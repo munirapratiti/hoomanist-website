@@ -46,8 +46,8 @@ Push ke branch lain menghasilkan preview URL terpisah.
   1200×630 px. Simpan sebagai `assets/og-image.png`, lalu tambahkan kembali
   di `<head>`:
   ```html
-  <meta property="og:image" content="https://hoomanist.vercel.app/assets/og-image.png">
+  <meta property="og:image" content="https://hoomanist-website.vercel.app/assets/og-image.png">
   ```
   dan ubah `twitter:card` menjadi `summary_large_image`.
 - **URL di `<link rel="canonical">` dan `og:url`** masih menunjuk ke
-  `hoomanist.vercel.app`. Ganti kalau nanti pakai domain sendiri.
+  `hoomanist-website.vercel.app`. Ganti kalau nanti pakai domain sendiri.
