@@ -39,3 +39,15 @@ Push ke branch lain menghasilkan preview URL terpisah.
 - **Sumber desain** ada di Claude Design, project "Hoomanist Website".
   File ini hasil konversi dari `Hoomanist Website.dc.html`. Kalau desain di
   sana diubah, perubahannya tidak otomatis masuk ke sini.
+
+## Belum selesai
+
+- **Gambar `og:image`.** Preview link di WhatsApp/LinkedIn/X butuh gambar
+  1200×630 px. Simpan sebagai `assets/og-image.png`, lalu tambahkan kembali
+  di `<head>`:
+  ```html
+  <meta property="og:image" content="https://hoomanist.vercel.app/assets/og-image.png">
+  ```
+  dan ubah `twitter:card` menjadi `summary_large_image`.
+- **URL di `<link rel="canonical">` dan `og:url`** masih menunjuk ke
+  `hoomanist.vercel.app`. Ganti kalau nanti pakai domain sendiri.
