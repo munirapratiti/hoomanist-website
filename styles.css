@@ -47,4 +47,4 @@
     .tiltr{transition:transform .24s ease,box-shadow .24s ease;}
     .tiltr:hover{transform:translateY(-3px);}
     .hand{font-family:'Caveat',cursive;font-weight:700;line-height:1;color:#3B2145;}
-    @media (max-width:980px){.hide-sm{display:none !important;}}
+    @media (max-width:980px){.hide-sm{display:none !important;}}.navlink.active{color:#EE7E52;}

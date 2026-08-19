@@ -5,19 +5,30 @@ HTML, CSS, dan JavaScript biasa. Di-deploy ke Vercel.
 
 ## Struktur
 
-| File | Isi |
+Situs multi-halaman. **File HTML di root adalah hasil bangunan — jangan diedit
+langsung**, karena akan tertimpa. Edit sumbernya di `src/`, lalu jalankan
+`python3 build.py`.
+
+| Path | Isi |
 |---|---|
-| `index.html` | Seluruh halaman. Styling utama pakai inline style (bawaan desain). |
+| `build.py` | Perakit situs. Berisi daftar halaman, menu, dan judul/deskripsi SEO. |
+| `src/head.html` | Template `<head>` untuk semua halaman. |
+| `src/raw/*.html` | Potongan konten tiap section, hasil ekstraksi dari desain. |
 | `styles.css` | Style global: reset, tipografi, animasi, breakpoint responsif. |
-| `main.js` | Scroll reveal, angka count-up, link email, dan form kontak. |
+| `main.js` | Scroll reveal, angka count-up, link email, form kontak. |
 | `assets/` | Gambar: logo, logo partner, foto tim. |
-| `favicon.svg` | Brand mark. |
 | `vercel.json` | Cache header dan security header. |
+
+Halaman yang dihasilkan: `/`, `/services`, `/why-us`, `/proof`,
+`/for-creatives`, `/faq`, `/contact`.
+
+Nav dan footer dibangkitkan satu kali di `build.py`, jadi menambah atau
+mengubah menu cukup satu baris — tidak perlu menyunting tujuh berkas.
 
 ## Menjalankan secara lokal
 
 ```bash
-python3 -m http.server 8000
+python3 build.py && python3 -m http.server 8000
 ```
 
 Lalu buka <http://localhost:8000>. Tidak perlu Node.
@@ -34,20 +45,18 @@ Push ke branch lain menghasilkan preview URL terpisah.
   server mana pun. Kalau nanti butuh form yang benar-benar mengirim ke inbox,
   perlu tambahan layanan seperti Formspree atau Vercel Functions.
 - **Alamat email disusun di `main.js`, bukan ditulis di HTML.** Ini menghambat
-  scraper. Kalau alamatnya berubah, ubah konstanta `EMAIL` di `main.js` —
-  satu tempat, berlaku untuk seluruh halaman.
+  scraper. Kalau alamatnya berubah, ubah konstanta `EMAIL` di `main.js`.
 - **Sumber desain** ada di Claude Design, project "Hoomanist Website".
-  File ini hasil konversi dari `Hoomanist Website.dc.html`. Kalau desain di
-  sana diubah, perubahannya tidak otomatis masuk ke sini.
+  Konversinya satu arah — perubahan di sana tidak mengalir ke sini.
 
 ## Belum selesai
 
-- **Gambar `og:image`.** Preview link di WhatsApp/LinkedIn/X butuh gambar
-  1200×630 px. Simpan sebagai `assets/og-image.png`, lalu tambahkan kembali
-  di `<head>`:
-  ```html
-  <meta property="og:image" content="https://hoomanist-website.vercel.app/assets/og-image.png">
-  ```
+- **Tiga gambar belum ada** dan harus diunduh manual dari Claude Design ke
+  `assets/`: `logo-icon-sm.png`, `logo-experia-sm.png`, dan `team-munira-sm.jpg`
+  (simpan sebagai `team-munira-sm.png`). Ketiganya melebihi batas 256 KB alat
+  pengambil berkas.
+- **Gambar `og:image`** untuk preview link di WhatsApp/LinkedIn/X. Perlu 1200×630
+  px, simpan sebagai `assets/og-image.png`, lalu tambahkan di `src/head.html`
   dan ubah `twitter:card` menjadi `summary_large_image`.
-- **URL di `<link rel="canonical">` dan `og:url`** masih menunjuk ke
-  `hoomanist-website.vercel.app`. Ganti kalau nanti pakai domain sendiri.
+- **URL di `canonical` dan `og:url`** memakai konstanta `BASE` di `build.py`.
+  Ganti satu baris itu kalau pindah ke domain sendiri.
