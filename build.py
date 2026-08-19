@@ -134,7 +134,7 @@ def build_nav(current):
         'padding:0 40px;height:76px;display:flex;align-items:center;'
         'justify-content:space-between;">\n'
         '      <a href="/" style="display:flex;align-items:center;gap:12px;">'
-        '<img src="/assets/logo-icon-sm.png" alt="Hoomanist" '
+        '<img src="/assets/logo-icon.png" alt="Hoomanist" '
         'style="height:44px;width:44px;display:block;object-fit:contain;">'
         '<span style="font-size:23px;font-weight:700;letter-spacing:-0.02em;'
         'color:#2C1E2E;">hoomanist</span></a>\n'

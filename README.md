@@ -51,10 +51,13 @@ Push ke branch lain menghasilkan preview URL terpisah.
 
 ## Belum selesai
 
-- **Tiga gambar belum ada** dan harus diunduh manual dari Claude Design ke
-  `assets/`: `logo-icon-sm.png`, `logo-experia-sm.png`, dan `team-munira-sm.jpg`
-  (simpan sebagai `team-munira-sm.png`). Ketiganya melebihi batas 256 KB alat
-  pengambil berkas.
+- **Dua gambar belum ada** dan harus diunduh manual dari Claude Design ke
+  `assets/`: `logo-experia-sm.png` dan `team-munira-sm.jpg` (simpan sebagai
+  `team-munira-sm.png`). Keduanya melebihi batas 256 KB alat pengambil berkas.
+
+  Logo ikon diambil dari berkas brand asli di
+  `PT Kinarya Nara Kolektif/Hoomanist/Brand Identity/Hoomanist Logo/Icon PNG 1.png`,
+  dipotong dari kanvas 2000x2000 (isinya hanya 39%) dan diskalakan ke 128 px.
 - **Gambar `og:image`** untuk preview link di WhatsApp/LinkedIn/X. Perlu 1200×630
   px, simpan sebagai `assets/og-image.png`, lalu tambahkan di `src/head.html`
   dan ubah `twitter:card` menjadi `summary_large_image`.
