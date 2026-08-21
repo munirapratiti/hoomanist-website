@@ -7,6 +7,11 @@
      Assembled at runtime rather than written into the HTML, so it doesn't
      sit in the markup as plain text for scrapers. Same approach the design
      used. Change it here and it updates everywhere on the page. */
+  // Isi dengan endpoint Formspree (atau layanan sejenis) agar kiriman form
+  // benar-benar masuk ke inbox. Selama kosong, form memakai aplikasi email
+  // pengunjung, dengan panel salin-tempel sebagai jaring pengaman.
+  var FORM_ENDPOINT = '';
+
   var AT = String.fromCharCode(64);
   var EMAIL = 'hoomanist' + '.id' + AT + 'gmail' + '.com';
   var MAILTO = 'mail' + 'to:';
@@ -127,28 +132,90 @@
     var sentState = document.getElementById('sent-state');
     if (!form || !formState || !sentState) return;
 
-    form.addEventListener('submit', function (e) {
-      e.preventDefault();
-      var f = e.target;
+    var fallbackPanel = document.getElementById('fallback-panel');
+    var fallbackBox = document.getElementById('fallback-message');
+    var copyBtn = document.getElementById('copy-message');
+
+    function compose(f) {
       var val = function (name) {
         return ((f[name] && f[name].value) || '').trim();
       };
-
       var name = val('name');
       var company = val('company');
-      var subject = 'New enquiry from ' + (name || 'the website') +
-                    (company ? ' (' + company + ')' : '');
-      var body = 'Name: ' + name +
-                 '\nCompany: ' + company +
-                 '\nEmail: ' + val('email') +
-                 '\n\n' + val('message');
+      return {
+        name: name,
+        company: company,
+        email: val('email'),
+        message: val('message'),
+        subject: 'New enquiry from ' + (name || 'the website') +
+                 (company ? ' (' + company + ')' : ''),
+      };
+    }
 
-      window.location.href = MAILTO + EMAIL +
-        '?subject=' + encodeURIComponent(subject) +
-        '&body=' + encodeURIComponent(body);
+    function asText(d) {
+      return 'Name: ' + d.name +
+             '\nCompany: ' + d.company +
+             '\nEmail: ' + d.email +
+             '\n\n' + d.message;
+    }
 
+    function showSent(withFallback) {
       formState.hidden = true;
       sentState.hidden = false;
+      if (fallbackPanel) fallbackPanel.hidden = !withFallback;
+    }
+
+    if (copyBtn && fallbackBox) {
+      copyBtn.addEventListener('click', function () {
+        var done = function () {
+          var was = copyBtn.textContent;
+          copyBtn.textContent = 'Copied';
+          setTimeout(function () { copyBtn.textContent = was; }, 1800);
+        };
+        // Clipboard API needs a secure context; select-and-copy is the
+        // fallback so the button still works everywhere.
+        if (navigator.clipboard && window.isSecureContext) {
+          navigator.clipboard.writeText(fallbackBox.value).then(done, function () {
+            fallbackBox.select();
+          });
+        } else {
+          fallbackBox.select();
+          try { document.execCommand('copy'); done(); } catch (e) { /* biar dipilih */ }
+        }
+      });
+    }
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var d = compose(e.target);
+      var body = asText(d);
+      if (fallbackBox) fallbackBox.value = body;
+
+      if (FORM_ENDPOINT) {
+        var btn = form.querySelector('button[type="submit"]');
+        var label = btn ? btn.textContent : '';
+        if (btn) { btn.disabled = true; btn.textContent = 'Sending…'; }
+
+        fetch(FORM_ENDPOINT, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+          body: JSON.stringify(d),
+        }).then(function (r) {
+          if (!r.ok) throw new Error('gagal');
+          showSent(false);
+        }).catch(function () {
+          // Jangan biarkan pesannya hilang: tawarkan jalur manual.
+          showSent(true);
+        }).then(function () {
+          if (btn) { btn.disabled = false; btn.textContent = label; }
+        });
+        return;
+      }
+
+      window.location.href = MAILTO + EMAIL +
+        '?subject=' + encodeURIComponent(d.subject) +
+        '&body=' + encodeURIComponent(body);
+      showSent(true);
     });
   }
 

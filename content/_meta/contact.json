@@ -46,5 +46,13 @@
   "your_message_should_pop_up_in_your_email": {
     "tag": "p",
     "label": "Your message should pop up in your email app, ready to send …"
+  },
+  "fallback_note": {
+    "tag": "div",
+    "label": "Kontak — keterangan cadangan kalau email tidak terbuka"
+  },
+  "copy_message": {
+    "tag": "button",
+    "label": "Kontak — tombol salin pesan"
   }
 }

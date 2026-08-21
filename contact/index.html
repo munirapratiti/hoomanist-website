@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- built 2026-08-21T06:57:33Z -->
+<!-- built 2026-08-21T07:03:14Z -->
 <html lang="en">
 <head>
 <meta charset="utf-8">
@@ -85,6 +85,11 @@
             <div style="width:72px;height:72px;border-radius:50%;background:#E6EFE9;display:flex;align-items:center;justify-content:center;margin:0 auto;"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#1E7A6A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"></path></svg></div>
             <div style="font-size:26px;font-weight:700;color:#3B2145;margin-top:22px;">Opening your email…</div>
             <p style="font-size:18px;color:#5C6473;line-height:1.55;margin-top:10px;">Your message should pop up in your email app, ready to send to us. If it didn't, just write to <strong style="color:#3B2145;"><span class="js-email"></span></strong> — we'll be in touch shortly.</p>
+          </div>
+          <div id="fallback-panel" style="text-align:left;background:#F6F2E8;border:1.5px solid #E2D9C5;border-radius:14px;padding:16px;margin-top:4px;">
+            <div style="font-size:14px;font-weight:600;color:#42485A;line-height:1.5;">If your email app didn't open, copy the message below and send it to <a href="/contact" data-mailto="main" style="color:#1E7A6A;text-decoration:underline;"><span class="js-email"></span></a></div>
+            <textarea id="fallback-message" readonly rows="6" style="width:100%;margin-top:10px;font-family:'Poppins',sans-serif;font-size:14px;line-height:1.5;color:#3B2145;background:#fff;border:1px solid #E2D9C5;border-radius:10px;padding:10px;resize:vertical;"></textarea>
+            <button type="button" id="copy-message" style="margin-top:10px;background:#3B2145;color:#F6F2E8;font-family:'Poppins',sans-serif;font-size:15px;font-weight:600;padding:10px 20px;border:none;border-radius:999px;cursor:pointer;">Copy message</button>
           </div>
         </div>
       </div>

@@ -38,6 +38,11 @@
             <div style="font-size:26px;font-weight:700;color:#3B2145;margin-top:22px;">{{opening_your_email}}</div>
             <p style="font-size:18px;color:#5C6473;line-height:1.55;margin-top:10px;">{{your_message_should_pop_up_in_your_email}}</p>
           </div>
+          <div id="fallback-panel" style="text-align:left;background:#F6F2E8;border:1.5px solid #E2D9C5;border-radius:14px;padding:16px;margin-top:4px;">
+            <div style="font-size:14px;font-weight:600;color:#42485A;line-height:1.5;">{{fallback_note}} <a href="#contact" data-mailto="main" style="color:#1E7A6A;text-decoration:underline;"><span class="js-email"></span></a></div>
+            <textarea id="fallback-message" readonly rows="6" style="width:100%;margin-top:10px;font-family:'Poppins',sans-serif;font-size:14px;line-height:1.5;color:#3B2145;background:#fff;border:1px solid #E2D9C5;border-radius:10px;padding:10px;resize:vertical;"></textarea>
+            <button type="button" id="copy-message" style="margin-top:10px;background:#3B2145;color:#F6F2E8;font-family:'Poppins',sans-serif;font-size:15px;font-weight:600;padding:10px 20px;border:none;border-radius:999px;cursor:pointer;">{{copy_message}}</button>
+          </div>
         </div>
       </div>
     </div>

@@ -10,5 +10,7 @@
   "what_s_on_your_mind": "What's on your mind?",
   "send_message": "Send message",
   "opening_your_email": "Opening your email…",
-  "your_message_should_pop_up_in_your_email": "Your message should pop up in your email app, ready to send to us. If it didn't, just write to <strong style=\"color:#3B2145;\"><span class=\"js-email\"></span></strong> — we'll be in touch shortly."
+  "your_message_should_pop_up_in_your_email": "Your message should pop up in your email app, ready to send to us. If it didn't, just write to <strong style=\"color:#3B2145;\"><span class=\"js-email\"></span></strong> — we'll be in touch shortly.",
+  "fallback_note": "If your email app didn't open, copy the message below and send it to",
+  "copy_message": "Copy message"
 }

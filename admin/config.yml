@@ -849,6 +849,14 @@ collections:
             label: "Your message should pop up in your email app, ready to send …"
             widget: text
             required: false
+          - name: "fallback_note"
+            label: "Kontak — keterangan cadangan kalau email tidak terbuka"
+            widget: string
+            required: false
+          - name: "copy_message"
+            label: "Kontak — tombol salin pesan"
+            widget: string
+            required: false
       - name: footer12
         label: "Footer"
         file: content/_footer12.json
