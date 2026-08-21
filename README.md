@@ -51,8 +51,6 @@ Push ke branch lain menghasilkan preview URL terpisah.
 
 ## Belum selesai
 
-- **Deskripsi kartu Sosplan** di strip klien masih diisi "Partner" saja.
-  Ganti dengan satu kalimat yang tepat di `src/raw/_section2.html`.
 
 - **Gambar `og:image`** untuk preview link di WhatsApp/LinkedIn/X. Perlu 1200×630
   px, simpan sebagai `assets/og-image.png`, lalu tambahkan di `src/head.html`
