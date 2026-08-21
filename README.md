@@ -82,3 +82,43 @@ Pada foto Tito ada logo Sosplan di kaosnya. Logo itu tidak dihapus dengan
 menyunting piksel — batas bawah potongan cukup disetel di atas garis logo
 (y=2250 dari tinggi 4000), sehingga logo tidak pernah masuk frame. Kalau
 suatu saat perlu potongan yang lebih lebar, logonya akan muncul lagi.
+
+## Halaman admin (/admin)
+
+Isi situs dapat disunting lewat <https://hoomanist-website.vercel.app/admin>
+tanpa menyentuh kode. Alurnya: simpan di admin -> jadi commit ke GitHub ->
+Vercel merakit ulang -> situs terbarui. Sekitar satu menit.
+
+### Menyalakan login (sekali saja)
+
+1. Buat OAuth App di <https://github.com/settings/developers> ->
+   **New OAuth App**:
+   - Homepage URL: `https://hoomanist-website.vercel.app`
+   - Authorization callback URL:
+     `https://hoomanist-website.vercel.app/api/callback`
+2. Salin **Client ID**, lalu **Generate a new client secret** dan salin
+   nilainya (hanya tampil sekali).
+3. Di Vercel -> project -> Settings -> Environment Variables, tambahkan:
+   - `GITHUB_CLIENT_ID`
+   - `GITHUB_CLIENT_SECRET`
+4. Redeploy agar variabel terbaca.
+
+Client secret hanya dibaca `api/callback.js` di sisi server dan tidak pernah
+dikirim ke browser.
+
+### Batasnya
+
+- Yang bisa diubah adalah **teks dan gambar**, bukan tata letak, warna, atau
+  urutan bagian. Itu tetap di `src/raw/*.html`.
+- Sebagian ruas berisi HTML kecil, misalnya `<br>` atau `<span>` pewarna kata.
+  Biarkan tag itu utuh; menghapusnya akan mengubah tampilan.
+- Menambah bagian baru tidak bisa dari admin — perlu menyunting berkas
+  tata letak lalu menjalankan `extract.py` dan `gen_admin.py` lagi.
+
+### Kalau teks di situs bertambah
+
+`admin/config.yml` dibangkitkan, bukan ditulis tangan:
+
+```bash
+python3 extract.py && python3 gen_admin.py && python3 build.py
+```
