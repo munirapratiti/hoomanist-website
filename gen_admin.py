@@ -74,8 +74,10 @@ def main():
             value = vals.get(key, "")
             # Long copy gets a textarea; headings and labels stay single-line.
             widget = "text" if len(value) > 70 or "<br" in value else "string"
+            # Nama ruas selalu dikutip: slug dari angka seperti "90" atau "68"
+            # akan dibaca YAML sebagai bilangan, dan Decap menolaknya.
             out += [
-                f"          - name: {key}",
+                f"          - name: {esc(key)}",
                 f"            label: {esc(m['label'])}",
                 f"            widget: {widget}",
                 "            required: false",

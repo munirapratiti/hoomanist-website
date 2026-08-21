@@ -18,63 +18,63 @@ collections:
         file: content/top.json
         format: json
         fields:
-          - name: where_creative_people_belong
+          - name: "where_creative_people_belong"
             label: "Where Creative People Belong"
             widget: text
             required: false
-          - name: creative_people_placed_with_purpose
+          - name: "creative_people_placed_with_purpose"
             label: "Creative people. Placed with purpose."
             widget: text
             required: false
-          - name: a_people_partner_for_agencies_and_brands
+          - name: "a_people_partner_for_agencies_and_brands"
             label: "A people partner for agencies and brands that treat their te…"
             widget: text
             required: false
-          - name: 3
+          - name: "3"
             label: "3+"
             widget: string
             required: false
-          - name: years_active
+          - name: "years_active"
             label: "Years active"
             widget: string
             required: false
-          - name: 10_20
+          - name: "10_20"
             label: "10–20"
             widget: string
             required: false
-          - name: roles_placed
+          - name: "roles_placed"
             label: "Roles placed"
             widget: string
             required: false
-          - name: 90
+          - name: "90"
             label: "90"
             widget: string
             required: false
-          - name: day_guarantee
+          - name: "day_guarantee"
             label: "Day guarantee"
             widget: string
             required: false
-          - name: is_hoomanist_right_for_you_see_if_you_re
+          - name: "is_hoomanist_right_for_you_see_if_you_re"
             label: "Is Hoomanist Right For You? See if you're a fit →"
             widget: text
             required: false
-          - name: for_creatives_find_your_next_role
+          - name: "for_creatives_find_your_next_role"
             label: "For Creatives Find your next role →"
             widget: text
             required: false
-          - name: start_a_conversation
+          - name: "start_a_conversation"
             label: "Start a conversation"
             widget: string
             required: false
-          - name: good_people_great_work
+          - name: "good_people_great_work"
             label: "good people. great work."
             widget: text
             required: false
-          - name: people_presence_purpose
+          - name: "people_presence_purpose"
             label: "People. Presence. Purpose."
             widget: text
             required: false
-          - name: the_three_things_we_build_every_engageme
+          - name: "the_three_things_we_build_every_engageme"
             label: "The three things we build every engagement around."
             widget: string
             required: false
@@ -83,23 +83,23 @@ collections:
         file: content/_section2.json
         format: json
         fields:
-          - name: clients_amp_partners_small_but_real_and_
+          - name: "clients_amp_partners_small_but_real_and_"
             label: "Clients &amp; partners small, but real — and growing."
             widget: text
             required: false
-          - name: every_hire_since_2022_plus_culture_and_r
+          - name: "every_hire_since_2022_plus_culture_and_r"
             label: "Every hire since 2022, plus culture and reviews"
             widget: string
             required: false
-          - name: partner_brand_and_creative_team_support
+          - name: "partner_brand_and_creative_team_support"
             label: "Partner — brand and creative team support"
             widget: string
             required: false
-          - name: partner_creative_people_partnership
+          - name: "partner_creative_people_partnership"
             label: "Partner — creative people partnership"
             widget: string
             required: false
-          - name: creative_recruitment_and_team_developmen
+          - name: "creative_recruitment_and_team_developmen"
             label: "Creative recruitment and team development · Since 2023"
             widget: string
             required: false
@@ -108,31 +108,31 @@ collections:
         file: content/_section3.json
         format: json
         fields:
-          - name: why_it_matters
+          - name: "why_it_matters"
             label: "Why It Matters"
             widget: text
             required: false
-          - name: a_wrong_hire_isn_t_an_hr_problem_it_s_a_
+          - name: "a_wrong_hire_isn_t_an_hr_problem_it_s_a_"
             label: "A wrong hire isn't an HR problem. It's a business one."
             widget: string
             required: false
-          - name: when_a_creative_hire_doesn_t_fit_the_cos
+          - name: "when_a_creative_hire_doesn_t_fit_the_cos"
             label: "When a creative hire doesn't fit, the cost shows up everywhe…"
             widget: text
             required: false
-          - name: 68
+          - name: "68"
             label: "68 %"
             widget: text
             required: false
-          - name: of_creative_hires_leave_within_18_months
+          - name: "of_creative_hires_leave_within_18_months"
             label: "of creative hires leave within 18 months due to mismatch."
             widget: string
             required: false
-          - name: 3_5
+          - name: "3_5"
             label: "3–5 ×"
             widget: string
             required: false
-          - name: annual_salary_lost_replacing_the_wrong_h
+          - name: "annual_salary_lost_replacing_the_wrong_h"
             label: "annual salary lost replacing the wrong hire."
             widget: string
             required: false
@@ -141,19 +141,19 @@ collections:
         file: content/home-cta.json
         format: json
         fields:
-          - name: let_s_talk
+          - name: "let_s_talk"
             label: "Let's Talk"
             widget: text
             required: false
-          - name: let_s_build_better_ways_of_working
+          - name: "let_s_build_better_ways_of_working"
             label: "Let's build better ways of working."
             widget: string
             required: false
-          - name: tell_us_where_your_business_is_today_and
+          - name: "tell_us_where_your_business_is_today_and"
             label: "Tell us where your business is today and what feels challeng…"
             widget: text
             required: false
-          - name: start_a_conversation
+          - name: "start_a_conversation"
             label: "Start a conversation →"
             widget: string
             required: false
@@ -162,147 +162,147 @@ collections:
         file: content/services.json
         format: json
         fields:
-          - name: what_we_do
+          - name: "what_we_do"
             label: "What We Do"
             widget: text
             required: false
-          - name: most_teams_start_with_a_hire_the_good_on
+          - name: "most_teams_start_with_a_hire_the_good_on"
             label: "Most teams start with a hire. The good ones stay for the sys…"
             widget: string
             required: false
-          - name: businesses_hired_for_skill_but_struggled
+          - name: "businesses_hired_for_skill_but_struggled"
             label: "Businesses hired for skill — but struggled with fit. We don'…"
             widget: text
             required: false
-          - name: 01
+          - name: "01"
             label: "01"
             widget: string
             required: false
-          - name: creative_recruitment_start_here_hiring_p
+          - name: "creative_recruitment_start_here_hiring_p"
             label: "Creative Recruitment — start here Hiring people who fit the …"
             widget: text
             required: false
-          - name: from_brief_to_belonging_end_to_end_recru
+          - name: "from_brief_to_belonging_end_to_end_recru"
             label: "From brief to belonging. End-to-end recruitment with culture…"
             widget: text
             required: false
-          - name: culture_fit_assessment_portfolio_review_
+          - name: "culture_fit_assessment_portfolio_review_"
             label: "Culture-fit assessment Portfolio review Interview support 90…"
             widget: text
             required: false
-          - name: from_brief_to_belonging_8_steps
+          - name: "from_brief_to_belonging_8_steps"
             label: "From brief to belonging — 8 steps"
             widget: string
             required: false
-          - name: 01_nbsp_discover_02_nbsp_source_03_nbsp_
+          - name: "01_nbsp_discover_02_nbsp_source_03_nbsp_"
             label: "01 &nbsp;Discover 02 &nbsp;Source 03 &nbsp;Assess 04 Fit Int…"
             widget: text
             required: false
-          - name: a_dedicated_fit_interview_plus_reference
+          - name: "a_dedicated_fit_interview_plus_reference"
             label: "A dedicated fit interview plus reference checks — this is wh…"
             widget: text
             required: false
-          - name: 02
+          - name: "02"
             label: "02"
             widget: string
             required: false
-          - name: people_growth_helping_people_grow_with_c
+          - name: "people_growth_helping_people_grow_with_c"
             label: "People Growth Helping people grow with clarity, not guesswor…"
             widget: text
             required: false
-          - name: career_path_frameworks_so_people_know_wh
+          - name: "career_path_frameworks_so_people_know_wh"
             label: "Career-path frameworks so people know where they're heading,…"
             widget: text
             required: false
-          - name: career_paths_skill_workshops_leadership_
+          - name: "career_paths_skill_workshops_leadership_"
             label: "Career paths Skill workshops Leadership development"
             widget: text
             required: false
-          - name: track_a
+          - name: "track_a"
             label: "Track A"
             widget: string
             required: false
-          - name: career_path_framework
+          - name: "career_path_framework"
             label: "Career Path Framework"
             widget: string
             required: false
-          - name: more_than_titles_a_clear_sense_of_where_
+          - name: "more_than_titles_a_clear_sense_of_where_"
             label: "More than titles — a clear sense of where you're going."
             widget: string
             required: false
-          - name: track_b
+          - name: "track_b"
             label: "Track B"
             widget: string
             required: false
-          - name: skill_building_workshops
+          - name: "skill_building_workshops"
             label: "Skill-Building Workshops"
             widget: string
             required: false
-          - name: learning_that_changes_behaviour_not_just
+          - name: "learning_that_changes_behaviour_not_just"
             label: "Learning that changes behaviour — not just fills slides."
             widget: string
             required: false
-          - name: track_c
+          - name: "track_c"
             label: "Track C"
             widget: string
             required: false
-          - name: leadership_development
+          - name: "leadership_development"
             label: "Leadership Development"
             widget: string
             required: false
-          - name: great_creatives_don_t_automatically_beco
+          - name: "great_creatives_don_t_automatically_beco"
             label: "Great creatives don't automatically become great leaders."
             widget: string
             required: false
-          - name: 03
+          - name: "03"
             label: "03"
             widget: string
             required: false
-          - name: performance_amp_alignment_performance_sy
+          - name: "performance_amp_alignment_performance_sy"
             label: "Performance &amp; Alignment Performance systems built for cr…"
             widget: text
             required: false
-          - name: most_creative_kpis_are_borrowed_broken_o
+          - name: "most_creative_kpis_are_borrowed_broken_o"
             label: "Most creative KPIs are borrowed, broken, or measuring the wr…"
             widget: text
             required: false
-          - name: kpi_design_kpi_audit_calibration_rollout
+          - name: "kpi_design_kpi_audit_calibration_rollout"
             label: "KPI design KPI audit Calibration Rollout support"
             widget: text
             required: false
-          - name: mode_a_nbsp_kpi_design_mode_b_nbsp_kpi_a
+          - name: "mode_a_nbsp_kpi_design_mode_b_nbsp_kpi_a"
             label: "Mode A &nbsp;· KPI Design Mode B &nbsp;· KPI Audit"
             widget: text
             required: false
-          - name: week_1
+          - name: "week_1"
             label: "Week 1"
             widget: string
             required: false
-          - name: discovery
+          - name: "discovery"
             label: "Discovery"
             widget: string
             required: false
-          - name: week_2_3
+          - name: "week_2_3"
             label: "Week 2–3"
             widget: string
             required: false
-          - name: design
+          - name: "design"
             label: "Design"
             widget: string
             required: false
-          - name: week_4
+          - name: "week_4"
             label: "Week 4"
             widget: string
             required: false
-          - name: calibration
+          - name: "calibration"
             label: "Calibration"
             widget: string
             required: false
-          - name: week_5_8
+          - name: "week_5_8"
             label: "Week 5–8"
             widget: string
             required: false
-          - name: rollout
+          - name: "rollout"
             label: "Rollout"
             widget: string
             required: false
@@ -311,19 +311,19 @@ collections:
         file: content/pricing.json
         format: json
         fields:
-          - name: pricing
+          - name: "pricing"
             label: "Pricing"
             widget: text
             required: false
-          - name: pricing_that_fits_the_work
+          - name: "pricing_that_fits_the_work"
             label: "Pricing that fits the work."
             widget: string
             required: false
-          - name: every_team_is_different_so_every_engagem
+          - name: "every_team_is_different_so_every_engagem"
             label: "Every team is different, so every engagement is scoped to yo…"
             widget: text
             required: false
-          - name: contact_us_for_pricing
+          - name: "contact_us_for_pricing"
             label: "Contact us for pricing"
             widget: string
             required: false
@@ -332,223 +332,223 @@ collections:
         file: content/why.json
         format: json
         fields:
-          - name: why_hoomanist
+          - name: "why_hoomanist"
             label: "Why Hoomanist"
             widget: text
             required: false
-          - name: your_people_are_the_one_thing_nobody_can
+          - name: "your_people_are_the_one_thing_nobody_can"
             label: "Your people are the one thing nobody can copy."
             widget: string
             required: false
-          - name: strategies_processes_even_ideas_can_be_c
+          - name: "strategies_processes_even_ideas_can_be_c"
             label: "Strategies, processes, even ideas can be copied. The chemist…"
             widget: text
             required: false
-          - name: 01
+          - name: "01"
             label: "01"
             widget: string
             required: false
-          - name: human_first
+          - name: "human_first"
             label: "Human First"
             widget: string
             required: false
-          - name: we_start_with_people_not_resumes_buildin
+          - name: "we_start_with_people_not_resumes_buildin"
             label: "We start with people, not resumes — building belonging that …"
             widget: text
             required: false
-          - name: 02
+          - name: "02"
             label: "02"
             widget: string
             required: false
-          - name: creative_native
+          - name: "creative_native"
             label: "Creative Native"
             widget: string
             required: false
-          - name: we_understand_how_creative_work_actually
+          - name: "we_understand_how_creative_work_actually"
             label: "We understand how creative work actually works, so hiring st…"
             widget: text
             required: false
-          - name: 03
+          - name: "03"
             label: "03"
             widget: string
             required: false
-          - name: purposeful
+          - name: "purposeful"
             label: "Purposeful"
             widget: string
             required: false
-          - name: we_hire_for_the_right_moment_not_just_th
+          - name: "we_hire_for_the_right_moment_not_just_th"
             label: "We hire for the right moment, not just the right person — se…"
             widget: text
             required: false
-          - name: why_a_partner_not_just_a_recruiter
+          - name: "why_a_partner_not_just_a_recruiter"
             label: "Why a partner — not just a recruiter."
             widget: text
             required: false
-          - name: hoomanist
+          - name: "hoomanist"
             label: "Hoomanist"
             widget: string
             required: false
-          - name: recruiter
+          - name: "recruiter"
             label: "Recruiter"
             widget: string
             required: false
-          - name: hr_firm
+          - name: "hr_firm"
             label: "HR firm"
             widget: string
             required: false
-          - name: in_house
+          - name: "in_house"
             label: "In-house"
             widget: string
             required: false
-          - name: culture_fit_hiring_beyond_the_cv
+          - name: "culture_fit_hiring_beyond_the_cv"
             label: "Culture-fit hiring, beyond the CV"
             widget: string
             required: false
-          - name: yes
+          - name: "yes"
             label: "Yes"
             widget: string
             required: false
-          - name: some
+          - name: "some"
             label: "Some"
             widget: string
             required: false
-          - name: no
+          - name: "no"
             label: "No"
             widget: string
             required: false
-          - name: some_2
+          - name: "some_2"
             label: "Some"
             widget: string
             required: false
-          - name: understands_creative_work
+          - name: "understands_creative_work"
             label: "Understands creative work"
             widget: string
             required: false
-          - name: yes_2
+          - name: "yes_2"
             label: "Yes"
             widget: string
             required: false
-          - name: some_3
+          - name: "some_3"
             label: "Some"
             widget: string
             required: false
-          - name: no_2
+          - name: "no_2"
             label: "No"
             widget: string
             required: false
-          - name: yes_3
+          - name: "yes_3"
             label: "Yes"
             widget: string
             required: false
-          - name: builds_people_systems_amp_culture
+          - name: "builds_people_systems_amp_culture"
             label: "Builds people systems &amp; culture"
             widget: string
             required: false
-          - name: yes_4
+          - name: "yes_4"
             label: "Yes"
             widget: string
             required: false
-          - name: no_3
+          - name: "no_3"
             label: "No"
             widget: string
             required: false
-          - name: yes_5
+          - name: "yes_5"
             label: "Yes"
             widget: string
             required: false
-          - name: some_4
+          - name: "some_4"
             label: "Some"
             widget: string
             required: false
-          - name: performance_and_growth_structure
+          - name: "performance_and_growth_structure"
             label: "Performance and growth structure"
             widget: string
             required: false
-          - name: yes_6
+          - name: "yes_6"
             label: "Yes"
             widget: string
             required: false
-          - name: no_4
+          - name: "no_4"
             label: "No"
             widget: string
             required: false
-          - name: yes_7
+          - name: "yes_7"
             label: "Yes"
             widget: string
             required: false
-          - name: some_5
+          - name: "some_5"
             label: "Some"
             widget: string
             required: false
-          - name: onboarding_amp_90_day_support
+          - name: "onboarding_amp_90_day_support"
             label: "Onboarding &amp; 90-day support"
             widget: string
             required: false
-          - name: yes_8
+          - name: "yes_8"
             label: "Yes"
             widget: string
             required: false
-          - name: no_5
+          - name: "no_5"
             label: "No"
             widget: string
             required: false
-          - name: some_6
+          - name: "some_6"
             label: "Some"
             widget: string
             required: false
-          - name: yes_9
+          - name: "yes_9"
             label: "Yes"
             widget: string
             required: false
-          - name: senior_embedded_partner
+          - name: "senior_embedded_partner"
             label: "Senior, embedded partner"
             widget: string
             required: false
-          - name: yes_10
+          - name: "yes_10"
             label: "Yes"
             widget: string
             required: false
-          - name: no_6
+          - name: "no_6"
             label: "No"
             widget: string
             required: false
-          - name: no_7
+          - name: "no_7"
             label: "No"
             widget: string
             required: false
-          - name: no_8
+          - name: "no_8"
             label: "No"
             widget: string
             required: false
-          - name: is_hoomanist_right_for_you
+          - name: "is_hoomanist_right_for_you"
             label: "Is Hoomanist Right For You?"
             widget: text
             required: false
-          - name: there_s_no_such_thing_as_too_early_the_s
+          - name: "there_s_no_such_thing_as_too_early_the_s"
             label: "There's no such thing as too early — the sooner we talk, the…"
             widget: text
             required: false
-          - name: 5_20_people
+          - name: "5_20_people"
             label: "5–20 people"
             widget: string
             required: false
-          - name: how_the_team_works_still_lives_in_the_fo
+          - name: "how_the_team_works_still_lives_in_the_fo"
             label: "How the team works still lives in the founder's head. One wr…"
             widget: text
             required: false
-          - name: 20_50_people
+          - name: "20_50_people"
             label: "20–50 people"
             widget: string
             required: false
-          - name: growing_fast_feeling_the_strain_the_foun
+          - name: "growing_fast_feeling_the_strain_the_foun"
             label: "Growing fast, feeling the strain. The founder can't be every…"
             widget: text
             required: false
-          - name: any_size
+          - name: "any_size"
             label: "Any size"
             widget: string
             required: false
-          - name: going_through_change_new_leadership_a_re
+          - name: "going_through_change_new_leadership_a_re"
             label: "Going through change — new leadership, a rebrand, a big expa…"
             widget: text
             required: false
@@ -557,47 +557,47 @@ collections:
         file: content/team.json
         format: json
         fields:
-          - name: the_team
+          - name: "the_team"
             label: "The Team"
             widget: text
             required: false
-          - name: the_people_behind_hoomanist
+          - name: "the_people_behind_hoomanist"
             label: "The people behind Hoomanist."
             widget: string
             required: false
-          - name: munira
+          - name: "munira"
             label: "Munira"
             widget: string
             required: false
-          - name: founder_amp_people_strategy
+          - name: "founder_amp_people_strategy"
             label: "Founder &amp; People Strategy"
             widget: string
             required: false
-          - name: believes_great_teams_are_built_on_purpos
+          - name: "believes_great_teams_are_built_on_purpos"
             label: "Believes great teams are built on purpose, not by accident."
             widget: string
             required: false
-          - name: people_growth_recruitment_performance_am
+          - name: "people_growth_recruitment_performance_am"
             label: "People growth · Recruitment · Performance &amp; alignment"
             widget: string
             required: false
-          - name: tito
+          - name: "tito"
             label: "Tito"
             widget: string
             required: false
-          - name: creative_amp_brand_direction
+          - name: "creative_amp_brand_direction"
             label: "Creative &amp; Brand Direction"
             widget: string
             required: false
-          - name: believes_strong_brands_and_strong_teams_
+          - name: "believes_strong_brands_and_strong_teams_"
             label: "Believes strong brands and strong teams get built the same w…"
             widget: string
             required: false
-          - name: creative_systems_brand_direction_visual_
+          - name: "creative_systems_brand_direction_visual_"
             label: "Creative systems · Brand direction · Visual strategy"
             widget: string
             required: false
-          - name: small_team_nbsp_thoughtful_work_nbsp_int
+          - name: "small_team_nbsp_thoughtful_work_nbsp_int"
             label: "Small team. &nbsp;Thoughtful work. &nbsp;Intentional partner…"
             widget: string
             required: false
@@ -606,115 +606,115 @@ collections:
         file: content/proof.json
         format: json
         fields:
-          - name: outcomes_you_can_measure
+          - name: "outcomes_you_can_measure"
             label: "Outcomes You Can Measure"
             widget: text
             required: false
-          - name: we_d_rather_show_you_than_tell_you
+          - name: "we_d_rather_show_you_than_tell_you"
             label: "We'd rather show you than tell you."
             widget: string
             required: false
-          - name: 10_20
+          - name: "10_20"
             label: "10–20"
             widget: string
             required: false
-          - name: creative_roles_placed
+          - name: "creative_roles_placed"
             label: "Creative roles placed"
             widget: string
             required: false
-          - name: across_agencies_and_in_house_teams_since
+          - name: "across_agencies_and_in_house_teams_since"
             label: "Across agencies and in-house teams since 2023."
             widget: string
             required: false
-          - name: 3_wks
+          - name: "3_wks"
             label: "3 wks"
             widget: string
             required: false
-          - name: fastest_full_team_hire
+          - name: "fastest_full_team_hire"
             label: "Fastest full-team hire"
             widget: string
             required: false
-          - name: 15_roles_filled_for_by_u_s_urgent_hiring
+          - name: "15_roles_filled_for_by_u_s_urgent_hiring"
             label: "15+ roles filled for By.U's urgent hiring need — see below."
             widget: string
             required: false
-          - name: 4_8_wks
+          - name: "4_8_wks"
             label: "4–8 wks"
             widget: string
             required: false
-          - name: average_time_to_hire
+          - name: "average_time_to_hire"
             label: "Average time to hire"
             widget: string
             required: false
-          - name: from_first_brief_to_signed_offer_per_rol
+          - name: "from_first_brief_to_signed_offer_per_rol"
             label: "From first brief to signed offer, per role."
             widget: string
             required: false
-          - name: 3
+          - name: "3"
             label: "3 +"
             widget: string
             required: false
-          - name: teams_amp_brands_supported
+          - name: "teams_amp_brands_supported"
             label: "Teams &amp; brands supported"
             widget: string
             required: false
-          - name: recruitment_performance_and_culture_work
+          - name: "recruitment_performance_and_culture_work"
             label: "Recruitment, performance and culture work combined."
             widget: string
             required: false
-          - name: approximate_ranges_based_on_engagements_
+          - name: "approximate_ranges_based_on_engagements_"
             label: "Approximate ranges based on engagements to date — to be refi…"
             widget: text
             required: false
-          - name: case_study_by_u
+          - name: "case_study_by_u"
             label: "Case Study · By.U"
             widget: string
             required: false
-          - name: client_since_2023
+          - name: "client_since_2023"
             label: "Client since 2023"
             widget: string
             required: false
-          - name: 15_urgent_roles_3_weeks_then_a_partnersh
+          - name: "15_urgent_roles_3_weeks_then_a_partnersh"
             label: "15 urgent roles. 3 weeks. Then a partnership that kept growi…"
             widget: string
             required: false
-          - name: by_u_needed_fifteen_plus_creative_roles_
+          - name: "by_u_needed_fifteen_plus_creative_roles_"
             label: "By.U needed fifteen-plus creative roles filled urgently — th…"
             widget: text
             required: false
-          - name: phase_1_2025
+          - name: "phase_1_2025"
             label: "Phase 1 · 2025"
             widget: string
             required: false
-          - name: urgent_recruitment
+          - name: "urgent_recruitment"
             label: "Urgent Recruitment"
             widget: string
             required: false
-          - name: 15_creative_roles_sourced_screened_and_p
+          - name: "15_creative_roles_sourced_screened_and_p"
             label: "15+ creative roles sourced, screened and placed in 3 weeks."
             widget: string
             required: false
-          - name: phase_2_ongoing
+          - name: "phase_2_ongoing"
             label: "Phase 2 · Ongoing"
             widget: string
             required: false
-          - name: review_amp_development
+          - name: "review_amp_development"
             label: "Review &amp; Development"
             widget: string
             required: false
-          - name: teammate_based_evaluation_and_a_tailored
+          - name: "teammate_based_evaluation_and_a_tailored"
             label: "Teammate-based evaluation and a tailored development program…"
             widget: string
             required: false
-          - name: the_team_from_hoomanist_has_been_excepti
+          - name: "the_team_from_hoomanist_has_been_excepti"
             label: "The team from Hoomanist has been exceptional — creative, cap…"
             widget: text
             required: false
-          - name: doni_marketing_team_by_u
+          - name: "doni_marketing_team_by_u"
             label: "— Doni, Marketing Team, By.U"
             widget: string
             required: false
-          - name: client_since_2023_quoted_with_permission
+          - name: "client_since_2023_quoted_with_permission"
             label: "Client since 2023, quoted with permission."
             widget: string
             required: false
@@ -723,31 +723,31 @@ collections:
         file: content/creatives.json
         format: json
         fields:
-          - name: for_creatives
+          - name: "for_creatives"
             label: "For Creatives"
             widget: text
             required: false
-          - name: looking_for_a_team_that_actually_fits
+          - name: "looking_for_a_team_that_actually_fits"
             label: "Looking for a team that actually fits?"
             widget: string
             required: false
-          - name: we_place_creative_people_with_studios_an
+          - name: "we_place_creative_people_with_studios_an"
             label: "We place creative people with studios and brands who value f…"
             widget: text
             required: false
-          - name: share_your_portfolio
+          - name: "share_your_portfolio"
             label: "Share your portfolio →"
             widget: string
             required: false
-          - name: 1_send_your_portfolio_and_what_you_re_lo
+          - name: "1_send_your_portfolio_and_what_you_re_lo"
             label: "1 Send your portfolio and what you're looking for"
             widget: text
             required: false
-          - name: 2_we_keep_you_in_mind_as_roles_come_up
+          - name: "2_we_keep_you_in_mind_as_roles_come_up"
             label: "2 We keep you in mind as roles come up"
             widget: text
             required: false
-          - name: 3_we_only_reach_out_when_it_s_a_genuine_
+          - name: "3_we_only_reach_out_when_it_s_a_genuine_"
             label: "3 We only reach out when it's a genuine fit"
             widget: text
             required: false
@@ -756,43 +756,43 @@ collections:
         file: content/faq.json
         format: json
         fields:
-          - name: questions
+          - name: "questions"
             label: "Questions"
             widget: text
             required: false
-          - name: good_questions_honest_answers
+          - name: "good_questions_honest_answers"
             label: "Good questions, honest answers."
             widget: text
             required: false
-          - name: just_ask_us
+          - name: "just_ask_us"
             label: "Just ask us →"
             widget: string
             required: false
-          - name: no_recruitment_is_where_many_teams_start
+          - name: "no_recruitment_is_where_many_teams_start"
             label: "No. Recruitment is where many teams start with us, but we al…"
             widget: text
             required: false
-          - name: usually_4_8_weeks_per_role_from_the_firs
+          - name: "usually_4_8_weeks_per_role_from_the_firs"
             label: "Usually 4–8 weeks per role, from the first brief to a signed…"
             widget: text
             required: false
-          - name: if_the_candidate_leaves_or_both_sides_ag
+          - name: "if_the_candidate_leaves_or_both_sides_ag"
             label: "If the candidate leaves, or both sides agree the fit isn't w…"
             widget: text
             required: false
-          - name: upon_written_confirmation_the_candidate_
+          - name: "upon_written_confirmation_the_candidate_"
             label: "Upon written confirmation the candidate has accepted the off…"
             widget: text
             required: false
-          - name: yes_most_of_our_work_is_with_growing_stu
+          - name: "yes_most_of_our_work_is_with_growing_stu"
             label: "Yes — most of our work is with growing studios and lean in-h…"
             widget: text
             required: false
-          - name: yes_each_role_is_its_own_engagement_and_
+          - name: "yes_each_role_is_its_own_engagement_and_"
             label: "Yes — each role is its own engagement, and multi-role bundle…"
             widget: text
             required: false
-          - name: we_work_remotely_with_teams_anywhere_and
+          - name: "we_work_remotely_with_teams_anywhere_and"
             label: "We work remotely with teams anywhere, and on-site when it he…"
             widget: text
             required: false
@@ -801,51 +801,51 @@ collections:
         file: content/contact.json
         format: json
         fields:
-          - name: let_s_talk
+          - name: "let_s_talk"
             label: "Let's Talk"
             widget: text
             required: false
-          - name: let_s_build_better_ways_of_working
+          - name: "let_s_build_better_ways_of_working"
             label: "Let's build better ways of working."
             widget: string
             required: false
-          - name: tell_us_where_your_business_is_today_and
+          - name: "tell_us_where_your_business_is_today_and"
             label: "Tell us where your business is today and what feels challeng…"
             widget: text
             required: false
-          - name: email
+          - name: "email"
             label: "Email"
             widget: text
             required: false
-          - name: instagram_hoomanist_id
+          - name: "instagram_hoomanist_id"
             label: "Instagram @hoomanist.id"
             widget: text
             required: false
-          - name: your_name
+          - name: "your_name"
             label: "Your name"
             widget: string
             required: false
-          - name: company
+          - name: "company"
             label: "Company"
             widget: string
             required: false
-          - name: email_2
+          - name: "email_2"
             label: "Email"
             widget: string
             required: false
-          - name: what_s_on_your_mind
+          - name: "what_s_on_your_mind"
             label: "What's on your mind?"
             widget: string
             required: false
-          - name: send_message
+          - name: "send_message"
             label: "Send message"
             widget: string
             required: false
-          - name: opening_your_email
+          - name: "opening_your_email"
             label: "Opening your email…"
             widget: string
             required: false
-          - name: your_message_should_pop_up_in_your_email
+          - name: "your_message_should_pop_up_in_your_email"
             label: "Your message should pop up in your email app, ready to send …"
             widget: text
             required: false
@@ -854,47 +854,47 @@ collections:
         file: content/_footer12.json
         format: json
         fields:
-          - name: hoomanist
+          - name: "hoomanist"
             label: "hoomanist"
             widget: text
             required: false
-          - name: a_creative_workforce_partner_for_people_
+          - name: "a_creative_workforce_partner_for_people_"
             label: "A creative workforce partner. For people who create. Where i…"
             widget: text
             required: false
-          - name: good_people_great_work
+          - name: "good_people_great_work"
             label: "good people. great work."
             widget: string
             required: false
-          - name: explore
+          - name: "explore"
             label: "Explore"
             widget: string
             required: false
-          - name: what_we_do
+          - name: "what_we_do"
             label: "What We Do"
             widget: string
             required: false
-          - name: services
+          - name: "services"
             label: "Services"
             widget: string
             required: false
-          - name: proof
+          - name: "proof"
             label: "Proof"
             widget: string
             required: false
-          - name: pricing
+          - name: "pricing"
             label: "Pricing"
             widget: string
             required: false
-          - name: connect
+          - name: "connect"
             label: "Connect"
             widget: string
             required: false
-          - name: hoomanist_id
+          - name: "hoomanist_id"
             label: "@hoomanist.id"
             widget: string
             required: false
-          - name: 2026_hoomanist_all_rights_reserved_peopl
+          - name: "2026_hoomanist_all_rights_reserved_peopl"
             label: "© 2026 Hoomanist. All rights reserved. People. &nbsp;Presenc…"
             widget: text
             required: false
