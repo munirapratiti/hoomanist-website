@@ -122,3 +122,26 @@ dikirim ke browser.
 ```bash
 python3 extract.py && python3 gen_admin.py && python3 build.py
 ```
+
+## Membuat ulang gambar og:image
+
+Sumbernya `source/og-image.svg` (tidak ikut Git-nya situs karena `source/`
+diabaikan — salin manual kalau perlu). Dirender memakai `qlmanage`, bawaan
+macOS, jadi tidak perlu memasang perkakas grafis:
+
+```bash
+curl -sL -o /tmp/poppins-bold.ttf https://github.com/google/fonts/raw/main/ofl/poppins/Poppins-Bold.ttf
+curl -sL -o /tmp/poppins-reg.ttf  https://github.com/google/fonts/raw/main/ofl/poppins/Poppins-Regular.ttf
+qlmanage -t -s 1200 -o /tmp/ogout source/og-image.svg
+sips -c 630 1200 /tmp/ogout/og-image.svg.png --out assets/og-image.png
+```
+
+Dua hal yang mudah menjebak di sini:
+
+- `qlmanage` selalu merender ke kanvas persegi. SVG-nya sengaja dibuat
+  1200x1200 dengan isi diletakkan di pita tengah.
+- `sips -c` memotong dari **tengah**, dan `--cropOffset 0 0` diabaikan. Karena
+  itu isinya ditaruh di tengah, bukan di atas.
+
+Poppins diambil dari Google Fonts (lisensi OFL) hanya saat merender; berkas
+fontnya tidak disimpan di repo.
