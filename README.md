@@ -51,6 +51,11 @@ Push ke branch lain menghasilkan preview URL terpisah.
 
 ## Belum selesai
 
+- **Lisensi foto stock.** `assets/photo-team.jpg` berasal dari berkas unduhan
+  di folder Downloads dan tampak seperti foto stock. Sebelum situs dipakai
+  untuk keperluan komersial, pastikan lisensinya memadai — sebagian penyedia
+  mewajibkan atribusi pada paket gratisnya. Ini perlu dicek oleh pemilik situs.
+
 
 - **Gambar `og:image`** untuk preview link di WhatsApp/LinkedIn/X. Perlu 1200×630
   px, simpan sebagai `assets/og-image.png`, lalu tambahkan di `src/head.html`
