@@ -36,6 +36,37 @@
     }
   }
 
+  /* ---- menu di layar sempit -------------------------------------------
+     Di bawah 980px daftar tautan disembunyikan CSS dan hanya muncul saat
+     tombol ditekan. Tanpa ini lima halaman tidak bisa dijangkau dari ponsel. */
+  function wireNav() {
+    var btn = document.querySelector('.nav-toggle');
+    var links = document.getElementById('nav-links');
+    if (!btn || !links) return;
+
+    function setOpen(open) {
+      links.classList.toggle('open', open);
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      btn.setAttribute('aria-label', open ? 'Tutup menu navigasi' : 'Buka menu navigasi');
+    }
+
+    btn.addEventListener('click', function () {
+      setOpen(!links.classList.contains('open'));
+    });
+
+    // Menutup sendiri setelah sebuah tautan dipilih.
+    links.addEventListener('click', function (e) {
+      if (e.target.closest('a')) setOpen(false);
+    });
+
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && links.classList.contains('open')) {
+        setOpen(false);
+        btn.focus();
+      }
+    });
+  }
+
   /* ---- scroll reveals -------------------------------------------------- */
   function wireReveals() {
     var targets = document.querySelectorAll('.reveal');
@@ -122,6 +153,7 @@
   }
 
   function init() {
+    wireNav();
     wireEmail();
     wireReveals();
     wireCounters();

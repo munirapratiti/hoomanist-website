@@ -163,14 +163,23 @@ def build_nav(current):
         'style="height:44px;width:44px;display:block;object-fit:contain;">'
         '<span style="font-size:23px;font-weight:700;letter-spacing:-0.02em;'
         'color:#2C1E2E;">hoomanist</span></a>\n'
-        '      <div class="nav-links" style="display:flex;align-items:center;'
-        'gap:38px;font-size:16px;font-weight:500;color:#42485A;">\n        '
+        '      <div id="nav-links" class="nav-links" style="display:flex;'
+        'align-items:center;gap:38px;font-size:16px;font-weight:500;'
+        'color:#42485A;">\n        '
         + "\n        ".join(links) +
         '\n      </div>\n'
-        '      <a href="/contact" class="btn-primary" '
+        '      <div style="display:flex;align-items:center;gap:12px;">\n'
+        '        <a href="/contact" class="btn-primary" '
         'style="background:#3B2145;color:#F6F2E8;font-size:16px;'
         'font-weight:600;padding:13px 26px;border-radius:999px;">'
         "Let's talk</a>\n"
+        '        <button type="button" class="nav-toggle" aria-expanded="false" '
+        'aria-controls="nav-links" aria-label="Buka menu navigasi">'
+        '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" '
+        'stroke="currentColor" stroke-width="2" stroke-linecap="round">'
+        '<path d="M3 6h18"></path><path d="M3 12h18"></path>'
+        '<path d="M3 18h18"></path></svg></button>\n'
+        '      </div>\n'
         '    </div>\n  </nav>\n'
     )
 

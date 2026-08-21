@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- built 2026-08-21T04:03:02Z -->
+<!-- built 2026-08-21T06:57:33Z -->
 <html lang="en">
 <head>
 <meta charset="utf-8">
@@ -30,14 +30,17 @@
 <nav style="position:sticky;top:0;z-index:50;background:rgba(246,242,232,0.86);backdrop-filter:blur(10px);border-bottom:1px solid #E5DCC8;">
     <div class="pad-x" style="max-width:1180px;margin:0 auto;padding:0 40px;height:76px;display:flex;align-items:center;justify-content:space-between;">
       <a href="/" style="display:flex;align-items:center;gap:12px;"><img src="/assets/logo-icon.png" alt="Hoomanist" style="height:44px;width:44px;display:block;object-fit:contain;"><span style="font-size:23px;font-weight:700;letter-spacing:-0.02em;color:#2C1E2E;">hoomanist</span></a>
-      <div class="nav-links" style="display:flex;align-items:center;gap:38px;font-size:16px;font-weight:500;color:#42485A;">
+      <div id="nav-links" class="nav-links" style="display:flex;align-items:center;gap:38px;font-size:16px;font-weight:500;color:#42485A;">
         <a href="/services" class="navlink">Services</a>
         <a href="/why-us" class="navlink">Why us</a>
         <a href="/proof" class="navlink active">Proof</a>
         <a href="/for-creatives" class="navlink">For Creatives</a>
         <a href="/faq" class="navlink">FAQ</a>
       </div>
-      <a href="/contact" class="btn-primary" style="background:#3B2145;color:#F6F2E8;font-size:16px;font-weight:600;padding:13px 26px;border-radius:999px;">Let's talk</a>
+      <div style="display:flex;align-items:center;gap:12px;">
+        <a href="/contact" class="btn-primary" style="background:#3B2145;color:#F6F2E8;font-size:16px;font-weight:600;padding:13px 26px;border-radius:999px;">Let's talk</a>
+        <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Buka menu navigasi"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18"></path><path d="M3 12h18"></path><path d="M3 18h18"></path></svg></button>
+      </div>
     </div>
   </nav>
 
