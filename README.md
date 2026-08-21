@@ -53,9 +53,6 @@ Push ke branch lain menghasilkan preview URL terpisah.
 
 - **Deskripsi kartu Sosplan** di strip klien masih diisi "Partner" saja.
   Ganti dengan satu kalimat yang tepat di `src/raw/_section2.html`.
-- **Foto Tito** beresolusi rendah (400x267, landscape) sehingga terpotong
-  di avatar bundar. Kalau ada versi portrait yang lebih besar, proses ulang
-  seperti foto Munira.
 
 - **Gambar `og:image`** untuk preview link di WhatsApp/LinkedIn/X. Perlu 1200×630
   px, simpan sebagai `assets/og-image.png`, lalu tambahkan di `src/head.html`
@@ -77,3 +74,8 @@ sips -Z 256 /tmp/crop.jpg --out assets/team-munira.jpg
 
 Ukuran tampil avatar 108 px, jadi 256 px sudah cukup untuk layar retina.
 Foto Munira turun dari 7,2 MB menjadi 13 KB dengan cara ini.
+
+Pada foto Tito ada logo Sosplan di kaosnya. Logo itu tidak dihapus dengan
+menyunting piksel — batas bawah potongan cukup disetel di atas garis logo
+(y=2250 dari tinggi 4000), sehingga logo tidak pernah masuk frame. Kalau
+suatu saat perlu potongan yang lebih lebar, logonya akan muncul lagi.
