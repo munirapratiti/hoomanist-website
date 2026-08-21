@@ -1,0 +1,42 @@
+{
+  "questions": {
+    "tag": "div",
+    "label": "Questions"
+  },
+  "good_questions_honest_answers": {
+    "tag": "h2",
+    "label": "Good questions, honest answers."
+  },
+  "just_ask_us": {
+    "tag": "a",
+    "label": "Just ask us →"
+  },
+  "no_recruitment_is_where_many_teams_start": {
+    "tag": "p",
+    "label": "No. Recruitment is where many teams start with us, but we al…"
+  },
+  "usually_4_8_weeks_per_role_from_the_firs": {
+    "tag": "p",
+    "label": "Usually 4–8 weeks per role, from the first brief to a signed…"
+  },
+  "if_the_candidate_leaves_or_both_sides_ag": {
+    "tag": "p",
+    "label": "If the candidate leaves, or both sides agree the fit isn't w…"
+  },
+  "upon_written_confirmation_the_candidate_": {
+    "tag": "p",
+    "label": "Upon written confirmation the candidate has accepted the off…"
+  },
+  "yes_most_of_our_work_is_with_growing_stu": {
+    "tag": "p",
+    "label": "Yes — most of our work is with growing studios and lean in-h…"
+  },
+  "yes_each_role_is_its_own_engagement_and_": {
+    "tag": "p",
+    "label": "Yes — each role is its own engagement, and multi-role bundle…"
+  },
+  "we_work_remotely_with_teams_anywhere_and": {
+    "tag": "p",
+    "label": "We work remotely with teams anywhere, and on-site when it he…"
+  }
+}

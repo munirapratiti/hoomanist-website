@@ -9,6 +9,7 @@ Run after editing anything in src/:
     python3 build.py
 """
 
+import json
 import os
 import re
 import shutil
@@ -105,6 +106,29 @@ def read(path):
         return fh.read()
 
 
+def load_content(stem):
+    """Wording for a section, split out so the CMS can edit it."""
+    path = os.path.join("content", stem + ".json")
+    if not os.path.exists(path):
+        return {}
+    with open(path) as fh:
+        return json.load(fh)
+
+
+def render_block(stem):
+    """Section markup with its {{placeholders}} filled from content/."""
+    html = clean(read(os.path.join(RAW, stem + ".html")))
+    fields = load_content(stem)
+
+    def sub(m):
+        field = fields.get(m.group(1))
+        # An unknown key means content/ and src/raw/ drifted apart. Leave the
+        # placeholder visible rather than silently dropping the text.
+        return field if field is not None else m.group(0)
+
+    return re.sub(r"\{\{([a-z0-9_]+)\}\}", sub, html)
+
+
 def clean(block):
     """Drop the trailing section comment that belongs to the next block."""
     return re.sub(r'\s*<!--[^>]*-->\s*$', '\n', block).rstrip()
@@ -152,7 +176,7 @@ def build_nav(current):
 
 
 def build_footer():
-    footer = clean(read(os.path.join(RAW, "_footer12.html")))
+    footer = render_block("_footer12")
     footer = rewrite_links(footer)
     # The footer's "Explore" column still lists the old duplicate menu.
     footer = footer.replace(
@@ -169,8 +193,7 @@ def main():
 
     for page in PAGES:
         body = "\n\n".join(
-            rewrite_links(clean(read(os.path.join(RAW, b + ".html"))))
-            for b in page["blocks"])
+            rewrite_links(render_block(b)) for b in page["blocks"])
 
         html = (head_tpl
                 .replace("{{BUILT}}", datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"))

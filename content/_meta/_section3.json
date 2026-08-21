@@ -1,0 +1,30 @@
+{
+  "why_it_matters": {
+    "tag": "div",
+    "label": "Why It Matters"
+  },
+  "a_wrong_hire_isn_t_an_hr_problem_it_s_a_": {
+    "tag": "h2",
+    "label": "A wrong hire isn't an HR problem. It's a business one."
+  },
+  "when_a_creative_hire_doesn_t_fit_the_cos": {
+    "tag": "p",
+    "label": "When a creative hire doesn't fit, the cost shows up everywhe…"
+  },
+  "68": {
+    "tag": "div",
+    "label": "68 %"
+  },
+  "of_creative_hires_leave_within_18_months": {
+    "tag": "p",
+    "label": "of creative hires leave within 18 months due to mismatch."
+  },
+  "3_5": {
+    "tag": "div",
+    "label": "3–5 ×"
+  },
+  "annual_salary_lost_replacing_the_wrong_h": {
+    "tag": "p",
+    "label": "annual salary lost replacing the wrong hire."
+  }
+}

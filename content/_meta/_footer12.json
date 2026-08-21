@@ -1,0 +1,46 @@
+{
+  "hoomanist": {
+    "tag": "div",
+    "label": "hoomanist"
+  },
+  "a_creative_workforce_partner_for_people_": {
+    "tag": "p",
+    "label": "A creative workforce partner. For people who create. Where i…"
+  },
+  "good_people_great_work": {
+    "tag": "div",
+    "label": "good people. great work."
+  },
+  "explore": {
+    "tag": "span",
+    "label": "Explore"
+  },
+  "what_we_do": {
+    "tag": "a",
+    "label": "What We Do"
+  },
+  "services": {
+    "tag": "a",
+    "label": "Services"
+  },
+  "proof": {
+    "tag": "a",
+    "label": "Proof"
+  },
+  "pricing": {
+    "tag": "a",
+    "label": "Pricing"
+  },
+  "connect": {
+    "tag": "span",
+    "label": "Connect"
+  },
+  "hoomanist_id": {
+    "tag": "a",
+    "label": "@hoomanist.id"
+  },
+  "2026_hoomanist_all_rights_reserved_peopl": {
+    "tag": "div",
+    "label": "© 2026 Hoomanist. All rights reserved. People. &nbsp;Presenc…"
+  }
+}

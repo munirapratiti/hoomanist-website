@@ -1,0 +1,46 @@
+{
+  "the_team": {
+    "tag": "div",
+    "label": "The Team"
+  },
+  "the_people_behind_hoomanist": {
+    "tag": "h2",
+    "label": "The people behind Hoomanist."
+  },
+  "munira": {
+    "tag": "div",
+    "label": "Munira"
+  },
+  "founder_amp_people_strategy": {
+    "tag": "div",
+    "label": "Founder &amp; People Strategy"
+  },
+  "believes_great_teams_are_built_on_purpos": {
+    "tag": "p",
+    "label": "Believes great teams are built on purpose, not by accident."
+  },
+  "people_growth_recruitment_performance_am": {
+    "tag": "p",
+    "label": "People growth · Recruitment · Performance &amp; alignment"
+  },
+  "tito": {
+    "tag": "div",
+    "label": "Tito"
+  },
+  "creative_amp_brand_direction": {
+    "tag": "div",
+    "label": "Creative &amp; Brand Direction"
+  },
+  "believes_strong_brands_and_strong_teams_": {
+    "tag": "p",
+    "label": "Believes strong brands and strong teams get built the same w…"
+  },
+  "creative_systems_brand_direction_visual_": {
+    "tag": "p",
+    "label": "Creative systems · Brand direction · Visual strategy"
+  },
+  "small_team_nbsp_thoughtful_work_nbsp_int": {
+    "tag": "div",
+    "label": "Small team. &nbsp;Thoughtful work. &nbsp;Intentional partner…"
+  }
+}

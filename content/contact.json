@@ -1,0 +1,14 @@
+{
+  "let_s_talk": "<span style=\"display:inline-block;width:7px;height:7px;border-radius:50%;background:#EE7E52;margin-right:9px;vertical-align:middle;\"></span>Let's Talk",
+  "let_s_build_better_ways_of_working": "Let's build better ways of working.",
+  "tell_us_where_your_business_is_today_and": "Tell us where your business is today and what feels challenging internally. A discovery conversation is always the best first step.",
+  "email": "<span style=\"width:52px;height:52px;border-radius:14px;background:rgba(255,255,255,0.08);display:flex;align-items:center;justify-content:center;flex:none;\"><svg width=\"22\" height=\"22\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#EE7E52\" stroke-width=\"2\"><rect x=\"3\" y=\"5\" width=\"18\" height=\"14\" rx=\"2\"></rect><path d=\"M3 7l9 6 9-6\"></path></svg></span>\n            <span><span style=\"display:block;font-size:14px;color:#6A7385;text-transform:uppercase;letter-spacing:0.1em;font-weight:600;\">Email</span><span style=\"font-size:21px;font-weight:600;\"><span class=\"js-email\"></span></span></span>",
+  "instagram_hoomanist_id": "<span style=\"width:52px;height:52px;border-radius:14px;background:rgba(255,255,255,0.08);display:flex;align-items:center;justify-content:center;flex:none;\"><svg width=\"22\" height=\"22\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#EE7E52\" stroke-width=\"2\"><rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"5\"></rect><circle cx=\"12\" cy=\"12\" r=\"4\"></circle><circle cx=\"17.5\" cy=\"6.5\" r=\"1\" fill=\"#EE7E52\" stroke=\"none\"></circle></svg></span>\n            <span><span style=\"display:block;font-size:14px;color:#6A7385;text-transform:uppercase;letter-spacing:0.1em;font-weight:600;\">Instagram</span><span style=\"font-size:21px;font-weight:600;\">@hoomanist.id</span></span>",
+  "your_name": "Your name",
+  "company": "Company",
+  "email_2": "Email",
+  "what_s_on_your_mind": "What's on your mind?",
+  "send_message": "Send message",
+  "opening_your_email": "Opening your email…",
+  "your_message_should_pop_up_in_your_email": "Your message should pop up in your email app, ready to send to us. If it didn't, just write to <strong style=\"color:#3B2145;\"><span class=\"js-email\"></span></strong> — we'll be in touch shortly."
+}

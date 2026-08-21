@@ -1,0 +1,18 @@
+{
+  "pricing": {
+    "tag": "div",
+    "label": "Pricing"
+  },
+  "pricing_that_fits_the_work": {
+    "tag": "h2",
+    "label": "Pricing that fits the work."
+  },
+  "every_team_is_different_so_every_engagem": {
+    "tag": "p",
+    "label": "Every team is different, so every engagement is scoped to yo…"
+  },
+  "contact_us_for_pricing": {
+    "tag": "a",
+    "label": "Contact us for pricing"
+  }
+}

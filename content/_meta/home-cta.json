@@ -1,0 +1,18 @@
+{
+  "let_s_talk": {
+    "tag": "div",
+    "label": "Let's Talk"
+  },
+  "let_s_build_better_ways_of_working": {
+    "tag": "h2",
+    "label": "Let's build better ways of working."
+  },
+  "tell_us_where_your_business_is_today_and": {
+    "tag": "p",
+    "label": "Tell us where your business is today and what feels challeng…"
+  },
+  "start_a_conversation": {
+    "tag": "a",
+    "label": "Start a conversation →"
+  }
+}

@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /admin
+Disallow: /api
+
+Sitemap: https://hoomanist-website.vercel.app/sitemap.xml

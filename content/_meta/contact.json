@@ -1,0 +1,50 @@
+{
+  "let_s_talk": {
+    "tag": "div",
+    "label": "Let's Talk"
+  },
+  "let_s_build_better_ways_of_working": {
+    "tag": "h2",
+    "label": "Let's build better ways of working."
+  },
+  "tell_us_where_your_business_is_today_and": {
+    "tag": "p",
+    "label": "Tell us where your business is today and what feels challeng…"
+  },
+  "email": {
+    "tag": "a",
+    "label": "Email"
+  },
+  "instagram_hoomanist_id": {
+    "tag": "a",
+    "label": "Instagram @hoomanist.id"
+  },
+  "your_name": {
+    "tag": "label",
+    "label": "Your name"
+  },
+  "company": {
+    "tag": "label",
+    "label": "Company"
+  },
+  "email_2": {
+    "tag": "label",
+    "label": "Email"
+  },
+  "what_s_on_your_mind": {
+    "tag": "label",
+    "label": "What's on your mind?"
+  },
+  "send_message": {
+    "tag": "button",
+    "label": "Send message"
+  },
+  "opening_your_email": {
+    "tag": "div",
+    "label": "Opening your email…"
+  },
+  "your_message_should_pop_up_in_your_email": {
+    "tag": "p",
+    "label": "Your message should pop up in your email app, ready to send …"
+  }
+}

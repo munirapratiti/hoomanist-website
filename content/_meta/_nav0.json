@@ -1,0 +1,34 @@
+{
+  "hoomanist": {
+    "tag": "span",
+    "label": "hoomanist"
+  },
+  "what_we_do": {
+    "tag": "a",
+    "label": "What We Do"
+  },
+  "why_us": {
+    "tag": "a",
+    "label": "Why us"
+  },
+  "services": {
+    "tag": "a",
+    "label": "Services"
+  },
+  "proof": {
+    "tag": "a",
+    "label": "Proof"
+  },
+  "for_creatives": {
+    "tag": "a",
+    "label": "For Creatives"
+  },
+  "faq": {
+    "tag": "a",
+    "label": "FAQ"
+  },
+  "let_s_talk": {
+    "tag": "a",
+    "label": "Let's talk"
+  }
+}
