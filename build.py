@@ -12,6 +12,7 @@ Run after editing anything in src/:
 import os
 import re
 import shutil
+from datetime import datetime, timezone
 
 BASE = "https://hoomanist-website.vercel.app"
 SRC = "src"
@@ -172,6 +173,7 @@ def main():
             for b in page["blocks"])
 
         html = (head_tpl
+                .replace("{{BUILT}}", datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"))
                 .replace("{{TITLE}}", page["title"])
                 .replace("{{DESC}}", page["desc"])
                 .replace("{{BASE}}", BASE)
