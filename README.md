@@ -51,15 +51,29 @@ Push ke branch lain menghasilkan preview URL terpisah.
 
 ## Belum selesai
 
-- **Dua gambar belum ada** dan harus diunduh manual dari Claude Design ke
-  `assets/`: `logo-experia-sm.png` dan `team-munira-sm.jpg` (simpan sebagai
-  `team-munira-sm.png`). Keduanya melebihi batas 256 KB alat pengambil berkas.
+- **Deskripsi kartu Sosplan** di strip klien masih diisi "Partner" saja.
+  Ganti dengan satu kalimat yang tepat di `src/raw/_section2.html`.
+- **Foto Tito** beresolusi rendah (400x267, landscape) sehingga terpotong
+  di avatar bundar. Kalau ada versi portrait yang lebih besar, proses ulang
+  seperti foto Munira.
 
-  Logo ikon diambil dari berkas brand asli di
-  `PT Kinarya Nara Kolektif/Hoomanist/Brand Identity/Hoomanist Logo/Icon PNG 1.png`,
-  dipotong dari kanvas 2000x2000 (isinya hanya 39%) dan diskalakan ke 128 px.
 - **Gambar `og:image`** untuk preview link di WhatsApp/LinkedIn/X. Perlu 1200×630
   px, simpan sebagai `assets/og-image.png`, lalu tambahkan di `src/head.html`
   dan ubah `twitter:card` menjadi `summary_large_image`.
 - **URL di `canonical` dan `og:url`** memakai konstanta `BASE` di `build.py`.
   Ganti satu baris itu kalau pindah ke domain sendiri.
+
+## Menyiapkan gambar
+
+Gambar mentah biasanya jauh lebih besar dari kebutuhan tampil. Berkas asli
+disimpan di `source/` (tidak ikut Git). Pemrosesan memakai `sips`, bawaan
+macOS — tidak perlu memasang apa pun:
+
+```bash
+# potong kotak: -c tinggi lebar, --cropOffset dari atas dan dari kiri
+sips -c 2100 2100 --cropOffset 1400 724 source/IMG_5647.JPG --out /tmp/crop.jpg
+sips -Z 256 /tmp/crop.jpg --out assets/team-munira.jpg
+```
+
+Ukuran tampil avatar 108 px, jadi 256 px sudah cukup untuk layar retina.
+Foto Munira turun dari 7,2 MB menjadi 13 KB dengan cara ini.
