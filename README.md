@@ -117,11 +117,21 @@ dikirim ke browser.
 
 ### Kalau teks di situs bertambah
 
-`admin/config.yml` dibangkitkan, bukan ditulis tangan:
+`admin/config.yml` dibangkitkan, bukan ditulis tangan, dan `build.py` sudah
+memanggil `gen_admin.py` — jadi keterangan tiap ruas selalu memantulkan isi
+terbaru, termasuk setelah disunting dari /admin.
 
-```bash
-python3 extract.py && python3 gen_admin.py && python3 build.py
-```
+Label ruas menggambarkan **peran** ("Judul utama", "Statistik 1 — angka"),
+bukan mengutip isinya. Kutipan akan basi begitu teksnya diubah. Isi saat ini
+muncul sebagai keterangan di bawah ruas, dan ruas yang mengandung tag HTML
+diberi tanda ⚠️.
+
+Nama ruas yang sulit dikenali dari perannya saja bisa diberi nama khusus lewat
+`OVERRIDE` di `gen_admin.py`.
+
+`extract.py` **hanya sekali jalan** — sekarang `src/raw/*.html` berisi
+{{placeholder}}, bukan teks, jadi menjalankannya lagi akan merusak. Teks baru
+ditambahkan manual ke `content/*.json` dan `content/_meta/*.json`.
 
 ## Membuat ulang gambar og:image
 

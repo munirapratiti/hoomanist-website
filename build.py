@@ -224,4 +224,14 @@ def main():
 if __name__ == "__main__":
     print("Membangun situs...")
     main()
+
+    # Form admin dibangkitkan ulang di sini, bukan hanya di laptop, supaya
+    # keterangan tiap ruas selalu memantulkan isi terbaru. Kalau hanya dibuat
+    # sekali, keterangannya basi begitu teksnya disunting dari /admin.
+    try:
+        import gen_admin
+        gen_admin.main()
+    except Exception as err:  # jangan sampai situsnya gagal terbit
+        print("  (lewati pembangkitan form admin: %s)" % err)
+
     print("Selesai.")

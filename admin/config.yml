@@ -19,890 +19,1097 @@ collections:
         format: json
         fields:
           - name: "where_creative_people_belong"
-            label: "Where Creative People Belong"
+            label: "Label kecil di atas judul"
             widget: text
             required: false
+            hint: "Where Creative People Belong  ⚠️ berisi tag HTML — biarkan utuh"
           - name: "creative_people_placed_with_purpose"
-            label: "Creative people. Placed with purpose."
+            label: "Judul utama"
             widget: text
             required: false
+            hint: "Creative people. Placed with purpose.  ⚠️ berisi tag HTML — biarkan utuh"
           - name: "a_people_partner_for_agencies_and_brands"
-            label: "A people partner for agencies and brands that treat their te…"
+            label: "Paragraf"
             widget: text
             required: false
+            hint: "A people partner for agencies and brands that treat their team as part…"
           - name: "3"
-            label: "3+"
+            label: "Statistik 1 — angka"
             widget: string
             required: false
+            hint: "3+"
           - name: "years_active"
-            label: "Years active"
+            label: "Statistik 1 — keterangan"
             widget: string
             required: false
+            hint: "Years active"
           - name: "10_20"
-            label: "10–20"
+            label: "Statistik 2 — angka"
             widget: string
             required: false
+            hint: "10–20"
           - name: "roles_placed"
-            label: "Roles placed"
+            label: "Statistik 2 — keterangan"
             widget: string
             required: false
+            hint: "Roles placed"
           - name: "90"
-            label: "90"
+            label: "Statistik 3 — angka"
             widget: string
             required: false
+            hint: "90"
           - name: "day_guarantee"
-            label: "Day guarantee"
+            label: "Statistik 3 — keterangan"
             widget: string
             required: false
+            hint: "Day guarantee"
           - name: "is_hoomanist_right_for_you_see_if_you_re"
-            label: "Is Hoomanist Right For You? See if you're a fit →"
+            label: "Tautan"
             widget: text
             required: false
+            hint: "Is Hoomanist Right For You? See if you're a fit →  ⚠️ berisi tag HTML — biarkan utuh"
           - name: "for_creatives_find_your_next_role"
-            label: "For Creatives Find your next role →"
+            label: "Tautan 2"
             widget: text
             required: false
+            hint: "For Creatives Find your next role →  ⚠️ berisi tag HTML — biarkan utuh"
           - name: "start_a_conversation"
-            label: "Start a conversation"
+            label: "Tautan 3"
             widget: string
             required: false
+            hint: "Start a conversation"
           - name: "good_people_great_work"
-            label: "good people. great work."
+            label: "Tulisan tangan (good people. great work.)"
             widget: text
             required: false
+            hint: "good people. great work.  ⚠️ berisi tag HTML — biarkan utuh"
           - name: "people_presence_purpose"
-            label: "People. Presence. Purpose."
+            label: "Kartu ungu — judul"
             widget: text
             required: false
+            hint: "People. Presence. Purpose.  ⚠️ berisi tag HTML — biarkan utuh"
           - name: "the_three_things_we_build_every_engageme"
-            label: "The three things we build every engagement around."
+            label: "Kartu ungu — keterangan"
             widget: string
             required: false
+            hint: "The three things we build every engagement around."
       - name: section2
         label: "Beranda — Klien & partner"
         file: content/_section2.json
         format: json
         fields:
           - name: "clients_amp_partners_small_but_real_and_"
-            label: "Clients &amp; partners small, but real — and growing."
+            label: "Judul bagian klien"
             widget: text
             required: false
+            hint: "Clients &amp; partners small, but real — and growing.  ⚠️ berisi tag HTML — biarkan utuh"
           - name: "every_hire_since_2022_plus_culture_and_r"
-            label: "Every hire since 2022, plus culture and reviews"
+            label: "Kartu Sosplan — keterangan"
             widget: string
             required: false
+            hint: "Every hire since 2022, plus culture and reviews"
           - name: "partner_brand_and_creative_team_support"
-            label: "Partner — brand and creative team support"
+            label: "Kartu 360 Padel — keterangan"
             widget: string
             required: false
+            hint: "Partner — brand and creative team support"
           - name: "partner_creative_people_partnership"
-            label: "Partner — creative people partnership"
+            label: "Kartu Experia — keterangan"
             widget: string
             required: false
+            hint: "Partner — creative people partnership"
           - name: "creative_recruitment_and_team_developmen"
-            label: "Creative recruitment and team development · Since 2023"
+            label: "Kartu by.U — keterangan"
             widget: string
             required: false
+            hint: "Creative recruitment and team development · Since 2023"
       - name: section3
         label: "Beranda — Kenapa ini penting"
         file: content/_section3.json
         format: json
         fields:
           - name: "why_it_matters"
-            label: "Why It Matters"
+            label: "Teks pendek"
             widget: text
             required: false
+            hint: "Why It Matters  ⚠️ berisi tag HTML — biarkan utuh"
           - name: "a_wrong_hire_isn_t_an_hr_problem_it_s_a_"
-            label: "A wrong hire isn't an HR problem. It's a business one."
+            label: "Judul"
             widget: string
             required: false
+            hint: "A wrong hire isn't an HR problem. It's a business one."
           - name: "when_a_creative_hire_doesn_t_fit_the_cos"
-            label: "When a creative hire doesn't fit, the cost shows up everywhe…"
+            label: "Paragraf"
             widget: text
             required: false
+            hint: "When a creative hire doesn't fit, the cost shows up everywhere — lost …"
           - name: "68"
-            label: "68 %"
+            label: "Teks pendek 2"
             widget: text
             required: false
+            hint: "68 %  ⚠️ berisi tag HTML — biarkan utuh"
           - name: "of_creative_hires_leave_within_18_months"
-            label: "of creative hires leave within 18 months due to mismatch."
+            label: "Paragraf 2"
             widget: string
             required: false
+            hint: "of creative hires leave within 18 months due to mismatch."
           - name: "3_5"
-            label: "3–5 ×"
+            label: "Teks pendek 3"
             widget: string
             required: false
+            hint: "3–5 ×  ⚠️ berisi tag HTML — biarkan utuh"
           - name: "annual_salary_lost_replacing_the_wrong_h"
-            label: "annual salary lost replacing the wrong hire."
+            label: "Paragraf 3"
             widget: string
             required: false
+            hint: "annual salary lost replacing the wrong hire."
       - name: home-cta
         label: "Beranda — Ajakan hubungi"
         file: content/home-cta.json
         format: json
         fields:
           - name: "let_s_talk"
-            label: "Let's Talk"
+            label: "Teks pendek"
             widget: text
             required: false
+            hint: "Let's Talk  ⚠️ berisi tag HTML — biarkan utuh"
           - name: "let_s_build_better_ways_of_working"
-            label: "Let's build better ways of working."
+            label: "Judul"
             widget: string
             required: false
+            hint: "Let's build better ways of working."
           - name: "tell_us_where_your_business_is_today_and"
-            label: "Tell us where your business is today and what feels challeng…"
+            label: "Paragraf"
             widget: text
             required: false
+            hint: "Tell us where your business is today and what feels challenging intern…"
           - name: "start_a_conversation"
-            label: "Start a conversation →"
+            label: "Tautan"
             widget: string
             required: false
+            hint: "Start a conversation →"
       - name: services
         label: "Services"
         file: content/services.json
         format: json
         fields:
           - name: "what_we_do"
-            label: "What We Do"
+            label: "Teks pendek"
             widget: text
             required: false
+            hint: "What We Do  ⚠️ berisi tag HTML — biarkan utuh"
           - name: "most_teams_start_with_a_hire_the_good_on"
-            label: "Most teams start with a hire. The good ones stay for the sys…"
+            label: "Judul"
             widget: string
             required: false
+            hint: "Most teams start with a hire. The good ones stay for the system."
           - name: "businesses_hired_for_skill_but_struggled"
-            label: "Businesses hired for skill — but struggled with fit. We don'…"
+            label: "Paragraf"
             widget: text
             required: false
+            hint: "Businesses hired for skill — but struggled with fit. We don't stop at …"
           - name: "01"
-            label: "01"
+            label: "Teks pendek 2"
             widget: string
             required: false
+            hint: "01"
           - name: "creative_recruitment_start_here_hiring_p"
-            label: "Creative Recruitment — start here Hiring people who fit the …"
+            label: "Teks pendek 3"
             widget: text
             required: false
+            hint: "Creative Recruitment — start here Hiring people who fit the role, the …  ⚠️ berisi tag HTML — biarkan utuh"
           - name: "from_brief_to_belonging_end_to_end_recru"
-            label: "From brief to belonging. End-to-end recruitment with culture…"
+            label: "Paragraf 2"
             widget: text
             required: false
+            hint: "From brief to belonging. End-to-end recruitment with culture fit at th…"
           - name: "culture_fit_assessment_portfolio_review_"
-            label: "Culture-fit assessment Portfolio review Interview support 90…"
+            label: "Teks pendek 4"
             widget: text
             required: false
+            hint: "Culture-fit assessment Portfolio review Interview support 90-day follo…  ⚠️ berisi tag HTML — biarkan utuh"
           - name: "from_brief_to_belonging_8_steps"
-            label: "From brief to belonging — 8 steps"
+            label: "Teks pendek 5"
             widget: string
             required: false
+            hint: "From brief to belonging — 8 steps"
           - name: "01_nbsp_discover_02_nbsp_source_03_nbsp_"
-            label: "01 &nbsp;Discover 02 &nbsp;Source 03 &nbsp;Assess 04 Fit Int…"
+            label: "Teks pendek 6"
             widget: text
             required: false
+            hint: "01 &nbsp;Discover 02 &nbsp;Source 03 &nbsp;Assess 04 Fit Interview — w…  ⚠️ berisi tag HTML — biarkan utuh"
           - name: "a_dedicated_fit_interview_plus_reference"
-            label: "A dedicated fit interview plus reference checks — this is wh…"
+            label: "Paragraf 3"
             widget: text
             required: false
+            hint: "A dedicated fit interview plus reference checks — this is what most re…"
           - name: "02"
-            label: "02"
+            label: "Teks pendek 7"
             widget: string
             required: false
+            hint: "02"
           - name: "people_growth_helping_people_grow_with_c"
-            label: "People Growth Helping people grow with clarity, not guesswor…"
+            label: "Teks pendek 8"
             widget: text
             required: false
+            hint: "People Growth Helping people grow with clarity, not guesswork.  ⚠️ berisi tag HTML — biarkan utuh"
           - name: "career_path_frameworks_so_people_know_wh"
-            label: "Career-path frameworks so people know where they're heading,…"
+            label: "Paragraf 4"
             widget: text
             required: false
+            hint: "Career-path frameworks so people know where they're heading, skill wor…"
           - name: "career_paths_skill_workshops_leadership_"
-            label: "Career paths Skill workshops Leadership development"
+            label: "Teks pendek 9"
             widget: text
             required: false
+            hint: "Career paths Skill workshops Leadership development  ⚠️ berisi tag HTML — biarkan utuh"
           - name: "track_a"
-            label: "Track A"
+            label: "Teks pendek 10"
             widget: string
             required: false
+            hint: "Track A"
           - name: "career_path_framework"
-            label: "Career Path Framework"
+            label: "Teks pendek 11"
             widget: string
             required: false
+            hint: "Career Path Framework"
           - name: "more_than_titles_a_clear_sense_of_where_"
-            label: "More than titles — a clear sense of where you're going."
+            label: "Paragraf 5"
             widget: string
             required: false
+            hint: "More than titles — a clear sense of where you're going."
           - name: "track_b"
-            label: "Track B"
+            label: "Teks pendek 12"
             widget: string
             required: false
+            hint: "Track B"
           - name: "skill_building_workshops"
-            label: "Skill-Building Workshops"
+            label: "Teks pendek 13"
             widget: string
             required: false
+            hint: "Skill-Building Workshops"
           - name: "learning_that_changes_behaviour_not_just"
-            label: "Learning that changes behaviour — not just fills slides."
+            label: "Paragraf 6"
             widget: string
             required: false
+            hint: "Learning that changes behaviour — not just fills slides."
           - name: "track_c"
-            label: "Track C"
+            label: "Teks pendek 14"
             widget: string
             required: false
+            hint: "Track C"
           - name: "leadership_development"
-            label: "Leadership Development"
+            label: "Teks pendek 15"
             widget: string
             required: false
+            hint: "Leadership Development"
           - name: "great_creatives_don_t_automatically_beco"
-            label: "Great creatives don't automatically become great leaders."
+            label: "Paragraf 7"
             widget: string
             required: false
+            hint: "Great creatives don't automatically become great leaders."
           - name: "03"
-            label: "03"
+            label: "Teks pendek 16"
             widget: string
             required: false
+            hint: "03"
           - name: "performance_amp_alignment_performance_sy"
-            label: "Performance &amp; Alignment Performance systems built for cr…"
+            label: "Teks pendek 17"
             widget: text
             required: false
+            hint: "Performance &amp; Alignment Performance systems built for creative tea…  ⚠️ berisi tag HTML — biarkan utuh"
           - name: "most_creative_kpis_are_borrowed_broken_o"
-            label: "Most creative KPIs are borrowed, broken, or measuring the wr…"
+            label: "Paragraf 8"
             widget: text
             required: false
+            hint: "Most creative KPIs are borrowed, broken, or measuring the wrong things…"
           - name: "kpi_design_kpi_audit_calibration_rollout"
-            label: "KPI design KPI audit Calibration Rollout support"
+            label: "Teks pendek 18"
             widget: text
             required: false
+            hint: "KPI design KPI audit Calibration Rollout support  ⚠️ berisi tag HTML — biarkan utuh"
           - name: "mode_a_nbsp_kpi_design_mode_b_nbsp_kpi_a"
-            label: "Mode A &nbsp;· KPI Design Mode B &nbsp;· KPI Audit"
+            label: "Teks pendek 19"
             widget: text
             required: false
+            hint: "Mode A &nbsp;· KPI Design Mode B &nbsp;· KPI Audit  ⚠️ berisi tag HTML — biarkan utuh"
           - name: "week_1"
-            label: "Week 1"
+            label: "Teks pendek 20"
             widget: string
             required: false
+            hint: "Week 1"
           - name: "discovery"
-            label: "Discovery"
+            label: "Teks pendek 21"
             widget: string
             required: false
+            hint: "Discovery"
           - name: "week_2_3"
-            label: "Week 2–3"
+            label: "Teks pendek 22"
             widget: string
             required: false
+            hint: "Week 2–3"
           - name: "design"
-            label: "Design"
+            label: "Teks pendek 23"
             widget: string
             required: false
+            hint: "Design"
           - name: "week_4"
-            label: "Week 4"
+            label: "Teks pendek 24"
             widget: string
             required: false
+            hint: "Week 4"
           - name: "calibration"
-            label: "Calibration"
+            label: "Teks pendek 25"
             widget: string
             required: false
+            hint: "Calibration"
           - name: "week_5_8"
-            label: "Week 5–8"
+            label: "Teks pendek 26"
             widget: string
             required: false
+            hint: "Week 5–8"
           - name: "rollout"
-            label: "Rollout"
+            label: "Teks pendek 27"
             widget: string
             required: false
+            hint: "Rollout"
       - name: pricing
         label: "Services — Harga"
         file: content/pricing.json
         format: json
         fields:
           - name: "pricing"
-            label: "Pricing"
+            label: "Teks pendek"
             widget: text
             required: false
+            hint: "Pricing  ⚠️ berisi tag HTML — biarkan utuh"
           - name: "pricing_that_fits_the_work"
-            label: "Pricing that fits the work."
+            label: "Judul"
             widget: string
             required: false
+            hint: "Pricing that fits the work."
           - name: "every_team_is_different_so_every_engagem"
-            label: "Every team is different, so every engagement is scoped to yo…"
+            label: "Paragraf"
             widget: text
             required: false
+            hint: "Every team is different, so every engagement is scoped to you. Want to…"
           - name: "contact_us_for_pricing"
-            label: "Contact us for pricing"
+            label: "Tautan"
             widget: string
             required: false
+            hint: "Contact us for pricing"
       - name: why
         label: "Why Us"
         file: content/why.json
         format: json
         fields:
           - name: "why_hoomanist"
-            label: "Why Hoomanist"
+            label: "Teks pendek"
             widget: text
             required: false
+            hint: "Why Hoomanist  ⚠️ berisi tag HTML — biarkan utuh"
           - name: "your_people_are_the_one_thing_nobody_can"
-            label: "Your people are the one thing nobody can copy."
+            label: "Judul"
             widget: string
             required: false
+            hint: "Your people are the one thing nobody can copy."
           - name: "strategies_processes_even_ideas_can_be_c"
-            label: "Strategies, processes, even ideas can be copied. The chemist…"
+            label: "Paragraf"
             widget: text
             required: false
+            hint: "Strategies, processes, even ideas can be copied. The chemistry between…"
           - name: "01"
-            label: "01"
+            label: "Teks pendek 2"
             widget: string
             required: false
+            hint: "01"
           - name: "human_first"
-            label: "Human First"
+            label: "Teks pendek 3"
             widget: string
             required: false
+            hint: "Human First"
           - name: "we_start_with_people_not_resumes_buildin"
-            label: "We start with people, not resumes — building belonging that …"
+            label: "Paragraf 2"
             widget: text
             required: false
+            hint: "We start with people, not resumes — building belonging that drives bet…"
           - name: "02"
-            label: "02"
+            label: "Teks pendek 4"
             widget: string
             required: false
+            hint: "02"
           - name: "creative_native"
-            label: "Creative Native"
+            label: "Teks pendek 5"
             widget: string
             required: false
+            hint: "Creative Native"
           - name: "we_understand_how_creative_work_actually"
-            label: "We understand how creative work actually works, so hiring st…"
+            label: "Paragraf 3"
             widget: text
             required: false
+            hint: "We understand how creative work actually works, so hiring stays portfo…"
           - name: "03"
-            label: "03"
+            label: "Teks pendek 6"
             widget: string
             required: false
+            hint: "03"
           - name: "purposeful"
-            label: "Purposeful"
+            label: "Teks pendek 7"
             widget: string
             required: false
+            hint: "Purposeful"
           - name: "we_hire_for_the_right_moment_not_just_th"
-            label: "We hire for the right moment, not just the right person — se…"
+            label: "Paragraf 4"
             widget: text
             required: false
+            hint: "We hire for the right moment, not just the right person — setting up b…"
           - name: "why_a_partner_not_just_a_recruiter"
-            label: "Why a partner — not just a recruiter."
+            label: "Sub-judul"
             widget: text
             required: false
+            hint: "Why a partner — not just a recruiter.  ⚠️ berisi tag HTML — biarkan utuh"
           - name: "hoomanist"
-            label: "Hoomanist"
+            label: "Teks pendek 8"
             widget: string
             required: false
+            hint: "Hoomanist"
           - name: "recruiter"
-            label: "Recruiter"
+            label: "Teks pendek 9"
             widget: string
             required: false
+            hint: "Recruiter"
           - name: "hr_firm"
-            label: "HR firm"
+            label: "Teks pendek 10"
             widget: string
             required: false
+            hint: "HR firm"
           - name: "in_house"
-            label: "In-house"
+            label: "Teks pendek 11"
             widget: string
             required: false
+            hint: "In-house"
           - name: "culture_fit_hiring_beyond_the_cv"
-            label: "Culture-fit hiring, beyond the CV"
+            label: "Teks pendek 12"
             widget: string
             required: false
+            hint: "Culture-fit hiring, beyond the CV"
           - name: "yes"
-            label: "Yes"
+            label: "Teks pendek 13"
             widget: string
             required: false
+            hint: "Yes"
           - name: "some"
-            label: "Some"
+            label: "Teks pendek 14"
             widget: string
             required: false
+            hint: "Some"
           - name: "no"
-            label: "No"
+            label: "Teks pendek 15"
             widget: string
             required: false
+            hint: "No"
           - name: "some_2"
-            label: "Some"
+            label: "Teks pendek 16"
             widget: string
             required: false
+            hint: "Some"
           - name: "understands_creative_work"
-            label: "Understands creative work"
+            label: "Teks pendek 17"
             widget: string
             required: false
+            hint: "Understands creative work"
           - name: "yes_2"
-            label: "Yes"
+            label: "Teks pendek 18"
             widget: string
             required: false
+            hint: "Yes"
           - name: "some_3"
-            label: "Some"
+            label: "Teks pendek 19"
             widget: string
             required: false
+            hint: "Some"
           - name: "no_2"
-            label: "No"
+            label: "Teks pendek 20"
             widget: string
             required: false
+            hint: "No"
           - name: "yes_3"
-            label: "Yes"
+            label: "Teks pendek 21"
             widget: string
             required: false
+            hint: "Yes"
           - name: "builds_people_systems_amp_culture"
-            label: "Builds people systems &amp; culture"
+            label: "Teks pendek 22"
             widget: string
             required: false
+            hint: "Builds people systems &amp; culture"
           - name: "yes_4"
-            label: "Yes"
+            label: "Teks pendek 23"
             widget: string
             required: false
+            hint: "Yes"
           - name: "no_3"
-            label: "No"
+            label: "Teks pendek 24"
             widget: string
             required: false
+            hint: "No"
           - name: "yes_5"
-            label: "Yes"
+            label: "Teks pendek 25"
             widget: string
             required: false
+            hint: "Yes"
           - name: "some_4"
-            label: "Some"
+            label: "Teks pendek 26"
             widget: string
             required: false
+            hint: "Some"
           - name: "performance_and_growth_structure"
-            label: "Performance and growth structure"
+            label: "Teks pendek 27"
             widget: string
             required: false
+            hint: "Performance and growth structure"
           - name: "yes_6"
-            label: "Yes"
+            label: "Teks pendek 28"
             widget: string
             required: false
+            hint: "Yes"
           - name: "no_4"
-            label: "No"
+            label: "Teks pendek 29"
             widget: string
             required: false
+            hint: "No"
           - name: "yes_7"
-            label: "Yes"
+            label: "Teks pendek 30"
             widget: string
             required: false
+            hint: "Yes"
           - name: "some_5"
-            label: "Some"
+            label: "Teks pendek 31"
             widget: string
             required: false
+            hint: "Some"
           - name: "onboarding_amp_90_day_support"
-            label: "Onboarding &amp; 90-day support"
+            label: "Teks pendek 32"
             widget: string
             required: false
+            hint: "Onboarding &amp; 90-day support"
           - name: "yes_8"
-            label: "Yes"
+            label: "Teks pendek 33"
             widget: string
             required: false
+            hint: "Yes"
           - name: "no_5"
-            label: "No"
+            label: "Teks pendek 34"
             widget: string
             required: false
+            hint: "No"
           - name: "some_6"
-            label: "Some"
+            label: "Teks pendek 35"
             widget: string
             required: false
+            hint: "Some"
           - name: "yes_9"
-            label: "Yes"
+            label: "Teks pendek 36"
             widget: string
             required: false
+            hint: "Yes"
           - name: "senior_embedded_partner"
-            label: "Senior, embedded partner"
+            label: "Teks pendek 37"
             widget: string
             required: false
+            hint: "Senior, embedded partner"
           - name: "yes_10"
-            label: "Yes"
+            label: "Teks pendek 38"
             widget: string
             required: false
+            hint: "Yes"
           - name: "no_6"
-            label: "No"
+            label: "Teks pendek 39"
             widget: string
             required: false
+            hint: "No"
           - name: "no_7"
-            label: "No"
+            label: "Teks pendek 40"
             widget: string
             required: false
+            hint: "No"
           - name: "no_8"
-            label: "No"
+            label: "Teks pendek 41"
             widget: string
             required: false
+            hint: "No"
           - name: "is_hoomanist_right_for_you"
-            label: "Is Hoomanist Right For You?"
+            label: "Teks pendek 42"
             widget: text
             required: false
+            hint: "Is Hoomanist Right For You?  ⚠️ berisi tag HTML — biarkan utuh"
           - name: "there_s_no_such_thing_as_too_early_the_s"
-            label: "There's no such thing as too early — the sooner we talk, the…"
+            label: "Paragraf 5"
             widget: text
             required: false
+            hint: "There's no such thing as too early — the sooner we talk, the more opti…"
           - name: "5_20_people"
-            label: "5–20 people"
+            label: "Teks pendek 43"
             widget: string
             required: false
+            hint: "5–20 people"
           - name: "how_the_team_works_still_lives_in_the_fo"
-            label: "How the team works still lives in the founder's head. One wr…"
+            label: "Paragraf 6"
             widget: text
             required: false
+            hint: "How the team works still lives in the founder's head. One wrong hire s…"
           - name: "20_50_people"
-            label: "20–50 people"
+            label: "Teks pendek 44"
             widget: string
             required: false
+            hint: "20–50 people"
           - name: "growing_fast_feeling_the_strain_the_foun"
-            label: "Growing fast, feeling the strain. The founder can't be every…"
+            label: "Paragraf 7"
             widget: text
             required: false
+            hint: "Growing fast, feeling the strain. The founder can't be everywhere, and…"
           - name: "any_size"
-            label: "Any size"
+            label: "Teks pendek 45"
             widget: string
             required: false
+            hint: "Any size"
           - name: "going_through_change_new_leadership_a_re"
-            label: "Going through change — new leadership, a rebrand, a big expa…"
+            label: "Paragraf 8"
             widget: text
             required: false
+            hint: "Going through change — new leadership, a rebrand, a big expansion. The…"
       - name: team
         label: "Why Us — Profil tim"
         file: content/team.json
         format: json
         fields:
           - name: "the_team"
-            label: "The Team"
+            label: "Teks pendek"
             widget: text
             required: false
+            hint: "The Team  ⚠️ berisi tag HTML — biarkan utuh"
           - name: "the_people_behind_hoomanist"
-            label: "The people behind Hoomanist."
+            label: "Judul"
             widget: string
             required: false
+            hint: "The people behind Hoomanist."
           - name: "munira"
-            label: "Munira"
+            label: "Teks pendek 2"
             widget: string
             required: false
+            hint: "Munira"
           - name: "founder_amp_people_strategy"
-            label: "Founder &amp; People Strategy"
+            label: "Teks pendek 3"
             widget: string
             required: false
+            hint: "Founder &amp; People Strategy"
           - name: "believes_great_teams_are_built_on_purpos"
-            label: "Believes great teams are built on purpose, not by accident."
+            label: "Paragraf"
             widget: string
             required: false
+            hint: "Believes great teams are built on purpose, not by accident."
           - name: "people_growth_recruitment_performance_am"
-            label: "People growth · Recruitment · Performance &amp; alignment"
+            label: "Paragraf 2"
             widget: string
             required: false
+            hint: "People growth · Recruitment · Performance &amp; alignment"
           - name: "tito"
-            label: "Tito"
+            label: "Teks pendek 4"
             widget: string
             required: false
+            hint: "Tito"
           - name: "creative_amp_brand_direction"
-            label: "Creative &amp; Brand Direction"
+            label: "Teks pendek 5"
             widget: string
             required: false
+            hint: "Creative &amp; Brand Direction"
           - name: "believes_strong_brands_and_strong_teams_"
-            label: "Believes strong brands and strong teams get built the same w…"
+            label: "Paragraf 3"
             widget: string
             required: false
+            hint: "Believes strong brands and strong teams get built the same way."
           - name: "creative_systems_brand_direction_visual_"
-            label: "Creative systems · Brand direction · Visual strategy"
+            label: "Paragraf 4"
             widget: string
             required: false
+            hint: "Creative systems · Brand direction · Visual strategy"
           - name: "small_team_nbsp_thoughtful_work_nbsp_int"
-            label: "Small team. &nbsp;Thoughtful work. &nbsp;Intentional partner…"
+            label: "Teks pendek 6"
             widget: string
             required: false
+            hint: "Small team. &nbsp;Thoughtful work. &nbsp;Intentional partnerships."
       - name: proof
         label: "Proof"
         file: content/proof.json
         format: json
         fields:
           - name: "outcomes_you_can_measure"
-            label: "Outcomes You Can Measure"
+            label: "Teks pendek"
             widget: text
             required: false
+            hint: "Outcomes You Can Measure  ⚠️ berisi tag HTML — biarkan utuh"
           - name: "we_d_rather_show_you_than_tell_you"
-            label: "We'd rather show you than tell you."
+            label: "Judul"
             widget: string
             required: false
+            hint: "We'd rather show you than tell you."
           - name: "10_20"
-            label: "10–20"
+            label: "Teks pendek 2"
             widget: string
             required: false
+            hint: "10–20"
           - name: "creative_roles_placed"
-            label: "Creative roles placed"
+            label: "Teks pendek 3"
             widget: string
             required: false
+            hint: "Creative roles placed"
           - name: "across_agencies_and_in_house_teams_since"
-            label: "Across agencies and in-house teams since 2023."
+            label: "Paragraf"
             widget: string
             required: false
+            hint: "Across agencies and in-house teams since 2023."
           - name: "3_wks"
-            label: "3 wks"
+            label: "Teks pendek 4"
             widget: string
             required: false
+            hint: "3 wks  ⚠️ berisi tag HTML — biarkan utuh"
           - name: "fastest_full_team_hire"
-            label: "Fastest full-team hire"
+            label: "Teks pendek 5"
             widget: string
             required: false
+            hint: "Fastest full-team hire"
           - name: "15_roles_filled_for_by_u_s_urgent_hiring"
-            label: "15+ roles filled for By.U's urgent hiring need — see below."
+            label: "Paragraf 2"
             widget: string
             required: false
+            hint: "15+ roles filled for By.U's urgent hiring need — see below."
           - name: "4_8_wks"
-            label: "4–8 wks"
+            label: "Teks pendek 6"
             widget: string
             required: false
+            hint: "4–8 wks"
           - name: "average_time_to_hire"
-            label: "Average time to hire"
+            label: "Teks pendek 7"
             widget: string
             required: false
+            hint: "Average time to hire"
           - name: "from_first_brief_to_signed_offer_per_rol"
-            label: "From first brief to signed offer, per role."
+            label: "Paragraf 3"
             widget: string
             required: false
+            hint: "From first brief to signed offer, per role."
           - name: "3"
-            label: "3 +"
+            label: "Teks pendek 8"
             widget: string
             required: false
+            hint: "3 +  ⚠️ berisi tag HTML — biarkan utuh"
           - name: "teams_amp_brands_supported"
-            label: "Teams &amp; brands supported"
+            label: "Teks pendek 9"
             widget: string
             required: false
+            hint: "Teams &amp; brands supported"
           - name: "recruitment_performance_and_culture_work"
-            label: "Recruitment, performance and culture work combined."
+            label: "Paragraf 4"
             widget: string
             required: false
+            hint: "Recruitment, performance and culture work combined."
           - name: "approximate_ranges_based_on_engagements_"
-            label: "Approximate ranges based on engagements to date — to be refi…"
+            label: "Teks pendek 10"
             widget: text
             required: false
+            hint: "Approximate ranges based on engagements to date — to be refined with e…"
           - name: "case_study_by_u"
-            label: "Case Study · By.U"
+            label: "Teks pendek 11"
             widget: string
             required: false
+            hint: "Case Study · By.U"
           - name: "client_since_2023"
-            label: "Client since 2023"
+            label: "Teks pendek 12"
             widget: string
             required: false
+            hint: "Client since 2023"
           - name: "15_urgent_roles_3_weeks_then_a_partnersh"
-            label: "15 urgent roles. 3 weeks. Then a partnership that kept growi…"
+            label: "Sub-judul"
             widget: string
             required: false
+            hint: "15 urgent roles. 3 weeks. Then a partnership that kept growing."
           - name: "by_u_needed_fifteen_plus_creative_roles_"
-            label: "By.U needed fifteen-plus creative roles filled urgently — th…"
+            label: "Paragraf 5"
             widget: text
             required: false
+            hint: "By.U needed fifteen-plus creative roles filled urgently — the kind of …"
           - name: "phase_1_2025"
-            label: "Phase 1 · 2025"
+            label: "Teks pendek 13"
             widget: string
             required: false
+            hint: "Phase 1 · 2025"
           - name: "urgent_recruitment"
-            label: "Urgent Recruitment"
+            label: "Teks pendek 14"
             widget: string
             required: false
+            hint: "Urgent Recruitment"
           - name: "15_creative_roles_sourced_screened_and_p"
-            label: "15+ creative roles sourced, screened and placed in 3 weeks."
+            label: "Paragraf 6"
             widget: string
             required: false
+            hint: "15+ creative roles sourced, screened and placed in 3 weeks."
           - name: "phase_2_ongoing"
-            label: "Phase 2 · Ongoing"
+            label: "Teks pendek 15"
             widget: string
             required: false
+            hint: "Phase 2 · Ongoing"
           - name: "review_amp_development"
-            label: "Review &amp; Development"
+            label: "Teks pendek 16"
             widget: string
             required: false
+            hint: "Review &amp; Development"
           - name: "teammate_based_evaluation_and_a_tailored"
-            label: "Teammate-based evaluation and a tailored development program…"
+            label: "Paragraf 7"
             widget: string
             required: false
+            hint: "Teammate-based evaluation and a tailored development program."
           - name: "the_team_from_hoomanist_has_been_excepti"
-            label: "The team from Hoomanist has been exceptional — creative, cap…"
+            label: "Paragraf 8"
             widget: text
             required: false
+            hint: "The team from Hoomanist has been exceptional — creative, capable, and …"
           - name: "doni_marketing_team_by_u"
-            label: "— Doni, Marketing Team, By.U"
+            label: "Teks pendek 17"
             widget: string
             required: false
+            hint: "— Doni, Marketing Team, By.U"
           - name: "client_since_2023_quoted_with_permission"
-            label: "Client since 2023, quoted with permission."
+            label: "Teks pendek 18"
             widget: string
             required: false
+            hint: "Client since 2023, quoted with permission."
       - name: creatives
         label: "For Creatives"
         file: content/creatives.json
         format: json
         fields:
           - name: "for_creatives"
-            label: "For Creatives"
+            label: "Teks pendek"
             widget: text
             required: false
+            hint: "For Creatives  ⚠️ berisi tag HTML — biarkan utuh"
           - name: "looking_for_a_team_that_actually_fits"
-            label: "Looking for a team that actually fits?"
+            label: "Judul"
             widget: string
             required: false
+            hint: "Looking for a team that actually fits?"
           - name: "we_place_creative_people_with_studios_an"
-            label: "We place creative people with studios and brands who value f…"
+            label: "Paragraf"
             widget: text
             required: false
+            hint: "We place creative people with studios and brands who value fit as much…"
           - name: "share_your_portfolio"
-            label: "Share your portfolio →"
+            label: "Tautan"
             widget: string
             required: false
+            hint: "Share your portfolio →"
           - name: "1_send_your_portfolio_and_what_you_re_lo"
-            label: "1 Send your portfolio and what you're looking for"
+            label: "Teks pendek 2"
             widget: text
             required: false
+            hint: "1 Send your portfolio and what you're looking for  ⚠️ berisi tag HTML — biarkan utuh"
           - name: "2_we_keep_you_in_mind_as_roles_come_up"
-            label: "2 We keep you in mind as roles come up"
+            label: "Teks pendek 3"
             widget: text
             required: false
+            hint: "2 We keep you in mind as roles come up  ⚠️ berisi tag HTML — biarkan utuh"
           - name: "3_we_only_reach_out_when_it_s_a_genuine_"
-            label: "3 We only reach out when it's a genuine fit"
+            label: "Teks pendek 4"
             widget: text
             required: false
+            hint: "3 We only reach out when it's a genuine fit  ⚠️ berisi tag HTML — biarkan utuh"
       - name: faq
         label: "FAQ"
         file: content/faq.json
         format: json
         fields:
           - name: "questions"
-            label: "Questions"
+            label: "Teks pendek"
             widget: text
             required: false
+            hint: "Questions  ⚠️ berisi tag HTML — biarkan utuh"
           - name: "good_questions_honest_answers"
-            label: "Good questions, honest answers."
+            label: "Judul"
             widget: text
             required: false
+            hint: "Good questions, honest answers.  ⚠️ berisi tag HTML — biarkan utuh"
           - name: "just_ask_us"
-            label: "Just ask us →"
+            label: "Tautan"
             widget: string
             required: false
+            hint: "Just ask us →"
           - name: "no_recruitment_is_where_many_teams_start"
-            label: "No. Recruitment is where many teams start with us, but we al…"
+            label: "Paragraf"
             widget: text
             required: false
+            hint: "No. Recruitment is where many teams start with us, but we also build p…"
           - name: "usually_4_8_weeks_per_role_from_the_firs"
-            label: "Usually 4–8 weeks per role, from the first brief to a signed…"
+            label: "Paragraf 2"
             widget: text
             required: false
+            hint: "Usually 4–8 weeks per role, from the first brief to a signed offer — w…"
           - name: "if_the_candidate_leaves_or_both_sides_ag"
-            label: "If the candidate leaves, or both sides agree the fit isn't w…"
+            label: "Paragraf 3"
             widget: text
             required: false
+            hint: "If the candidate leaves, or both sides agree the fit isn't working wit…"
           - name: "upon_written_confirmation_the_candidate_"
-            label: "Upon written confirmation the candidate has accepted the off…"
+            label: "Paragraf 4"
             widget: text
             required: false
+            hint: "Upon written confirmation the candidate has accepted the offer — not a…"
           - name: "yes_most_of_our_work_is_with_growing_stu"
-            label: "Yes — most of our work is with growing studios and lean in-h…"
+            label: "Paragraf 5"
             widget: text
             required: false
+            hint: "Yes — most of our work is with growing studios and lean in-house teams…"
           - name: "yes_each_role_is_its_own_engagement_and_"
-            label: "Yes — each role is its own engagement, and multi-role bundle…"
+            label: "Paragraf 6"
             widget: text
             required: false
+            hint: "Yes — each role is its own engagement, and multi-role bundles (three o…"
           - name: "we_work_remotely_with_teams_anywhere_and"
-            label: "We work remotely with teams anywhere, and on-site when it he…"
+            label: "Paragraf 7"
             widget: text
             required: false
+            hint: "We work remotely with teams anywhere, and on-site when it helps. Where…"
       - name: contact
         label: "Contact"
         file: content/contact.json
         format: json
         fields:
           - name: "let_s_talk"
-            label: "Let's Talk"
+            label: "Teks pendek"
             widget: text
             required: false
+            hint: "Let's Talk  ⚠️ berisi tag HTML — biarkan utuh"
           - name: "let_s_build_better_ways_of_working"
-            label: "Let's build better ways of working."
+            label: "Judul"
             widget: string
             required: false
+            hint: "Let's build better ways of working."
           - name: "tell_us_where_your_business_is_today_and"
-            label: "Tell us where your business is today and what feels challeng…"
+            label: "Paragraf"
             widget: text
             required: false
+            hint: "Tell us where your business is today and what feels challenging intern…"
           - name: "email"
-            label: "Email"
+            label: "Tautan"
             widget: text
             required: false
+            hint: "Email  ⚠️ berisi tag HTML — biarkan utuh"
           - name: "instagram_hoomanist_id"
-            label: "Instagram @hoomanist.id"
+            label: "Tautan 2"
             widget: text
             required: false
+            hint: "Instagram @hoomanist.id  ⚠️ berisi tag HTML — biarkan utuh"
           - name: "your_name"
-            label: "Your name"
+            label: "Label isian"
             widget: string
             required: false
+            hint: "Your name"
           - name: "company"
-            label: "Company"
+            label: "Label isian 2"
             widget: string
             required: false
+            hint: "Company"
           - name: "email_2"
-            label: "Email"
+            label: "Label isian 3"
             widget: string
             required: false
+            hint: "Email"
           - name: "what_s_on_your_mind"
-            label: "What's on your mind?"
+            label: "Label isian 4"
             widget: string
             required: false
+            hint: "What's on your mind?"
           - name: "send_message"
-            label: "Send message"
+            label: "Tombol"
             widget: string
             required: false
+            hint: "Send message"
           - name: "opening_your_email"
-            label: "Opening your email…"
+            label: "Teks pendek 2"
             widget: string
             required: false
+            hint: "Opening your email…"
           - name: "your_message_should_pop_up_in_your_email"
-            label: "Your message should pop up in your email app, ready to send …"
+            label: "Paragraf 2"
             widget: text
             required: false
+            hint: "Your message should pop up in your email app, ready to send to us. If …  ⚠️ berisi tag HTML — biarkan utuh"
           - name: "fallback_note"
-            label: "Kontak — keterangan cadangan kalau email tidak terbuka"
+            label: "Teks pendek 3"
             widget: string
             required: false
+            hint: "If your email app didn't open, copy the message below and send it to"
           - name: "copy_message"
-            label: "Kontak — tombol salin pesan"
+            label: "Tombol 2"
             widget: string
             required: false
+            hint: "Copy message"
       - name: footer12
         label: "Footer"
         file: content/_footer12.json
         format: json
         fields:
           - name: "hoomanist"
-            label: "hoomanist"
+            label: "Teks pendek"
             widget: text
             required: false
+            hint: "hoomanist  ⚠️ berisi tag HTML — biarkan utuh"
           - name: "a_creative_workforce_partner_for_people_"
-            label: "A creative workforce partner. For people who create. Where i…"
+            label: "Paragraf"
             widget: text
             required: false
+            hint: "A creative workforce partner. For people who create. Where ideas find …  ⚠️ berisi tag HTML — biarkan utuh"
           - name: "good_people_great_work"
-            label: "good people. great work."
+            label: "Teks pendek 2"
             widget: string
             required: false
+            hint: "good people. great work."
           - name: "explore"
-            label: "Explore"
+            label: "Teks pendek 3"
             widget: string
             required: false
+            hint: "Explore"
           - name: "what_we_do"
-            label: "What We Do"
+            label: "Tautan"
             widget: string
             required: false
+            hint: "What We Do"
           - name: "services"
-            label: "Services"
+            label: "Tautan 2"
             widget: string
             required: false
+            hint: "Services"
           - name: "proof"
-            label: "Proof"
+            label: "Tautan 3"
             widget: string
             required: false
+            hint: "Proof"
           - name: "pricing"
-            label: "Pricing"
+            label: "Tautan 4"
             widget: string
             required: false
+            hint: "Pricing"
           - name: "connect"
-            label: "Connect"
+            label: "Teks pendek 4"
             widget: string
             required: false
+            hint: "Connect"
           - name: "hoomanist_id"
-            label: "@hoomanist.id"
+            label: "Tautan 5"
             widget: string
             required: false
+            hint: "@hoomanist.id"
           - name: "2026_hoomanist_all_rights_reserved_peopl"
-            label: "© 2026 Hoomanist. All rights reserved. People. &nbsp;Presenc…"
+            label: "Teks pendek 5"
             widget: text
             required: false
+            hint: "© 2026 Hoomanist. All rights reserved. People. &nbsp;Presence. &nbsp;P…  ⚠️ berisi tag HTML — biarkan utuh"
