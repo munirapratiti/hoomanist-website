@@ -923,6 +923,96 @@ collections:
             widget: text
             required: false
             hint: "3 We only reach out when it's a genuine fit  ⚠️ berisi tag HTML — biarkan utuh"
+          - name: "c_roles_title"
+            label: "Teks pendek 5"
+            widget: string
+            required: false
+            hint: "Roles we place"
+          - name: "c_roles_body"
+            label: "Paragraf 2"
+            widget: text
+            required: false
+            hint: "Graphic and UI designers, copywriters and content writers, social medi…"
+          - name: "c_look_title"
+            label: "Teks pendek 6"
+            widget: string
+            required: false
+            hint: "What we look for"
+          - name: "c_look_body"
+            label: "Paragraf 3"
+            widget: text
+            required: false
+            hint: "Craft you can show, and the way you work with people. We read portfoli…"
+          - name: "c_send_eyebrow"
+            label: "Teks pendek 7"
+            widget: string
+            required: false
+            hint: "Sending your portfolio"
+          - name: "c_send_title"
+            label: "Sub-judul"
+            widget: string
+            required: false
+            hint: "Four things that make your portfolio easy to place."
+          - name: "c_send_1"
+            label: "Teks pendek 8"
+            widget: text
+            required: false
+            hint: "A link that opens without a password — a site, PDF, Behance or Drive f…"
+          - name: "c_send_2"
+            label: "Teks pendek 9"
+            widget: text
+            required: false
+            hint: "Which parts of each project were actually yours, especially on team wo…"
+          - name: "c_send_3"
+            label: "Teks pendek 10"
+            widget: string
+            required: false
+            hint: "The kind of role and team you want next, not just the job title."
+          - name: "c_send_4"
+            label: "Teks pendek 11"
+            widget: string
+            required: false
+            hint: "Where you are based, and whether you want remote, hybrid or on-site."
+          - name: "c_send_cta"
+            label: "Tautan 2"
+            widget: string
+            required: false
+            hint: "Send your portfolio →"
+          - name: "c_faq_title"
+            label: "Sub-judul 2"
+            widget: string
+            required: false
+            hint: "Before you send"
+          - name: "c_q1"
+            label: "Pertanyaan"
+            widget: string
+            required: false
+            hint: "Will you share my portfolio without telling me?"
+          - name: "c_a1"
+            label: "Paragraf 4"
+            widget: text
+            required: false
+            hint: "No. We ask you first, every time, before your name or work goes to a c…"
+          - name: "c_q2"
+            label: "Pertanyaan 2"
+            widget: string
+            required: false
+            hint: "I did not hear back. Does that mean no?"
+          - name: "c_a2"
+            label: "Paragraf 5"
+            widget: text
+            required: false
+            hint: "It usually means there is no matching role open right now. We keep por…"
+          - name: "c_q3"
+            label: "Pertanyaan 3"
+            widget: string
+            required: false
+            hint: "I am still employed. Is that a problem?"
+          - name: "c_a3"
+            label: "Paragraf 6"
+            widget: text
+            required: false
+            hint: "Not at all, and we keep it confidential. Most people we place are work…"
       - name: faq
         label: "FAQ"
         file: content/faq.json

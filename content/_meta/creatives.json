@@ -26,5 +26,77 @@
   "3_we_only_reach_out_when_it_s_a_genuine_": {
     "tag": "div",
     "label": "3 We only reach out when it's a genuine fit"
+  },
+  "c_roles_title": {
+    "tag": "div",
+    "label": "Kartu 1 — judul"
+  },
+  "c_roles_body": {
+    "tag": "p",
+    "label": "Kartu 1 — isi"
+  },
+  "c_look_title": {
+    "tag": "div",
+    "label": "Kartu 2 — judul"
+  },
+  "c_look_body": {
+    "tag": "p",
+    "label": "Kartu 2 — isi"
+  },
+  "c_send_eyebrow": {
+    "tag": "div",
+    "label": "Panel ungu — label kecil"
+  },
+  "c_send_title": {
+    "tag": "h3",
+    "label": "Panel ungu — judul"
+  },
+  "c_send_1": {
+    "tag": "div",
+    "label": "Panel ungu — poin 1"
+  },
+  "c_send_2": {
+    "tag": "div",
+    "label": "Panel ungu — poin 2"
+  },
+  "c_send_3": {
+    "tag": "div",
+    "label": "Panel ungu — poin 3"
+  },
+  "c_send_4": {
+    "tag": "div",
+    "label": "Panel ungu — poin 4"
+  },
+  "c_send_cta": {
+    "tag": "a",
+    "label": "Panel ungu — tombol"
+  },
+  "c_faq_title": {
+    "tag": "h3",
+    "label": "Tanya-jawab — judul"
+  },
+  "c_q1": {
+    "tag": "summary",
+    "label": "Tanya 1"
+  },
+  "c_a1": {
+    "tag": "p",
+    "label": "Jawab 1"
+  },
+  "c_q2": {
+    "tag": "summary",
+    "label": "Tanya 2"
+  },
+  "c_a2": {
+    "tag": "p",
+    "label": "Jawab 2"
+  },
+  "c_q3": {
+    "tag": "summary",
+    "label": "Tanya 3"
+  },
+  "c_a3": {
+    "tag": "p",
+    "label": "Jawab 3"
   }
 }
