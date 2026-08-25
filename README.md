@@ -51,10 +51,6 @@ Push ke branch lain menghasilkan preview URL terpisah.
 
 ## Belum selesai
 
-- **Lisensi foto stock.** `assets/photo-team.jpg` berasal dari berkas unduhan
-  di folder Downloads dan tampak seperti foto stock. Sebelum situs dipakai
-  untuk keperluan komersial, pastikan lisensinya memadai — sebagian penyedia
-  mewajibkan atribusi pada paket gratisnya. Ini perlu dicek oleh pemilik situs.
 
 
 - **Gambar `og:image`** untuk preview link di WhatsApp/LinkedIn/X. Perlu 1200×630
@@ -62,6 +58,17 @@ Push ke branch lain menghasilkan preview URL terpisah.
   dan ubah `twitter:card` menjadi `summary_large_image`.
 - **URL di `canonical` dan `og:url`** memakai konstanta `BASE` di `build.py`.
   Ganti satu baris itu kalau pindah ke domain sendiri.
+
+## Asal gambar
+
+`assets/photo-team.jpg` berasal dari Unsplash — foto oleh **@vantaymedia**,
+<https://unsplash.com/photos/group-of-people-with-laptops-Hh-PIe3qIug>.
+Lisensi Unsplash mengizinkan pemakaian komersial tanpa izin dan tanpa
+kewajiban mencantumkan kredit.
+
+Foto sebelumnya diunduh dari magnific.com dan statusnya tidak dapat
+dipastikan, jadi diganti. Kalau nanti menambah foto lagi, ambil dari Unsplash
+atau Pexels — keduanya bebas syarat — dan catat tautan asalnya di sini.
 
 ## Menyiapkan gambar
 
