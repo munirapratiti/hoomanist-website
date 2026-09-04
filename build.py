@@ -15,7 +15,7 @@ import re
 import shutil
 from datetime import datetime, timezone
 
-BASE = "https://hoomanist-website.vercel.app"
+from site_config import BASE, PATHS
 SRC = "src"
 RAW = os.path.join(SRC, "raw")
 
@@ -221,9 +221,26 @@ def main():
         print("  %-28s %6d bytes" % (out, len(html)))
 
 
+def write_seo_files():
+    """robots.txt dan sitemap.xml ikut BASE, jadi tidak ketinggalan saat
+    pindah domain — dulu keduanya berkas statis yang mudah terlupakan."""
+    with open("robots.txt", "w") as fh:
+        fh.write("User-agent: *\nDisallow: /admin\nDisallow: /api\n\n"
+                 "Sitemap: %s/sitemap.xml\n" % BASE)
+
+    urls = "".join("  <url>\n    <loc>%s%s</loc>\n  </url>\n" % (BASE, p or "/")
+                   for p in PATHS)
+    with open("sitemap.xml", "w") as fh:
+        fh.write('<?xml version="1.0" encoding="UTF-8"?>\n'
+                 '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+                 + urls + "</urlset>\n")
+    print("  robots.txt + sitemap.xml (%d halaman)" % len(PATHS))
+
+
 if __name__ == "__main__":
     print("Membangun situs...")
     main()
+    write_seo_files()
 
     # Form admin dibangkitkan ulang di sini, bukan hanya di laptop, supaya
     # keterangan tiap ruas selalu memantulkan isi terbaru. Kalau hanya dibuat

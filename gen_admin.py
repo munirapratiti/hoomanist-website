@@ -13,7 +13,7 @@ import os
 import re
 
 REPO = "munirapratiti/hoomanist-website"
-SITE = "https://hoomanist-website.vercel.app"
+from site_config import BASE as SITE
 
 # Section file -> the label the editor sees. Ordered as they appear on the site.
 SECTIONS = [
