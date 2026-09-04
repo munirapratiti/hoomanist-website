@@ -10,7 +10,7 @@
   // Isi dengan endpoint Formspree (atau layanan sejenis) agar kiriman form
   // benar-benar masuk ke inbox. Selama kosong, form memakai aplikasi email
   // pengunjung, dengan panel salin-tempel sebagai jaring pengaman.
-  var FORM_ENDPOINT = '';
+  var FORM_ENDPOINT = 'https://formspree.io/f/xvkoqkdg';
 
   var AT = String.fromCharCode(64);
   var EMAIL = 'hoomanist' + '.id' + AT + 'gmail' + '.com';
