@@ -5,6 +5,6 @@ sitemap.xml dibangkitkan darinya — jadi pindah domain cukup mengubah
 satu baris di berkas ini.
 """
 
-BASE = "https://hoomanist-website.vercel.app"
+BASE = "https://hoomanist.id"
 
 PATHS = ["", "/services", "/why-us", "/proof", "/for-creatives", "/faq", "/contact"]

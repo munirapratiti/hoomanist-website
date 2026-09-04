@@ -3,7 +3,7 @@ backend:
   name: github
   repo: munirapratiti/hoomanist-website
   branch: main
-  base_url: https://hoomanist-website.vercel.app
+  base_url: https://hoomanist.id
   auth_endpoint: api/auth
 
 media_folder: assets
