@@ -40,10 +40,11 @@ Push ke branch lain menghasilkan preview URL terpisah.
 
 ## Catatan
 
-- **Form kontak tidak punya backend.** Form menyusun link `mailto:` dan
-  menyerahkannya ke aplikasi email pengunjung. Tidak ada data yang dikirim ke
-  server mana pun. Kalau nanti butuh form yang benar-benar mengirim ke inbox,
-  perlu tambahan layanan seperti Formspree atau Vercel Functions.
+- **Form kontak memakai Formspree.** Endpoint-nya ada di konstanta
+  `FORM_ENDPOINT` di `main.js`. Kalau pengiriman gagal, halaman menampilkan
+  panel salin-tempel berisi pesan yang sudah tersusun, jadi kiriman tidak
+  hilang diam-diam. Tombol kirim dikunci selama menunggu balasan — Formspree
+  menganjurkan ini agar klik ganda tidak menghasilkan kiriman dobel.
 - **Alamat email disusun di `main.js`, bukan ditulis di HTML.** Ini menghambat
   scraper. Kalau alamatnya berubah, ubah konstanta `EMAIL` di `main.js`.
 - **Sumber desain** ada di Claude Design, project "Hoomanist Website".
