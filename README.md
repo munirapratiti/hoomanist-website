@@ -62,10 +62,16 @@ Push ke branch lain menghasilkan preview URL terpisah.
 
 ## Asal gambar
 
-`assets/photo-team.jpg` berasal dari Unsplash — foto oleh **@vantaymedia**,
-<https://unsplash.com/photos/group-of-people-with-laptops-Hh-PIe3qIug>.
-Lisensi Unsplash mengizinkan pemakaian komersial tanpa izin dan tanpa
-kewajiban mencantumkan kredit.
+Semua foto berasal dari Unsplash — lisensinya mengizinkan pemakaian
+komersial tanpa izin dan tanpa kewajiban mencantumkan kredit, tapi
+tautannya dicatat di sini untuk keperluan penelusuran:
+
+- `assets/photo-team.jpg` — @vantaymedia,
+  <https://unsplash.com/photos/group-of-people-with-laptops-Hh-PIe3qIug>
+- `assets/photo-services.jpg` — @wolfart32,
+  <https://unsplash.com/photos/two-women-collaborating-at-a-desk-with-design-materials-Ry22piRv0bs>
+- `assets/photo-creatives.jpg` — @tourbox,
+  <https://unsplash.com/photos/a-man-edits-video-on-a-computer-brC_7jOF_cg>
 
 Foto sebelumnya diunduh dari magnific.com dan statusnya tidak dapat
 dipastikan, jadi diganti. Kalau nanti menambah foto lagi, ambil dari Unsplash

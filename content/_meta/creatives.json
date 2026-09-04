@@ -98,5 +98,9 @@
   "c_a3": {
     "tag": "p",
     "label": "Jawab 3"
+  },
+  "cr_photo_alt": {
+    "tag": "img",
+    "label": "Foto — teks alternatif"
   }
 }

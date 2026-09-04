@@ -142,5 +142,9 @@
   "rollout": {
     "tag": "div",
     "label": "Rollout"
+  },
+  "svc_photo_alt": {
+    "tag": "img",
+    "label": "Foto — teks alternatif"
   }
 }

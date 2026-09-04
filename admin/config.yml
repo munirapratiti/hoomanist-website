@@ -373,6 +373,11 @@ collections:
             widget: string
             required: false
             hint: "Rollout"
+          - name: "svc_photo_alt"
+            label: "Teks"
+            widget: text
+            required: false
+            hint: "A creative director reviewing a mood board and portfolio prints with a…"
       - name: pricing
         label: "Services — Harga"
         file: content/pricing.json
@@ -1013,6 +1018,11 @@ collections:
             widget: text
             required: false
             hint: "Not at all, and we keep it confidential. Most people we place are work…"
+          - name: "cr_photo_alt"
+            label: "Teks"
+            widget: text
+            required: false
+            hint: "A video editor color-grading a project on a dual-monitor home studio s…"
       - name: faq
         label: "FAQ"
         file: content/faq.json
