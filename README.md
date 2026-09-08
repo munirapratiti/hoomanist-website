@@ -1,7 +1,11 @@
 # Hoomanist Website
 
-Situs statis satu halaman untuk Hoomanist. Tanpa framework, tanpa build step —
-HTML, CSS, dan JavaScript biasa. Di-deploy ke Vercel.
+Situs company profile Hoomanist — tujuh halaman statis, tanpa framework.
+HTML, CSS, dan JavaScript biasa, dirakit `build.py` (Python 3, tanpa Node)
+dan di-deploy otomatis ke Vercel. Live di <https://hoomanist.id>.
+
+Baru pertama kali di repo ini? Baca `CLAUDE.md` dulu — isinya aturan yang
+kalau dilanggar merusak tanpa pesan error.
 
 ## Struktur
 
