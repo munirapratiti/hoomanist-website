@@ -9,7 +9,7 @@
   },
   "10_20": {
     "tag": "div",
-    "label": "50+"
+    "label": "65+"
   },
   "creative_roles_placed": {
     "tag": "div",
@@ -45,15 +45,15 @@
   },
   "3": {
     "tag": "div",
-    "label": "3 yrs"
+    "label": "2"
   },
   "teams_amp_brands_supported": {
     "tag": "div",
-    "label": "Longest client partnership"
+    "label": "Project teams staffed"
   },
   "recruitment_performance_and_culture_work": {
     "tag": "p",
-    "label": "By.U — from urgent hiring to development work, stil…"
+    "label": "Bestie Konter by XL in 2024, By.U in 2025 — both deli…"
   },
   "case_study_by_u": {
     "tag": "div",
@@ -61,7 +61,7 @@
   },
   "client_since_2023": {
     "tag": "span",
-    "label": "Client since 2023"
+    "label": "2025 · with Sosplan"
   },
   "15_urgent_roles_3_weeks_then_a_partnersh": {
     "tag": "h3",
@@ -105,6 +105,6 @@
   },
   "client_since_2023_quoted_with_permission": {
     "tag": "div",
-    "label": "Client since 2023, quoted with permission."
+    "label": "By.U campaign delivered with Sosplan, quoted with per…"
   }
 }

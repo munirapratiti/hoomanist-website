@@ -762,7 +762,7 @@ collections:
             label: "Teks pendek 2"
             widget: string
             required: false
-            hint: "50+"
+            hint: "65+"
           - name: "creative_roles_placed"
             label: "Teks pendek 3"
             widget: string
@@ -807,17 +807,17 @@ collections:
             label: "Teks pendek 8"
             widget: string
             required: false
-            hint: "3 yrs"
+            hint: "2"
           - name: "teams_amp_brands_supported"
             label: "Teks pendek 9"
             widget: string
             required: false
-            hint: "Longest client partnership"
+            hint: "Project teams staffed"
           - name: "recruitment_performance_and_culture_work"
             label: "Paragraf 4"
-            widget: string
+            widget: text
             required: false
-            hint: "By.U — from urgent hiring to development work, still running."
+            hint: "Bestie Konter by XL in 2024, By.U in 2025 — both delivered with Sospla…"
           - name: "case_study_by_u"
             label: "Teks pendek 10"
             widget: string
@@ -827,7 +827,7 @@ collections:
             label: "Teks pendek 11"
             widget: string
             required: false
-            hint: "Client since 2023"
+            hint: "2025 · with Sosplan"
           - name: "15_urgent_roles_3_weeks_then_a_partnersh"
             label: "Sub-judul"
             widget: string
@@ -882,7 +882,7 @@ collections:
             label: "Teks pendek 17"
             widget: string
             required: false
-            hint: "Client since 2023, quoted with permission."
+            hint: "By.U campaign delivered with Sosplan, quoted with permission."
       - name: creatives
         label: "For Creatives"
         file: content/creatives.json
