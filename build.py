@@ -196,6 +196,87 @@ def build_footer():
     return footer
 
 
+def strip_tags(html):
+    """Teks polos dari sepotong markup — untuk isi JSON-LD."""
+    text = re.sub(r"<[^>]+>", "", html)
+    for entity, char in (("&amp;", "&"), ("&nbsp;", " "), ("&#39;", "'"),
+                         ("&quot;", '"'), ("&lt;", "<"), ("&gt;", ">")):
+        text = text.replace(entity, char)
+    return re.sub(r"\s+", " ", text).strip()
+
+
+def faq_pairs(body):
+    """Pasangan tanya-jawab dari blok FAQ yang sudah dirender.
+
+    Dibaca dari markup hasil render, bukan ditulis ulang tangan, supaya
+    schema tidak pernah berbeda dari yang dibaca pengunjung.
+    """
+    pairs = []
+    for block in re.findall(r"<details.*?</details>", body, re.S):
+        q = re.search(r"<summary[^>]*>(.*?)</summary>", block, re.S)
+        a = re.search(r"<p[^>]*>(.*?)</p>", block, re.S)
+        if q and a:
+            question, answer = strip_tags(q.group(1)), strip_tags(a.group(1))
+            if question and answer:
+                pairs.append((question, answer))
+    return pairs
+
+
+def build_schema(page, body):
+    """JSON-LD per halaman.
+
+    Hanya memuat fakta yang memang sudah tampil di situs. Alamat email
+    sengaja tidak ikut — situs ini menyusunnya saat runtime di main.js
+    sebagai penghambat scraper, dan schema akan membocorkannya kembali.
+    """
+    org = {
+        "@type": "Organization",
+        "@id": BASE + "/#organization",
+        "name": "Hoomanist",
+        "url": BASE + "/",
+        "logo": BASE + "/assets/logo-icon.png",
+        "image": BASE + "/assets/og-image.png",
+        "description": PAGES[0]["desc"],
+        "sameAs": ["https://www.instagram.com/hoomanist.id/"],
+    }
+
+    graph = [org, {
+        "@type": "WebPage",
+        "@id": BASE + (page["path"] if page["path"] != "/" else "/") + "#webpage",
+        "url": BASE + ("" if page["path"] == "/" else page["path"]),
+        "name": page["title"],
+        "description": page["desc"],
+        "isPartOf": {"@id": BASE + "/#website"},
+        "publisher": {"@id": BASE + "/#organization"},
+    }]
+
+    if page["path"] == "/":
+        graph.append({
+            "@type": "WebSite",
+            "@id": BASE + "/#website",
+            "url": BASE + "/",
+            "name": "Hoomanist",
+            "publisher": {"@id": BASE + "/#organization"},
+        })
+
+    if page["path"] == "/faq":
+        pairs = faq_pairs(body)
+        if pairs:
+            graph.append({
+                "@type": "FAQPage",
+                "@id": BASE + "/faq#faqpage",
+                "mainEntity": [
+                    {"@type": "Question", "name": q,
+                     "acceptedAnswer": {"@type": "Answer", "text": a}}
+                    for q, a in pairs
+                ],
+            })
+
+    payload = json.dumps({"@context": "https://schema.org", "@graph": graph},
+                         ensure_ascii=False, indent=2)
+    return '<script type="application/ld+json">\n%s\n</script>' % payload
+
+
 def main():
     head_tpl = read(os.path.join(SRC, "head.html"))
     footer = build_footer()
@@ -208,6 +289,7 @@ def main():
                 .replace("{{BUILT}}", datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"))
                 .replace("{{TITLE}}", page["title"])
                 .replace("{{DESC}}", page["desc"])
+                .replace("{{SCHEMA}}", build_schema(page, body))
                 .replace("{{BASE}}", BASE)
                 .replace("{{PATH}}", "" if page["path"] == "/" else page["path"]))
 
