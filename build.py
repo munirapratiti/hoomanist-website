@@ -34,56 +34,62 @@ PAGES = [
     {
         "path": "/",
         "out": "index.html",
-        "title": "Hoomanist — Creative people. Placed with purpose.",
-        "desc": "Hoomanist is a creative workforce partner. We help teams hire, "
-                "build and keep the people behind great work.",
+        "title": "Creative Recruitment in Indonesia | Hoomanist",
+        "desc": "Hoomanist is a creative workforce partner in Indonesia. We help "
+                "agencies and brands hire, grow and keep the people behind "
+                "great work.",
         "blocks": ["top", "_section2", "_section3", "home-cta"],
     },
     {
         "path": "/services",
         "out": "services/index.html",
-        "title": "Services — Hoomanist",
-        "desc": "Recruitment, team building and people systems for creative "
-                "studios and brands. Pricing that fits the work.",
+        "title": "Creative Recruitment & People Systems | Hoomanist",
+        "desc": "Creative recruitment, people growth and performance systems for "
+                "studios and brands in Indonesia. Culture-fit hiring, backed by "
+                "a 90-day guarantee.",
         "blocks": ["services", "pricing"],
     },
     {
         "path": "/why-us",
         "out": "why-us/index.html",
-        "title": "Why Us — Hoomanist",
+        "title": "Why Creative Teams Choose Hoomanist",
         "desc": "Your people are the one thing nobody can copy. Why creative "
-                "teams work with Hoomanist, and the people behind it.",
+                "teams in Indonesia work with Hoomanist, and the people "
+                "behind it.",
         "blocks": ["why", "team"],
     },
     {
         "path": "/proof",
         "out": "proof/index.html",
-        "title": "Proof — Hoomanist",
-        "desc": "We'd rather show you than tell you. Results from the creative "
-                "teams we've built.",
+        "title": "Creative Recruitment Case Studies | Hoomanist",
+        "desc": "15+ roles filled for By.U in three weeks. Results from the "
+                "creative teams we've built since 2023.",
         "blocks": ["proof"],
     },
     {
         "path": "/for-creatives",
         "out": "for-creatives/index.html",
-        "title": "For Creatives — Hoomanist",
+        "title": "Creative Jobs in Indonesia | Hoomanist",
         "desc": "Looking for a team that actually fits? Share your portfolio "
-                "with Hoomanist.",
+                "with Hoomanist and we'll keep you in mind for roles at "
+                "studios and brands.",
         "blocks": ["creatives"],
     },
     {
         "path": "/faq",
         "out": "faq/index.html",
-        "title": "FAQ — Hoomanist",
-        "desc": "Good questions, honest answers about how Hoomanist works.",
+        "title": "Recruitment FAQ — Fees, Timeline & Guarantee | Hoomanist",
+        "desc": "How long a creative hire takes, when we invoice, and what "
+                "happens if the fit doesn't work out. Honest answers about how "
+                "Hoomanist works.",
         "blocks": ["faq"],
     },
     {
         "path": "/contact",
         "out": "contact/index.html",
-        "title": "Contact — Hoomanist",
-        "desc": "Let's build better ways of working. Start a discovery "
-                "conversation with Hoomanist.",
+        "title": "Contact Hoomanist — Creative Recruitment in Indonesia",
+        "desc": "Tell us where your team is today and what feels challenging. "
+                "Start a discovery conversation with Hoomanist.",
         "blocks": ["contact"],
     },
 ]
@@ -196,6 +202,16 @@ def build_footer():
     return footer
 
 
+def esc(text):
+    """Aman untuk ditaruh di <title> maupun di atribut content="...".
+
+    Apostrof sengaja dibiarkan: setiap atribut di sini dibatasi tanda kutip
+    ganda, jadi meng-escape-nya hanya membuat markup lebih berisik.
+    """
+    return (text.replace("&", "&amp;").replace("<", "&lt;")
+                .replace(">", "&gt;").replace('"', "&quot;"))
+
+
 def strip_tags(html):
     """Teks polos dari sepotong markup — untuk isi JSON-LD."""
     text = re.sub(r"<[^>]+>", "", html)
@@ -238,6 +254,10 @@ def build_schema(page, body):
         "image": BASE + "/assets/og-image.png",
         "description": PAGES[0]["desc"],
         "sameAs": ["https://www.instagram.com/hoomanist.id/"],
+        # Negara saja, tanpa alamat jalan — itu fakta tentang di mana bisnis
+        # ini berada, bukan klaim soal wilayah yang dilayani. FAQ situs sendiri
+        # menyebut mereka bekerja remote dengan tim mana pun.
+        "address": {"@type": "PostalAddress", "addressCountry": "ID"},
     }
 
     graph = [org, {
@@ -287,8 +307,11 @@ def main():
 
         html = (head_tpl
                 .replace("{{BUILT}}", datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"))
-                .replace("{{TITLE}}", page["title"])
-                .replace("{{DESC}}", page["desc"])
+                # Judul dan deskripsi masuk ke markup, jadi harus di-escape.
+                # Versi mentahnya tetap dipakai di JSON-LD, yang aturan
+                # pelolosannya beda (JSON, bukan HTML).
+                .replace("{{TITLE}}", esc(page["title"]))
+                .replace("{{DESC}}", esc(page["desc"]))
                 .replace("{{SCHEMA}}", build_schema(page, body))
                 .replace("{{BASE}}", BASE)
                 .replace("{{PATH}}", "" if page["path"] == "/" else page["path"]))
