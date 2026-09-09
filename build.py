@@ -13,6 +13,7 @@ import json
 import os
 import re
 import shutil
+import subprocess
 from datetime import datetime, timezone
 
 from site_config import BASE, PATHS
@@ -314,7 +315,11 @@ def main():
                 .replace("{{DESC}}", esc(page["desc"]))
                 .replace("{{SCHEMA}}", build_schema(page, body))
                 .replace("{{BASE}}", BASE)
-                .replace("{{PATH}}", "" if page["path"] == "/" else page["path"]))
+                # Beranda memakai garis miring agar canonical, og:url dan
+                # sitemap menuliskan URL yang sama persis. Sebelumnya
+                # canonical menulis tanpa garis miring sementara sitemap
+                # dengan — dua ejaan untuk satu halaman.
+                .replace("{{PATH}}", "/" if page["path"] == "/" else page["path"]))
 
         html += build_nav(page["path"]) + "\n" + body + "\n\n" + footer
         html += '\n\n</div>\n<script src="/main.js" defer></script>\n</body>\n</html>\n'
@@ -326,6 +331,62 @@ def main():
         print("  %-28s %6d bytes" % (out, len(html)))
 
 
+def _shallow_clone(_cache=[]):
+    """Benar kalau repo ini hasil clone dangkal.
+
+    Penting karena pada clone dangkal `git log -1 -- berkas` mengembalikan
+    tanggal commit terakhir untuk berkas apa pun — riwayat sebelumnya tidak
+    ada. Hasilnya setiap halaman akan mengaku berubah pada tanggal deploy,
+    yaitu kebohongan yang justru ingin dihindari lastmod. Lebih baik seluruh
+    ruas lastmod dilewati. Vercel meng-clone dengan kedalaman terbatas, jadi
+    ini bukan kasus teoretis.
+    """
+    if not _cache:
+        try:
+            out = subprocess.run(
+                ["git", "rev-parse", "--is-shallow-repository"],
+                capture_output=True, text=True, timeout=10)
+            _cache.append(out.stdout.strip() != "false")
+        except (OSError, subprocess.SubprocessError):
+            _cache.append(True)
+    return _cache[0]
+
+
+def last_changed(path):
+    """Tanggal commit terakhir yang menyentuh isi sebuah halaman, atau None.
+
+    Sengaja memakai riwayat git, bukan waktu build: kalau lastmod diisi
+    waktu build, setiap halaman akan mengaku berubah pada setiap deploy.
+    Tanggal yang keliru lebih buruk daripada tidak ada tanggal — mesin
+    telusur belajar mengabaikan lastmod yang terbukti tidak bisa dipercaya.
+    Kalau riwayatnya tidak terbaca (checkout dangkal, git tidak ada),
+    fungsi ini mengembalikan None dan ruas lastmod dilewati saja.
+    """
+    page = next((p for p in PAGES if p["path"] == (path or "/")), None)
+    if page is None or _shallow_clone():
+        return None
+
+    sources = [os.path.join(SRC, "head.html")]
+    for block in page["blocks"]:
+        sources.append(os.path.join(RAW, block + ".html"))
+        sources.append(os.path.join("content", block + ".json"))
+
+    dates = []
+    for src in sources:
+        if not os.path.exists(src):
+            continue
+        try:
+            out = subprocess.run(
+                ["git", "log", "-1", "--format=%cI", "--", src],
+                capture_output=True, text=True, timeout=10)
+        except (OSError, subprocess.SubprocessError):
+            return None
+        if out.returncode == 0 and out.stdout.strip():
+            dates.append(out.stdout.strip())
+
+    return max(dates) if dates else None
+
+
 def write_seo_files():
     """robots.txt dan sitemap.xml ikut BASE, jadi tidak ketinggalan saat
     pindah domain — dulu keduanya berkas statis yang mudah terlupakan."""
@@ -333,8 +394,13 @@ def write_seo_files():
         fh.write("User-agent: *\nDisallow: /admin\nDisallow: /api\n\n"
                  "Sitemap: %s/sitemap.xml\n" % BASE)
 
-    urls = "".join("  <url>\n    <loc>%s%s</loc>\n  </url>\n" % (BASE, p or "/")
-                   for p in PATHS)
+    urls = ""
+    for p in PATHS:
+        urls += "  <url>\n    <loc>%s%s</loc>\n" % (BASE, p or "/")
+        stamp = last_changed(p)
+        if stamp:
+            urls += "    <lastmod>%s</lastmod>\n" % stamp
+        urls += "  </url>\n"
     with open("sitemap.xml", "w") as fh:
         fh.write('<?xml version="1.0" encoding="UTF-8"?>\n'
                  '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
