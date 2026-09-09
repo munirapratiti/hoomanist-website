@@ -762,7 +762,7 @@ collections:
             label: "Teks pendek 2"
             widget: string
             required: false
-            hint: "10–20"
+            hint: "50+"
           - name: "creative_roles_placed"
             label: "Teks pendek 3"
             widget: string
@@ -772,7 +772,7 @@ collections:
             label: "Paragraf"
             widget: string
             required: false
-            hint: "Across agencies and in-house teams since 2023."
+            hint: "Freelance and in-house, for agencies and brands since 2023."
           - name: "3_wks"
             label: "Teks pendek 4"
             widget: string
@@ -807,29 +807,24 @@ collections:
             label: "Teks pendek 8"
             widget: string
             required: false
-            hint: "3 +  ⚠️ berisi tag HTML — biarkan utuh"
+            hint: "3 yrs"
           - name: "teams_amp_brands_supported"
             label: "Teks pendek 9"
             widget: string
             required: false
-            hint: "Teams &amp; brands supported"
+            hint: "Longest client partnership"
           - name: "recruitment_performance_and_culture_work"
             label: "Paragraf 4"
             widget: string
             required: false
-            hint: "Recruitment, performance and culture work combined."
-          - name: "approximate_ranges_based_on_engagements_"
-            label: "Teks pendek 10"
-            widget: text
-            required: false
-            hint: "Approximate ranges based on engagements to date — to be refined with e…"
+            hint: "By.U — from urgent hiring to development work, still running."
           - name: "case_study_by_u"
-            label: "Teks pendek 11"
+            label: "Teks pendek 10"
             widget: string
             required: false
             hint: "Case Study · By.U"
           - name: "client_since_2023"
-            label: "Teks pendek 12"
+            label: "Teks pendek 11"
             widget: string
             required: false
             hint: "Client since 2023"
@@ -844,12 +839,12 @@ collections:
             required: false
             hint: "By.U needed fifteen-plus creative roles filled urgently — the kind of …"
           - name: "phase_1_2025"
-            label: "Teks pendek 13"
+            label: "Teks pendek 12"
             widget: string
             required: false
             hint: "Phase 1 · 2025"
           - name: "urgent_recruitment"
-            label: "Teks pendek 14"
+            label: "Teks pendek 13"
             widget: string
             required: false
             hint: "Urgent Recruitment"
@@ -859,12 +854,12 @@ collections:
             required: false
             hint: "15+ creative roles sourced, screened and placed in 3 weeks."
           - name: "phase_2_ongoing"
-            label: "Teks pendek 15"
+            label: "Teks pendek 14"
             widget: string
             required: false
             hint: "Phase 2 · Ongoing"
           - name: "review_amp_development"
-            label: "Teks pendek 16"
+            label: "Teks pendek 15"
             widget: string
             required: false
             hint: "Review &amp; Development"
@@ -879,12 +874,12 @@ collections:
             required: false
             hint: "The team from Hoomanist has been exceptional — creative, capable, and …"
           - name: "doni_marketing_team_by_u"
-            label: "Teks pendek 17"
+            label: "Teks pendek 16"
             widget: string
             required: false
             hint: "— Doni, Marketing Team, By.U"
           - name: "client_since_2023_quoted_with_permission"
-            label: "Teks pendek 18"
+            label: "Teks pendek 17"
             widget: string
             required: false
             hint: "Client since 2023, quoted with permission."
