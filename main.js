@@ -41,6 +41,36 @@
     }
   }
 
+  /* ---- lapor konversi ke platform iklan ---------------------------------
+     Dipanggil hanya saat pesan benar-benar terkirim, bukan saat halaman
+     dibuka. Ini bedanya lead yang terhitung dengan kunjungan yang terhitung —
+     kalau tag dipasang di halaman, Google akan mengira setiap pengunjung
+     adalah lead dan mengoptimalkan ke arah yang salah.
+
+     Aman dipanggil sebelum tag apa pun terpasang: kalau gtag/fbq belum ada,
+     fungsi ini tidak melakukan apa-apa dan tidak melempar error. */
+  var ADS_CONVERSION_LABEL = '';   // isi: 'AW-XXXXXXXXX/AbCdEfGhIj'
+
+  function reportLead(via) {
+    try {
+      if (typeof window.gtag === 'function') {
+        // Peristiwa untuk GA4 — terbaca walau konversi iklan belum disetel.
+        window.gtag('event', 'generate_lead', {
+          method: via,
+          form_id: 'contact-form',
+        });
+        if (ADS_CONVERSION_LABEL) {
+          window.gtag('event', 'conversion', { send_to: ADS_CONVERSION_LABEL });
+        }
+      }
+      if (typeof window.fbq === 'function') {
+        window.fbq('track', 'Lead', { content_name: 'contact-form' });
+      }
+    } catch (e) {
+      // Pelaporan tidak boleh menggagalkan pengiriman pesan.
+    }
+  }
+
   /* ---- menu di layar sempit -------------------------------------------
      Di bawah 980px daftar tautan disembunyikan CSS dan hanya muncul saat
      tombol ditekan. Tanpa ini lima halaman tidak bisa dijangkau dari ponsel. */
@@ -202,6 +232,7 @@
           body: JSON.stringify(d),
         }).then(function (r) {
           if (!r.ok) throw new Error('gagal');
+          reportLead('form');
           showSent(false);
         }).catch(function () {
           // Jangan biarkan pesannya hilang: tawarkan jalur manual.
@@ -212,6 +243,7 @@
         return;
       }
 
+      reportLead('mailto');
       window.location.href = MAILTO + EMAIL +
         '?subject=' + encodeURIComponent(d.subject) +
         '&body=' + encodeURIComponent(body);

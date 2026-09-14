@@ -172,6 +172,17 @@ ANCHORS_ID = {
 }
 
 
+def asset_tag(path):
+    """Potongan sidik jari isi berkas, untuk ditempel di URL aset.
+
+    Tanpa ini browser memakai salinan lamanya setelah berkas diperbarui —
+    pengunjung lama bisa menjalankan JavaScript versi sebelumnya tanpa ada
+    yang menyadari."""
+    import hashlib
+    with open(path, "rb") as fh:
+        return hashlib.sha1(fh.read()).hexdigest()[:8]
+
+
 def read(path):
     with open(path) as fh:
         return fh.read()
@@ -424,6 +435,7 @@ def main():
                 .replace("{{TITLE}}", esc(page["title"]))
                 .replace("{{DESC}}", esc(page["desc"]))
                 .replace("{{SCHEMA}}", build_schema(page, body))
+                .replace("{{CSSV}}", asset_tag("styles.css"))
                 .replace("{{BASE}}", BASE)
                 # Beranda memakai garis miring agar canonical, og:url dan
                 # sitemap menuliskan URL yang sama persis. Sebelumnya
@@ -434,7 +446,8 @@ def main():
                 .replace("{{PATH}}", "/" if page["path"] == "/" else page["path"]))
 
         html += build_nav(page["path"], lang, alt) + "\n" + body + "\n\n" + footer
-        html += '\n\n</div>\n<script src="/main.js" defer></script>\n</body>\n</html>\n'
+        html += ('\n\n</div>\n<script src="/main.js?v=%s" defer></script>'
+                 '\n</body>\n</html>\n' % asset_tag("main.js"))
 
         out = page["out"]
         os.makedirs(os.path.dirname(out) or ".", exist_ok=True)
