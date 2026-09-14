@@ -105,7 +105,7 @@ PAGES = [
 
 PAGES += [
     {
-        "path": "/id/",
+        "path": "/id",
         "out": "id/index.html",
         "lang": "id",
         "title": "Jasa Rekrutmen Kreatif di Indonesia | Hoomanist",
@@ -154,14 +154,14 @@ ANCHORS = {
 # Padanan halaman antar bahasa. Dipakai untuk hreflang dan tombol pindah
 # bahasa; halaman yang tidak ada di sini berarti belum punya padanan.
 ALT = {
-    "/": "/id/",
+    "/": "/id",
     "/services": "/id/layanan",
     "/contact": "/id/kontak",
 }
 ALT.update({v: k for k, v in ALT.items()})
 
 ANCHORS_ID = {
-    "#top": "/id/",
+    "#top": "/id",
     "#contact": "/id/kontak",
     "#services": "/id/layanan",
     "#pricing": "/id/layanan#pricing",
@@ -234,7 +234,7 @@ def build_nav(current, lang="en", alt=None):
     for label, url in (NAV_ID if lang == "id" else NAV):
         cls = "navlink active" if url == current else "navlink"
         links.append('<a href="%s" class="%s">%s</a>' % (url, cls, label))
-    home = "/id/" if lang == "id" else "/"
+    home = "/id" if lang == "id" else "/"
     cta_url = "/id/kontak" if lang == "id" else "/contact"
     cta_label = "Mulai obrolan" if lang == "id" else "Let&#39;s talk"
 
@@ -397,7 +397,7 @@ def hreflang_tags(path):
     alt = ALT.get(path)
     if not alt:
         return ""
-    en, id_ = (path, alt) if not path.startswith("/id/") else (alt, path)
+    en, id_ = (path, alt) if not path.startswith("/id") else (alt, path)
     return (
         '\n<link rel="alternate" hreflang="en" href="%s%s">'
         '\n<link rel="alternate" hreflang="id" href="%s%s">'

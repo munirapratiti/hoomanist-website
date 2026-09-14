@@ -8,4 +8,4 @@ satu baris di berkas ini.
 BASE = "https://hoomanist.id"
 
 PATHS = ["", "/services", "/why-us", "/proof", "/for-creatives", "/faq", "/contact",
-         "/id/", "/id/layanan", "/id/kontak"]
+         "/id", "/id/layanan", "/id/kontak"]
