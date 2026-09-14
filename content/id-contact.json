@@ -1,0 +1,13 @@
+{
+  "let_s_talk": "<span style=\"display:inline-block;width:7px;height:7px;border-radius:50%;background:#EE7E52;margin-right:9px;vertical-align:middle;\"></span>Mari Bicara",
+  "let_s_build_better_ways_of_working": "Mari bangun cara kerja yang lebih baik.",
+  "tell_us_where_your_business_is_today_and": "Ceritakan kondisi bisnis Anda sekarang dan apa yang terasa mengganjal di dalam tim. Obrolan awal selalu jadi langkah pertama yang paling masuk akal.",
+  "your_name": "Nama Anda",
+  "company": "Perusahaan",
+  "what_s_on_your_mind": "Apa yang ingin Anda sampaikan?",
+  "send_message": "Kirim pesan",
+  "opening_your_email": "Membuka aplikasi email Anda…",
+  "your_message_should_pop_up_in_your_email": "Pesan Anda seharusnya terbuka di aplikasi email, tinggal dikirim. Kalau tidak terbuka, silakan kirim langsung ke <strong style=\"color:#3B2145;\"><span class=\"js-email\"></span></strong> — kami akan segera membalas.",
+  "fallback_note": "Kalau aplikasi email Anda tidak terbuka, salin pesan di bawah ini dan kirim ke",
+  "copy_message": "Salin pesan"
+}

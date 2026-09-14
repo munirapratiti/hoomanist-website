@@ -30,6 +30,17 @@ SECTIONS = [
     ("faq",        "FAQ"),
     ("contact",    "Contact"),
     ("_footer12",  "Footer"),
+
+    # Versi Indonesia. Label meta-nya dipinjam dari berkas Inggris karena
+    # nama ruasnya identik — hanya isinya yang berbeda.
+    ("id-top",       "🇮🇩 Beranda — Bagian atas"),
+    ("id-_section2", "🇮🇩 Beranda — Klien & partner"),
+    ("id-_section3", "🇮🇩 Beranda — Kenapa ini penting"),
+    ("id-home-cta",  "🇮🇩 Beranda — Ajakan hubungi"),
+    ("id-services",  "🇮🇩 Layanan"),
+    ("id-pricing",   "🇮🇩 Layanan — Harga"),
+    ("id-contact",   "🇮🇩 Kontak"),
+    ("id-_footer12", "🇮🇩 Footer"),
 ]
 
 
@@ -103,7 +114,11 @@ def main():
     ]
 
     for stem, label in SECTIONS:
-        meta_path = f"content/_meta/{stem}.json"
+        # Ruas versi Indonesia memakai nama yang sama dengan versi Inggris,
+        # jadi label dan jenis tag-nya dipinjam dari meta Inggris — tidak
+        # perlu berkas meta terpisah yang harus dijaga tetap sinkron.
+        meta_stem = stem[3:] if stem.startswith("id-") else stem
+        meta_path = f"content/_meta/{meta_stem}.json"
         val_path = f"content/{stem}.json"
         if not os.path.exists(meta_path):
             continue

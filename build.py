@@ -29,6 +29,14 @@ NAV = [
     ("FAQ", "/faq"),
 ]
 
+# Menu versi Indonesia. Baru tiga halaman yang diterjemahkan; sisanya sengaja
+# tidak ditautkan supaya pengunjung tidak terlempar ke halaman berbahasa
+# Inggris di tengah alur.
+NAV_ID = [
+    ("Layanan", "/id/layanan"),
+    ("Kontak", "/id/kontak"),
+]
+
 # Each page: output path, <title>, meta description, and the raw blocks it is
 # built from (in order).
 PAGES = [
@@ -95,6 +103,38 @@ PAGES = [
     },
 ]
 
+PAGES += [
+    {
+        "path": "/id/",
+        "out": "id/index.html",
+        "lang": "id",
+        "title": "Jasa Rekrutmen Kreatif di Indonesia | Hoomanist",
+        "desc": "Hoomanist membantu agensi dan brand di Indonesia merekrut, "
+                "mengembangkan, dan mempertahankan talenta kreatif — desainer, "
+                "copywriter, video editor, dan social media specialist.",
+        "blocks": ["top", "_section2", "_section3", "home-cta"],
+    },
+    {
+        "path": "/id/layanan",
+        "out": "id/layanan/index.html",
+        "lang": "id",
+        "title": "Jasa Rekrutmen Kreatif & Sistem SDM | Hoomanist",
+        "desc": "Rekrutmen talenta kreatif, pengembangan karier, dan sistem "
+                "penilaian kinerja untuk agensi dan brand di Indonesia. "
+                "Dengan garansi 90 hari.",
+        "blocks": ["services", "pricing"],
+    },
+    {
+        "path": "/id/kontak",
+        "out": "id/kontak/index.html",
+        "lang": "id",
+        "title": "Hubungi Kami | Hoomanist",
+        "desc": "Ceritakan kebutuhan tim kreatif Anda. Obrolan awal tanpa "
+                "biaya untuk memetakan kebutuhan rekrutmen atau sistem SDM.",
+        "blocks": ["contact"],
+    },
+]
+
 # The single-page anchors become real page URLs.
 ANCHORS = {
     "#top": "/",
@@ -108,24 +148,60 @@ ANCHORS = {
 }
 
 
+# Dua kartu di hero menunjuk halaman yang belum ada versi Indonesianya, jadi
+# diarahkan ke halaman Indonesia terdekat yang maknanya masih cocok — teks
+# kartunya ditulis menyesuaikan tujuan itu, bukan sebaliknya.
+# Padanan halaman antar bahasa. Dipakai untuk hreflang dan tombol pindah
+# bahasa; halaman yang tidak ada di sini berarti belum punya padanan.
+ALT = {
+    "/": "/id/",
+    "/services": "/id/layanan",
+    "/contact": "/id/kontak",
+}
+ALT.update({v: k for k, v in ALT.items()})
+
+ANCHORS_ID = {
+    "#top": "/id/",
+    "#contact": "/id/kontak",
+    "#services": "/id/layanan",
+    "#pricing": "/id/layanan#pricing",
+    "#why": "/id/layanan",
+    "#proof": "/id/layanan",
+    "#creatives": "/id/kontak",
+    "#faq": "/id/layanan",
+}
+
+
 def read(path):
     with open(path) as fh:
         return fh.read()
 
 
-def load_content(stem):
-    """Wording for a section, split out so the CMS can edit it."""
-    path = os.path.join("content", stem + ".json")
+def _read_json(path):
     if not os.path.exists(path):
         return {}
     with open(path) as fh:
         return json.load(fh)
 
 
-def render_block(stem):
+def load_content(stem, lang="en"):
+    """Wording for a section, split out so the CMS can edit it.
+
+    Versi non-Inggris menimpa teks Inggris ruas demi ruas, jadi ruas yang
+    belum diterjemahkan tetap tampil dalam bahasa Inggris alih-alih hilang
+    atau memunculkan placeholder mentah.
+    """
+    fields = _read_json(os.path.join("content", stem + ".json"))
+    if lang != "en":
+        fields = dict(fields, **_read_json(
+            os.path.join("content", "%s-%s.json" % (lang, stem))))
+    return fields
+
+
+def render_block(stem, lang="en"):
     """Section markup with its {{placeholders}} filled from content/."""
     html = clean(read(os.path.join(RAW, stem + ".html")))
-    fields = load_content(stem)
+    fields = load_content(stem, lang)
 
     def sub(m):
         field = fields.get(m.group(1))
@@ -141,23 +217,39 @@ def clean(block):
     return re.sub(r'\s*<!--[^>]*-->\s*$', '\n', block).rstrip()
 
 
-def rewrite_links(html):
+def rewrite_links(html, lang="en"):
     """Anchors to page URLs, and relative asset paths to absolute ones.
 
     Relative "assets/..." would resolve against /services/ on a subpage and
     404, so every asset reference has to be rooted.
     """
-    for anchor, url in ANCHORS.items():
+    for anchor, url in (ANCHORS_ID if lang == "id" else ANCHORS).items():
         html = html.replace('href="%s"' % anchor, 'href="%s"' % url)
     html = html.replace('src="assets/', 'src="/assets/')
     return html
 
 
-def build_nav(current):
+def build_nav(current, lang="en", alt=None):
     links = []
-    for label, url in NAV:
+    for label, url in (NAV_ID if lang == "id" else NAV):
         cls = "navlink active" if url == current else "navlink"
         links.append('<a href="%s" class="%s">%s</a>' % (url, cls, label))
+    home = "/id/" if lang == "id" else "/"
+    cta_url = "/id/kontak" if lang == "id" else "/contact"
+    cta_label = "Mulai obrolan" if lang == "id" else "Let&#39;s talk"
+
+    # Tombol pindah bahasa hanya muncul kalau halaman padanannya benar-benar
+    # ada. Menautkan ke halaman yang belum diterjemahkan hanya menghasilkan 404.
+    switcher = ""
+    if alt:
+        other = "EN" if lang == "id" else "ID"
+        switcher = (
+            '<a href="%s" hreflang="%s" class="langswitch" '
+            'style="font-size:14px;font-weight:600;letter-spacing:0.04em;'
+            'color:#5C6473;border:1px solid #E5DCC8;border-radius:999px;'
+            'padding:7px 13px;">%s</a>'
+            % (alt, "en" if lang == "id" else "id", other))
+
     return (
         '<nav style="position:sticky;top:0;z-index:50;'
         'background:rgba(246,242,232,0.86);backdrop-filter:blur(10px);'
@@ -165,7 +257,7 @@ def build_nav(current):
         '    <div class="pad-x" style="max-width:1180px;margin:0 auto;'
         'padding:0 40px;height:76px;display:flex;align-items:center;'
         'justify-content:space-between;">\n'
-        '      <a href="/" style="display:flex;align-items:center;gap:12px;">'
+        '      <a href="%s" style="display:flex;align-items:center;gap:12px;">' % home +
         '<img src="/assets/logo-icon.png" alt="Hoomanist" '
         'style="height:44px;width:44px;display:block;object-fit:contain;">'
         '<span style="font-size:23px;font-weight:700;letter-spacing:-0.02em;'
@@ -176,10 +268,11 @@ def build_nav(current):
         + "\n        ".join(links) +
         '\n      </div>\n'
         '      <div style="display:flex;align-items:center;gap:12px;">\n'
-        '        <a href="/contact" class="btn-primary" '
+        '        %s\n' % switcher +
+        '        <a href="%s" class="btn-primary" '
         'style="background:#3B2145;color:#F6F2E8;font-size:16px;'
-        'font-weight:600;padding:13px 26px;border-radius:999px;">'
-        "Let's talk</a>\n"
+        'font-weight:600;padding:13px 26px;border-radius:999px;">%s</a>\n'
+        % (cta_url, cta_label) +
         '        <button type="button" class="nav-toggle" aria-expanded="false" '
         'aria-controls="nav-links" aria-label="Buka menu navigasi">'
         '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" '
@@ -191,9 +284,9 @@ def build_nav(current):
     )
 
 
-def build_footer():
-    footer = render_block("_footer12")
-    footer = rewrite_links(footer)
+def build_footer(lang="en"):
+    footer = render_block("_footer12", lang)
+    footer = rewrite_links(footer, lang)
     # The footer's "Explore" column still lists the old duplicate menu.
     footer = footer.replace(
         '<a href="/services" class="navlink">What We Do</a>\n          ', '')
@@ -298,13 +391,30 @@ def build_schema(page, body):
     return '<script type="application/ld+json">\n%s\n</script>' % payload
 
 
+def hreflang_tags(path):
+    """Tautan antar-bahasa. Hanya dipasang kalau padanannya memang ada —
+    hreflang ke URL yang tidak ada justru dibaca Google sebagai kesalahan."""
+    alt = ALT.get(path)
+    if not alt:
+        return ""
+    en, id_ = (path, alt) if not path.startswith("/id/") else (alt, path)
+    return (
+        '\n<link rel="alternate" hreflang="en" href="%s%s">'
+        '\n<link rel="alternate" hreflang="id" href="%s%s">'
+        '\n<link rel="alternate" hreflang="x-default" href="%s%s">'
+        % (BASE, en, BASE, id_, BASE, en))
+
+
 def main():
     head_tpl = read(os.path.join(SRC, "head.html"))
-    footer = build_footer()
+    footers = {"en": build_footer("en"), "id": build_footer("id")}
 
     for page in PAGES:
+        lang = page.get("lang", "en")
+        footer = footers[lang]
+        alt = ALT.get(page["path"])
         body = "\n\n".join(
-            rewrite_links(render_block(b)) for b in page["blocks"])
+            rewrite_links(render_block(b, lang), lang) for b in page["blocks"])
 
         html = (head_tpl
                 .replace("{{BUILT}}", datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"))
@@ -319,9 +429,11 @@ def main():
                 # sitemap menuliskan URL yang sama persis. Sebelumnya
                 # canonical menulis tanpa garis miring sementara sitemap
                 # dengan — dua ejaan untuk satu halaman.
+                .replace("{{LANG}}", lang)
+                .replace("{{HREFLANG}}", hreflang_tags(page["path"]))
                 .replace("{{PATH}}", "/" if page["path"] == "/" else page["path"]))
 
-        html += build_nav(page["path"]) + "\n" + body + "\n\n" + footer
+        html += build_nav(page["path"], lang, alt) + "\n" + body + "\n\n" + footer
         html += '\n\n</div>\n<script src="/main.js" defer></script>\n</body>\n</html>\n'
 
         out = page["out"]

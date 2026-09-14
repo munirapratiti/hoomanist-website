@@ -1208,3 +1208,516 @@ collections:
             widget: text
             required: false
             hint: "© 2026 Hoomanist. All rights reserved. People. &nbsp;Presence. &nbsp;P…  ⚠️ berisi tag HTML — biarkan utuh"
+      - name: id-top
+        label: "🇮🇩 Beranda — Bagian atas"
+        file: content/id-top.json
+        format: json
+        fields:
+          - name: "where_creative_people_belong"
+            label: "Teks pendek"
+            widget: text
+            required: false
+            hint: "Tempat Talenta Kreatif Berkembang  ⚠️ berisi tag HTML — biarkan utuh"
+          - name: "creative_people_placed_with_purpose"
+            label: "Judul utama"
+            widget: text
+            required: false
+            hint: "Talenta kreatif. Ditempatkan dengan tepat.  ⚠️ berisi tag HTML — biarkan utuh"
+          - name: "a_people_partner_for_agencies_and_brands"
+            label: "Paragraf"
+            widget: text
+            required: false
+            hint: "Partner SDM untuk agensi dan brand yang memperlakukan timnya sebagai b…"
+          - name: "3"
+            label: "Teks pendek 2"
+            widget: string
+            required: false
+            hint: "3+"
+          - name: "years_active"
+            label: "Teks pendek 3"
+            widget: string
+            required: false
+            hint: "Tahun berjalan"
+          - name: "10_20"
+            label: "Teks pendek 4"
+            widget: string
+            required: false
+            hint: "65+"
+          - name: "roles_placed"
+            label: "Teks pendek 5"
+            widget: string
+            required: false
+            hint: "Peran terisi"
+          - name: "90"
+            label: "Teks pendek 6"
+            widget: string
+            required: false
+            hint: "90"
+          - name: "day_guarantee"
+            label: "Teks pendek 7"
+            widget: string
+            required: false
+            hint: "Hari garansi"
+          - name: "is_hoomanist_right_for_you_see_if_you_re"
+            label: "Tautan"
+            widget: text
+            required: false
+            hint: "Apa yang kami kerjakan Lihat layanan kami →  ⚠️ berisi tag HTML — biarkan utuh"
+          - name: "for_creatives_find_your_next_role"
+            label: "Tautan 2"
+            widget: text
+            required: false
+            hint: "Untuk Talenta Kreatif Kirim portofoliomu →  ⚠️ berisi tag HTML — biarkan utuh"
+          - name: "start_a_conversation"
+            label: "Tautan 3"
+            widget: string
+            required: false
+            hint: "Mulai obrolan"
+          - name: "good_people_great_work"
+            label: "Teks pendek 8"
+            widget: string
+            required: false
+          - name: "people_presence_purpose"
+            label: "Teks pendek 9"
+            widget: text
+            required: false
+            hint: "Manusia. Kehadiran. Tujuan.  ⚠️ berisi tag HTML — biarkan utuh"
+          - name: "the_three_things_we_build_every_engageme"
+            label: "Teks pendek 10"
+            widget: string
+            required: false
+            hint: "Tiga hal yang jadi dasar setiap kerja sama kami."
+      - name: id-_section2
+        label: "🇮🇩 Beranda — Klien & partner"
+        file: content/id-_section2.json
+        format: json
+        fields:
+          - name: "clients_amp_partners_small_but_real_and_"
+            label: "Teks pendek"
+            widget: text
+            required: false
+            hint: "Klien &amp; partner masih sedikit, tapi nyata — dan terus bertambah.  ⚠️ berisi tag HTML — biarkan utuh"
+          - name: "every_hire_since_2022_plus_culture_and_r"
+            label: "Teks pendek 2"
+            widget: string
+            required: false
+            hint: "Seluruh rekrutmen sejak 2022, plus budaya kerja dan evaluasi"
+          - name: "partner_brand_and_creative_team_support"
+            label: "Teks pendek 3"
+            widget: string
+            required: false
+            hint: "Partner — dukungan brand dan tim kreatif"
+          - name: "partner_creative_people_partnership"
+            label: "Teks pendek 4"
+            widget: string
+            required: false
+            hint: "Partner — kemitraan talenta kreatif"
+          - name: "creative_recruitment_and_team_developmen"
+            label: "Teks pendek 5"
+            widget: string
+            required: false
+            hint: "Rekrutmen kreatif dan pengembangan tim · Sejak 2023"
+      - name: id-_section3
+        label: "🇮🇩 Beranda — Kenapa ini penting"
+        file: content/id-_section3.json
+        format: json
+        fields:
+          - name: "why_it_matters"
+            label: "Teks pendek"
+            widget: text
+            required: false
+            hint: "Kenapa Ini Penting  ⚠️ berisi tag HTML — biarkan utuh"
+          - name: "a_wrong_hire_isn_t_an_hr_problem_it_s_a_"
+            label: "Judul"
+            widget: string
+            required: false
+            hint: "Salah rekrut bukan masalah HR. Itu masalah bisnis."
+          - name: "when_a_creative_hire_doesn_t_fit_the_cos"
+            label: "Paragraf"
+            widget: text
+            required: false
+            hint: "Ketika satu rekrutan kreatif tidak cocok, biayanya muncul di mana-mana…"
+          - name: "68"
+            label: "Teks pendek 2"
+            widget: string
+            required: false
+          - name: "of_creative_hires_leave_within_18_months"
+            label: "Paragraf 2"
+            widget: string
+            required: false
+            hint: "rekrutan kreatif keluar dalam 18 bulan karena ketidakcocokan."
+          - name: "3_5"
+            label: "Teks pendek 3"
+            widget: string
+            required: false
+          - name: "annual_salary_lost_replacing_the_wrong_h"
+            label: "Paragraf 3"
+            widget: string
+            required: false
+            hint: "gaji setahun hilang untuk mengganti orang yang salah."
+      - name: id-home-cta
+        label: "🇮🇩 Beranda — Ajakan hubungi"
+        file: content/id-home-cta.json
+        format: json
+        fields:
+          - name: "let_s_talk"
+            label: "Teks pendek"
+            widget: text
+            required: false
+            hint: "Mari Bicara  ⚠️ berisi tag HTML — biarkan utuh"
+          - name: "let_s_build_better_ways_of_working"
+            label: "Judul"
+            widget: string
+            required: false
+            hint: "Mari bangun cara kerja yang lebih baik."
+          - name: "tell_us_where_your_business_is_today_and"
+            label: "Paragraf"
+            widget: text
+            required: false
+            hint: "Ceritakan kondisi bisnis Anda sekarang dan apa yang terasa mengganjal …"
+          - name: "start_a_conversation"
+            label: "Tautan"
+            widget: string
+            required: false
+            hint: "Mulai obrolan →"
+      - name: id-services
+        label: "🇮🇩 Layanan"
+        file: content/id-services.json
+        format: json
+        fields:
+          - name: "what_we_do"
+            label: "Teks pendek"
+            widget: text
+            required: false
+            hint: "Layanan Kami  ⚠️ berisi tag HTML — biarkan utuh"
+          - name: "most_teams_start_with_a_hire_the_good_on"
+            label: "Judul"
+            widget: text
+            required: false
+            hint: "Kebanyakan tim mulai dari satu rekrutan. Yang bertahan, mulai dari sis…"
+          - name: "businesses_hired_for_skill_but_struggled"
+            label: "Paragraf"
+            widget: text
+            required: false
+            hint: "Banyak bisnis merekrut berdasarkan keahlian, lalu tersandung soal keco…"
+          - name: "01"
+            label: "Teks pendek 2"
+            widget: string
+            required: false
+          - name: "creative_recruitment_start_here_hiring_p"
+            label: "Teks pendek 3"
+            widget: text
+            required: false
+            hint: "Rekrutmen Kreatif — mulai di sini Merekrut orang yang cocok dengan per…  ⚠️ berisi tag HTML — biarkan utuh"
+          - name: "from_brief_to_belonging_end_to_end_recru"
+            label: "Paragraf 2"
+            widget: text
+            required: false
+            hint: "Dari brief sampai benar-benar menyatu dengan tim. Rekrutmen menyeluruh…"
+          - name: "culture_fit_assessment_portfolio_review_"
+            label: "Teks pendek 4"
+            widget: text
+            required: false
+            hint: "Asesmen kecocokan budaya Tinjauan portofolio Pendampingan wawancara Pe…  ⚠️ berisi tag HTML — biarkan utuh"
+          - name: "from_brief_to_belonging_8_steps"
+            label: "Teks pendek 5"
+            widget: string
+            required: false
+            hint: "Dari brief sampai menyatu — 8 langkah"
+          - name: "01_nbsp_discover_02_nbsp_source_03_nbsp_"
+            label: "Teks pendek 6"
+            widget: text
+            required: false
+            hint: "01 &nbsp;Pemetaan 02 &nbsp;Pencarian 03 &nbsp;Penilaian 04 Wawancara K…  ⚠️ berisi tag HTML — biarkan utuh"
+          - name: "a_dedicated_fit_interview_plus_reference"
+            label: "Paragraf 3"
+            widget: text
+            required: false
+            hint: "Wawancara kecocokan tersendiri plus pengecekan referensi — bagian inil…"
+          - name: "02"
+            label: "Teks pendek 7"
+            widget: string
+            required: false
+          - name: "people_growth_helping_people_grow_with_c"
+            label: "Teks pendek 8"
+            widget: text
+            required: false
+            hint: "Pengembangan Orang Membantu orang berkembang dengan arah yang jelas, b…  ⚠️ berisi tag HTML — biarkan utuh"
+          - name: "career_path_frameworks_so_people_know_wh"
+            label: "Paragraf 4"
+            widget: text
+            required: false
+            hint: "Kerangka jenjang karier supaya orang tahu arahnya ke mana, lokakarya k…"
+          - name: "career_paths_skill_workshops_leadership_"
+            label: "Teks pendek 9"
+            widget: text
+            required: false
+            hint: "Jenjang karier Lokakarya keterampilan Pengembangan kepemimpinan  ⚠️ berisi tag HTML — biarkan utuh"
+          - name: "track_a"
+            label: "Teks pendek 10"
+            widget: string
+            required: false
+            hint: "Jalur A"
+          - name: "career_path_framework"
+            label: "Teks pendek 11"
+            widget: string
+            required: false
+            hint: "Kerangka Jenjang Karier"
+          - name: "more_than_titles_a_clear_sense_of_where_"
+            label: "Paragraf 5"
+            widget: string
+            required: false
+            hint: "Lebih dari sekadar jabatan — kejelasan arah yang dituju."
+          - name: "track_b"
+            label: "Teks pendek 12"
+            widget: string
+            required: false
+            hint: "Jalur B"
+          - name: "skill_building_workshops"
+            label: "Teks pendek 13"
+            widget: string
+            required: false
+            hint: "Lokakarya Peningkatan Keterampilan"
+          - name: "learning_that_changes_behaviour_not_just"
+            label: "Paragraf 6"
+            widget: string
+            required: false
+            hint: "Pembelajaran yang mengubah cara kerja — bukan sekadar mengisi slide."
+          - name: "track_c"
+            label: "Teks pendek 14"
+            widget: string
+            required: false
+            hint: "Jalur C"
+          - name: "leadership_development"
+            label: "Teks pendek 15"
+            widget: string
+            required: false
+            hint: "Pengembangan Kepemimpinan"
+          - name: "great_creatives_don_t_automatically_beco"
+            label: "Paragraf 7"
+            widget: string
+            required: false
+            hint: "Talenta kreatif yang hebat tidak otomatis jadi pemimpin yang hebat."
+          - name: "03"
+            label: "Teks pendek 16"
+            widget: string
+            required: false
+          - name: "performance_amp_alignment_performance_sy"
+            label: "Teks pendek 17"
+            widget: text
+            required: false
+            hint: "Kinerja &amp; Keselarasan Sistem penilaian kinerja yang dirancang untu…  ⚠️ berisi tag HTML — biarkan utuh"
+          - name: "most_creative_kpis_are_borrowed_broken_o"
+            label: "Paragraf 8"
+            widget: text
+            required: false
+            hint: "Kebanyakan KPI tim kreatif itu hasil contekan, tidak jalan, atau mengu…"
+          - name: "kpi_design_kpi_audit_calibration_rollout"
+            label: "Teks pendek 18"
+            widget: text
+            required: false
+            hint: "Perancangan KPI Audit KPI Kalibrasi Pendampingan penerapan  ⚠️ berisi tag HTML — biarkan utuh"
+          - name: "mode_a_nbsp_kpi_design_mode_b_nbsp_kpi_a"
+            label: "Teks pendek 19"
+            widget: text
+            required: false
+            hint: "Mode A &nbsp;· Perancangan KPI Mode B &nbsp;· Audit KPI  ⚠️ berisi tag HTML — biarkan utuh"
+          - name: "week_1"
+            label: "Teks pendek 20"
+            widget: string
+            required: false
+            hint: "Minggu 1"
+          - name: "discovery"
+            label: "Teks pendek 21"
+            widget: string
+            required: false
+            hint: "Pemetaany"
+          - name: "week_2_3"
+            label: "Teks pendek 22"
+            widget: string
+            required: false
+            hint: "Minggu 2–3"
+          - name: "design"
+            label: "Teks pendek 23"
+            widget: string
+            required: false
+            hint: "Perancangan"
+          - name: "week_4"
+            label: "Teks pendek 24"
+            widget: string
+            required: false
+            hint: "Minggu 4"
+          - name: "calibration"
+            label: "Teks pendek 25"
+            widget: string
+            required: false
+            hint: "Kalibrasi"
+          - name: "week_5_8"
+            label: "Teks pendek 26"
+            widget: string
+            required: false
+            hint: "Minggu 5–8"
+          - name: "rollout"
+            label: "Teks pendek 27"
+            widget: string
+            required: false
+            hint: "Penerapan"
+          - name: "svc_photo_alt"
+            label: "Teks"
+            widget: text
+            required: false
+            hint: "Seorang direktur kreatif meninjau mood board dan cetakan portofolio be…"
+      - name: id-pricing
+        label: "🇮🇩 Layanan — Harga"
+        file: content/id-pricing.json
+        format: json
+        fields:
+          - name: "pricing"
+            label: "Teks pendek"
+            widget: text
+            required: false
+            hint: "Harga  ⚠️ berisi tag HTML — biarkan utuh"
+          - name: "pricing_that_fits_the_work"
+            label: "Judul"
+            widget: string
+            required: false
+            hint: "Harga yang menyesuaikan lingkup kerjanya."
+          - name: "every_team_is_different_so_every_engagem"
+            label: "Paragraf"
+            widget: text
+            required: false
+            hint: "Setiap tim berbeda, jadi setiap kerja sama disusun sesuai kebutuhan An…"
+          - name: "contact_us_for_pricing"
+            label: "Tautan"
+            widget: string
+            required: false
+            hint: "Tanya harga ke kami"
+      - name: id-contact
+        label: "🇮🇩 Kontak"
+        file: content/id-contact.json
+        format: json
+        fields:
+          - name: "let_s_talk"
+            label: "Teks pendek"
+            widget: text
+            required: false
+            hint: "Mari Bicara  ⚠️ berisi tag HTML — biarkan utuh"
+          - name: "let_s_build_better_ways_of_working"
+            label: "Judul"
+            widget: string
+            required: false
+            hint: "Mari bangun cara kerja yang lebih baik."
+          - name: "tell_us_where_your_business_is_today_and"
+            label: "Paragraf"
+            widget: text
+            required: false
+            hint: "Ceritakan kondisi bisnis Anda sekarang dan apa yang terasa mengganjal …"
+          - name: "email"
+            label: "Tautan"
+            widget: string
+            required: false
+          - name: "instagram_hoomanist_id"
+            label: "Tautan 2"
+            widget: string
+            required: false
+          - name: "your_name"
+            label: "Label isian"
+            widget: string
+            required: false
+            hint: "Nama Anda"
+          - name: "company"
+            label: "Label isian 2"
+            widget: string
+            required: false
+            hint: "Perusahaan"
+          - name: "email_2"
+            label: "Label isian 3"
+            widget: string
+            required: false
+          - name: "what_s_on_your_mind"
+            label: "Label isian 4"
+            widget: string
+            required: false
+            hint: "Apa yang ingin Anda sampaikan?"
+          - name: "send_message"
+            label: "Tombol"
+            widget: string
+            required: false
+            hint: "Kirim pesan"
+          - name: "opening_your_email"
+            label: "Teks pendek 2"
+            widget: string
+            required: false
+            hint: "Membuka aplikasi email Anda…"
+          - name: "your_message_should_pop_up_in_your_email"
+            label: "Paragraf 2"
+            widget: text
+            required: false
+            hint: "Pesan Anda seharusnya terbuka di aplikasi email, tinggal dikirim. Kala…  ⚠️ berisi tag HTML — biarkan utuh"
+          - name: "fallback_note"
+            label: "Teks pendek 3"
+            widget: text
+            required: false
+            hint: "Kalau aplikasi email Anda tidak terbuka, salin pesan di bawah ini dan …"
+          - name: "copy_message"
+            label: "Tombol 2"
+            widget: string
+            required: false
+            hint: "Salin pesan"
+      - name: id-_footer12
+        label: "🇮🇩 Footer"
+        file: content/id-_footer12.json
+        format: json
+        fields:
+          - name: "hoomanist"
+            label: "Teks pendek"
+            widget: string
+            required: false
+          - name: "a_creative_workforce_partner_for_people_"
+            label: "Paragraf"
+            widget: text
+            required: false
+            hint: "Partner SDM kreatif. Untuk mereka yang berkarya. Tempat ide bertemu or…  ⚠️ berisi tag HTML — biarkan utuh"
+          - name: "good_people_great_work"
+            label: "Teks pendek 2"
+            widget: string
+            required: false
+          - name: "explore"
+            label: "Teks pendek 3"
+            widget: string
+            required: false
+            hint: "Jelajahi"
+          - name: "what_we_do"
+            label: "Tautan"
+            widget: string
+            required: false
+            hint: "Layanan Kami"
+          - name: "services"
+            label: "Tautan 2"
+            widget: string
+            required: false
+            hint: "Layanan"
+          - name: "proof"
+            label: "Tautan 3"
+            widget: string
+            required: false
+            hint: "Bukti"
+          - name: "pricing"
+            label: "Tautan 4"
+            widget: string
+            required: false
+            hint: "Harga"
+          - name: "connect"
+            label: "Teks pendek 4"
+            widget: string
+            required: false
+            hint: "Terhubung"
+          - name: "hoomanist_id"
+            label: "Tautan 5"
+            widget: string
+            required: false
+          - name: "2026_hoomanist_all_rights_reserved_peopl"
+            label: "Teks pendek 5"
+            widget: text
+            required: false
+            hint: "© 2026 Hoomanist. Seluruh hak cipta dilindungi. Manusia. &nbsp;Kehadir…  ⚠️ berisi tag HTML — biarkan utuh"
