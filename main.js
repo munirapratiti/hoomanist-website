@@ -49,7 +49,7 @@
 
      Aman dipanggil sebelum tag apa pun terpasang: kalau gtag/fbq belum ada,
      fungsi ini tidak melakukan apa-apa dan tidak melempar error. */
-  var ADS_CONVERSION_LABEL = '';   // isi: 'AW-XXXXXXXXX/AbCdEfGhIj'
+  var ADS_CONVERSION_LABEL = 'AW-18452142367/IUdiCNWxoPgcEJ-y1d5E';
 
   function reportLead(via) {
     try {
@@ -60,7 +60,11 @@
           form_id: 'contact-form',
         });
         if (ADS_CONVERSION_LABEL) {
-          window.gtag('event', 'conversion', { send_to: ADS_CONVERSION_LABEL });
+          window.gtag('event', 'conversion', {
+            send_to: ADS_CONVERSION_LABEL,
+            value: 1.0,
+            currency: 'IDR',
+          });
         }
       }
       if (typeof window.fbq === 'function') {
