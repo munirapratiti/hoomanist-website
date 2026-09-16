@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- built 2026-09-15T10:47:45Z -->
+<!-- built 2026-09-16T04:54:16Z -->
 <html lang="en">
 <head>
 <!-- Google tag (gtag.js) — dipakai reportLead() di main.js untuk melaporkan
@@ -37,7 +37,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/styles.css?v=a73eafaf">
+<link rel="stylesheet" href="/styles.css?v=4912126a">
 <noscript><style>.reveal{opacity:1 !important;transform:none !important;}</style></noscript>
 <script type="application/ld+json">
 {
@@ -89,7 +89,7 @@
           "name": "How long does a hire take?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Usually 4–8 weeks per role, from the first brief to a signed offer — with you involved at the moments that matter, not buried in CVs."
+            "text": "How long does a hire take? Usually 4–8 weeks per role, from the first brief to a signed offer — with you involved at the moments that matter, not buried in CVs."
           }
         },
         {
@@ -97,7 +97,7 @@
           "name": "What if the hire doesn't work out?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "If the candidate leaves, or both sides agree the fit isn't working within 90 days, we run a new search at no extra charge. It's built into every engagement, not a special add-on."
+            "text": "What if the hire doesn't work out? If the candidate leaves, or both sides agree the fit isn't working within 90 days, we run a new search at no extra charge. It's built into every engagement, not a special add-on."
           }
         },
         {
@@ -105,7 +105,7 @@
           "name": "When do you invoice?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Upon written confirmation the candidate has accepted the offer — not at placement. If they don't start, there's no fee."
+            "text": "When do you invoice? Upon written confirmation the candidate has accepted the offer — not at placement. If they don't start, there's no fee."
           }
         },
         {
@@ -113,7 +113,7 @@
           "name": "Do you work with small teams?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes — most of our work is with growing studios and lean in-house teams, from 5 people up. That's exactly where every people decision counts the most."
+            "text": "Do you work with small teams? Yes — most of our work is with growing studios and lean in-house teams, from 5 people up. That's exactly where every people decision counts the most."
           }
         },
         {
@@ -121,7 +121,7 @@
           "name": "Can we hire for multiple roles at once?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes — each role is its own engagement, and multi-role bundles (three or more roles at once) qualify for a bundled rate. We've staffed whole project teams this way too, including fifteen roles filled in three weeks."
+            "text": "Can we hire for multiple roles at once? Yes — each role is its own engagement, and multi-role bundles (three or more roles at once) qualify for a bundled rate. We've staffed whole project teams this way too, including fifteen roles filled in three weeks."
           }
         },
         {
@@ -129,7 +129,7 @@
           "name": "Are you remote or on-site?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "We work remotely with teams anywhere, and on-site when it helps. Wherever your team is, we plug into how you already work."
+            "text": "Are you remote or on-site? We work remotely with teams anywhere, and on-site when it helps. Wherever your team is, we plug into how you already work."
           }
         }
       ]
@@ -160,39 +160,95 @@
 
 <section id="faq" class="sec" style="padding:104px 0;">
     <div class="pad-x split" style="max-width:1180px;margin:0 auto;padding:0 40px;display:flex;gap:64px;align-items:flex-start;">
-      <div class="reveal" style="flex:none;width:380px;max-width:100%;">
+
+      <!-- Kolom kiri menempel saat digulir di layar lebar; di bawah 980px
+           .split menumpuk jadi satu kolom dan position:sticky tidak berpengaruh. -->
+      <div class="reveal" style="flex:none;width:380px;max-width:100%;position:sticky;top:110px;">
         <div style="font-size:15px;font-weight:600;letter-spacing:0.16em;text-transform:uppercase;color:#1E7A6A;"><span style="display:inline-block;width:7px;height:7px;border-radius:50%;background:#1E7A6A;margin-right:9px;vertical-align:middle;"></span>Questions</div>
         <h1 class="h2" style="font-size:42px;font-weight:700;line-height:1.06;letter-spacing:-0.02em;margin-top:16px;">Good questions,<br>honest answers.</h1>
         <p style="font-size:18px;line-height:1.6;color:#5C6473;margin-top:18px;">Still wondering something? <a href="/contact" style="color:#1E7A6A;font-weight:600;border-bottom:2px solid #1E7A6A;">Just ask us →</a></p>
       </div>
+
+      <!-- Tiap pertanyaan jadi kartu dengan lencana ikon, mengikuti gaya akordeon
+           di halaman /services supaya bahasa visualnya satu. Ikon hanya penanda
+           supaya daftar ini bisa dipindai, bukan dibaca dari atas ke bawah. -->
       <div class="reveal" style="flex:1;min-width:0;">
-        <details style="border-bottom:1px solid #E2D9C5;">
-          <summary class="acc" style="display:flex;align-items:center;justify-content:space-between;gap:20px;padding:24px 10px;font-size:21px;font-weight:600;color:#3B2145;border-radius:10px;">Do you only do recruitment?<svg class="chev" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3B2145" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg></summary>
-          <p style="font-size:18px;line-height:1.6;color:#5C6473;padding:0 10px 24px;">No. Recruitment is where many teams start with us, but we also build people growth, performance and culture systems — often for the same team as they scale.</p>
+
+        <details style="border:1px solid #E2D9C5;border-radius:18px;background:#FBF9F2;margin-bottom:12px;">
+          <summary class="acc" style="display:flex;align-items:center;gap:18px;padding:22px 26px;font-size:21px;font-weight:600;color:#3B2145;border-radius:18px;">
+            <span style="flex:none;width:40px;height:40px;border-radius:12px;background:#E4F0ED;display:flex;align-items:center;justify-content:center;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1E7A6A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1.5"></rect><rect x="14" y="3" width="7" height="7" rx="1.5"></rect><rect x="3" y="14" width="7" height="7" rx="1.5"></rect><rect x="14" y="14" width="7" height="7" rx="1.5"></rect></svg>
+            </span>
+            <span style="flex:1;min-width:0;">Do you only do recruitment?</span>
+            <svg class="chev" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3B2145" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"></path></svg>
+          </summary>
+          <p style="font-size:18px;line-height:1.6;color:#5C6473;padding:0 26px 24px 84px;">No. Recruitment is where many teams start with us, but we also build people growth, performance and culture systems — often for the same team as they scale.</p>
         </details>
-        <details style="border-bottom:1px solid #E2D9C5;">
-          <summary class="acc" style="display:flex;align-items:center;justify-content:space-between;gap:20px;padding:24px 10px;font-size:21px;font-weight:600;color:#3B2145;border-radius:10px;">How long does a hire take?<svg class="chev" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3B2145" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg></summary>
-          <p style="font-size:18px;line-height:1.6;color:#5C6473;padding:0 10px 24px;">Usually 4–8 weeks per role, from the first brief to a signed offer — with you involved at the moments that matter, not buried in CVs.</p>
+
+        <details style="border:1px solid #E2D9C5;border-radius:18px;background:#FBF9F2;margin-bottom:12px;">
+          <summary class="acc" style="display:flex;align-items:center;gap:18px;padding:22px 26px;font-size:21px;font-weight:600;color:#3B2145;border-radius:18px;">
+            <span style="flex:none;width:40px;height:40px;border-radius:12px;background:#FDEDE5;display:flex;align-items:center;justify-content:center;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#EE7E52" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15.5 14"></polyline></svg>
+            </span>
+            <span style="flex:1;min-width:0;">How long does a hire take?</span>
+            <svg class="chev" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3B2145" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"></path></svg>
+          </summary>
+          <p style="font-size:18px;line-height:1.6;color:#5C6473;padding:0 26px 24px 84px;">Usually 4–8 weeks per role, from the first brief to a signed offer — with you involved at the moments that matter, not buried in CVs.</p>
         </details>
-        <details style="border-bottom:1px solid #E2D9C5;">
-          <summary class="acc" style="display:flex;align-items:center;justify-content:space-between;gap:20px;padding:24px 10px;font-size:21px;font-weight:600;color:#3B2145;border-radius:10px;">What if the hire doesn't work out?<svg class="chev" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3B2145" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg></summary>
-          <p style="font-size:18px;line-height:1.6;color:#5C6473;padding:0 10px 24px;">If the candidate leaves, or both sides agree the fit isn't working within 90 days, we run a new search at no extra charge. It's built into every engagement, not a special add-on.</p>
+
+        <details style="border:1px solid #E2D9C5;border-radius:18px;background:#FBF9F2;margin-bottom:12px;">
+          <summary class="acc" style="display:flex;align-items:center;gap:18px;padding:22px 26px;font-size:21px;font-weight:600;color:#3B2145;border-radius:18px;">
+            <span style="flex:none;width:40px;height:40px;border-radius:12px;background:#E4F0ED;display:flex;align-items:center;justify-content:center;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1E7A6A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><polyline points="9 12 11 14 15 10"></polyline></svg>
+            </span>
+            <span style="flex:1;min-width:0;">What if the hire doesn't work out?</span>
+            <svg class="chev" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3B2145" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"></path></svg>
+          </summary>
+          <p style="font-size:18px;line-height:1.6;color:#5C6473;padding:0 26px 24px 84px;">If the candidate leaves, or both sides agree the fit isn't working within 90 days, we run a new search at no extra charge. It's built into every engagement, not a special add-on.</p>
         </details>
-        <details style="border-bottom:1px solid #E2D9C5;">
-          <summary class="acc" style="display:flex;align-items:center;justify-content:space-between;gap:20px;padding:24px 10px;font-size:21px;font-weight:600;color:#3B2145;border-radius:10px;">When do you invoice?<svg class="chev" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3B2145" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg></summary>
-          <p style="font-size:18px;line-height:1.6;color:#5C6473;padding:0 10px 24px;">Upon written confirmation the candidate has accepted the offer — not at placement. If they don't start, there's no fee.</p>
+
+        <details style="border:1px solid #E2D9C5;border-radius:18px;background:#FBF9F2;margin-bottom:12px;">
+          <summary class="acc" style="display:flex;align-items:center;gap:18px;padding:22px 26px;font-size:21px;font-weight:600;color:#3B2145;border-radius:18px;">
+            <span style="flex:none;width:40px;height:40px;border-radius:12px;background:#FDEDE5;display:flex;align-items:center;justify-content:center;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#EE7E52" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 3h16v18l-2.7-1.8L14.6 21l-2.6-1.8L9.4 21l-2.7-1.8L4 21z"></path><path d="M8.5 8.5h7M8.5 12.5h7"></path></svg>
+            </span>
+            <span style="flex:1;min-width:0;">When do you invoice?</span>
+            <svg class="chev" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3B2145" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"></path></svg>
+          </summary>
+          <p style="font-size:18px;line-height:1.6;color:#5C6473;padding:0 26px 24px 84px;">Upon written confirmation the candidate has accepted the offer — not at placement. If they don't start, there's no fee.</p>
         </details>
-        <details style="border-bottom:1px solid #E2D9C5;">
-          <summary class="acc" style="display:flex;align-items:center;justify-content:space-between;gap:20px;padding:24px 10px;font-size:21px;font-weight:600;color:#3B2145;border-radius:10px;">Do you work with small teams?<svg class="chev" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3B2145" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg></summary>
-          <p style="font-size:18px;line-height:1.6;color:#5C6473;padding:0 10px 24px;">Yes — most of our work is with growing studios and lean in-house teams, from 5 people up. That's exactly where every people decision counts the most.</p>
+
+        <details style="border:1px solid #E2D9C5;border-radius:18px;background:#FBF9F2;margin-bottom:12px;">
+          <summary class="acc" style="display:flex;align-items:center;gap:18px;padding:22px 26px;font-size:21px;font-weight:600;color:#3B2145;border-radius:18px;">
+            <span style="flex:none;width:40px;height:40px;border-radius:12px;background:#E4F0ED;display:flex;align-items:center;justify-content:center;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1E7A6A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 11h-6"></path></svg>
+            </span>
+            <span style="flex:1;min-width:0;">Do you work with small teams?</span>
+            <svg class="chev" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3B2145" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"></path></svg>
+          </summary>
+          <p style="font-size:18px;line-height:1.6;color:#5C6473;padding:0 26px 24px 84px;">Yes — most of our work is with growing studios and lean in-house teams, from 5 people up. That's exactly where every people decision counts the most.</p>
         </details>
-        <details style="border-bottom:1px solid #E2D9C5;">
-          <summary class="acc" style="display:flex;align-items:center;justify-content:space-between;gap:20px;padding:24px 10px;font-size:21px;font-weight:600;color:#3B2145;border-radius:10px;">Can we hire for multiple roles at once?<svg class="chev" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3B2145" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg></summary>
-          <p style="font-size:18px;line-height:1.6;color:#5C6473;padding:0 10px 24px;">Yes — each role is its own engagement, and multi-role bundles (three or more roles at once) qualify for a bundled rate. We've staffed whole project teams this way too, including fifteen roles filled in three weeks.</p>
+
+        <details style="border:1px solid #E2D9C5;border-radius:18px;background:#FBF9F2;margin-bottom:12px;">
+          <summary class="acc" style="display:flex;align-items:center;gap:18px;padding:22px 26px;font-size:21px;font-weight:600;color:#3B2145;border-radius:18px;">
+            <span style="flex:none;width:40px;height:40px;border-radius:12px;background:#FDEDE5;display:flex;align-items:center;justify-content:center;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#EE7E52" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            </span>
+            <span style="flex:1;min-width:0;">Can we hire for multiple roles at once?</span>
+            <svg class="chev" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3B2145" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"></path></svg>
+          </summary>
+          <p style="font-size:18px;line-height:1.6;color:#5C6473;padding:0 26px 24px 84px;">Yes — each role is its own engagement, and multi-role bundles (three or more roles at once) qualify for a bundled rate. We've staffed whole project teams this way too, including fifteen roles filled in three weeks.</p>
         </details>
-        <details style="border-bottom:1px solid #E2D9C5;">
-          <summary class="acc" style="display:flex;align-items:center;justify-content:space-between;gap:20px;padding:24px 10px;font-size:21px;font-weight:600;color:#3B2145;border-radius:10px;">Are you remote or on-site?<svg class="chev" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3B2145" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg></summary>
-          <p style="font-size:18px;line-height:1.6;color:#5C6473;padding:0 10px 24px;">We work remotely with teams anywhere, and on-site when it helps. Wherever your team is, we plug into how you already work.</p>
+
+        <details style="border:1px solid #E2D9C5;border-radius:18px;background:#FBF9F2;margin-bottom:12px;">
+          <summary class="acc" style="display:flex;align-items:center;gap:18px;padding:22px 26px;font-size:21px;font-weight:600;color:#3B2145;border-radius:18px;">
+            <span style="flex:none;width:40px;height:40px;border-radius:12px;background:#E4F0ED;display:flex;align-items:center;justify-content:center;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1E7A6A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18"></path><path d="M12 3a15 15 0 0 1 0 18a15 15 0 0 1 0-18z"></path></svg>
+            </span>
+            <span style="flex:1;min-width:0;">Are you remote or on-site?</span>
+            <svg class="chev" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3B2145" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"></path></svg>
+          </summary>
+          <p style="font-size:18px;line-height:1.6;color:#5C6473;padding:0 26px 24px 84px;">We work remotely with teams anywhere, and on-site when it helps. Wherever your team is, we plug into how you already work.</p>
         </details>
       </div>
     </div>
