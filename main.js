@@ -16,6 +16,21 @@
   var EMAIL = 'hoomanist' + '.id' + AT + 'gmail' + '.com';
   var MAILTO = 'mail' + 'to:';
 
+  /* ---- WhatsApp -------------------------------------------------------
+     Selama WA_NUMBER kosong, tombol WhatsApp tidak muncul sama sekali —
+     jadi kode ini aman ada di situs sebelum nomornya diputuskan.
+     Format internasional, angka saja: tanpa +, spasi, atau strip.
+     Contoh: 081234567890 ditulis '6281234567890'.
+     Nomornya disusun di sini, bukan ditulis di HTML, dengan alasan yang
+     sama seperti EMAIL. */
+  var WA_NUMBER = '';
+
+  /* Label konversi SEKUNDER untuk klik WhatsApp (AW-18452142367/xxxx).
+     Sengaja dipisah dari ADS_CONVERSION_LABEL: klik tombol belum tentu
+     jadi pesan terkirim, jadi Google Ads tidak boleh belajar dari angka
+     ini — di dashboard, setel conversion action-nya sebagai Secondary. */
+  var ADS_WA_LABEL = '';
+
   function mailtoMain() {
     return MAILTO + EMAIL;
   }
@@ -255,12 +270,77 @@
     });
   }
 
+  function waDisplay(num) {
+    // 6281234567890 -> +62 812-3456-7890 (kelompok 3 lalu per 4 angka)
+    var cc = num.slice(0, 2), rest = num.slice(2), parts = [rest.slice(0, 3)];
+    for (var i = 3; i < rest.length; i += 4) parts.push(rest.slice(i, i + 4));
+    return '+' + cc + ' ' + parts.join('-');
+  }
+
+  function reportWhatsApp(place) {
+    try {
+      if (typeof window.gtag === 'function') {
+        window.gtag('event', 'whatsapp_click', { placement: place });
+        if (ADS_WA_LABEL) {
+          window.gtag('event', 'conversion', { send_to: ADS_WA_LABEL });
+        }
+      }
+    } catch (e) { /* Pelaporan tidak boleh menghalangi chat dibuka. */ }
+  }
+
+  var WA_ICON =
+    '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" ' +
+    'stroke="currentColor" stroke-width="2" stroke-linecap="round" ' +
+    'stroke-linejoin="round" aria-hidden="true"><path d="M3.5 20.5l1.3-4.1' +
+    'A8.5 8.5 0 1 1 8 19.6z"></path><path d="M9 8.6c.2 2.8 3.1 5.8 6 6' +
+    'l1.1-1.4-2-1.1-.9.8c-1-.4-2-1.4-2.4-2.4l.8-.9-1.1-2z"></path></svg>';
+
+  function wireWhatsApp() {
+    if (!WA_NUMBER) return;
+
+    var isId = document.documentElement.lang === 'id';
+    var text = isId
+      ? 'Halo Hoomanist, saya mau tanya soal rekrutmen untuk tim saya.'
+      : "Hi Hoomanist, I'd like to ask about hiring for my team.";
+    var href = 'https://wa.me/' + WA_NUMBER + '?text=' + encodeURIComponent(text);
+
+    // Baris di halaman kontak: kerangkanya ada di template, isinya dari sini.
+    var rows = document.querySelectorAll('.js-wa');
+    for (var i = 0; i < rows.length; i++) {
+      rows[i].href = href;
+      rows[i].innerHTML =
+        '<span style="width:52px;height:52px;border-radius:14px;' +
+        'background:rgba(255,255,255,0.08);display:flex;align-items:center;' +
+        'justify-content:center;flex:none;color:#EE7E52;">' + WA_ICON + '</span>' +
+        '<span><span style="display:block;font-size:14px;color:#6A7385;' +
+        'text-transform:uppercase;letter-spacing:0.1em;font-weight:600;">' +
+        'WhatsApp</span><span style="font-size:21px;font-weight:600;">' +
+        waDisplay(WA_NUMBER) + '</span></span>';
+      rows[i].style.display = 'flex';
+      rows[i].addEventListener('click', function () { reportWhatsApp('contact'); });
+    }
+
+    // Tombol melayang hanya di halaman yang tidak punya baris WhatsApp,
+    // supaya halaman kontak tidak menampilkan dua tombol untuk hal yang sama.
+    if (rows.length) return;
+    var fab = document.createElement('a');
+    fab.className = 'wa-float';
+    fab.href = href;
+    fab.target = '_blank';
+    fab.rel = 'noopener';
+    fab.setAttribute('aria-label', isId ? 'Chat lewat WhatsApp' : 'Chat on WhatsApp');
+    fab.innerHTML = WA_ICON;
+    fab.addEventListener('click', function () { reportWhatsApp('float'); });
+    document.body.appendChild(fab);
+  }
+
   function init() {
     wireNav();
     wireEmail();
     wireReveals();
     wireCounters();
     wireForm();
+    wireWhatsApp();
   }
 
   if (document.readyState === 'loading') {

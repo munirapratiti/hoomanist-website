@@ -85,3 +85,16 @@
   nav .pad-x > a > span{display:none;}
   nav .btn-primary{white-space:nowrap;font-size:15px;padding:11px 20px;}
 }
+
+/* Tombol WhatsApp melayang. Hijau WhatsApp, bukan warna merek: yang dicari
+   pengunjung adalah logo yang mereka kenali. Hanya dibuat oleh main.js
+   kalau WA_NUMBER terisi. */
+.wa-float{position:fixed;right:22px;bottom:22px;z-index:40;width:58px;height:58px;
+  border-radius:50%;background:#25D366;color:#fff;display:flex;align-items:center;
+  justify-content:center;box-shadow:0 10px 26px rgba(22,35,62,0.22);
+  transition:transform .2s ease,box-shadow .2s ease;}
+.wa-float svg{width:28px;height:28px;}
+.wa-float:hover{transform:translateY(-3px);box-shadow:0 14px 32px rgba(22,35,62,0.28);}
+.wa-float:focus-visible{outline:3px solid #3B2145;outline-offset:3px;}
+@media (max-width:600px){.wa-float{right:16px;bottom:16px;width:54px;height:54px;}}
+@media (prefers-reduced-motion:reduce){.wa-float{transition:none;}}
