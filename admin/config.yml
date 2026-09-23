@@ -880,9 +880,9 @@ collections:
             hint: "— Doni, Marketing Team, By.U"
           - name: "client_since_2023_quoted_with_permission"
             label: "Teks pendek 17"
-            widget: string
+            widget: text
             required: false
-            hint: "By.U campaign delivered with Sosplan, quoted with permission."
+            hint: "By.U and Bestie Konter campaigns delivered with Sosplan. Testimonial q…"
           - name: "byu_photo_1_alt"
             label: "Deskripsi foto 1 (dibaca pembaca layar, tidak tampil di halaman)"
             widget: text
@@ -903,6 +903,56 @@ collections:
             widget: string
             required: false
             hint: "Group photo at centre court during the Piala by.U finals in Lombok"
+          - name: "case_study_xl"
+            label: "Teks pendek 22"
+            widget: string
+            required: false
+            hint: "Case Study · Bestie Konter by XL"
+          - name: "xl_year_badge"
+            label: "Teks pendek 23"
+            widget: string
+            required: false
+            hint: "2024 · with Sosplan"
+          - name: "xl_headline"
+            label: "Sub-judul 2"
+            widget: string
+            required: false
+            hint: "A thirteen-person crew for one campaign."
+          - name: "xl_body"
+            label: "Paragraf 9"
+            widget: text
+            required: false
+            hint: "Bestie Konter needed a full content team, not a single hire — the peop…"
+          - name: "xl_role_1"
+            label: "Teks pendek 24"
+            widget: string
+            required: false
+            hint: "Social Media Specialist"
+          - name: "xl_role_2"
+            label: "Teks pendek 25"
+            widget: string
+            required: false
+            hint: "Scriptwriter"
+          - name: "xl_role_3"
+            label: "Teks pendek 26"
+            widget: string
+            required: false
+            hint: "Video Editor"
+          - name: "xl_role_4"
+            label: "Teks pendek 27"
+            widget: string
+            required: false
+            hint: "Graphic Designer"
+          - name: "xl_role_5"
+            label: "Teks pendek 28"
+            widget: string
+            required: false
+            hint: "Social Media Manager"
+          - name: "xl_role_6"
+            label: "Teks pendek 29"
+            widget: string
+            required: false
+            hint: "Campaign Admin"
       - name: creatives
         label: "For Creatives"
         file: content/creatives.json

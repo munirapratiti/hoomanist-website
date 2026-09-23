@@ -122,5 +122,45 @@
   "byu_photo_3_alt": {
     "tag": "span",
     "label": "Alt foto 3"
+  },
+  "case_study_xl": {
+    "tag": "div",
+    "label": "Case Study · Bestie Konter by XL"
+  },
+  "xl_year_badge": {
+    "tag": "span",
+    "label": "2024 · with Sosplan"
+  },
+  "xl_headline": {
+    "tag": "h3",
+    "label": "Judul studi kasus XL"
+  },
+  "xl_body": {
+    "tag": "p",
+    "label": "Paragraf studi kasus XL"
+  },
+  "xl_role_1": {
+    "tag": "span",
+    "label": "Peran 1"
+  },
+  "xl_role_2": {
+    "tag": "span",
+    "label": "Peran 2"
+  },
+  "xl_role_3": {
+    "tag": "span",
+    "label": "Peran 3"
+  },
+  "xl_role_4": {
+    "tag": "span",
+    "label": "Peran 4"
+  },
+  "xl_role_5": {
+    "tag": "span",
+    "label": "Peran 5"
+  },
+  "xl_role_6": {
+    "tag": "span",
+    "label": "Peran 6"
   }
 }
