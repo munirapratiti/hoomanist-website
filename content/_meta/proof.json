@@ -210,5 +210,9 @@
   "sosplan_gallery_caption": {
     "tag": "div",
     "label": "Keterangan galeri Sosplan"
+  },
+  "proof_intro": {
+    "tag": "p",
+    "label": "Paragraf pembuka /proof"
   }
 }

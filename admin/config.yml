@@ -1063,6 +1063,11 @@ collections:
             widget: string
             required: false
             hint: "Working sessions, reviews, and the team together."
+          - name: "proof_intro"
+            label: "Paragraf 11"
+            widget: text
+            required: false
+            hint: "Our work so far has been built through one long partnership. We have r…"
       - name: creatives
         label: "For Creatives"
         file: content/creatives.json
