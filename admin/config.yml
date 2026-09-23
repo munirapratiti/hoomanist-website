@@ -722,7 +722,7 @@ collections:
             label: "Teks pendek 48"
             widget: string
             required: false
-            hint: "A client team together at an after-work gathering"
+            hint: "A film crew setting up lights and camera on an outdoor location"
           - name: "why_side_eyebrow"
             label: "Teks pendek 49"
             widget: string

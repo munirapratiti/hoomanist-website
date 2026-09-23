@@ -80,6 +80,19 @@ jadi gambar utama `/why-us` sudah dihapus** — halaman itu berargumen bahwa
 orang adalah satu-satunya hal yang tidak bisa ditiru, dan memakai foto stok
 untuk itu melemahkan argumennya sendiri. Sekarang dipakai foto tim sungguhan.
 
+**Foto dipotong di berkasnya, bukan hanya digeser lewat object-position.**
+Sumbernya foto dokumentasi ponsel: subjeknya sering kecil di tengah ruangan,
+dan itulah yang membuatnya terlihat amatir — bukan terang-gelapnya. Potongan
+rapat dari berkas asli beresolusi penuh (`sips -c H W --cropOffset top left`)
+memperbaikinya; `assets/_raw/` menyimpan aslinya sehingga selalu bisa dipotong
+ulang. Catatan: `sips -c` diam-diam gagal kalau lebar potongan sama persis
+dengan lebar sumber — pakai zoom sedikit di bawah 1.
+
+**Nada warna: satu grade yang sama untuk semua**, yaitu
+`contrast(1.06) saturate(1.06)`, ditambah koreksi `brightness()` per foto ke
+rata-rata ~105. Menyamakan terang saja tanpa grade justru membuat semuanya
+terlihat pucat dan datar.
+
 **Ukur luminans pada potongan yang benar-benar terlihat, bukan pada seluruh
 berkas — untuk SEMUA foto, bukan hanya yang berbentuk pita.** Galeri memotong
 foto jadi kotak lewat `object-fit:cover`, jadi rata-rata seluruh berkas bisa
