@@ -114,5 +114,9 @@
   "byu_gallery_caption": {
     "tag": "div",
     "label": "Keterangan galeri"
+  },
+  "byu_photo_2_alt": {
+    "tag": "span",
+    "label": "Alt foto 2"
   }
 }

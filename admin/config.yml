@@ -893,6 +893,11 @@ collections:
             widget: string
             required: false
             hint: "Piala by.U — delivered with Sosplan."
+          - name: "byu_photo_2_alt"
+            label: "Deskripsi foto 2 (dibaca pembaca layar, tidak tampil di halaman)"
+            widget: text
+            required: false
+            hint: "Behind the scenes at the Piala by.U venue, beside the stands during th…"
       - name: creatives
         label: "For Creatives"
         file: content/creatives.json

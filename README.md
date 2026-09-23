@@ -66,8 +66,9 @@ Push ke branch lain menghasilkan preview URL terpisah.
 
 ## Asal gambar
 
-`assets/byu-piala-01.jpg` **bukan** foto stok — itu dokumentasi milik Munira
-sendiri dari Piala by.U, dikirim 23 September 2026. Metadata EXIF-nya dibuang
+`assets/byu-piala-01.jpg` dan `assets/byu-piala-02.jpg` **bukan** foto stok —
+itu dokumentasi milik Munira sendiri dari Piala by.U, dikirim 23 September
+2026. Berkas kedua aslinya membawa koordinat GPS lokasi acara; sudah dibuang. Metadata EXIF-nya dibuang
 sebelum dipasang (foto ponsel bisa membawa koordinat GPS lokasi pengambilan;
 berkas ini sudah bersih karena lewat Google Drive, tapi tetap dilucuti agar
 prosesnya seragam). Profil warna ICC sengaja dipertahankan. **Foto yang ada

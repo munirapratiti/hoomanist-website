@@ -74,6 +74,8 @@ ROLE = {
 OVERRIDE = {
     ("proof", "byu_photo_1_alt"):
         "Deskripsi foto 1 (dibaca pembaca layar, tidak tampil di halaman)",
+    ("proof", "byu_photo_2_alt"):
+        "Deskripsi foto 2 (dibaca pembaca layar, tidak tampil di halaman)",
     ("proof", "byu_gallery_caption"): "Keterangan di bawah galeri foto",
     ("top", "3"): "Statistik 1 — angka",
     ("top", "years_active"): "Statistik 1 — keterangan",
