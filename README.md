@@ -66,18 +66,21 @@ Push ke branch lain menghasilkan preview URL terpisah.
 
 ## Asal gambar
 
-`assets/byu-piala-01.jpg` dan `assets/byu-piala-02.jpg` **bukan** foto stok —
-itu dokumentasi milik Munira sendiri dari Piala by.U, dikirim 23 September
-2026. Berkas kedua aslinya membawa koordinat GPS lokasi acara; sudah dibuang. Metadata EXIF-nya dibuang
+Berkas `assets/byu-piala-*.jpg` **bukan** foto stok — itu dokumentasi milik
+Munira sendiri dari Piala by.U, dikirim 23 September 2026. `byu-piala-02`
+aslinya membawa koordinat GPS lokasi acara; sudah dibuang. Metadata EXIF-nya dibuang
 sebelum dipasang (foto ponsel bisa membawa koordinat GPS lokasi pengambilan;
 berkas ini sudah bersih karena lewat Google Drive, tapi tetap dilucuti agar
 prosesnya seragam). Profil warna ICC sengaja dipertahankan. **Foto yang ada
 wajah orang hanya dipasang atas persetujuan orang-orang di dalamnya** — itu
 keputusan Munira, bukan diputuskan di sini.
 
-Foto berikutnya untuk galeri ini cukup ditambahkan sebagai satu kartu lagi di
-dalam `<div class="galeri">` pada `src/raw/proof.html`; kolomnya auto-fit,
-jadi tata letaknya tidak perlu diubah.
+Foto berikutnya cukup ditambahkan sebagai satu kartu lagi di dalam
+`<div class="galeri">` pada `src/raw/proof.html`, ditambah satu ruas alt di
+`content/proof.json` dan `content/_meta/proof.json`. Galerinya menyamakan
+**tinggi** semua foto dan membiarkan lebarnya mengikuti bentuk asli, jadi
+foto tegak dan melintang boleh bercampur tanpa ada yang dipotong; di ponsel
+semuanya jadi selebar penuh, satu per baris.
 
 Sisanya berasal dari Unsplash — lisensinya mengizinkan pemakaian
 komersial tanpa izin dan tanpa kewajiban mencantumkan kredit, tapi

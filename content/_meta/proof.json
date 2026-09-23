@@ -118,5 +118,9 @@
   "byu_photo_2_alt": {
     "tag": "span",
     "label": "Alt foto 2"
+  },
+  "byu_photo_3_alt": {
+    "tag": "span",
+    "label": "Alt foto 3"
   }
 }

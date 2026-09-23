@@ -101,17 +101,15 @@
           </div>
         </div>
 
-        <!-- Galeri dokumentasi. Dibuat agar foto berikutnya cukup ditambah
-             sebagai satu kartu foto lagi: kolomnya auto-fit dengan lebar
-             maksimum 300px, jadi satu foto tidak melar memenuhi baris dan
-             empat foto tetap rapi tanpa mengubah apa pun di sini. -->
-        <div class="galeri" style="margin-top:30px;position:relative;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,300px));gap:16px;">
-          <figure style="margin:0;border-radius:16px;overflow:hidden;border:1px solid #E7DFCC;background:#fff;">
-            <img loading="lazy" src="assets/byu-piala-01.jpg" alt="{{byu_photo_1_alt}}" style="display:block;width:100%;aspect-ratio:3/4;object-fit:cover;">
-          </figure>
-          <figure style="margin:0;border-radius:16px;overflow:hidden;border:1px solid #E7DFCC;background:#fff;">
-            <img loading="lazy" src="assets/byu-piala-02.jpg" alt="{{byu_photo_2_alt}}" style="display:block;width:100%;aspect-ratio:3/4;object-fit:cover;">
-          </figure>
+        <!-- Galeri dokumentasi. Semua foto disamakan TINGGINYA dan lebarnya
+             mengikuti bentuk asli (lihat .galeri di styles.css), supaya foto
+             melintang dan tegak bisa berdampingan tanpa ada yang dipotong.
+             Menambah foto = menambah satu kartu foto di bawah ini, tidak ada
+             yang lain yang perlu diubah. -->
+        <div class="galeri">
+          <figure><img loading="lazy" src="assets/byu-piala-01.jpg" alt="{{byu_photo_1_alt}}"></figure>
+          <figure><img loading="lazy" src="assets/byu-piala-02.jpg" alt="{{byu_photo_2_alt}}"></figure>
+          <figure><img loading="lazy" src="assets/byu-piala-03.jpg" alt="{{byu_photo_3_alt}}"></figure>
         </div>
         <div style="position:relative;font-size:14px;color:#A89F88;margin-top:12px;">{{byu_gallery_caption}}</div>
 

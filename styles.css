@@ -98,3 +98,16 @@
 .wa-float:focus-visible{outline:3px solid #3B2145;outline-offset:3px;}
 @media (max-width:600px){.wa-float{right:16px;bottom:16px;width:54px;height:54px;}}
 @media (prefers-reduced-motion:reduce){.wa-float{transition:none;}}
+
+/* Galeri dokumentasi di /proof. Semua foto setinggi sama dan lebarnya
+   mengikuti bentuk aslinya, jadi foto tegak dan melintang boleh bercampur
+   tanpa satu pun dipotong. Di ponsel deretan ini jadi satu foto per baris
+   selebar penuh, karena foto melintang setinggi 300px akan lebih lebar
+   daripada kartunya. */
+.galeri{position:relative;margin-top:30px;display:flex;flex-wrap:wrap;gap:16px;}
+.galeri figure{margin:0;border-radius:16px;overflow:hidden;border:1px solid #E7DFCC;background:#fff;}
+.galeri img{display:block;height:300px;width:auto;max-width:100%;object-fit:cover;}
+@media (max-width:700px){
+  .galeri figure{width:100%;}
+  .galeri img{width:100%;height:auto;}
+}

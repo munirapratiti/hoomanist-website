@@ -898,6 +898,11 @@ collections:
             widget: text
             required: false
             hint: "Behind the scenes at the Piala by.U venue, beside the stands during th…"
+          - name: "byu_photo_3_alt"
+            label: "Deskripsi foto 3 (dibaca pembaca layar, tidak tampil di halaman)"
+            widget: string
+            required: false
+            hint: "Group photo at centre court during the Piala by.U finals in Lombok"
       - name: creatives
         label: "For Creatives"
         file: content/creatives.json
