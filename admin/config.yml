@@ -93,6 +93,11 @@ collections:
             widget: string
             required: false
             hint: "The three things we build every engagement around."
+          - name: "hero_photo_alt"
+            label: "Teks pendek 11"
+            widget: string
+            required: false
+            hint: "A creative team working together late in a studio"
       - name: section2
         label: "Beranda — Klien & partner"
         file: content/_section2.json
@@ -132,7 +137,7 @@ collections:
             label: "Teks pendek 7"
             widget: string
             required: false
-            hint: "Colleagues regrouping over a creative brief"
+            hint: "Filming behind the scenes during a client shoot"
           - name: "beranda_photo_3_alt"
             label: "Teks pendek 8"
             widget: string
@@ -1487,6 +1492,11 @@ collections:
             widget: string
             required: false
             hint: "Tiga hal yang jadi dasar setiap kerja sama kami."
+          - name: "hero_photo_alt"
+            label: "Teks pendek 11"
+            widget: string
+            required: false
+            hint: "Tim kreatif bekerja bersama di studio"
       - name: id-_section2
         label: "🇮🇩 Beranda — Klien & partner"
         file: content/id-_section2.json
