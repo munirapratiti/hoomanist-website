@@ -66,6 +66,18 @@ Push ke branch lain menghasilkan preview URL terpisah.
 
 ## Asal gambar
 
+`assets/tim-*.jpg`, `assets/beranda-*.jpg` dan `assets/sosplan-*.jpg` juga
+dokumentasi internal milik Munira. **`assets/photo-team.jpg` yang sebelumnya
+jadi gambar utama `/why-us` sudah dihapus** — halaman itu berargumen bahwa
+orang adalah satu-satunya hal yang tidak bisa ditiru, dan memakai foto stok
+untuk itu melemahkan argumennya sendiri. Sekarang dipakai foto tim sungguhan.
+
+Untuk foto yang tampil sebagai pita lebar (bukan kotak), **ukur luminans pada
+potongan yang benar-benar terlihat**, bukan pada seluruh berkas: `tim-hero.jpg`
+rata-rata 180 secara keseluruhan karena langit pantainya, tapi hanya 153 pada
+pita yang tampil — menyamakan berdasarkan angka pertama akan membuatnya jauh
+terlalu gelap.
+
 Berkas `assets/xl-bestie-*.jpg` juga milik Munira sendiri, dokumentasi hari
 syuting kampanye Bestie Konter by XL. Keduanya lebih gelap daripada foto
 By.U, jadi disamakan lewat `filter:brightness()/contrast()` pada masing-masing
@@ -98,8 +110,6 @@ Sisanya berasal dari Unsplash — lisensinya mengizinkan pemakaian
 komersial tanpa izin dan tanpa kewajiban mencantumkan kredit, tapi
 tautannya dicatat di sini untuk keperluan penelusuran:
 
-- `assets/photo-team.jpg` — @vantaymedia,
-  <https://unsplash.com/photos/group-of-people-with-laptops-Hh-PIe3qIug>
 - `assets/photo-services.jpg` — @wolfart32,
   <https://unsplash.com/photos/two-women-collaborating-at-a-desk-with-design-materials-Ry22piRv0bs>
 - `assets/photo-creatives.jpg` — @tourbox,

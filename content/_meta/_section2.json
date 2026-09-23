@@ -18,5 +18,21 @@
   "creative_recruitment_and_team_developmen": {
     "tag": "div",
     "label": "Creative recruitment and team development · Since 2023"
+  },
+  "beranda_photo_1_alt": {
+    "tag": "span",
+    "label": "Alt foto beranda 1"
+  },
+  "beranda_photo_2_alt": {
+    "tag": "span",
+    "label": "Alt foto beranda 2"
+  },
+  "beranda_photo_3_alt": {
+    "tag": "span",
+    "label": "Alt foto beranda 3"
+  },
+  "beranda_gallery_caption": {
+    "tag": "div",
+    "label": "Keterangan galeri beranda"
   }
 }

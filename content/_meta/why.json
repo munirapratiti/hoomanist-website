@@ -218,5 +218,25 @@
   "going_through_change_new_leadership_a_re": {
     "tag": "p",
     "label": "Going through change — new leadership, a rebrand, a big expa…"
+  },
+  "tim_photo_1_alt": {
+    "tag": "span",
+    "label": "Alt foto tim 1"
+  },
+  "tim_photo_2_alt": {
+    "tag": "span",
+    "label": "Alt foto tim 2"
+  },
+  "tim_photo_3_alt": {
+    "tag": "span",
+    "label": "Alt foto tim 3"
+  },
+  "tim_gallery_caption": {
+    "tag": "div",
+    "label": "Keterangan galeri tim"
+  },
+  "why_hero_alt": {
+    "tag": "span",
+    "label": "Alt foto utama /why-us"
   }
 }

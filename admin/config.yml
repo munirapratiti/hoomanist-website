@@ -122,7 +122,27 @@ collections:
             label: "Kartu by.U — keterangan"
             widget: string
             required: false
-            hint: "Creative recruitment and team development · Since 2023"
+            hint: "Creative recruitment and team development · Since 2025"
+          - name: "beranda_photo_1_alt"
+            label: "Teks pendek 6"
+            widget: string
+            required: false
+            hint: "A team meeting in progress around a table of laptops"
+          - name: "beranda_photo_2_alt"
+            label: "Teks pendek 7"
+            widget: string
+            required: false
+            hint: "Colleagues regrouping over a creative brief"
+          - name: "beranda_photo_3_alt"
+            label: "Teks pendek 8"
+            widget: string
+            required: false
+            hint: "Two crew members setting up a camera on location"
+          - name: "beranda_gallery_caption"
+            label: "Teks pendek 9"
+            widget: string
+            required: false
+            hint: "The teams we build, at work."
       - name: section3
         label: "Beranda — Kenapa ini penting"
         file: content/_section3.json
@@ -683,6 +703,31 @@ collections:
             widget: text
             required: false
             hint: "Going through change — new leadership, a rebrand, a big expansion. The…"
+          - name: "tim_photo_1_alt"
+            label: "Teks pendek 46"
+            widget: string
+            required: false
+            hint: "The team out on a boat together during a company trip"
+          - name: "tim_photo_2_alt"
+            label: "Teks pendek 47"
+            widget: string
+            required: false
+            hint: "A group photo taken by the team on the same trip"
+          - name: "tim_photo_3_alt"
+            label: "Teks pendek 48"
+            widget: string
+            required: false
+            hint: "The wider team gathered together at an after-work get-together"
+          - name: "tim_gallery_caption"
+            label: "Teks pendek 49"
+            widget: string
+            required: false
+            hint: "Offsites, get-togethers, and the people we work alongside."
+          - name: "why_hero_alt"
+            label: "Teks pendek 50"
+            widget: string
+            required: false
+            hint: "The Hoomanist and Sosplan team together on a company trip"
       - name: team
         label: "Why Us — Profil tim"
         file: content/team.json
@@ -743,26 +788,6 @@ collections:
             widget: string
             required: false
             hint: "Small team. &nbsp;Thoughtful work. &nbsp;Intentional partnerships."
-          - name: "tim_photo_1_alt"
-            label: "Teks pendek 7"
-            widget: string
-            required: false
-            hint: "The team out on a boat together during a company trip"
-          - name: "tim_photo_2_alt"
-            label: "Teks pendek 8"
-            widget: string
-            required: false
-            hint: "A group photo taken by the team on the same trip"
-          - name: "tim_photo_3_alt"
-            label: "Teks pendek 9"
-            widget: string
-            required: false
-            hint: "The wider team gathered together at an after-work get-together"
-          - name: "tim_gallery_caption"
-            label: "Teks pendek 10"
-            widget: string
-            required: false
-            hint: "Offsites, get-togethers, and the people we work alongside."
       - name: proof
         label: "Proof"
         file: content/proof.json
@@ -1491,7 +1516,24 @@ collections:
             label: "Teks pendek 5"
             widget: string
             required: false
-            hint: "Rekrutmen kreatif dan pengembangan tim · Sejak 2023"
+            hint: "Rekrutmen kreatif dan pengembangan tim · Sejak 2025"
+          - name: "beranda_photo_1_alt"
+            label: "Teks pendek 6"
+            widget: string
+            required: false
+          - name: "beranda_photo_2_alt"
+            label: "Teks pendek 7"
+            widget: string
+            required: false
+          - name: "beranda_photo_3_alt"
+            label: "Teks pendek 8"
+            widget: string
+            required: false
+          - name: "beranda_gallery_caption"
+            label: "Teks pendek 9"
+            widget: string
+            required: false
+            hint: "Tim yang kami bangun, saat bekerja."
       - name: id-_section3
         label: "🇮🇩 Beranda — Kenapa ini penting"
         file: content/id-_section3.json
