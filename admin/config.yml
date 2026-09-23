@@ -743,6 +743,26 @@ collections:
             widget: string
             required: false
             hint: "Small team. &nbsp;Thoughtful work. &nbsp;Intentional partnerships."
+          - name: "tim_photo_1_alt"
+            label: "Teks pendek 7"
+            widget: string
+            required: false
+            hint: "The team out on a boat together during a company trip"
+          - name: "tim_photo_2_alt"
+            label: "Teks pendek 8"
+            widget: string
+            required: false
+            hint: "A group photo taken by the team on the same trip"
+          - name: "tim_photo_3_alt"
+            label: "Teks pendek 9"
+            widget: string
+            required: false
+            hint: "The wider team gathered together at an after-work get-together"
+          - name: "tim_gallery_caption"
+            label: "Teks pendek 10"
+            widget: string
+            required: false
+            hint: "Offsites, get-togethers, and the people we work alongside."
       - name: proof
         label: "Proof"
         file: content/proof.json
@@ -1153,6 +1173,26 @@ collections:
             widget: text
             required: false
             hint: "A video editor color-grading a project on a dual-monitor home studio s…"
+          - name: "kerja_photo_1_alt"
+            label: "Teks pendek 12"
+            widget: string
+            required: false
+            hint: "Two people working side by side at a laptop during a session"
+          - name: "kerja_photo_2_alt"
+            label: "Teks pendek 13"
+            widget: string
+            required: false
+            hint: "A film crew setting up camera track and lights on location"
+          - name: "kerja_photo_3_alt"
+            label: "Teks pendek 14"
+            widget: string
+            required: false
+            hint: "A crew filming a performer on an outdoor set at dusk"
+          - name: "kerja_gallery_caption"
+            label: "Teks pendek 15"
+            widget: string
+            required: false
+            hint: "Some of the sets and sessions the people we place end up on."
       - name: faq
         label: "FAQ"
         file: content/faq.json

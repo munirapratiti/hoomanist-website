@@ -42,5 +42,21 @@
   "small_team_nbsp_thoughtful_work_nbsp_int": {
     "tag": "div",
     "label": "Small team. &nbsp;Thoughtful work. &nbsp;Intentional partner…"
+  },
+  "tim_photo_1_alt": {
+    "tag": "span",
+    "label": "Alt foto tim 1"
+  },
+  "tim_photo_2_alt": {
+    "tag": "span",
+    "label": "Alt foto tim 2"
+  },
+  "tim_photo_3_alt": {
+    "tag": "span",
+    "label": "Alt foto tim 3"
+  },
+  "tim_gallery_caption": {
+    "tag": "div",
+    "label": "Keterangan galeri tim"
   }
 }

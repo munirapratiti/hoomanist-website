@@ -102,5 +102,21 @@
   "cr_photo_alt": {
     "tag": "img",
     "label": "Foto — teks alternatif"
+  },
+  "kerja_photo_1_alt": {
+    "tag": "span",
+    "label": "Alt foto kerja 1"
+  },
+  "kerja_photo_2_alt": {
+    "tag": "span",
+    "label": "Alt foto kerja 2"
+  },
+  "kerja_photo_3_alt": {
+    "tag": "span",
+    "label": "Alt foto kerja 3"
+  },
+  "kerja_gallery_caption": {
+    "tag": "div",
+    "label": "Keterangan galeri kerja"
   }
 }
