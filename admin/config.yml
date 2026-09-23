@@ -953,6 +953,21 @@ collections:
             widget: string
             required: false
             hint: "Campaign Admin"
+          - name: "xl_photo_1_alt"
+            label: "Deskripsi foto XL 1 (dibaca pembaca layar, tidak tampil di halaman)"
+            widget: string
+            required: false
+            hint: "Crew and cameras set up around the Bestie Konter set on a shoot day"
+          - name: "xl_photo_2_alt"
+            label: "Deskripsi foto XL 2 (dibaca pembaca layar, tidak tampil di halaman)"
+            widget: text
+            required: false
+            hint: "A shoot in progress at the XL office, crew and lighting around the pre…"
+          - name: "xl_gallery_caption"
+            label: "Keterangan di bawah galeri foto XL"
+            widget: string
+            required: false
+            hint: "On set during the campaign shoot."
       - name: creatives
         label: "For Creatives"
         file: content/creatives.json

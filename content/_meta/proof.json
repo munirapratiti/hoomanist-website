@@ -162,5 +162,17 @@
   "xl_role_6": {
     "tag": "span",
     "label": "Peran 6"
+  },
+  "xl_photo_1_alt": {
+    "tag": "span",
+    "label": "Alt foto XL 1"
+  },
+  "xl_photo_2_alt": {
+    "tag": "span",
+    "label": "Alt foto XL 2"
+  },
+  "xl_gallery_caption": {
+    "tag": "div",
+    "label": "Keterangan galeri XL"
   }
 }

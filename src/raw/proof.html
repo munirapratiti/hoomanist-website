@@ -151,6 +151,18 @@
           <span class="chip">{{xl_role_5}}</span>
           <span class="chip">{{xl_role_6}}</span>
         </div>
+
+        <!-- Kedua foto berbentuk sama (16:9), jadi dipakai rasio aslinya —
+             tidak perlu dipotong jadi kotak untuk terlihat seragam.
+             Filter brightness/contrast per foto menyamakan tingkat terang:
+             diukur lewat canvas, keduanya dibawa ke rata-rata luminans ~105
+             agar sepadan dengan foto By.U di kartu atas, tanpa ada bagian
+             terang yang sampai gosong (0% piksel putih penuh). -->
+        <div class="galeri galeri--lebar">
+          <figure><img loading="lazy" src="assets/xl-bestie-01.jpg" alt="{{xl_photo_1_alt}}" style="filter:brightness(1.12) contrast(0.98);"></figure>
+          <figure><img loading="lazy" src="assets/xl-bestie-02.jpg" alt="{{xl_photo_2_alt}}" style="filter:brightness(1.55) contrast(0.92);"></figure>
+        </div>
+        <div style="position:relative;font-size:14px;color:#A89F88;margin-top:12px;">{{xl_gallery_caption}}</div>
       </div>
 
       <div style="font-size:14px;color:#A89F88;font-style:italic;margin-top:14px;">{{client_since_2023_quoted_with_permission}}</div>

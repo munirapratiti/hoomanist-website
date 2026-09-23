@@ -66,6 +66,15 @@ Push ke branch lain menghasilkan preview URL terpisah.
 
 ## Asal gambar
 
+Berkas `assets/xl-bestie-*.jpg` juga milik Munira sendiri, dokumentasi hari
+syuting kampanye Bestie Konter by XL. Keduanya lebih gelap daripada foto
+By.U, jadi disamakan lewat `filter:brightness()/contrast()` pada masing-masing
+`<img>`, bukan dengan mengubah berkasnya. Angkanya bukan kira-kira: luminans
+rata-rata tiap foto diukur lewat canvas, lalu dibawa ke ~105 agar sepadan
+dengan foto By.U, dengan syarat tidak ada piksel yang sampai putih penuh
+(diverifikasi 0%). Kalau kelak perlu diubah, ganti angka filternya — berkas
+aslinya tidak disentuh.
+
 Berkas `assets/byu-piala-*.jpg` **bukan** foto stok — itu dokumentasi milik
 Munira sendiri dari Piala by.U, dikirim 23 September 2026. `byu-piala-02`
 aslinya membawa koordinat GPS lokasi acara; sudah dibuang. Metadata EXIF-nya dibuang

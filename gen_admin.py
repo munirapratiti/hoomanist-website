@@ -72,6 +72,11 @@ ROLE = {
 # Nama khusus untuk ruas yang sering dicari dan sulit dikenali dari perannya
 # saja — misalnya tiga angka statistik di beranda yang semuanya "teks pendek".
 OVERRIDE = {
+    ("proof", "xl_photo_1_alt"):
+        "Deskripsi foto XL 1 (dibaca pembaca layar, tidak tampil di halaman)",
+    ("proof", "xl_photo_2_alt"):
+        "Deskripsi foto XL 2 (dibaca pembaca layar, tidak tampil di halaman)",
+    ("proof", "xl_gallery_caption"): "Keterangan di bawah galeri foto XL",
     ("proof", "byu_photo_1_alt"):
         "Deskripsi foto 1 (dibaca pembaca layar, tidak tampil di halaman)",
     ("proof", "byu_photo_2_alt"):
