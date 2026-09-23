@@ -968,6 +968,56 @@ collections:
             widget: string
             required: false
             hint: "On set during the campaign shoot."
+          - name: "xl_photo_3_alt"
+            label: "Deskripsi foto XL 3 (dibaca pembaca layar, tidak tampil di halaman)"
+            widget: string
+            required: false
+            hint: "The Bestie Konter counter set, with the crew filming a scene"
+          - name: "xl_photo_4_alt"
+            label: "Deskripsi foto XL 4 (dibaca pembaca layar, tidak tampil di halaman)"
+            widget: string
+            required: false
+            hint: "Cast and crew at the Bestie Konter counter set between takes"
+          - name: "case_study_sosplan"
+            label: "Teks pendek 35"
+            widget: string
+            required: false
+            hint: "Case Study · Sosplan"
+          - name: "sosplan_year_badge"
+            label: "Teks pendek 36"
+            widget: string
+            required: false
+            hint: "2022 — ongoing"
+          - name: "sosplan_headline"
+            label: "Sub-judul 3"
+            widget: string
+            required: false
+            hint: "Not a project. A team we have kept staffed for four years."
+          - name: "sosplan_body"
+            label: "Paragraf 10"
+            widget: text
+            required: false
+            hint: "Sosplan is where this work started, and where it never stopped. Every …"
+          - name: "sosplan_photo_1_alt"
+            label: "Deskripsi foto Sosplan 1 (dibaca pembaca layar, tidak tampil di halaman)"
+            widget: string
+            required: false
+            hint: "Two team members in Sosplan shirts going through paperwork on site"
+          - name: "sosplan_photo_2_alt"
+            label: "Deskripsi foto Sosplan 2 (dibaca pembaca layar, tidak tampil di halaman)"
+            widget: string
+            required: false
+            hint: "The team gathered around a laptop during a working session"
+          - name: "sosplan_photo_3_alt"
+            label: "Deskripsi foto Sosplan 3 (dibaca pembaca layar, tidak tampil di halaman)"
+            widget: string
+            required: false
+            hint: "The wider Sosplan team together at a company gathering"
+          - name: "sosplan_gallery_caption"
+            label: "Keterangan di bawah galeri foto Sosplan"
+            widget: string
+            required: false
+            hint: "Working sessions, reviews, and the team together."
       - name: creatives
         label: "For Creatives"
         file: content/creatives.json

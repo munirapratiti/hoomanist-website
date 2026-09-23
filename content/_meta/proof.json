@@ -174,5 +174,45 @@
   "xl_gallery_caption": {
     "tag": "div",
     "label": "Keterangan galeri XL"
+  },
+  "xl_photo_3_alt": {
+    "tag": "span",
+    "label": "Alt foto XL 3"
+  },
+  "xl_photo_4_alt": {
+    "tag": "span",
+    "label": "Alt foto XL 4"
+  },
+  "case_study_sosplan": {
+    "tag": "div",
+    "label": "Case Study · Sosplan"
+  },
+  "sosplan_year_badge": {
+    "tag": "span",
+    "label": "2022 — ongoing"
+  },
+  "sosplan_headline": {
+    "tag": "h3",
+    "label": "Judul studi kasus Sosplan"
+  },
+  "sosplan_body": {
+    "tag": "p",
+    "label": "Paragraf studi kasus Sosplan"
+  },
+  "sosplan_photo_1_alt": {
+    "tag": "span",
+    "label": "Alt foto Sosplan 1"
+  },
+  "sosplan_photo_2_alt": {
+    "tag": "span",
+    "label": "Alt foto Sosplan 2"
+  },
+  "sosplan_photo_3_alt": {
+    "tag": "span",
+    "label": "Alt foto Sosplan 3"
+  },
+  "sosplan_gallery_caption": {
+    "tag": "div",
+    "label": "Keterangan galeri Sosplan"
   }
 }

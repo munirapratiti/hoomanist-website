@@ -3,3 +3,8 @@
 node_modules/
 *.log
 source/
+
+# Bahan foto mentah. Ditaruh di sini supaya bisa dipilih, tapi tidak
+# pernah ikut ter-commit atau ter-publish. Hanya hasil olahannya yang
+# ditambahkan ke assets/ secara eksplisit.
+assets/_raw/

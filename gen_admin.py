@@ -72,6 +72,17 @@ ROLE = {
 # Nama khusus untuk ruas yang sering dicari dan sulit dikenali dari perannya
 # saja — misalnya tiga angka statistik di beranda yang semuanya "teks pendek".
 OVERRIDE = {
+    ("proof", "xl_photo_3_alt"):
+        "Deskripsi foto XL 3 (dibaca pembaca layar, tidak tampil di halaman)",
+    ("proof", "xl_photo_4_alt"):
+        "Deskripsi foto XL 4 (dibaca pembaca layar, tidak tampil di halaman)",
+    ("proof", "sosplan_photo_1_alt"):
+        "Deskripsi foto Sosplan 1 (dibaca pembaca layar, tidak tampil di halaman)",
+    ("proof", "sosplan_photo_2_alt"):
+        "Deskripsi foto Sosplan 2 (dibaca pembaca layar, tidak tampil di halaman)",
+    ("proof", "sosplan_photo_3_alt"):
+        "Deskripsi foto Sosplan 3 (dibaca pembaca layar, tidak tampil di halaman)",
+    ("proof", "sosplan_gallery_caption"): "Keterangan di bawah galeri foto Sosplan",
     ("proof", "xl_photo_1_alt"):
         "Deskripsi foto XL 1 (dibaca pembaca layar, tidak tampil di halaman)",
     ("proof", "xl_photo_2_alt"):
