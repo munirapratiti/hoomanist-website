@@ -77,10 +77,13 @@ keputusan Munira, bukan diputuskan di sini.
 
 Foto berikutnya cukup ditambahkan sebagai satu kartu lagi di dalam
 `<div class="galeri">` pada `src/raw/proof.html`, ditambah satu ruas alt di
-`content/proof.json` dan `content/_meta/proof.json`. Galerinya menyamakan
-**tinggi** semua foto dan membiarkan lebarnya mengikuti bentuk asli, jadi
-foto tegak dan melintang boleh bercampur tanpa ada yang dipotong; di ponsel
-semuanya jadi selebar penuh, satu per baris.
+`content/proof.json` dan `content/_meta/proof.json`. Semua foto ditampilkan
+sebagai **kotak berukuran sama** — pilihan pemilik situs demi kerapian.
+Karena bentuk aslinya bercampur, sisi yang berlebih dipotong oleh
+`object-fit:cover`; bagian yang dipertahankan diatur per foto lewat
+`object-position` pada masing-masing `<img>`. Kalau foto baru terlihat
+terpotong di tempat yang salah, ubah angka itu — berkas aslinya tidak
+dipotong, jadi selalu bisa diatur ulang.
 
 Sisanya berasal dari Unsplash — lisensinya mengizinkan pemakaian
 komersial tanpa izin dan tanpa kewajiban mencantumkan kredit, tapi

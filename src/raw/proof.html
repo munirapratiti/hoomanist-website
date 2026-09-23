@@ -101,15 +101,15 @@
           </div>
         </div>
 
-        <!-- Galeri dokumentasi. Semua foto disamakan TINGGINYA dan lebarnya
-             mengikuti bentuk asli (lihat .galeri di styles.css), supaya foto
-             melintang dan tegak bisa berdampingan tanpa ada yang dipotong.
-             Menambah foto = menambah satu kartu foto di bawah ini, tidak ada
-             yang lain yang perlu diubah. -->
+        <!-- Galeri dokumentasi. Ukurannya disamakan jadi kotak (lihat .galeri
+             di styles.css). object-position mengatur bagian mana yang
+             dipertahankan saat dipotong: foto tegak dipotong dari atas-bawah,
+             foto melintang dari kiri-kanan. Menambah foto = menambah satu
+             kartu di bawah ini. -->
         <div class="galeri">
-          <figure><img loading="lazy" src="assets/byu-piala-01.jpg" alt="{{byu_photo_1_alt}}"></figure>
-          <figure><img loading="lazy" src="assets/byu-piala-02.jpg" alt="{{byu_photo_2_alt}}"></figure>
-          <figure><img loading="lazy" src="assets/byu-piala-03.jpg" alt="{{byu_photo_3_alt}}"></figure>
+          <figure><img loading="lazy" src="assets/byu-piala-01.jpg" alt="{{byu_photo_1_alt}}" style="object-position:50% 40%;"></figure>
+          <figure><img loading="lazy" src="assets/byu-piala-02.jpg" alt="{{byu_photo_2_alt}}" style="object-position:50% 35%;"></figure>
+          <figure><img loading="lazy" src="assets/byu-piala-03.jpg" alt="{{byu_photo_3_alt}}" style="object-position:50% 50%;"></figure>
         </div>
         <div style="position:relative;font-size:14px;color:#A89F88;margin-top:12px;">{{byu_gallery_caption}}</div>
 
