@@ -943,23 +943,18 @@ collections:
             widget: string
             required: false
             hint: "Piala by.U — delivered with Sosplan."
-          - name: "byu_photo_2_alt"
-            label: "Deskripsi foto 2 (dibaca pembaca layar, tidak tampil di halaman)"
-            widget: text
-            required: false
-            hint: "Behind the scenes at the Piala by.U venue, beside the stands during th…"
           - name: "byu_photo_3_alt"
             label: "Deskripsi foto 3 (dibaca pembaca layar, tidak tampil di halaman)"
             widget: string
             required: false
             hint: "Group photo at centre court during the Piala by.U finals in Lombok"
           - name: "case_study_xl"
-            label: "Teks pendek 22"
+            label: "Teks pendek 21"
             widget: string
             required: false
             hint: "Case Study · Bestie Konter by XL"
           - name: "xl_year_badge"
-            label: "Teks pendek 23"
+            label: "Teks pendek 22"
             widget: string
             required: false
             hint: "2024 · with Sosplan"
@@ -974,32 +969,32 @@ collections:
             required: false
             hint: "Bestie Konter needed a full content team, not a single hire — the peop…"
           - name: "xl_role_1"
-            label: "Teks pendek 24"
+            label: "Teks pendek 23"
             widget: string
             required: false
             hint: "Social Media Specialist"
           - name: "xl_role_2"
-            label: "Teks pendek 25"
+            label: "Teks pendek 24"
             widget: string
             required: false
             hint: "Scriptwriter"
           - name: "xl_role_3"
-            label: "Teks pendek 26"
+            label: "Teks pendek 25"
             widget: string
             required: false
             hint: "Video Editor"
           - name: "xl_role_4"
-            label: "Teks pendek 27"
+            label: "Teks pendek 26"
             widget: string
             required: false
             hint: "Graphic Designer"
           - name: "xl_role_5"
-            label: "Teks pendek 28"
+            label: "Teks pendek 27"
             widget: string
             required: false
             hint: "Social Media Manager"
           - name: "xl_role_6"
-            label: "Teks pendek 29"
+            label: "Teks pendek 28"
             widget: string
             required: false
             hint: "Campaign Admin"
@@ -1024,12 +1019,12 @@ collections:
             required: false
             hint: "The Bestie Konter counter set, with the crew filming a scene"
           - name: "case_study_sosplan"
-            label: "Teks pendek 34"
+            label: "Teks pendek 33"
             widget: string
             required: false
             hint: "Case Study · Sosplan"
           - name: "sosplan_year_badge"
-            label: "Teks pendek 35"
+            label: "Teks pendek 34"
             widget: string
             required: false
             hint: "2022 — ongoing"
