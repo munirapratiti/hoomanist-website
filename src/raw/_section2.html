@@ -26,17 +26,12 @@
 
       </div>
     </div>
-  <!-- Deretan foto beranda sengaja TIDAK memakai kelas .galeri seperti
-       halaman lain: di sini bentuknya tempelan foto dengan bingkai putih,
-       ukuran berbeda-beda dan sedikit miring — supaya beranda punya nada
-       sendiri dan tidak terbaca sebagai galeri yang sama diulang.
-       Kemiringan dihilangkan di layar kecil (lihat .tempel di styles.css)
-       karena di sana fotonya menumpuk ke bawah dan miringnya jadi
-       menyempitkan lebar yang tersedia. -->
-  <div class="tempel reveal">
-    <figure class="tempel-a"><img loading="lazy" src="assets/beranda-01.jpg" alt="{{beranda_photo_1_alt}}" style="filter:brightness(1.18);object-position:50% 45%;"></figure>
-    <figure class="tempel-b"><img loading="lazy" src="assets/beranda-02.jpg" alt="{{beranda_photo_2_alt}}" style="filter:brightness(1.06);object-position:50% 40%;"></figure>
-    <figure class="tempel-c"><img loading="lazy" src="assets/beranda-03.jpg" alt="{{beranda_photo_3_alt}}" style="filter:brightness(0.77) contrast(1.05);object-position:50% 40%;"></figure>
-    <div class="tempel-ket hand">{{beranda_gallery_caption}}</div>
+  <!-- Pita foto beranda. Memakai kelas .galeri yang sama dengan halaman
+       lain supaya bentuk dan tone-nya seragam di seluruh situs. -->
+  <div class="galeri reveal" style="margin-top:44px;">
+    <figure><img loading="lazy" src="assets/beranda-01.jpg" alt="{{beranda_photo_1_alt}}" style="filter:brightness(1.22);object-position:50% 45%;"></figure>
+    <figure><img loading="lazy" src="assets/beranda-02.jpg" alt="{{beranda_photo_2_alt}}" style="filter:brightness(0.89);object-position:50% 40%;"></figure>
+    <figure><img loading="lazy" src="assets/beranda-03.jpg" alt="{{beranda_photo_3_alt}}" style="filter:brightness(0.88);object-position:50% 40%;"></figure>
   </div>
+  <div style="font-size:14px;color:#A89F88;margin-top:12px;">{{beranda_gallery_caption}}</div>
 </section>

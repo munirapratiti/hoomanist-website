@@ -72,8 +72,13 @@ jadi gambar utama `/why-us` sudah dihapus** — halaman itu berargumen bahwa
 orang adalah satu-satunya hal yang tidak bisa ditiru, dan memakai foto stok
 untuk itu melemahkan argumennya sendiri. Sekarang dipakai foto tim sungguhan.
 
-Untuk foto yang tampil sebagai pita lebar (bukan kotak), **ukur luminans pada
-potongan yang benar-benar terlihat**, bukan pada seluruh berkas: `tim-hero.jpg`
+**Ukur luminans pada potongan yang benar-benar terlihat, bukan pada seluruh
+berkas — untuk SEMUA foto, bukan hanya yang berbentuk pita.** Galeri memotong
+foto jadi kotak lewat `object-fit:cover`, jadi rata-rata seluruh berkas bisa
+meleset jauh: `sosplan-01` rata-rata 85,8 utuh tapi hanya 62,7 pada kotak yang
+tampil. Menyamakan berdasarkan angka utuh membuat galeri terlihat tidak rata
+meski angkanya "sudah sama". Semua foto galeri kini disetel ke ~100 diukur
+pada potongannya masing-masing. Untuk foto pita lebar hal yang sama berlaku, bukan pada seluruh berkas: `tim-hero.jpg`
 rata-rata 180 secara keseluruhan karena langit pantainya, tapi hanya 153 pada
 pita yang tampil — menyamakan berdasarkan angka pertama akan membuatnya jauh
 terlalu gelap.
