@@ -66,7 +66,19 @@ Push ke branch lain menghasilkan preview URL terpisah.
 
 ## Asal gambar
 
-Semua foto berasal dari Unsplash — lisensinya mengizinkan pemakaian
+`assets/byu-piala-01.jpg` **bukan** foto stok — itu dokumentasi milik Munira
+sendiri dari Piala by.U, dikirim 23 September 2026. Metadata EXIF-nya dibuang
+sebelum dipasang (foto ponsel bisa membawa koordinat GPS lokasi pengambilan;
+berkas ini sudah bersih karena lewat Google Drive, tapi tetap dilucuti agar
+prosesnya seragam). Profil warna ICC sengaja dipertahankan. **Foto yang ada
+wajah orang hanya dipasang atas persetujuan orang-orang di dalamnya** — itu
+keputusan Munira, bukan diputuskan di sini.
+
+Foto berikutnya untuk galeri ini cukup ditambahkan sebagai satu kartu lagi di
+dalam `<div class="galeri">` pada `src/raw/proof.html`; kolomnya auto-fit,
+jadi tata letaknya tidak perlu diubah.
+
+Sisanya berasal dari Unsplash — lisensinya mengizinkan pemakaian
 komersial tanpa izin dan tanpa kewajiban mencantumkan kredit, tapi
 tautannya dicatat di sini untuk keperluan penelusuran:
 

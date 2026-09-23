@@ -883,6 +883,16 @@ collections:
             widget: string
             required: false
             hint: "By.U campaign delivered with Sosplan, quoted with permission."
+          - name: "byu_photo_1_alt"
+            label: "Deskripsi foto 1 (dibaca pembaca layar, tidak tampil di halaman)"
+            widget: text
+            required: false
+            hint: "Hoomanist and Sosplan crew at the Piala by.U futsal event, in front of…"
+          - name: "byu_gallery_caption"
+            label: "Keterangan di bawah galeri foto"
+            widget: string
+            required: false
+            hint: "Piala by.U — delivered with Sosplan."
       - name: creatives
         label: "For Creatives"
         file: content/creatives.json

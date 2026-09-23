@@ -106,5 +106,13 @@
   "client_since_2023_quoted_with_permission": {
     "tag": "div",
     "label": "By.U campaign delivered with Sosplan, quoted with per…"
+  },
+  "byu_photo_1_alt": {
+    "tag": "span",
+    "label": "Alt foto 1"
+  },
+  "byu_gallery_caption": {
+    "tag": "div",
+    "label": "Keterangan galeri"
   }
 }

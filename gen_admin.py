@@ -72,6 +72,9 @@ ROLE = {
 # Nama khusus untuk ruas yang sering dicari dan sulit dikenali dari perannya
 # saja — misalnya tiga angka statistik di beranda yang semuanya "teks pendek".
 OVERRIDE = {
+    ("proof", "byu_photo_1_alt"):
+        "Deskripsi foto 1 (dibaca pembaca layar, tidak tampil di halaman)",
+    ("proof", "byu_gallery_caption"): "Keterangan di bawah galeri foto",
     ("top", "3"): "Statistik 1 — angka",
     ("top", "years_active"): "Statistik 1 — keterangan",
     ("top", "10_20"): "Statistik 2 — angka",
