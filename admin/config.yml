@@ -722,7 +722,7 @@ collections:
             label: "Teks pendek 48"
             widget: string
             required: false
-            hint: "A film crew setting up lights and camera on an outdoor location"
+            hint: "A client team together at a company gathering"
           - name: "why_side_eyebrow"
             label: "Teks pendek 49"
             widget: string
@@ -1047,7 +1047,7 @@ collections:
             label: "Deskripsi foto Sosplan 3 (dibaca pembaca layar, tidak tampil di halaman)"
             widget: string
             required: false
-            hint: "The wider Sosplan team together at a company gathering"
+            hint: "A film crew setting up lights and camera on an outdoor location"
           - name: "sosplan_gallery_caption"
             label: "Keterangan di bawah galeri foto Sosplan"
             widget: string
