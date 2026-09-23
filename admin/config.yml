@@ -97,7 +97,7 @@ collections:
             label: "Teks pendek 11"
             widget: string
             required: false
-            hint: "A creative team working together late in a studio"
+            hint: "A team gathered around a laptop, working through something together"
       - name: section2
         label: "Beranda — Klien & partner"
         file: content/_section2.json
@@ -1043,11 +1043,6 @@ collections:
             widget: string
             required: false
             hint: "Two team members in Sosplan shirts going through paperwork on site"
-          - name: "sosplan_photo_2_alt"
-            label: "Deskripsi foto Sosplan 2 (dibaca pembaca layar, tidak tampil di halaman)"
-            widget: string
-            required: false
-            hint: "The team gathered around a laptop during a working session"
           - name: "sosplan_photo_3_alt"
             label: "Deskripsi foto Sosplan 3 (dibaca pembaca layar, tidak tampil di halaman)"
             widget: string
@@ -1491,7 +1486,7 @@ collections:
             label: "Teks pendek 11"
             widget: string
             required: false
-            hint: "Tim kreatif bekerja bersama di studio"
+            hint: "Tim berkumpul di depan laptop, mengerjakan sesuatu bersama"
       - name: id-_section2
         label: "🇮🇩 Beranda — Klien & partner"
         file: content/id-_section2.json
