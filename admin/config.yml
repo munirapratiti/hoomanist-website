@@ -132,7 +132,7 @@ collections:
             label: "Teks pendek 6"
             widget: string
             required: false
-            hint: "A team meeting in progress around a table of laptops"
+            hint: "A recording session in progress in a small studio"
           - name: "beranda_photo_2_alt"
             label: "Teks pendek 7"
             widget: string
@@ -147,7 +147,7 @@ collections:
             label: "Teks pendek 9"
             widget: string
             required: false
-            hint: "The teams we build, at work."
+            hint: "Teams we placed, on the job."
       - name: section3
         label: "Beranda — Kenapa ini penting"
         file: content/_section3.json
@@ -400,9 +400,9 @@ collections:
             hint: "Rollout"
           - name: "svc_photo_alt"
             label: "Teks"
-            widget: text
+            widget: string
             required: false
-            hint: "A creative director reviewing a mood board and portfolio prints with a…"
+            hint: "A client team in a working session around a long table of laptops"
       - name: pricing
         label: "Services — Harga"
         file: content/pricing.json
@@ -708,31 +708,31 @@ collections:
             widget: text
             required: false
             hint: "Going through change — new leadership, a rebrand, a big expansion. The…"
-          - name: "tim_photo_1_alt"
+          - name: "why_hero_alt"
             label: "Teks pendek 46"
             widget: string
             required: false
-            hint: "The team out on a boat together during a company trip"
-          - name: "tim_photo_2_alt"
+            hint: "A client team we staffed, together on their company offsite"
+          - name: "why_hero_caption"
             label: "Teks pendek 47"
-            widget: string
+            widget: text
             required: false
-            hint: "A group photo taken by the team on the same trip"
-          - name: "tim_photo_3_alt"
+            hint: "Sosplan's team on their offsite. Every hire since 2022 came through us…"
+          - name: "why_side_photo_alt"
             label: "Teks pendek 48"
             widget: string
             required: false
-            hint: "The wider team gathered together at an after-work get-together"
-          - name: "tim_gallery_caption"
+            hint: "A client team together at an after-work gathering"
+          - name: "why_side_eyebrow"
             label: "Teks pendek 49"
             widget: string
             required: false
-            hint: "Offsites, get-togethers, and the people we work alongside."
-          - name: "why_hero_alt"
-            label: "Teks pendek 50"
-            widget: string
+            hint: "What we are actually looking at"
+          - name: "why_side_body"
+            label: "Paragraf 9"
+            widget: text
             required: false
-            hint: "The Hoomanist and Sosplan team together on a company trip"
+            hint: "Most of the people in these photos are not our staff — they are the te…"
       - name: team
         label: "Why Us — Profil tim"
         file: content/team.json
@@ -1023,18 +1023,13 @@ collections:
             widget: string
             required: false
             hint: "The Bestie Konter counter set, with the crew filming a scene"
-          - name: "xl_photo_4_alt"
-            label: "Deskripsi foto XL 4 (dibaca pembaca layar, tidak tampil di halaman)"
-            widget: string
-            required: false
-            hint: "Cast and crew at the Bestie Konter counter set between takes"
           - name: "case_study_sosplan"
-            label: "Teks pendek 35"
+            label: "Teks pendek 34"
             widget: string
             required: false
             hint: "Case Study · Sosplan"
           - name: "sosplan_year_badge"
-            label: "Teks pendek 36"
+            label: "Teks pendek 35"
             widget: string
             required: false
             hint: "2022 — ongoing"
@@ -1543,7 +1538,7 @@ collections:
             label: "Teks pendek 9"
             widget: string
             required: false
-            hint: "Tim yang kami bangun, saat bekerja."
+            hint: "Tim hasil rekrutan kami, saat bekerja."
       - name: id-_section3
         label: "🇮🇩 Beranda — Kenapa ini penting"
         file: content/id-_section3.json
@@ -1791,9 +1786,9 @@ collections:
             hint: "Penerapan"
           - name: "svc_photo_alt"
             label: "Teks"
-            widget: text
+            widget: string
             required: false
-            hint: "Seorang direktur kreatif meninjau mood board dan cetakan portofolio be…"
+            hint: "Tim klien dalam sesi kerja di meja panjang penuh laptop"
       - name: id-pricing
         label: "🇮🇩 Layanan — Harga"
         file: content/id-pricing.json

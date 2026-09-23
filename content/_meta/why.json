@@ -219,24 +219,24 @@
     "tag": "p",
     "label": "Going through change — new leadership, a rebrand, a big expa…"
   },
-  "tim_photo_1_alt": {
-    "tag": "span",
-    "label": "Alt foto tim 1"
-  },
-  "tim_photo_2_alt": {
-    "tag": "span",
-    "label": "Alt foto tim 2"
-  },
-  "tim_photo_3_alt": {
-    "tag": "span",
-    "label": "Alt foto tim 3"
-  },
-  "tim_gallery_caption": {
-    "tag": "div",
-    "label": "Keterangan galeri tim"
-  },
   "why_hero_alt": {
     "tag": "span",
     "label": "Alt foto utama /why-us"
+  },
+  "why_hero_caption": {
+    "tag": "div",
+    "label": "Keterangan foto utama /why-us"
+  },
+  "why_side_photo_alt": {
+    "tag": "span",
+    "label": "Alt foto samping /why-us"
+  },
+  "why_side_eyebrow": {
+    "tag": "div",
+    "label": "Label kecil blok foto samping"
+  },
+  "why_side_body": {
+    "tag": "p",
+    "label": "Paragraf blok foto samping"
   }
 }

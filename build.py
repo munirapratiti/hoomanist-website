@@ -236,6 +236,19 @@ def rewrite_links(html, lang="en"):
     """
     for anchor, url in (ANCHORS_ID if lang == "id" else ANCHORS).items():
         html = html.replace('href="%s"' % anchor, 'href="%s"' % url)
+    # Aset gambar ikut diberi sidik jari isi berkas, dengan alasan yang sama
+    # seperti main.js dan styles.css: tanpa itu browser menyimpan salinan lama
+    # selamanya karena nama berkasnya tidak berubah. Pernah terjadi — sebuah
+    # foto diperbaiki orientasinya di server tapi pengunjung tetap melihat
+    # versi rebahnya.
+    def _sidik(m):
+        berkas = m.group(1)
+        jalur = os.path.join("assets", berkas)
+        if not os.path.exists(jalur):
+            return m.group(0)
+        return 'src="/assets/%s?v=%s"' % (berkas, asset_tag(jalur))
+
+    html = re.sub(r'src="assets/([^"?]+)"', _sidik, html)
     html = html.replace('src="assets/', 'src="/assets/')
     return html
 

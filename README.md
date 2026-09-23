@@ -66,6 +66,14 @@ Push ke branch lain menghasilkan preview URL terpisah.
 
 ## Asal gambar
 
+**Foto orang di situs ini hampir semuanya tim klien, bukan karyawan Hoomanist.**
+Hoomanist hanya berdua. Karena itu setiap foto rombongan harus diberi
+keterangan yang menyebut siapa mereka — tanpa itu pengunjung wajar menyimpulkan
+situs ini milik Sosplan. `/why-us` punya blok khusus yang menyatakannya
+terang-terangan ("What we are actually looking at"), dan keterangan foto
+utamanya menyebut Sosplan secara eksplisit.
+
+
 `assets/tim-*.jpg`, `assets/beranda-*.jpg` dan `assets/sosplan-*.jpg` juga
 dokumentasi internal milik Munira. **`assets/photo-team.jpg` yang sebelumnya
 jadi gambar utama `/why-us` sudah dihapus** — halaman itu berargumen bahwa

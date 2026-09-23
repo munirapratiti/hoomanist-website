@@ -14,16 +14,7 @@
       <div class="reveal" style="margin-top:54px;border-radius:22px;overflow:hidden;box-shadow:0 18px 44px rgba(22,35,62,0.10);">
         <img loading="lazy" src="assets/tim-hero.jpg" alt="{{why_hero_alt}}" style="filter:brightness(0.72) contrast(1.08);object-position:50% 55%;width:100%;height:clamp(240px,36vw,420px);object-fit:cover;display:block;">
       </div>
-      <!-- Galeri budaya tim. Halaman ini mengklaim "orang adalah satu-satunya
-           yang tidak bisa ditiru"; foto tim sungguhan membuat klaim itu punya
-           bukti, bukan sekadar kalimat. Bentuknya kotak seragam, sama seperti
-           galeri di /proof. -->
-      <div class="galeri reveal" style="margin-top:26px;">
-        <figure><img loading="lazy" src="assets/tim-01.jpg" alt="{{tim_photo_1_alt}}" style="filter:brightness(0.77);object-position:50% 45%;"></figure>
-        <figure><img loading="lazy" src="assets/tim-02.jpg" alt="{{tim_photo_2_alt}}" style="filter:brightness(1.08) contrast(0.95);object-position:50% 40%;"></figure>
-        <figure><img loading="lazy" src="assets/tim-03.jpg" alt="{{tim_photo_3_alt}}" style="filter:brightness(1.16);object-position:50% 45%;"></figure>
-      </div>
-      <div style="font-size:14px;color:#A89F88;margin-top:12px;">{{tim_gallery_caption}}</div>
+      <div style="font-size:14px;color:#A89F88;margin-top:12px;text-align:center;">{{why_hero_caption}}</div>
       <div class="col3 reveal" style="display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:54px;">
         <div class="lift" style="background:#FBF9F2;border:1px solid #E2D9C5;border-radius:22px;padding:40px 38px;box-shadow:0 12px 30px rgba(22,35,62,0.05);">
           <span style="display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:50%;background:#FBEADD;font-size:19px;font-weight:700;color:#EE7E52;">{{01}}</span>
@@ -39,6 +30,20 @@
           <span style="display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:50%;background:#FBEADD;font-size:19px;font-weight:700;color:#EE7E52;">{{03}}</span>
           <div style="font-size:27px;font-weight:700;margin-top:12px;">{{purposeful}}</div>
           <p style="font-size:18px;line-height:1.55;color:#5C6473;margin-top:14px;">{{we_hire_for_the_right_moment_not_just_th}}</p>
+        </div>
+      </div>
+
+      <!-- Satu foto di samping teks, bukan galeri kotak seperti halaman
+           lain — supaya halaman ini tidak terbaca sebagai pengulangan
+           pola yang sama. Fotonya sengaja tim klien yang sedang bekerja,
+           dengan keterangan yang menyebut siapa mereka. -->
+      <div class="split reveal" style="margin-top:80px;display:flex;gap:56px;align-items:center;">
+        <div style="flex:none;width:44%;max-width:100%;border-radius:22px;overflow:hidden;box-shadow:0 18px 44px rgba(22,35,62,0.10);">
+          <img loading="lazy" src="assets/tim-03.jpg" alt="{{why_side_photo_alt}}" style="filter:brightness(1.05);object-position:50% 45%;display:block;width:100%;height:clamp(240px,30vw,360px);object-fit:cover;">
+        </div>
+        <div style="flex:1;min-width:0;">
+          <div style="font-size:15px;font-weight:600;letter-spacing:0.16em;text-transform:uppercase;color:#1E7A6A;">{{why_side_eyebrow}}</div>
+          <p style="font-size:20px;line-height:1.6;color:#5C6473;margin-top:16px;">{{why_side_body}}</p>
         </div>
       </div>
 

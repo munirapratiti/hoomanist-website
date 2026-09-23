@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- built 2026-09-23T09:26:17Z -->
+<!-- built 2026-09-23T09:39:58Z -->
 <html lang="en">
 <head>
 <!-- Google tag (gtag.js) — dipakai reportLead() di main.js untuk melaporkan
@@ -140,8 +140,12 @@
           <!-- Foto sebagai latar kartu. Gradasi ungu dari bawah menjaga
                teksnya tetap terbaca; bagian atas dibiarkan cukup terang
                supaya orangnya kelihatan, bukan cuma jadi tekstur gelap. -->
-          <img loading="lazy" src="/assets/hero-people.jpg" alt="A creative team working together late in a studio" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 30%;filter:brightness(0.92) saturate(0.95);">
-          <div aria-hidden="true" style="position:absolute;inset:0;background:linear-gradient(to top,#3B2145 6%,rgba(59,33,69,0.92) 38%,rgba(59,33,69,0.42) 72%,rgba(59,33,69,0.18) 100%);"></div>
+          <!-- Foto jadi pita di bagian ATAS kartu, bukan latar penuh:
+               sebagai latar, bagian yang tampil justru langit-langit dan
+               rak baju, bukan orangnya. Sebagai pita dengan titik potong
+               di wajah, orang-orangnya yang terlihat. -->
+          <img loading="lazy" src="/assets/hero-people.jpg?v=6ae1ef4b" alt="A creative team working together late in a studio" style="filter:brightness(0.80) contrast(1.02);position:absolute;top:0;left:0;width:100%;height:40%;object-fit:cover;object-position:50% 62%;">
+          <div aria-hidden="true" style="position:absolute;top:0;left:0;right:0;height:40%;background:linear-gradient(to bottom,rgba(59,33,69,0) 55%,#3B2145 100%);"></div>
           <span style="position:relative;display:inline-block;width:70px;height:58px;flex:none;margin-bottom:36px;">
             <span style="position: absolute; left: -13px; top: 4px; width: 38px; height: 22px; border: 8px solid #EE7E52; border-bottom: none; border-radius: 22px 22px 0 0; box-sizing: border-box"></span>
             <span style="position: absolute; top: 10px; width: 15px; height: 15px; border-radius: 50%; background: #F6F2E8; left: 36px"></span>
@@ -161,22 +165,22 @@
       <div class="col4" style="flex:1;min-width:260px;display:grid;grid-template-columns:repeat(2,1fr);gap:18px;align-items:stretch;">
 
         <div class="tilt" style="border:1px solid #E5DCC8;border-radius:14px;overflow:hidden;background:#FBF9F2;">
-          <div style="height:66px;display:flex;align-items:center;justify-content:center;padding:14px 22px;background:#fff;border-bottom:1px solid #E5DCC8;"><img loading="lazy" src="/assets/logo-sosplan.png" alt="Sosplan" style="max-width:100%;max-height:100%;object-fit:contain;display:block;"></div>
+          <div style="height:66px;display:flex;align-items:center;justify-content:center;padding:14px 22px;background:#fff;border-bottom:1px solid #E5DCC8;"><img loading="lazy" src="/assets/logo-sosplan.png?v=0bb83218" alt="Sosplan" style="max-width:100%;max-height:100%;object-fit:contain;display:block;"></div>
           <div style="padding:10px 16px;font-size:13px;color:#5C6473;">Every hire since 2022, plus culture and reviews</div>
         </div>
 
         <div class="tiltr" style="border:1px solid #E5DCC8;border-radius:14px;overflow:hidden;background:#FBF9F2;">
-          <div style="height:66px;overflow:hidden;"><img loading="lazy" src="/assets/logo-padel.png" alt="360 Padel" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
+          <div style="height:66px;overflow:hidden;"><img loading="lazy" src="/assets/logo-padel.png?v=551cb56f" alt="360 Padel" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
           <div style="padding:10px 16px;font-size:13px;color:#5C6473;">Partner — brand and creative team support</div>
         </div>
 
         <div class="tilt" style="border:1px solid #145261;border-radius:14px;overflow:hidden;background:#145261;">
-          <div style="height:66px;overflow:hidden;"><img loading="lazy" src="/assets/logo-experia.png" alt="Experia" style="width:100%;height:100%;object-fit:contain;display:block;"></div>
+          <div style="height:66px;overflow:hidden;"><img loading="lazy" src="/assets/logo-experia.png?v=70febf60" alt="Experia" style="width:100%;height:100%;object-fit:contain;display:block;"></div>
           <div style="padding:10px 16px;font-size:13px;color:#B9C0CE;">Partner — creative people partnership</div>
         </div>
 
         <div class="tiltr" style="border:1px solid #E5DCC8;border-radius:14px;overflow:hidden;background:#FBF9F2;">
-          <div style="height:66px;display:flex;align-items:center;justify-content:center;padding:14px 22px;background:#fff;border-bottom:1px solid #E5DCC8;"><img loading="lazy" src="/assets/logo-byu.png" alt="by.U" style="max-width:100%;max-height:100%;object-fit:contain;display:block;"></div>
+          <div style="height:66px;display:flex;align-items:center;justify-content:center;padding:14px 22px;background:#fff;border-bottom:1px solid #E5DCC8;"><img loading="lazy" src="/assets/logo-byu.png?v=51828a74" alt="by.U" style="max-width:100%;max-height:100%;object-fit:contain;display:block;"></div>
           <div style="padding:10px 16px;font-size:13px;color:#5C6473;">Creative recruitment and team development · Since 2025</div>
         </div>
 
@@ -185,11 +189,11 @@
   <!-- Pita foto beranda. Memakai kelas .galeri yang sama dengan halaman
        lain supaya bentuk dan tone-nya seragam di seluruh situs. -->
   <div class="galeri reveal" style="margin-top:44px;">
-    <figure><img loading="lazy" src="/assets/beranda-01.jpg" alt="A team meeting in progress around a table of laptops" style="filter:brightness(1.22);object-position:50% 45%;"></figure>
-    <figure><img loading="lazy" src="/assets/beranda-02.jpg" alt="Filming behind the scenes during a client shoot" style="filter:brightness(0.89);object-position:50% 40%;"></figure>
-    <figure><img loading="lazy" src="/assets/beranda-03.jpg" alt="Two crew members setting up a camera on location" style="filter:brightness(0.88);object-position:50% 40%;"></figure>
+    <figure><img loading="lazy" src="/assets/beranda-01.jpg?v=554a5116" alt="A recording session in progress in a small studio" style="filter:brightness(0.74);object-position:50% 45%;"></figure>
+    <figure><img loading="lazy" src="/assets/beranda-02.jpg?v=9eaede02" alt="Filming behind the scenes during a client shoot" style="filter:brightness(0.89);object-position:50% 40%;"></figure>
+    <figure><img loading="lazy" src="/assets/beranda-03.jpg?v=f36f09d4" alt="Two crew members setting up a camera on location" style="filter:brightness(0.88);object-position:50% 40%;"></figure>
   </div>
-  <div style="font-size:14px;color:#A89F88;margin-top:12px;">The teams we build, at work.</div>
+  <div style="font-size:14px;color:#A89F88;margin-top:12px;">Teams we placed, on the job.</div>
 </section>
 
 <section class="sec" style="padding:88px 0;background:#3B2145;color:#F6F2E8;">
