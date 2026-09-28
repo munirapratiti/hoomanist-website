@@ -233,13 +233,8 @@ collections:
             widget: text
             required: false
             hint: "Businesses hired for skill — but struggled with fit. We don't stop at …"
-          - name: "01"
-            label: "Teks pendek 2"
-            widget: string
-            required: false
-            hint: "01"
           - name: "creative_recruitment_start_here_hiring_p"
-            label: "Teks pendek 3"
+            label: "Teks pendek 2"
             widget: text
             required: false
             hint: "Creative Recruitment — start here Hiring people who fit the role, the …  ⚠️ berisi tag HTML — biarkan utuh"
@@ -249,17 +244,17 @@ collections:
             required: false
             hint: "From brief to belonging. End-to-end recruitment with culture fit at th…"
           - name: "culture_fit_assessment_portfolio_review_"
-            label: "Teks pendek 4"
+            label: "Teks pendek 3"
             widget: text
             required: false
             hint: "Culture-fit assessment Portfolio review Interview support 90-day follo…  ⚠️ berisi tag HTML — biarkan utuh"
           - name: "from_brief_to_belonging_8_steps"
-            label: "Teks pendek 5"
+            label: "Teks pendek 4"
             widget: string
             required: false
             hint: "From brief to belonging — 8 steps"
           - name: "01_nbsp_discover_02_nbsp_source_03_nbsp_"
-            label: "Teks pendek 6"
+            label: "Teks pendek 5"
             widget: text
             required: false
             hint: "01 &nbsp;Discover 02 &nbsp;Source 03 &nbsp;Assess 04 Fit Interview — w…  ⚠️ berisi tag HTML — biarkan utuh"
@@ -268,136 +263,6 @@ collections:
             widget: text
             required: false
             hint: "A dedicated fit interview plus reference checks — this is what most re…"
-          - name: "02"
-            label: "Teks pendek 7"
-            widget: string
-            required: false
-            hint: "02"
-          - name: "people_growth_helping_people_grow_with_c"
-            label: "Teks pendek 8"
-            widget: text
-            required: false
-            hint: "People Growth Helping people grow with clarity, not guesswork.  ⚠️ berisi tag HTML — biarkan utuh"
-          - name: "career_path_frameworks_so_people_know_wh"
-            label: "Paragraf 4"
-            widget: text
-            required: false
-            hint: "Career-path frameworks so people know where they're heading, skill wor…"
-          - name: "career_paths_skill_workshops_leadership_"
-            label: "Teks pendek 9"
-            widget: text
-            required: false
-            hint: "Career paths Skill workshops Leadership development  ⚠️ berisi tag HTML — biarkan utuh"
-          - name: "track_a"
-            label: "Teks pendek 10"
-            widget: string
-            required: false
-            hint: "Track A"
-          - name: "career_path_framework"
-            label: "Teks pendek 11"
-            widget: string
-            required: false
-            hint: "Career Path Framework"
-          - name: "more_than_titles_a_clear_sense_of_where_"
-            label: "Paragraf 5"
-            widget: string
-            required: false
-            hint: "More than titles — a clear sense of where you're going."
-          - name: "track_b"
-            label: "Teks pendek 12"
-            widget: string
-            required: false
-            hint: "Track B"
-          - name: "skill_building_workshops"
-            label: "Teks pendek 13"
-            widget: string
-            required: false
-            hint: "Skill-Building Workshops"
-          - name: "learning_that_changes_behaviour_not_just"
-            label: "Paragraf 6"
-            widget: string
-            required: false
-            hint: "Learning that changes behaviour — not just fills slides."
-          - name: "track_c"
-            label: "Teks pendek 14"
-            widget: string
-            required: false
-            hint: "Track C"
-          - name: "leadership_development"
-            label: "Teks pendek 15"
-            widget: string
-            required: false
-            hint: "Leadership Development"
-          - name: "great_creatives_don_t_automatically_beco"
-            label: "Paragraf 7"
-            widget: string
-            required: false
-            hint: "Great creatives don't automatically become great leaders."
-          - name: "03"
-            label: "Teks pendek 16"
-            widget: string
-            required: false
-            hint: "03"
-          - name: "performance_amp_alignment_performance_sy"
-            label: "Teks pendek 17"
-            widget: text
-            required: false
-            hint: "Performance &amp; Alignment Performance systems built for creative tea…  ⚠️ berisi tag HTML — biarkan utuh"
-          - name: "most_creative_kpis_are_borrowed_broken_o"
-            label: "Paragraf 8"
-            widget: text
-            required: false
-            hint: "Most creative KPIs are borrowed, broken, or measuring the wrong things…"
-          - name: "kpi_design_kpi_audit_calibration_rollout"
-            label: "Teks pendek 18"
-            widget: text
-            required: false
-            hint: "KPI design KPI audit Calibration Rollout support  ⚠️ berisi tag HTML — biarkan utuh"
-          - name: "mode_a_nbsp_kpi_design_mode_b_nbsp_kpi_a"
-            label: "Teks pendek 19"
-            widget: text
-            required: false
-            hint: "Mode A &nbsp;· KPI Design Mode B &nbsp;· KPI Audit  ⚠️ berisi tag HTML — biarkan utuh"
-          - name: "week_1"
-            label: "Teks pendek 20"
-            widget: string
-            required: false
-            hint: "Week 1"
-          - name: "discovery"
-            label: "Teks pendek 21"
-            widget: string
-            required: false
-            hint: "Discovery"
-          - name: "week_2_3"
-            label: "Teks pendek 22"
-            widget: string
-            required: false
-            hint: "Week 2–3"
-          - name: "design"
-            label: "Teks pendek 23"
-            widget: string
-            required: false
-            hint: "Design"
-          - name: "week_4"
-            label: "Teks pendek 24"
-            widget: string
-            required: false
-            hint: "Week 4"
-          - name: "calibration"
-            label: "Teks pendek 25"
-            widget: string
-            required: false
-            hint: "Calibration"
-          - name: "week_5_8"
-            label: "Teks pendek 26"
-            widget: string
-            required: false
-            hint: "Week 5–8"
-          - name: "rollout"
-            label: "Teks pendek 27"
-            widget: string
-            required: false
-            hint: "Rollout"
           - name: "svc_photo_alt"
             label: "Teks"
             widget: string
@@ -1617,12 +1482,8 @@ collections:
             widget: text
             required: false
             hint: "Banyak bisnis merekrut berdasarkan keahlian, lalu tersandung soal keco…"
-          - name: "01"
-            label: "Teks pendek 2"
-            widget: string
-            required: false
           - name: "creative_recruitment_start_here_hiring_p"
-            label: "Teks pendek 3"
+            label: "Teks pendek 2"
             widget: text
             required: false
             hint: "Rekrutmen Kreatif — mulai di sini Merekrut orang yang cocok dengan per…  ⚠️ berisi tag HTML — biarkan utuh"
@@ -1632,17 +1493,17 @@ collections:
             required: false
             hint: "Dari brief sampai benar-benar menyatu dengan tim. Rekrutmen menyeluruh…"
           - name: "culture_fit_assessment_portfolio_review_"
-            label: "Teks pendek 4"
+            label: "Teks pendek 3"
             widget: text
             required: false
             hint: "Asesmen kecocokan budaya Tinjauan portofolio Pendampingan wawancara Pe…  ⚠️ berisi tag HTML — biarkan utuh"
           - name: "from_brief_to_belonging_8_steps"
-            label: "Teks pendek 5"
+            label: "Teks pendek 4"
             widget: string
             required: false
             hint: "Dari brief sampai menyatu — 8 langkah"
           - name: "01_nbsp_discover_02_nbsp_source_03_nbsp_"
-            label: "Teks pendek 6"
+            label: "Teks pendek 5"
             widget: text
             required: false
             hint: "01 &nbsp;Pemetaan 02 &nbsp;Pencarian 03 &nbsp;Penilaian 04 Wawancara K…  ⚠️ berisi tag HTML — biarkan utuh"
@@ -1651,134 +1512,6 @@ collections:
             widget: text
             required: false
             hint: "Wawancara kecocokan tersendiri plus pengecekan referensi — bagian inil…"
-          - name: "02"
-            label: "Teks pendek 7"
-            widget: string
-            required: false
-          - name: "people_growth_helping_people_grow_with_c"
-            label: "Teks pendek 8"
-            widget: text
-            required: false
-            hint: "Pengembangan Orang Membantu orang berkembang dengan arah yang jelas, b…  ⚠️ berisi tag HTML — biarkan utuh"
-          - name: "career_path_frameworks_so_people_know_wh"
-            label: "Paragraf 4"
-            widget: text
-            required: false
-            hint: "Kerangka jenjang karier supaya orang tahu arahnya ke mana, lokakarya k…"
-          - name: "career_paths_skill_workshops_leadership_"
-            label: "Teks pendek 9"
-            widget: text
-            required: false
-            hint: "Jenjang karier Lokakarya keterampilan Pengembangan kepemimpinan  ⚠️ berisi tag HTML — biarkan utuh"
-          - name: "track_a"
-            label: "Teks pendek 10"
-            widget: string
-            required: false
-            hint: "Jalur A"
-          - name: "career_path_framework"
-            label: "Teks pendek 11"
-            widget: string
-            required: false
-            hint: "Kerangka Jenjang Karier"
-          - name: "more_than_titles_a_clear_sense_of_where_"
-            label: "Paragraf 5"
-            widget: string
-            required: false
-            hint: "Lebih dari sekadar jabatan — kejelasan arah yang dituju."
-          - name: "track_b"
-            label: "Teks pendek 12"
-            widget: string
-            required: false
-            hint: "Jalur B"
-          - name: "skill_building_workshops"
-            label: "Teks pendek 13"
-            widget: string
-            required: false
-            hint: "Lokakarya Peningkatan Keterampilan"
-          - name: "learning_that_changes_behaviour_not_just"
-            label: "Paragraf 6"
-            widget: string
-            required: false
-            hint: "Pembelajaran yang mengubah cara kerja — bukan sekadar mengisi slide."
-          - name: "track_c"
-            label: "Teks pendek 14"
-            widget: string
-            required: false
-            hint: "Jalur C"
-          - name: "leadership_development"
-            label: "Teks pendek 15"
-            widget: string
-            required: false
-            hint: "Pengembangan Kepemimpinan"
-          - name: "great_creatives_don_t_automatically_beco"
-            label: "Paragraf 7"
-            widget: string
-            required: false
-            hint: "Talenta kreatif yang hebat tidak otomatis jadi pemimpin yang hebat."
-          - name: "03"
-            label: "Teks pendek 16"
-            widget: string
-            required: false
-          - name: "performance_amp_alignment_performance_sy"
-            label: "Teks pendek 17"
-            widget: text
-            required: false
-            hint: "Kinerja &amp; Keselarasan Sistem penilaian kinerja yang dirancang untu…  ⚠️ berisi tag HTML — biarkan utuh"
-          - name: "most_creative_kpis_are_borrowed_broken_o"
-            label: "Paragraf 8"
-            widget: text
-            required: false
-            hint: "Kebanyakan KPI tim kreatif itu hasil contekan, tidak jalan, atau mengu…"
-          - name: "kpi_design_kpi_audit_calibration_rollout"
-            label: "Teks pendek 18"
-            widget: text
-            required: false
-            hint: "Perancangan KPI Audit KPI Kalibrasi Pendampingan penerapan  ⚠️ berisi tag HTML — biarkan utuh"
-          - name: "mode_a_nbsp_kpi_design_mode_b_nbsp_kpi_a"
-            label: "Teks pendek 19"
-            widget: text
-            required: false
-            hint: "Mode A &nbsp;· Perancangan KPI Mode B &nbsp;· Audit KPI  ⚠️ berisi tag HTML — biarkan utuh"
-          - name: "week_1"
-            label: "Teks pendek 20"
-            widget: string
-            required: false
-            hint: "Minggu 1"
-          - name: "discovery"
-            label: "Teks pendek 21"
-            widget: string
-            required: false
-            hint: "Pemetaany"
-          - name: "week_2_3"
-            label: "Teks pendek 22"
-            widget: string
-            required: false
-            hint: "Minggu 2–3"
-          - name: "design"
-            label: "Teks pendek 23"
-            widget: string
-            required: false
-            hint: "Perancangan"
-          - name: "week_4"
-            label: "Teks pendek 24"
-            widget: string
-            required: false
-            hint: "Minggu 4"
-          - name: "calibration"
-            label: "Teks pendek 25"
-            widget: string
-            required: false
-            hint: "Kalibrasi"
-          - name: "week_5_8"
-            label: "Teks pendek 26"
-            widget: string
-            required: false
-            hint: "Minggu 5–8"
-          - name: "rollout"
-            label: "Teks pendek 27"
-            widget: string
-            required: false
-            hint: "Penerapan"
           - name: "svc_photo_alt"
             label: "Teks"
             widget: string
