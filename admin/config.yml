@@ -93,38 +93,48 @@ collections:
         file: content/who-we-are.json
         format: json
         fields:
+          - name: "who_label"
+            label: "Teks pendek"
+            widget: string
+            required: false
+            hint: "Who We Are?"
           - name: "who_we_are"
             label: "Judul"
             widget: string
             required: false
-            hint: "Who We Are"
-          - name: "who_kalimat"
-            label: "Teks pendek"
-            widget: string
-            required: false
-            hint: "A recruitment partner built for creative teams."
+            hint: "About Us"
           - name: "who_isi"
             label: "Paragraf"
             widget: text
             required: false
-            hint: "Hoomanist hires for agencies and brands that treat their people as par…"
+            hint: "Hoomanist is a creative workforce partner. Since 2022 we have been hir…"
+          - name: "who_isi2"
+            label: "Paragraf 2"
+            widget: text
+            required: false
+            hint: "We are deliberately small: 65+ creative roles placed, one team at a ti…"
       - name: what-we-do
         label: "Beranda — Apa yang kami kerjakan"
         file: content/what-we-do.json
         format: json
         fields:
+          - name: "what_label"
+            label: "Teks pendek"
+            widget: string
+            required: false
+            hint: "What We Do?"
           - name: "what_we_do_judul"
             label: "Judul"
             widget: string
             required: false
-            hint: "What We Do"
+            hint: "Our Service"
           - name: "what_kalimat"
-            label: "Teks pendek"
+            label: "Paragraf"
             widget: string
             required: false
             hint: "Creative recruitment, from brief to belonging."
           - name: "what_isi"
-            label: "Paragraf"
+            label: "Paragraf 2"
             widget: text
             required: false
             hint: "One service, done properly. End-to-end recruitment with culture fit at…"

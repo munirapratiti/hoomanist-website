@@ -1,14 +1,18 @@
 {
+  "who_label": {
+    "tag": "div",
+    "label": "Label kecil di atas judul"
+  },
   "who_we_are": {
     "tag": "h2",
-    "label": "Judul bagian"
-  },
-  "who_kalimat": {
-    "tag": "div",
-    "label": "Kalimat utama"
+    "label": "Judul besar"
   },
   "who_isi": {
     "tag": "p",
-    "label": "Paragraf"
+    "label": "Paragraf pertama"
+  },
+  "who_isi2": {
+    "tag": "p",
+    "label": "Paragraf kedua"
   }
 }

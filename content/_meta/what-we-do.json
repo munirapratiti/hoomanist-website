@@ -1,10 +1,14 @@
 {
+  "what_label": {
+    "tag": "div",
+    "label": "Label kecil di atas judul"
+  },
   "what_we_do_judul": {
     "tag": "h2",
-    "label": "Judul bagian"
+    "label": "Judul besar"
   },
   "what_kalimat": {
-    "tag": "div",
+    "tag": "p",
     "label": "Kalimat utama"
   },
   "what_isi": {
