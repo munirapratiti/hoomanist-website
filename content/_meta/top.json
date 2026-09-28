@@ -43,10 +43,6 @@
     "tag": "a",
     "label": "Start a conversation"
   },
-  "good_people_great_work": {
-    "tag": "div",
-    "label": "good people. great work."
-  },
   "people_presence_purpose": {
     "tag": "div",
     "label": "People. Presence. Purpose."

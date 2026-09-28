@@ -32,7 +32,7 @@ collections:
             label: "Statistik 1 — angka"
             widget: string
             required: false
-            hint: "3+"
+            hint: "4"
           - name: "years_active"
             label: "Statistik 1 — keterangan"
             widget: string
@@ -73,11 +73,6 @@ collections:
             widget: string
             required: false
             hint: "Start a conversation"
-          - name: "good_people_great_work"
-            label: "Tulisan tangan (good people. great work.)"
-            widget: text
-            required: false
-            hint: "good people. great work.  ⚠️ berisi tag HTML — biarkan utuh"
           - name: "people_presence_purpose"
             label: "Kartu ungu — judul"
             widget: text
@@ -89,7 +84,7 @@ collections:
             required: false
             hint: "The three things we build every engagement around."
           - name: "hero_photo_alt"
-            label: "Teks pendek 10"
+            label: "Teks pendek 9"
             widget: string
             required: false
             hint: "A team gathered around a laptop, working through something together"
@@ -107,12 +102,12 @@ collections:
             label: "Teks pendek"
             widget: string
             required: false
-            hint: "Two people who hire for creative teams."
+            hint: "A recruitment partner built for creative teams."
           - name: "who_isi"
             label: "Paragraf"
             widget: text
             required: false
-            hint: "Munira leads people strategy and recruitment. Tito leads creative and …"
+            hint: "Hoomanist hires for agencies and brands that treat their people as par…"
       - name: what-we-do
         label: "Beranda — Apa yang kami kerjakan"
         file: content/what-we-do.json
@@ -1238,13 +1233,8 @@ collections:
             widget: text
             required: false
             hint: "A creative workforce partner. For people who create. Where ideas find …  ⚠️ berisi tag HTML — biarkan utuh"
-          - name: "good_people_great_work"
-            label: "Teks pendek 2"
-            widget: string
-            required: false
-            hint: "good people. great work."
           - name: "explore"
-            label: "Teks pendek 3"
+            label: "Teks pendek 2"
             widget: string
             required: false
             hint: "Explore"
@@ -1269,7 +1259,7 @@ collections:
             required: false
             hint: "Pricing"
           - name: "connect"
-            label: "Teks pendek 4"
+            label: "Teks pendek 3"
             widget: string
             required: false
             hint: "Connect"
@@ -1279,7 +1269,7 @@ collections:
             required: false
             hint: "@hoomanist.id"
           - name: "2026_hoomanist_all_rights_reserved_peopl"
-            label: "Teks pendek 5"
+            label: "Teks pendek 4"
             widget: text
             required: false
             hint: "© 2026 Hoomanist. All rights reserved. People. &nbsp;Presence. &nbsp;P…  ⚠️ berisi tag HTML — biarkan utuh"
@@ -1302,7 +1292,7 @@ collections:
             label: "Teks pendek"
             widget: string
             required: false
-            hint: "3+"
+            hint: "4"
           - name: "years_active"
             label: "Teks pendek 2"
             widget: string
@@ -1343,22 +1333,18 @@ collections:
             widget: string
             required: false
             hint: "Mulai obrolan"
-          - name: "good_people_great_work"
-            label: "Teks pendek 7"
-            widget: string
-            required: false
           - name: "people_presence_purpose"
-            label: "Teks pendek 8"
+            label: "Teks pendek 7"
             widget: text
             required: false
             hint: "Manusia. Kehadiran. Tujuan.  ⚠️ berisi tag HTML — biarkan utuh"
           - name: "the_three_things_we_build_every_engageme"
-            label: "Teks pendek 9"
+            label: "Teks pendek 8"
             widget: string
             required: false
             hint: "Tiga hal yang jadi dasar setiap kerja sama kami."
           - name: "hero_photo_alt"
-            label: "Teks pendek 10"
+            label: "Teks pendek 9"
             widget: string
             required: false
             hint: "Tim berkumpul di depan laptop, mengerjakan sesuatu bersama"
@@ -1613,12 +1599,8 @@ collections:
             widget: text
             required: false
             hint: "Partner SDM kreatif. Untuk mereka yang berkarya. Tempat ide bertemu or…  ⚠️ berisi tag HTML — biarkan utuh"
-          - name: "good_people_great_work"
-            label: "Teks pendek 2"
-            widget: string
-            required: false
           - name: "explore"
-            label: "Teks pendek 3"
+            label: "Teks pendek 2"
             widget: string
             required: false
             hint: "Jelajahi"
@@ -1643,7 +1625,7 @@ collections:
             required: false
             hint: "Harga"
           - name: "connect"
-            label: "Teks pendek 4"
+            label: "Teks pendek 3"
             widget: string
             required: false
             hint: "Terhubung"
@@ -1652,7 +1634,7 @@ collections:
             widget: string
             required: false
           - name: "2026_hoomanist_all_rights_reserved_peopl"
-            label: "Teks pendek 5"
+            label: "Teks pendek 4"
             widget: text
             required: false
             hint: "© 2026 Hoomanist. Seluruh hak cipta dilindungi. Manusia. &nbsp;Kehadir…  ⚠️ berisi tag HTML — biarkan utuh"
