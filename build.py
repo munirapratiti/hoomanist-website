@@ -47,7 +47,8 @@ PAGES = [
         "desc": "Hoomanist is a creative workforce partner in Indonesia. We help "
                 "agencies and brands hire, grow and keep the people behind "
                 "great work.",
-        "blocks": ["top", "_section2", "_section3", "home-cta"],
+        "blocks": ["top", "who-we-are", "what-we-do", "_section2",
+                   "_section3", "home-cta"],
     },
     {
         "path": "/services",
@@ -112,7 +113,8 @@ PAGES += [
         "desc": "Hoomanist membantu agensi dan brand di Indonesia merekrut, "
                 "mengembangkan, dan mempertahankan talenta kreatif — desainer, "
                 "copywriter, video editor, dan social media specialist.",
-        "blocks": ["top", "_section2", "_section3", "home-cta"],
+        "blocks": ["top", "who-we-are", "what-we-do", "_section2",
+                   "_section3", "home-cta"],
     },
     {
         "path": "/id/layanan",

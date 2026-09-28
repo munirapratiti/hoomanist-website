@@ -18,6 +18,8 @@ from site_config import BASE as SITE
 # Section file -> the label the editor sees. Ordered as they appear on the site.
 SECTIONS = [
     ("top",        "Beranda — Bagian atas"),
+    ("who-we-are", "Beranda — Siapa kami"),
+    ("what-we-do", "Beranda — Apa yang kami kerjakan"),
     ("_section2",  "Beranda — Klien & partner"),
     ("_section3",  "Beranda — Kenapa ini penting"),
     ("home-cta",   "Beranda — Ajakan hubungi"),

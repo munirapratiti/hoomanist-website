@@ -1,0 +1,14 @@
+{
+  "who_we_are": {
+    "tag": "h2",
+    "label": "Judul bagian"
+  },
+  "who_kalimat": {
+    "tag": "div",
+    "label": "Kalimat utama"
+  },
+  "who_isi": {
+    "tag": "p",
+    "label": "Paragraf"
+  }
+}

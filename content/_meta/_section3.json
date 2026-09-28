@@ -11,20 +11,20 @@
     "tag": "p",
     "label": "When a creative hire doesn't fit, the cost shows up everywhe…"
   },
-  "68": {
+  "stat_a_angka": {
     "tag": "div",
-    "label": "68 %"
+    "label": "Angka pertama"
   },
-  "of_creative_hires_leave_within_18_months": {
+  "stat_a_teks": {
     "tag": "p",
-    "label": "of creative hires leave within 18 months due to mismatch."
+    "label": "Keterangan angka pertama"
   },
-  "3_5": {
+  "stat_b_angka": {
     "tag": "div",
-    "label": "3–5 ×"
+    "label": "Angka kedua"
   },
-  "annual_salary_lost_replacing_the_wrong_h": {
+  "stat_b_teks": {
     "tag": "p",
-    "label": "annual salary lost replacing the wrong hire."
+    "label": "Keterangan angka kedua"
   }
 }

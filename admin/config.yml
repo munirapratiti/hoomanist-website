@@ -18,11 +18,6 @@ collections:
         file: content/top.json
         format: json
         fields:
-          - name: "where_creative_people_belong"
-            label: "Label kecil di atas judul"
-            widget: text
-            required: false
-            hint: "Where Creative People Belong  ⚠️ berisi tag HTML — biarkan utuh"
           - name: "creative_people_placed_with_purpose"
             label: "Judul utama"
             widget: text
@@ -94,10 +89,55 @@ collections:
             required: false
             hint: "The three things we build every engagement around."
           - name: "hero_photo_alt"
-            label: "Teks pendek 11"
+            label: "Teks pendek 10"
             widget: string
             required: false
             hint: "A team gathered around a laptop, working through something together"
+      - name: who-we-are
+        label: "Beranda — Siapa kami"
+        file: content/who-we-are.json
+        format: json
+        fields:
+          - name: "who_we_are"
+            label: "Judul"
+            widget: string
+            required: false
+            hint: "Who We Are"
+          - name: "who_kalimat"
+            label: "Teks pendek"
+            widget: string
+            required: false
+            hint: "Two people who hire for creative teams."
+          - name: "who_isi"
+            label: "Paragraf"
+            widget: text
+            required: false
+            hint: "Munira leads people strategy and recruitment. Tito leads creative and …"
+      - name: what-we-do
+        label: "Beranda — Apa yang kami kerjakan"
+        file: content/what-we-do.json
+        format: json
+        fields:
+          - name: "what_we_do_judul"
+            label: "Judul"
+            widget: string
+            required: false
+            hint: "What We Do"
+          - name: "what_kalimat"
+            label: "Teks pendek"
+            widget: string
+            required: false
+            hint: "Creative recruitment, from brief to belonging."
+          - name: "what_isi"
+            label: "Paragraf"
+            widget: text
+            required: false
+            hint: "One service, done properly. End-to-end recruitment with culture fit at…"
+          - name: "what_tautan"
+            label: "Tautan"
+            widget: string
+            required: false
+            hint: "See how it works →"
       - name: section2
         label: "Beranda — Klien & partner"
         file: content/_section2.json
@@ -105,49 +145,24 @@ collections:
         fields:
           - name: "clients_amp_partners_small_but_real_and_"
             label: "Judul bagian klien"
-            widget: text
-            required: false
-            hint: "Clients &amp; partners small, but real — and growing.  ⚠️ berisi tag HTML — biarkan utuh"
-          - name: "every_hire_since_2022_plus_culture_and_r"
-            label: "Kartu Sosplan — keterangan"
             widget: string
             required: false
-            hint: "Every hire since 2022, plus culture and reviews"
-          - name: "partner_brand_and_creative_team_support"
-            label: "Kartu 360 Padel — keterangan"
-            widget: string
-            required: false
-            hint: "Partner — brand and creative team support"
-          - name: "partner_creative_people_partnership"
-            label: "Kartu Experia — keterangan"
-            widget: string
-            required: false
-            hint: "Partner — creative people partnership"
-          - name: "creative_recruitment_and_team_developmen"
-            label: "Kartu by.U — keterangan"
-            widget: string
-            required: false
-            hint: "Creative recruitment and team development · Since 2025"
+            hint: "Clients &amp; Partners"
           - name: "beranda_photo_1_alt"
-            label: "Teks pendek 6"
+            label: "Teks pendek 2"
             widget: string
             required: false
             hint: "A recording session in progress in a small studio"
           - name: "beranda_photo_2_alt"
-            label: "Teks pendek 7"
+            label: "Teks pendek 3"
             widget: string
             required: false
             hint: "Filming behind the scenes during a client shoot"
           - name: "beranda_photo_3_alt"
-            label: "Teks pendek 8"
+            label: "Teks pendek 4"
             widget: string
             required: false
             hint: "Two crew members setting up a camera on location"
-          - name: "beranda_gallery_caption"
-            label: "Teks pendek 9"
-            widget: string
-            required: false
-            hint: "Teams we placed, on the job."
       - name: section3
         label: "Beranda — Kenapa ini penting"
         file: content/_section3.json
@@ -155,9 +170,9 @@ collections:
         fields:
           - name: "why_it_matters"
             label: "Teks pendek"
-            widget: text
+            widget: string
             required: false
-            hint: "Why It Matters  ⚠️ berisi tag HTML — biarkan utuh"
+            hint: "Why It Matters"
           - name: "a_wrong_hire_isn_t_an_hr_problem_it_s_a_"
             label: "Judul"
             widget: string
@@ -168,26 +183,26 @@ collections:
             widget: text
             required: false
             hint: "When a creative hire doesn't fit, the cost shows up everywhere — lost …"
-          - name: "68"
+          - name: "stat_a_angka"
             label: "Teks pendek 2"
-            widget: text
+            widget: string
             required: false
-            hint: "68 %  ⚠️ berisi tag HTML — biarkan utuh"
-          - name: "of_creative_hires_leave_within_18_months"
+            hint: "65 +  ⚠️ berisi tag HTML — biarkan utuh"
+          - name: "stat_a_teks"
             label: "Paragraf 2"
             widget: string
             required: false
-            hint: "of creative hires leave within 18 months due to mismatch."
-          - name: "3_5"
+            hint: "creative roles placed through that process since 2022."
+          - name: "stat_b_angka"
             label: "Teks pendek 3"
             widget: string
             required: false
-            hint: "3–5 ×  ⚠️ berisi tag HTML — biarkan utuh"
-          - name: "annual_salary_lost_replacing_the_wrong_h"
+            hint: "90"
+          - name: "stat_b_teks"
             label: "Paragraf 3"
             widget: string
             required: false
-            hint: "annual salary lost replacing the wrong hire."
+            hint: "days to replace a hire that doesn't fit — at no extra fee."
       - name: home-cta
         label: "Beranda — Ajakan hubungi"
         file: content/home-cta.json
@@ -195,9 +210,9 @@ collections:
         fields:
           - name: "let_s_talk"
             label: "Teks pendek"
-            widget: text
+            widget: string
             required: false
-            hint: "Let's Talk  ⚠️ berisi tag HTML — biarkan utuh"
+            hint: "Let's Talk"
           - name: "let_s_build_better_ways_of_working"
             label: "Judul"
             widget: string
@@ -220,9 +235,9 @@ collections:
         fields:
           - name: "what_we_do"
             label: "Teks pendek"
-            widget: text
+            widget: string
             required: false
-            hint: "What We Do  ⚠️ berisi tag HTML — biarkan utuh"
+            hint: "What We Do"
           - name: "most_teams_start_with_a_hire_the_good_on"
             label: "Judul"
             widget: string
@@ -275,9 +290,9 @@ collections:
         fields:
           - name: "pricing"
             label: "Teks pendek"
-            widget: text
+            widget: string
             required: false
-            hint: "Pricing  ⚠️ berisi tag HTML — biarkan utuh"
+            hint: "Pricing"
           - name: "pricing_that_fits_the_work"
             label: "Judul"
             widget: string
@@ -300,9 +315,9 @@ collections:
         fields:
           - name: "why_hoomanist"
             label: "Teks pendek"
-            widget: text
+            widget: string
             required: false
-            hint: "Why Hoomanist  ⚠️ berisi tag HTML — biarkan utuh"
+            hint: "Why Hoomanist"
           - name: "your_people_are_the_one_thing_nobody_can"
             label: "Judul"
             widget: string
@@ -535,9 +550,9 @@ collections:
             hint: "No"
           - name: "is_hoomanist_right_for_you"
             label: "Teks pendek 42"
-            widget: text
+            widget: string
             required: false
-            hint: "Is Hoomanist Right For You?  ⚠️ berisi tag HTML — biarkan utuh"
+            hint: "Is Hoomanist Right For You?"
           - name: "there_s_no_such_thing_as_too_early_the_s"
             label: "Paragraf 5"
             widget: text
@@ -605,9 +620,9 @@ collections:
         fields:
           - name: "the_team"
             label: "Teks pendek"
-            widget: text
+            widget: string
             required: false
-            hint: "The Team  ⚠️ berisi tag HTML — biarkan utuh"
+            hint: "The Team"
           - name: "the_people_behind_hoomanist"
             label: "Judul"
             widget: string
@@ -665,9 +680,9 @@ collections:
         fields:
           - name: "outcomes_you_can_measure"
             label: "Teks pendek"
-            widget: text
+            widget: string
             required: false
-            hint: "Outcomes You Can Measure  ⚠️ berisi tag HTML — biarkan utuh"
+            hint: "Outcomes You Can Measure"
           - name: "we_d_rather_show_you_than_tell_you"
             label: "Judul"
             widget: string
@@ -930,9 +945,9 @@ collections:
         fields:
           - name: "for_creatives"
             label: "Teks pendek"
-            widget: text
+            widget: string
             required: false
-            hint: "For Creatives  ⚠️ berisi tag HTML — biarkan utuh"
+            hint: "For Creatives"
           - name: "looking_for_a_team_that_actually_fits"
             label: "Judul"
             widget: string
@@ -1085,9 +1100,9 @@ collections:
         fields:
           - name: "questions"
             label: "Teks pendek"
-            widget: text
+            widget: string
             required: false
-            hint: "Questions  ⚠️ berisi tag HTML — biarkan utuh"
+            hint: "Questions"
           - name: "good_questions_honest_answers"
             label: "Judul"
             widget: text
@@ -1140,9 +1155,9 @@ collections:
         fields:
           - name: "let_s_talk"
             label: "Teks pendek"
-            widget: text
+            widget: string
             required: false
-            hint: "Let's Talk  ⚠️ berisi tag HTML — biarkan utuh"
+            hint: "Let's Talk"
           - name: "let_s_build_better_ways_of_working"
             label: "Judul"
             widget: string
@@ -1273,11 +1288,6 @@ collections:
         file: content/id-top.json
         format: json
         fields:
-          - name: "where_creative_people_belong"
-            label: "Teks pendek"
-            widget: text
-            required: false
-            hint: "Tempat Talenta Kreatif Berkembang  ⚠️ berisi tag HTML — biarkan utuh"
           - name: "creative_people_placed_with_purpose"
             label: "Judul utama"
             widget: text
@@ -1289,32 +1299,32 @@ collections:
             required: false
             hint: "Partner SDM untuk agensi dan brand yang memperlakukan timnya sebagai b…"
           - name: "3"
-            label: "Teks pendek 2"
+            label: "Teks pendek"
             widget: string
             required: false
             hint: "3+"
           - name: "years_active"
-            label: "Teks pendek 3"
+            label: "Teks pendek 2"
             widget: string
             required: false
             hint: "Tahun berjalan"
           - name: "10_20"
-            label: "Teks pendek 4"
+            label: "Teks pendek 3"
             widget: string
             required: false
             hint: "65+"
           - name: "roles_placed"
-            label: "Teks pendek 5"
+            label: "Teks pendek 4"
             widget: string
             required: false
             hint: "Peran terisi"
           - name: "90"
-            label: "Teks pendek 6"
+            label: "Teks pendek 5"
             widget: string
             required: false
             hint: "90"
           - name: "day_guarantee"
-            label: "Teks pendek 7"
+            label: "Teks pendek 6"
             widget: string
             required: false
             hint: "Hari garansi"
@@ -1334,21 +1344,21 @@ collections:
             required: false
             hint: "Mulai obrolan"
           - name: "good_people_great_work"
-            label: "Teks pendek 8"
+            label: "Teks pendek 7"
             widget: string
             required: false
           - name: "people_presence_purpose"
-            label: "Teks pendek 9"
+            label: "Teks pendek 8"
             widget: text
             required: false
             hint: "Manusia. Kehadiran. Tujuan.  ⚠️ berisi tag HTML — biarkan utuh"
           - name: "the_three_things_we_build_every_engageme"
-            label: "Teks pendek 10"
+            label: "Teks pendek 9"
             widget: string
             required: false
             hint: "Tiga hal yang jadi dasar setiap kerja sama kami."
           - name: "hero_photo_alt"
-            label: "Teks pendek 11"
+            label: "Teks pendek 10"
             widget: string
             required: false
             hint: "Tim berkumpul di depan laptop, mengerjakan sesuatu bersama"
@@ -1359,46 +1369,21 @@ collections:
         fields:
           - name: "clients_amp_partners_small_but_real_and_"
             label: "Teks pendek"
-            widget: text
+            widget: string
             required: false
-            hint: "Klien &amp; partner masih sedikit, tapi nyata — dan terus bertambah.  ⚠️ berisi tag HTML — biarkan utuh"
-          - name: "every_hire_since_2022_plus_culture_and_r"
+            hint: "Klien &amp; Partner"
+          - name: "beranda_photo_1_alt"
             label: "Teks pendek 2"
             widget: string
             required: false
-            hint: "Seluruh rekrutmen sejak 2022, plus budaya kerja dan evaluasi"
-          - name: "partner_brand_and_creative_team_support"
+          - name: "beranda_photo_2_alt"
             label: "Teks pendek 3"
             widget: string
             required: false
-            hint: "Partner — dukungan brand dan tim kreatif"
-          - name: "partner_creative_people_partnership"
+          - name: "beranda_photo_3_alt"
             label: "Teks pendek 4"
             widget: string
             required: false
-            hint: "Partner — kemitraan talenta kreatif"
-          - name: "creative_recruitment_and_team_developmen"
-            label: "Teks pendek 5"
-            widget: string
-            required: false
-            hint: "Rekrutmen kreatif dan pengembangan tim · Sejak 2025"
-          - name: "beranda_photo_1_alt"
-            label: "Teks pendek 6"
-            widget: string
-            required: false
-          - name: "beranda_photo_2_alt"
-            label: "Teks pendek 7"
-            widget: string
-            required: false
-          - name: "beranda_photo_3_alt"
-            label: "Teks pendek 8"
-            widget: string
-            required: false
-          - name: "beranda_gallery_caption"
-            label: "Teks pendek 9"
-            widget: string
-            required: false
-            hint: "Tim hasil rekrutan kami, saat bekerja."
       - name: id-_section3
         label: "🇮🇩 Beranda — Kenapa ini penting"
         file: content/id-_section3.json
@@ -1406,9 +1391,9 @@ collections:
         fields:
           - name: "why_it_matters"
             label: "Teks pendek"
-            widget: text
+            widget: string
             required: false
-            hint: "Kenapa Ini Penting  ⚠️ berisi tag HTML — biarkan utuh"
+            hint: "Kenapa Ini Penting"
           - name: "a_wrong_hire_isn_t_an_hr_problem_it_s_a_"
             label: "Judul"
             widget: string
@@ -1419,24 +1404,24 @@ collections:
             widget: text
             required: false
             hint: "Ketika satu rekrutan kreatif tidak cocok, biayanya muncul di mana-mana…"
-          - name: "68"
+          - name: "stat_a_angka"
             label: "Teks pendek 2"
             widget: string
             required: false
-          - name: "of_creative_hires_leave_within_18_months"
+          - name: "stat_a_teks"
             label: "Paragraf 2"
             widget: string
             required: false
-            hint: "rekrutan kreatif keluar dalam 18 bulan karena ketidakcocokan."
-          - name: "3_5"
+            hint: "peran kreatif ditempatkan lewat proses itu sejak 2022."
+          - name: "stat_b_angka"
             label: "Teks pendek 3"
             widget: string
             required: false
-          - name: "annual_salary_lost_replacing_the_wrong_h"
+          - name: "stat_b_teks"
             label: "Paragraf 3"
             widget: string
             required: false
-            hint: "gaji setahun hilang untuk mengganti orang yang salah."
+            hint: "hari untuk mengganti rekrutan yang tidak cocok — tanpa biaya tambahan."
       - name: id-home-cta
         label: "🇮🇩 Beranda — Ajakan hubungi"
         file: content/id-home-cta.json
@@ -1444,9 +1429,9 @@ collections:
         fields:
           - name: "let_s_talk"
             label: "Teks pendek"
-            widget: text
+            widget: string
             required: false
-            hint: "Mari Bicara  ⚠️ berisi tag HTML — biarkan utuh"
+            hint: "Mari Bicara"
           - name: "let_s_build_better_ways_of_working"
             label: "Judul"
             widget: string
@@ -1469,9 +1454,9 @@ collections:
         fields:
           - name: "what_we_do"
             label: "Teks pendek"
-            widget: text
+            widget: string
             required: false
-            hint: "Layanan Kami  ⚠️ berisi tag HTML — biarkan utuh"
+            hint: "Layanan Kami"
           - name: "most_teams_start_with_a_hire_the_good_on"
             label: "Judul"
             widget: text
@@ -1524,9 +1509,9 @@ collections:
         fields:
           - name: "pricing"
             label: "Teks pendek"
-            widget: text
+            widget: string
             required: false
-            hint: "Harga  ⚠️ berisi tag HTML — biarkan utuh"
+            hint: "Harga"
           - name: "pricing_that_fits_the_work"
             label: "Judul"
             widget: string
@@ -1549,9 +1534,9 @@ collections:
         fields:
           - name: "let_s_talk"
             label: "Teks pendek"
-            widget: text
+            widget: string
             required: false
-            hint: "Mari Bicara  ⚠️ berisi tag HTML — biarkan utuh"
+            hint: "Mari Bicara"
           - name: "let_s_build_better_ways_of_working"
             label: "Judul"
             widget: string
