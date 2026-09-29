@@ -67,7 +67,7 @@ collections:
             label: "Tautan 2"
             widget: text
             required: false
-            hint: "For Creatives Find your next role →  ⚠️ berisi tag HTML — biarkan utuh"
+            hint: "Get Seen Find your next role →  ⚠️ berisi tag HTML — biarkan utuh"
           - name: "start_a_conversation"
             label: "Tautan 3"
             widget: string
@@ -942,7 +942,7 @@ collections:
             label: "Teks pendek"
             widget: string
             required: false
-            hint: "For Creatives"
+            hint: "Get Seen"
           - name: "looking_for_a_team_that_actually_fits"
             label: "Judul"
             widget: string

@@ -25,7 +25,7 @@ NAV = [
     ("Services", "/services"),
     ("Why us", "/why-us"),
     ("Proof", "/proof"),
-    ("For Creatives", "/for-creatives"),
+    ("Get Seen", "/for-creatives"),
     ("FAQ", "/faq"),
 ]
 
