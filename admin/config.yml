@@ -27,7 +27,7 @@ collections:
             label: "Paragraf"
             widget: text
             required: false
-            hint: "We find and place creative people — for agencies and brands that treat…"
+            hint: "A people partner for agencies and brands that treat their team as part…"
           - name: "3"
             label: "Statistik 1 — angka"
             widget: string
@@ -107,12 +107,12 @@ collections:
             label: "Paragraf"
             widget: text
             required: false
-            hint: "Hoomanist finds and places creative people. Since 2022 we have been hi…"
+            hint: "Hoomanist is a people partner. Not a vendor you call when a seat opens…"
           - name: "who_isi2"
             label: "Paragraf 2"
             widget: text
             required: false
-            hint: "We are deliberately small: 65+ creative roles placed, one team at a ti…"
+            hint: "Since 2022 we have been doing this for agencies and brands, deliberate…"
       - name: what-we-do
         label: "Beranda — Apa yang kami kerjakan"
         file: content/what-we-do.json
@@ -1287,7 +1287,7 @@ collections:
             label: "Paragraf"
             widget: text
             required: false
-            hint: "Kami mencari dan menempatkan orang kreatif — untuk agensi dan brand ya…"
+            hint: "People partner untuk agensi dan brand yang memperlakukan timnya sebaga…"
           - name: "3"
             label: "Teks pendek"
             widget: string
