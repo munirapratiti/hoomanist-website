@@ -27,7 +27,7 @@ collections:
             label: "Paragraf"
             widget: text
             required: false
-            hint: "A people partner for agencies and brands that treat their team as part…"
+            hint: "We find and place creative people — for agencies and brands that treat…"
           - name: "3"
             label: "Statistik 1 — angka"
             widget: string
@@ -107,7 +107,7 @@ collections:
             label: "Paragraf"
             widget: text
             required: false
-            hint: "Hoomanist is a creative workforce partner. Since 2022 we have been hir…"
+            hint: "Hoomanist finds and places creative people. Since 2022 we have been hi…"
           - name: "who_isi2"
             label: "Paragraf 2"
             widget: text
@@ -268,16 +268,6 @@ collections:
             widget: text
             required: false
             hint: "Culture-fit assessment Portfolio review Interview support 90-day follo…  ⚠️ berisi tag HTML — biarkan utuh"
-          - name: "from_brief_to_belonging_8_steps"
-            label: "Teks pendek 4"
-            widget: string
-            required: false
-            hint: "From brief to belonging — 8 steps"
-          - name: "01_nbsp_discover_02_nbsp_source_03_nbsp_"
-            label: "Teks pendek 5"
-            widget: text
-            required: false
-            hint: "01 &nbsp;Discover 02 &nbsp;Source 03 &nbsp;Assess 04 Fit Interview — w…  ⚠️ berisi tag HTML — biarkan utuh"
           - name: "a_dedicated_fit_interview_plus_reference"
             label: "Paragraf 3"
             widget: text
@@ -1242,7 +1232,7 @@ collections:
             label: "Paragraf"
             widget: text
             required: false
-            hint: "A creative workforce partner. For people who create. Where ideas find …  ⚠️ berisi tag HTML — biarkan utuh"
+            hint: "We find and place creative people for agencies and brands.  ⚠️ berisi tag HTML — biarkan utuh"
           - name: "explore"
             label: "Teks pendek 2"
             widget: string
@@ -1297,7 +1287,7 @@ collections:
             label: "Paragraf"
             widget: text
             required: false
-            hint: "Partner SDM untuk agensi dan brand yang memperlakukan timnya sebagai b…"
+            hint: "Kami mencari dan menempatkan orang kreatif — untuk agensi dan brand ya…"
           - name: "3"
             label: "Teks pendek"
             widget: string
@@ -1478,16 +1468,6 @@ collections:
             widget: text
             required: false
             hint: "Asesmen kecocokan budaya Tinjauan portofolio Pendampingan wawancara Pe…  ⚠️ berisi tag HTML — biarkan utuh"
-          - name: "from_brief_to_belonging_8_steps"
-            label: "Teks pendek 4"
-            widget: string
-            required: false
-            hint: "Dari brief sampai menyatu — 8 langkah"
-          - name: "01_nbsp_discover_02_nbsp_source_03_nbsp_"
-            label: "Teks pendek 5"
-            widget: text
-            required: false
-            hint: "01 &nbsp;Pemetaan 02 &nbsp;Pencarian 03 &nbsp;Penilaian 04 Wawancara K…  ⚠️ berisi tag HTML — biarkan utuh"
           - name: "a_dedicated_fit_interview_plus_reference"
             label: "Paragraf 3"
             widget: text
@@ -1608,7 +1588,7 @@ collections:
             label: "Paragraf"
             widget: text
             required: false
-            hint: "Partner SDM kreatif. Untuk mereka yang berkarya. Tempat ide bertemu or…  ⚠️ berisi tag HTML — biarkan utuh"
+            hint: "Kami mencari dan menempatkan orang kreatif untuk agensi dan brand.  ⚠️ berisi tag HTML — biarkan utuh"
           - name: "explore"
             label: "Teks pendek 2"
             widget: string
