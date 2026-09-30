@@ -1198,18 +1198,28 @@ collections:
             widget: string
             required: false
             hint: "Send message"
-          - name: "opening_your_email"
+          - name: "message_sent"
             label: "Teks pendek 2"
+            widget: string
+            required: false
+            hint: "Message sent"
+          - name: "message_sent_note"
+            label: "Paragraf 2"
+            widget: text
+            required: false
+            hint: "Thanks — it's in our inbox. We'll reply to the email address you gave …"
+          - name: "opening_your_email"
+            label: "Teks pendek 3"
             widget: string
             required: false
             hint: "Opening your email…"
           - name: "your_message_should_pop_up_in_your_email"
-            label: "Paragraf 2"
+            label: "Paragraf 3"
             widget: text
             required: false
             hint: "Your message should pop up in your email app, ready to send to us. If …  ⚠️ berisi tag HTML — biarkan utuh"
           - name: "fallback_note"
-            label: "Teks pendek 3"
+            label: "Teks pendek 4"
             widget: string
             required: false
             hint: "If your email app didn't open, copy the message below and send it to"
@@ -1555,18 +1565,28 @@ collections:
             widget: string
             required: false
             hint: "Kirim pesan"
-          - name: "opening_your_email"
+          - name: "message_sent"
             label: "Teks pendek 2"
+            widget: string
+            required: false
+            hint: "Pesan terkirim"
+          - name: "message_sent_note"
+            label: "Paragraf 2"
+            widget: text
+            required: false
+            hint: "Terima kasih — pesan Anda sudah masuk ke inbox kami. Kami balas ke ala…"
+          - name: "opening_your_email"
+            label: "Teks pendek 3"
             widget: string
             required: false
             hint: "Membuka aplikasi email Anda…"
           - name: "your_message_should_pop_up_in_your_email"
-            label: "Paragraf 2"
+            label: "Paragraf 3"
             widget: text
             required: false
             hint: "Pesan Anda seharusnya terbuka di aplikasi email, tinggal dikirim. Kala…  ⚠️ berisi tag HTML — biarkan utuh"
           - name: "fallback_note"
-            label: "Teks pendek 3"
+            label: "Teks pendek 4"
             widget: text
             required: false
             hint: "Kalau aplikasi email Anda tidak terbuka, salin pesan di bawah ini dan …"

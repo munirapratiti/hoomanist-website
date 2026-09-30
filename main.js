@@ -31,6 +31,14 @@
      ini — di dashboard, setel conversion action-nya sebagai Secondary. */
   var ADS_WA_LABEL = '';
 
+  /* Label konversi SEKUNDER untuk klik alamat email (AW-18452142367/xxxx).
+     Dipisah dari ADS_CONVERSION_LABEL dengan alasan yang sama seperti
+     ADS_WA_LABEL: membuka aplikasi email belum tentu jadi pesan terkirim,
+     jadi Google Ads tidak boleh belajar dari angka ini — di dashboard,
+     setel conversion action-nya sebagai Secondary. Selama kosong, klik
+     tetap terekam di GA4 tapi tidak dilaporkan sebagai konversi iklan. */
+  var ADS_EMAIL_LABEL = '';
+
   function mailtoMain() {
     return MAILTO + EMAIL;
   }
@@ -53,7 +61,15 @@
       els[i].href = els[i].getAttribute('data-mailto') === 'talent'
         ? mailtoTalent()
         : mailtoMain();
+      // Pendengar bernama, bukan closure di dalam loop: kode ini ES5 dan
+      // `var i` dibagi seluruh fungsi.
+      els[i].addEventListener('click', onEmailClick);
     }
+  }
+
+  function onEmailClick() {
+    reportEmailClick(
+      this.getAttribute('data-mailto') === 'talent' ? 'talent' : 'main');
   }
 
   /* ---- lapor konversi ke platform iklan ---------------------------------
@@ -208,9 +224,16 @@
              '\n\n' + d.message;
     }
 
+    /* withFallback=false berarti Formspree menerima pesannya: tidak ada
+       aplikasi email yang terbuka, jadi teks "membuka aplikasi email" tidak
+       boleh muncul. withFallback=true adalah jalur manual. */
     function showSent(withFallback) {
       formState.hidden = true;
       sentState.hidden = false;
+      var sentOk = document.getElementById('sent-ok');
+      var sentManual = document.getElementById('sent-manual');
+      if (sentOk) sentOk.hidden = !!withFallback;
+      if (sentManual) sentManual.hidden = !withFallback;
       if (fallbackPanel) fallbackPanel.hidden = !withFallback;
     }
 
@@ -275,6 +298,17 @@
     var cc = num.slice(0, 2), rest = num.slice(2), parts = [rest.slice(0, 3)];
     for (var i = 3; i < rest.length; i += 4) parts.push(rest.slice(i, i + 4));
     return '+' + cc + ' ' + parts.join('-');
+  }
+
+  function reportEmailClick(place) {
+    try {
+      if (typeof window.gtag === 'function') {
+        window.gtag('event', 'email_click', { placement: place });
+        if (ADS_EMAIL_LABEL) {
+          window.gtag('event', 'conversion', { send_to: ADS_EMAIL_LABEL });
+        }
+      }
+    } catch (e) { /* Pelaporan tidak boleh menghalangi email dibuka. */ }
   }
 
   function reportWhatsApp(place) {

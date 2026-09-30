@@ -6,6 +6,8 @@
   "company": "Perusahaan",
   "what_s_on_your_mind": "Apa yang ingin Anda sampaikan?",
   "send_message": "Kirim pesan",
+  "message_sent": "Pesan terkirim",
+  "message_sent_note": "Terima kasih — pesan Anda sudah masuk ke inbox kami. Kami balas ke alamat email yang Anda tulis, biasanya dalam satu hari kerja.",
   "opening_your_email": "Membuka aplikasi email Anda…",
   "your_message_should_pop_up_in_your_email": "Pesan Anda seharusnya terbuka di aplikasi email, tinggal dikirim. Kalau tidak terbuka, silakan kirim langsung ke <strong style=\"color:#3B2145;\"><span class=\"js-email\"></span></strong> — kami akan segera membalas.",
   "fallback_note": "Kalau aplikasi email Anda tidak terbuka, salin pesan di bawah ini dan kirim ke",

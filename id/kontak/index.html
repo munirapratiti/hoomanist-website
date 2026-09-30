@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- built 2026-09-30T03:26:37Z -->
+<!-- built 2026-09-30T04:05:25Z -->
 <html lang="id">
 <head>
 <!-- Google tag (gtag.js) — dipakai reportLead() di main.js untuk melaporkan
@@ -138,8 +138,18 @@
         <div id="sent-state" hidden>
           <div style="text-align:center;padding:40px 10px;">
             <div style="width:72px;height:72px;border-radius:50%;background:#E6EFE9;display:flex;align-items:center;justify-content:center;margin:0 auto;"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#1E7A6A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"></path></svg></div>
-            <div style="font-size:26px;font-weight:700;color:#3B2145;margin-top:22px;">Membuka aplikasi email Anda…</div>
-            <p style="font-size:18px;color:#5C6473;line-height:1.55;margin-top:10px;">Pesan Anda seharusnya terbuka di aplikasi email, tinggal dikirim. Kalau tidak terbuka, silakan kirim langsung ke <strong style="color:#3B2145;"><span class="js-email"></span></strong> — kami akan segera membalas.</p>
+            <!-- Dua salinan teks untuk dua hasil yang berbeda. showSent() di
+                 main.js memunculkan satu saja: #sent-ok kalau pesannya benar-
+                 benar terkirim ke Formspree, #sent-manual kalau pengirimannya
+                 gagal dan pengunjung harus mengirim sendiri lewat email. -->
+            <div id="sent-ok">
+              <div style="font-size:26px;font-weight:700;color:#3B2145;margin-top:22px;">Pesan terkirim</div>
+              <p style="font-size:18px;color:#5C6473;line-height:1.55;margin-top:10px;">Terima kasih — pesan Anda sudah masuk ke inbox kami. Kami balas ke alamat email yang Anda tulis, biasanya dalam satu hari kerja.</p>
+            </div>
+            <div id="sent-manual" hidden>
+              <div style="font-size:26px;font-weight:700;color:#3B2145;margin-top:22px;">Membuka aplikasi email Anda…</div>
+              <p style="font-size:18px;color:#5C6473;line-height:1.55;margin-top:10px;">Pesan Anda seharusnya terbuka di aplikasi email, tinggal dikirim. Kalau tidak terbuka, silakan kirim langsung ke <strong style="color:#3B2145;"><span class="js-email"></span></strong> — kami akan segera membalas.</p>
+            </div>
           </div>
           <div id="fallback-panel" style="text-align:left;background:#F6F2E8;border:1.5px solid #E2D9C5;border-radius:14px;padding:16px;margin-top:4px;">
             <div style="font-size:14px;font-weight:600;color:#42485A;line-height:1.5;">Kalau aplikasi email Anda tidak terbuka, salin pesan di bawah ini dan kirim ke <a href="/id/kontak" data-mailto="main" style="color:#1E7A6A;text-decoration:underline;"><span class="js-email"></span></a></div>
@@ -183,6 +193,6 @@
   </footer>
 
 </div>
-<script src="/main.js?v=de943a6b" defer></script>
+<script src="/main.js?v=17befa7a" defer></script>
 </body>
 </html>

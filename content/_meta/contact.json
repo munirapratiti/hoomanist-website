@@ -39,6 +39,14 @@
     "tag": "button",
     "label": "Send message"
   },
+  "message_sent": {
+    "tag": "div",
+    "label": "Kontak — judul setelah pesan terkirim"
+  },
+  "message_sent_note": {
+    "tag": "p",
+    "label": "Kontak — keterangan setelah pesan terkirim"
+  },
   "opening_your_email": {
     "tag": "div",
     "label": "Opening your email…"
