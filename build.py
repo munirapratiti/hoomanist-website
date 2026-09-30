@@ -53,10 +53,10 @@ PAGES = [
     {
         "path": "/services",
         "out": "services/index.html",
-        "title": "Creative Recruitment & People Systems | Hoomanist",
-        "desc": "Creative recruitment, people growth and performance systems for "
-                "studios and brands in Indonesia. Culture-fit hiring, backed by "
-                "a 90-day guarantee.",
+        "title": "Creative Recruitment for Agencies & Brands | Hoomanist",
+        "desc": "End-to-end creative recruitment for studios and brands in "
+                "Indonesia. Culture-fit hiring with a dedicated fit interview, "
+                "backed by a 90-day guarantee.",
         "blocks": ["services", "pricing"],
     },
     {
@@ -120,10 +120,10 @@ PAGES += [
         "path": "/id/layanan",
         "out": "id/layanan/index.html",
         "lang": "id",
-        "title": "Jasa Rekrutmen Kreatif & Sistem SDM | Hoomanist",
-        "desc": "Rekrutmen talenta kreatif, pengembangan karier, dan sistem "
-                "penilaian kinerja untuk agensi dan brand di Indonesia. "
-                "Dengan garansi 90 hari.",
+        "title": "Jasa Rekrutmen Kreatif di Indonesia | Hoomanist",
+        "desc": "Jasa rekrutmen kreatif menyeluruh untuk agensi dan brand di "
+                "Indonesia. Kecocokan budaya sebagai pusatnya, dengan wawancara "
+                "kecocokan tersendiri dan garansi 90 hari.",
         "blocks": ["services", "pricing"],
     },
     {

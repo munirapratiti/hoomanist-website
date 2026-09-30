@@ -247,17 +247,17 @@ collections:
             label: "Judul"
             widget: string
             required: false
-            hint: "Most teams start with a hire. The good ones stay for the system."
+            hint: "Hiring for skill is the easy part. Fit is where teams get it wrong."
           - name: "businesses_hired_for_skill_but_struggled"
             label: "Paragraf"
             widget: text
             required: false
-            hint: "Businesses hired for skill — but struggled with fit. We don't stop at …"
+            hint: "Businesses hire for skill, then struggle with fit. We run recruitment …"
           - name: "creative_recruitment_start_here_hiring_p"
             label: "Teks pendek 2"
             widget: text
             required: false
-            hint: "Creative Recruitment — start here Hiring people who fit the role, the …  ⚠️ berisi tag HTML — biarkan utuh"
+            hint: "Creative Recruitment Hiring people who fit the role, the team, and the…  ⚠️ berisi tag HTML — biarkan utuh"
           - name: "from_brief_to_belonging_end_to_end_recru"
             label: "Paragraf 2"
             widget: text
@@ -1447,7 +1447,7 @@ collections:
             label: "Judul"
             widget: text
             required: false
-            hint: "Kebanyakan tim mulai dari satu rekrutan. Yang bertahan, mulai dari sis…"
+            hint: "Merekrut berdasarkan keahlian itu gampang. Kecocokan yang bikin tim ke…"
           - name: "businesses_hired_for_skill_but_struggled"
             label: "Paragraf"
             widget: text
@@ -1457,7 +1457,7 @@ collections:
             label: "Teks pendek 2"
             widget: text
             required: false
-            hint: "Rekrutmen Kreatif — mulai di sini Merekrut orang yang cocok dengan per…  ⚠️ berisi tag HTML — biarkan utuh"
+            hint: "Rekrutmen Kreatif Merekrut orang yang cocok dengan perannya, timnya, d…  ⚠️ berisi tag HTML — biarkan utuh"
           - name: "from_brief_to_belonging_end_to_end_recru"
             label: "Paragraf 2"
             widget: text
