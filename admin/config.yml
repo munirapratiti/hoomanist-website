@@ -352,7 +352,7 @@ collections:
             label: "Paragraf 3"
             widget: text
             required: false
-            hint: "We understand how creative work actually works, so hiring stays portfo…"
+            hint: "Every portfolio is reviewed by people who have made creative work them…"
           - name: "03"
             label: "Teks pendek 6"
             widget: string
@@ -447,7 +447,7 @@ collections:
             label: "Teks pendek 22"
             widget: string
             required: false
-            hint: "Builds people systems &amp; culture"
+            hint: "Runs the fit interview itself, never delegated"
           - name: "yes_4"
             label: "Teks pendek 23"
             widget: string
@@ -462,89 +462,64 @@ collections:
             label: "Teks pendek 25"
             widget: string
             required: false
-            hint: "Yes"
+            hint: "No"
           - name: "some_4"
             label: "Teks pendek 26"
             widget: string
             required: false
-            hint: "Some"
-          - name: "performance_and_growth_structure"
-            label: "Teks pendek 27"
-            widget: string
-            required: false
-            hint: "Performance and growth structure"
-          - name: "yes_6"
-            label: "Teks pendek 28"
-            widget: string
-            required: false
             hint: "Yes"
-          - name: "no_4"
-            label: "Teks pendek 29"
-            widget: string
-            required: false
-            hint: "No"
-          - name: "yes_7"
-            label: "Teks pendek 30"
-            widget: string
-            required: false
-            hint: "Yes"
-          - name: "some_5"
-            label: "Teks pendek 31"
-            widget: string
-            required: false
-            hint: "Some"
           - name: "onboarding_amp_90_day_support"
-            label: "Teks pendek 32"
+            label: "Teks pendek 27"
             widget: string
             required: false
             hint: "Onboarding &amp; 90-day support"
           - name: "yes_8"
-            label: "Teks pendek 33"
+            label: "Teks pendek 28"
             widget: string
             required: false
             hint: "Yes"
           - name: "no_5"
-            label: "Teks pendek 34"
+            label: "Teks pendek 29"
             widget: string
             required: false
             hint: "No"
           - name: "some_6"
-            label: "Teks pendek 35"
+            label: "Teks pendek 30"
             widget: string
             required: false
             hint: "Some"
           - name: "yes_9"
-            label: "Teks pendek 36"
+            label: "Teks pendek 31"
             widget: string
             required: false
             hint: "Yes"
           - name: "senior_embedded_partner"
-            label: "Teks pendek 37"
+            label: "Teks pendek 32"
             widget: string
             required: false
             hint: "Senior, embedded partner"
           - name: "yes_10"
-            label: "Teks pendek 38"
+            label: "Teks pendek 33"
             widget: string
             required: false
             hint: "Yes"
           - name: "no_6"
-            label: "Teks pendek 39"
+            label: "Teks pendek 34"
             widget: string
             required: false
             hint: "No"
           - name: "no_7"
-            label: "Teks pendek 40"
+            label: "Teks pendek 35"
             widget: string
             required: false
             hint: "No"
           - name: "no_8"
-            label: "Teks pendek 41"
+            label: "Teks pendek 36"
             widget: string
             required: false
             hint: "No"
           - name: "is_hoomanist_right_for_you"
-            label: "Teks pendek 42"
+            label: "Teks pendek 37"
             widget: string
             required: false
             hint: "Is Hoomanist Right For You?"
@@ -554,7 +529,7 @@ collections:
             required: false
             hint: "There's no such thing as too early — the sooner we talk, the more opti…"
           - name: "5_20_people"
-            label: "Teks pendek 43"
+            label: "Teks pendek 38"
             widget: string
             required: false
             hint: "5–20 people"
@@ -564,7 +539,7 @@ collections:
             required: false
             hint: "How the team works still lives in the founder's head. One wrong hire s…"
           - name: "20_50_people"
-            label: "Teks pendek 44"
+            label: "Teks pendek 39"
             widget: string
             required: false
             hint: "20–50 people"
@@ -574,7 +549,7 @@ collections:
             required: false
             hint: "Growing fast, feeling the strain. The founder can't be everywhere, and…"
           - name: "any_size"
-            label: "Teks pendek 45"
+            label: "Teks pendek 40"
             widget: string
             required: false
             hint: "Any size"
@@ -584,22 +559,22 @@ collections:
             required: false
             hint: "Going through change — new leadership, a rebrand, a big expansion. The…"
           - name: "why_hero_alt"
-            label: "Teks pendek 46"
+            label: "Teks pendek 41"
             widget: string
             required: false
             hint: "A client team we staffed, together on their company offsite"
           - name: "why_hero_caption"
-            label: "Teks pendek 47"
+            label: "Teks pendek 42"
             widget: text
             required: false
             hint: "Sosplan's team on their offsite. Every hire since 2022 came through us…"
           - name: "why_side_photo_alt"
-            label: "Teks pendek 48"
+            label: "Teks pendek 43"
             widget: string
             required: false
             hint: "A client team together at a company gathering"
           - name: "why_side_eyebrow"
-            label: "Teks pendek 49"
+            label: "Teks pendek 44"
             widget: string
             required: false
             hint: "What we are actually looking at"
@@ -642,7 +617,7 @@ collections:
             label: "Paragraf 2"
             widget: string
             required: false
-            hint: "People growth · Recruitment · Performance &amp; alignment"
+            hint: "Recruitment · Fit interviews · 90-day support"
           - name: "tito"
             label: "Teks pendek 4"
             widget: string
@@ -697,7 +672,7 @@ collections:
             label: "Paragraf"
             widget: string
             required: false
-            hint: "Freelance and in-house, for agencies and brands since 2023."
+            hint: "Freelance and in-house, for agencies and brands since 2022."
           - name: "3_wks"
             label: "Teks pendek 4"
             widget: string

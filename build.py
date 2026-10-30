@@ -73,7 +73,7 @@ PAGES = [
         "out": "proof/index.html",
         "title": "Creative Recruitment Case Studies | Hoomanist",
         "desc": "15+ roles filled for By.U in three weeks. Results from the "
-                "creative teams we've built since 2023.",
+                "creative teams we've built since 2022.",
         "blocks": ["proof"],
     },
     {

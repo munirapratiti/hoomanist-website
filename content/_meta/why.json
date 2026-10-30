@@ -109,43 +109,23 @@
   },
   "builds_people_systems_amp_culture": {
     "tag": "div",
-    "label": "Builds people systems &amp; culture"
+    "label": "Runs the fit interview itself, never delegated"
   },
   "yes_4": {
     "tag": "div",
-    "label": "Yes"
+    "label": "Fit interview · Hoomanist"
   },
   "no_3": {
     "tag": "div",
-    "label": "No"
+    "label": "Fit interview · Recruiter"
   },
   "yes_5": {
     "tag": "div",
-    "label": "Yes"
+    "label": "Fit interview · HR firm"
   },
   "some_4": {
     "tag": "div",
-    "label": "Some"
-  },
-  "performance_and_growth_structure": {
-    "tag": "div",
-    "label": "Performance and growth structure"
-  },
-  "yes_6": {
-    "tag": "div",
-    "label": "Yes"
-  },
-  "no_4": {
-    "tag": "div",
-    "label": "No"
-  },
-  "yes_7": {
-    "tag": "div",
-    "label": "Yes"
-  },
-  "some_5": {
-    "tag": "div",
-    "label": "Some"
+    "label": "Fit interview · In-house"
   },
   "onboarding_amp_90_day_support": {
     "tag": "div",
