@@ -1,0 +1,1075 @@
+<title>Bahan Konten Hoomanist</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Poppins:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+
+<style>
+  /* Palet diambil dari situs hoomanist.id supaya halaman ini terasa
+     milik mereka sendiri, bukan tempelan. */
+  :root{
+    --ground:#F6F2E8;
+    --surface:#FBF9F2;
+    --sheet:#FFFFFF;
+    --ink:#3B2145;
+    --ink-soft:#5C6473;
+    --line:#E2D9C5;
+    --line-soft:#EFE8D8;
+    --plum:#3B2145;
+    --orange:#EE7E52;
+    --teal:#1E7A6A;
+    --teal-wash:#E4F0ED;
+    --orange-wash:#FDEDE5;
+    --mark:#8A6A1F;
+    --mark-wash:#FBF0D4;
+    --shadow:rgba(59,33,69,.10);
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      color-scheme: dark;
+      --ground:#241430;
+      --surface:#2E1B3C;
+      --sheet:#33203F;
+      --ink:#F3ECE0;
+      --ink-soft:#B9AEC2;
+      --line:#4A3457;
+      --line-soft:#3E2B4B;
+      --plum:#F3ECE0;
+      --orange:#F79A72;
+      --teal:#5FC0AB;
+      --teal-wash:#22463F;
+      --orange-wash:#4A2E24;
+      --mark:#E8C879;
+      --mark-wash:#423519;
+      --shadow:rgba(0,0,0,.34);
+    }
+  }
+  :root[data-theme="dark"]{
+    color-scheme: dark;
+    --ground:#241430;
+    --surface:#2E1B3C;
+    --sheet:#33203F;
+    --ink:#F3ECE0;
+    --ink-soft:#B9AEC2;
+    --line:#4A3457;
+    --line-soft:#3E2B4B;
+    --plum:#F3ECE0;
+    --orange:#F79A72;
+    --teal:#5FC0AB;
+    --teal-wash:#22463F;
+    --orange-wash:#4A2E24;
+    --mark:#E8C879;
+    --mark-wash:#423519;
+    --shadow:rgba(0,0,0,.34);
+  }
+
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--ground);
+    color:var(--ink);
+    font-family:'Poppins',system-ui,-apple-system,'Segoe UI',sans-serif;
+    font-size:15px;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{
+    max-width:1140px;
+    margin:0 auto;
+    padding-inline:20px;
+    padding-block:0 72px;
+  }
+
+  header.top{
+    padding-block:52px 34px;
+    border-bottom:2px solid var(--ink);
+  }
+  .kicker{
+    font-family:'IBM Plex Mono',ui-monospace,monospace;
+    font-size:12px;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    color:var(--teal);
+    margin:0 0 14px;
+  }
+  h1{
+    font-family:'Fraunces','Iowan Old Style',Georgia,serif;
+    font-weight:700;
+    font-size:clamp(34px,6vw,54px);
+    line-height:1.04;
+    letter-spacing:-.02em;
+    margin:0;
+    text-wrap:balance;
+  }
+  .lede{
+    font-size:17px;
+    line-height:1.62;
+    color:var(--ink-soft);
+    max-width:60ch;
+    margin:18px 0 0;
+  }
+  .rule-of-thumb{
+    margin-top:28px;
+    border-left:3px solid var(--orange);
+    padding:14px 0 14px 18px;
+  }
+  .rule-of-thumb p{margin:0;max-width:62ch;}
+  .rule-of-thumb strong{color:var(--ink);}
+
+  section{padding-block:48px 8px;}
+  section + section{border-top:1px solid var(--line);}
+  .sec-head{
+    display:flex;
+    align-items:baseline;
+    gap:14px;
+    flex-wrap:wrap;
+    margin-bottom:8px;
+  }
+  .sec-num{
+    font-family:'IBM Plex Mono',ui-monospace,monospace;
+    font-size:13px;
+    color:var(--orange);
+    letter-spacing:.08em;
+  }
+  h2{
+    font-family:'Fraunces','Iowan Old Style',Georgia,serif;
+    font-weight:700;
+    font-size:clamp(25px,3.6vw,34px);
+    line-height:1.14;
+    letter-spacing:-.015em;
+    margin:0;
+    text-wrap:balance;
+  }
+  .sec-note{
+    color:var(--ink-soft);
+    max-width:64ch;
+    margin:10px 0 30px;
+  }
+
+  .stack{display:flex;flex-direction:column;gap:22px;}
+  .post{
+    background:var(--sheet);
+    border:1px solid var(--line);
+    border-radius:14px;
+    overflow:hidden;
+    box-shadow:0 1px 2px var(--shadow);
+  }
+  .post-head{
+    display:flex;
+    align-items:flex-start;
+    gap:14px;
+    flex-wrap:wrap;
+    padding:18px 20px 14px;
+    border-bottom:1px solid var(--line-soft);
+  }
+  .post-head .titles{flex:1 1 230px;min-width:0;}
+  .platform{
+    font-family:'IBM Plex Mono',ui-monospace,monospace;
+    font-size:11px;
+    letter-spacing:.13em;
+    text-transform:uppercase;
+    padding:4px 9px;
+    border-radius:5px;
+    white-space:nowrap;
+  }
+  .platform.li{background:var(--teal-wash);color:var(--teal);}
+  .platform.ig{background:var(--orange-wash);color:var(--orange);}
+  h3{
+    font-size:19px;
+    font-weight:600;
+    line-height:1.3;
+    margin:8px 0 0;
+    letter-spacing:-.01em;
+    text-wrap:balance;
+  }
+  .why{
+    font-size:13.5px;
+    color:var(--ink-soft);
+    margin:6px 0 0;
+    max-width:58ch;
+  }
+
+  .copyblock{
+    position:relative;
+    background:var(--surface);
+    border-top:1px solid var(--line-soft);
+  }
+  .copytext{
+    font-family:'IBM Plex Mono',ui-monospace,monospace;
+    font-size:13.5px;
+    line-height:1.75;
+    white-space:pre-wrap;
+    margin:0;
+    padding:20px;
+    color:var(--ink);
+    overflow-wrap:break-word;
+  }
+  .copytext b{font-weight:500;color:var(--teal);}
+  /* Tempat cerita asli Munira. Sengaja mencolok supaya tidak ikut
+     ter-posting mentah-mentah. */
+  .fill{
+    display:block;
+    background:var(--mark-wash);
+    color:var(--mark);
+    border:1px dashed var(--mark);
+    border-radius:7px;
+    padding:11px 13px;
+    margin:9px 0;
+    font-size:12.5px;
+    line-height:1.55;
+  }
+  .post-foot{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    flex-wrap:wrap;
+    padding:13px 20px;
+    border-top:1px solid var(--line-soft);
+    background:var(--sheet);
+  }
+  button.copy{
+    font-family:'Poppins',sans-serif;
+    font-size:13.5px;
+    font-weight:600;
+    color:#F6F2E8;
+    background:var(--plum);
+    border:none;
+    border-radius:999px;
+    padding:9px 20px;
+    cursor:pointer;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]) button.copy{color:#241430;}
+  }
+  :root[data-theme="dark"] button.copy{color:#241430;}
+  button.copy:hover{opacity:.88;}
+  button.copy:focus-visible{outline:2.5px solid var(--orange);outline-offset:2px;}
+  .done{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    font-size:13.5px;
+    color:var(--ink-soft);
+    cursor:pointer;
+    user-select:none;
+  }
+  .done input{width:16px;height:16px;accent-color:var(--teal);cursor:pointer;}
+  .counter{
+    margin-left:auto;
+    font-family:'IBM Plex Mono',ui-monospace,monospace;
+    font-size:12px;
+    color:var(--ink-soft);
+  }
+  .counter.over{color:var(--orange);font-weight:500;}
+
+  .slides{display:flex;flex-direction:column;gap:0;padding:4px 0;}
+  .slide{
+    display:flex;
+    gap:16px;
+    padding:15px 20px;
+    border-bottom:1px solid var(--line-soft);
+  }
+  .slide:last-child{border-bottom:none;}
+  .slide-n{
+    font-family:'IBM Plex Mono',ui-monospace,monospace;
+    font-size:12px;
+    color:var(--orange);
+    padding-top:3px;
+    flex:none;
+    width:26px;
+  }
+  .slide-body{flex:1;min-width:0;}
+  .slide-title{font-weight:600;font-size:15.5px;line-height:1.35;margin:0;}
+  .slide-sub{font-size:13.5px;color:var(--ink-soft);margin:5px 0 0;max-width:56ch;}
+
+  .bios{display:grid;grid-template-columns:repeat(auto-fit,minmax(265px,1fr));gap:18px;}
+  .bio{
+    background:var(--sheet);
+    border:1px solid var(--line);
+    border-radius:14px;
+    display:flex;
+    flex-direction:column;
+    box-shadow:0 1px 2px var(--shadow);
+  }
+  .bio-label{
+    font-family:'IBM Plex Mono',ui-monospace,monospace;
+    font-size:11px;
+    letter-spacing:.13em;
+    text-transform:uppercase;
+    color:var(--ink-soft);
+    padding:14px 18px 0;
+  }
+  .bio pre{
+    font-family:'IBM Plex Mono',ui-monospace,monospace;
+    font-size:13px;
+    line-height:1.7;
+    white-space:pre-wrap;
+    margin:0;
+    padding:10px 18px 16px;
+    flex:1;
+    overflow-wrap:break-word;
+  }
+  .bio .post-foot{border-radius:0 0 13px 13px;}
+  /* Yang sudah dipilih Munira — dua sisanya disimpan sebagai arsip. */
+  .bio.chosen{border-color:var(--teal);border-width:2px;}
+  .bio.chosen .bio-label{color:var(--teal);font-weight:500;}
+  .bio:not(.chosen){opacity:.6;}
+  .bio:not(.chosen):hover,
+  .bio:not(.chosen):focus-within{opacity:1;}
+
+  .tasks{display:flex;flex-direction:column;gap:16px;margin-bottom:34px;}
+  .task{
+    display:flex;
+    gap:16px;
+    background:var(--sheet);
+    border:1px solid var(--line);
+    border-radius:14px;
+    padding:18px 20px;
+  }
+  .task-n{
+    font-family:'Fraunces',Georgia,serif;
+    font-size:27px;
+    font-weight:700;
+    color:var(--orange);
+    line-height:1;
+    flex:none;
+  }
+  .task h4{margin:0 0 6px;font-size:16.5px;font-weight:600;letter-spacing:-.01em;}
+  .task p{margin:0;color:var(--ink-soft);font-size:14px;max-width:60ch;}
+
+  .sched-scroll{overflow-x:auto;margin-top:6px;}
+  table{border-collapse:collapse;width:100%;min-width:490px;font-size:14px;}
+  th,td{text-align:left;padding:13px 14px;border-bottom:1px solid var(--line);vertical-align:top;}
+  th{
+    font-family:'IBM Plex Mono',ui-monospace,monospace;
+    font-size:11px;
+    letter-spacing:.11em;
+    text-transform:uppercase;
+    color:var(--ink-soft);
+    font-weight:500;
+    border-bottom:1.5px solid var(--ink);
+  }
+  td.wk{font-family:'IBM Plex Mono',ui-monospace,monospace;color:var(--orange);white-space:nowrap;}
+  tr:last-child td{border-bottom:none;}
+
+  .aside{
+    background:var(--teal-wash);
+    border-radius:12px;
+    padding:17px 20px;
+    margin-top:26px;
+    font-size:14px;
+    color:var(--ink);
+  }
+  .aside p{margin:0;max-width:64ch;}
+  .aside p + p{margin-top:9px;}
+  .aside strong{color:var(--teal);}
+
+  .warn{
+    background:var(--mark-wash);
+    border-radius:12px;
+    padding:17px 20px;
+    margin-top:26px;
+    font-size:14px;
+  }
+  .warn p{margin:0;max-width:64ch;}
+  .warn strong{color:var(--mark);}
+
+  footer.end{
+    margin-top:56px;
+    padding-top:26px;
+    border-top:1px solid var(--line);
+    color:var(--ink-soft);
+    font-size:13.5px;
+  }
+  footer.end p{margin:0 0 8px;max-width:62ch;}
+
+  @media (prefers-reduced-motion: reduce){
+    *{animation:none !important;transition:none !important;}
+  }
+  @media (max-width:560px){
+    .copytext{padding:16px;font-size:13px;}
+    .slide{padding:13px 16px;}
+    .post-head{padding:16px 16px 13px;}
+    .post-foot{padding:12px 16px;}
+    .counter{margin-left:0;width:100%;}
+  }
+</style>
+
+<div class="wrap">
+
+  <header class="top">
+    <p class="kicker">Hoomanist · Bahan konten</p>
+    <h1>Bahan Konten Hoomanist</h1>
+    <p class="lede">Sembilan tulisan siap pakai — lima untuk LinkedIn, empat untuk Instagram — plus perbaikan profil LinkedIn, opsi bio Instagram, dan jadwal lima minggu. Dibuat setelah iklan Google membuktikan calon klien tidak mencari lewat pencarian.</p>
+
+    <div class="rule-of-thumb">
+      <p><strong>Satu aturan untuk semua tulisan di sini:</strong> tulis yang hanya Hoomanist yang bisa menulisnya. Kompetitor menulis "strategi KPI" — itu bisa ditulis siapa saja. Hoomanist punya 65+ penempatan kreatif. Itu yang tidak bisa dikarang orang lain.</p>
+    </div>
+  </header>
+
+  <!-- ====================== MINGGU 0 ====================== -->
+  <section>
+    <div class="sec-head">
+      <span class="sec-num">Minggu 0</span>
+      <h2>Beresin mesinnya dulu</h2>
+    </div>
+    <p class="sec-note">Sebelum memposting apa pun. Instagram Hoomanist sekarang 12 follower dan hanya mengikuti 2 akun — itu sebabnya, bukan akibatnya. Postingan sebagus apa pun tidak akan terlihat kalau mesinnya belum menyala.</p>
+
+    <div class="tasks">
+      <div class="task">
+        <span class="task-n">1</span>
+        <div>
+          <h4>Follow 200–300 akun</h4>
+          <p>Desainer, copywriter, video editor, art director Indonesia. Agensi kreatif. Komunitas desain. Dosen DKV. Gratis, tidak perlu membuat konten, dan ini yang paling berpengaruh — sekarang algoritma Instagram belum punya bahan apa pun untuk menentukan Hoomanist harus muncul di feed siapa.</p>
+        </div>
+      </div>
+      <div class="task">
+        <span class="task-n">2</span>
+        <div>
+          <h4>Ganti bio</h4>
+          <p>Bio sekarang — <em>"Where creative people belong. Human-centered creative teams built with purpose."</em> — masalahnya bukan bahasanya, tapi orang yang membacanya tidak tahu Hoomanist mengerjakan apa. Tiga opsi di bawah, pilih satu.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="bios">
+      <div class="bio chosen">
+        <span class="bio-label">✓ Dipakai</span>
+        <pre id="bio-b">Your team is the craft, not an afterthought.
+Two of us. One team at a time.
+65+ creative roles filled since 2022
+hoomanist.id</pre>
+        <div class="post-foot">
+          <button class="copy" data-src="bio-b">Salin</button>
+          <span class="counter" data-count="bio-b" data-limit="150"></span>
+        </div>
+      </div>
+
+      <div class="bio">
+        <span class="bio-label">Tidak dipakai · dengan tiga kata nilai</span>
+        <pre id="bio-a">Human. Presence. Purpose.
+Your team is the craft, not an afterthought.
+Two of us. You talk to who does the work.
+65+ roles since 2022 · hoomanist.id</pre>
+        <div class="post-foot">
+          <button class="copy" data-src="bio-a">Salin</button>
+          <span class="counter" data-count="bio-a" data-limit="150"></span>
+        </div>
+      </div>
+
+      <div class="bio">
+        <span class="bio-label">Tidak dipakai · bukti dipadatkan</span>
+        <pre id="bio-c">Human. Presence. Purpose.
+Your team is the craft, not an afterthought.
+Two of us, one team at a time. 65+ roles since 2022.
+hoomanist.id</pre>
+        <div class="post-foot">
+          <button class="copy" data-src="bio-c">Salin</button>
+          <span class="counter" data-count="bio-c" data-limit="150"></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="aside">
+      <p><strong>Tiap baris mengerjakan satu tugas.</strong> Baris pertama adalah tesisnya: tim bukan pelengkap pekerjaan kreatif, tim itu pekerjaannya. Baris kedua jujur soal ukuran, dan justru di situ kekuatannya — hampir tidak ada agensi yang berani menulis "two of us", semuanya berpura-pura besar. Baris ketiga buktinya.</p>
+      <p><strong>Bahasa Inggris di bio, Indonesia di konten.</strong> Campuran ini normal di industri kreatif Indonesia dan tidak membuat jarak. Bio dibaca sekilas oleh calon klien dan kandidat sekaligus, jadi nada profesional membantu. Tapi carousel dan tulisan panjang tetap bahasa Indonesia — di situ pembacanya kandidat kreatif Indonesia, dan bahasa Inggris justru akan terasa dibuat-buat.</p>
+      <p><strong>Istilah "people partner" sengaja tidak muncul di bio.</strong> Istilah yang butuh dijelaskan akan menghabiskan 150 karakter sebelum sempat menempel. Definisi lengkapnya ditaruh di <strong>LinkedIn 05</strong> di bawah — di situ ruangnya 500 kata.</p>
+    </div>
+
+    <div class="aside">
+      <p><strong>Posting dari akun pribadi, bukan akun perusahaan.</strong> LinkedIn hampir tidak menyebarkan postingan halaman perusahaan. Postingan orang disebarkan. Kompetitor mengalami ini juga — halaman perusahaannya 1.565 follower tapi isinya hanya lowongan.</p>
+    </div>
+  </section>
+
+  <!-- ============== PROFIL LINKEDIN (prasyarat) ============== -->
+  <section>
+    <div class="sec-head">
+      <span class="sec-num">Prasyarat</span>
+      <h2>Profil LinkedIn Munira</h2>
+    </div>
+    <p class="sec-note">Tulisan diposting dari akun pribadi, jadi <strong>profil inilah yang jadi halaman tujuannya</strong> — bukan website. Orang membaca tulisan, klik nama, dan mendarat di sini. Profil sekarang tidak menyebut Hoomanist sama sekali: headline-nya "Freelance Recruiter | Human Resources Enthusiast", Experience-nya hanya Sosplan Creative, About-nya CV untuk melamar kerja. Perbaiki ini dulu sebelum memposting apa pun.</p>
+
+    <div class="aside">
+      <p><strong>Modalnya sudah ada: 3.188 follower.</strong> Jauh di atas Instagram yang 12. Satu postingan sebelumnya menembus 1.113 impression. Jadi distribusinya bukan masalah — yang kurang cuma: tiga ribu orang itu belum tahu Hoomanist apa.</p>
+    </div>
+
+    <div class="stack">
+      <article class="post">
+        <div class="post-head">
+          <span class="platform li">Headline</span>
+          <div class="titles">
+            <h3>Pilih satu</h3>
+            <p class="why">Ganti kata "Enthusiast" — itu kata orang yang sedang belajar, bukan yang menjual jasa. Dan "3+ years" bertentangan dengan website yang menyebut sejak 2022 (4 tahun).</p>
+          </div>
+        </div>
+        <div class="copyblock">
+          <p class="copytext" id="li-head-1">Founder, Hoomanist — creative recruitment for agencies &amp; brands | 65+ roles filled since 2022</p>
+        </div>
+        <div class="post-foot">
+          <button class="copy" data-src="li-head-1">Salin</button>
+          <span class="counter" data-count="li-head-1" data-limit="220"></span>
+        </div>
+        <div class="copyblock">
+          <p class="copytext" id="li-head-2">I help agencies &amp; brands hire creative people | Founder, Hoomanist | 65+ roles filled since 2022</p>
+        </div>
+        <div class="post-foot">
+          <button class="copy" data-src="li-head-2">Salin</button>
+          <span class="counter" data-count="li-head-2" data-limit="220"></span>
+        </div>
+      </article>
+
+      <article class="post">
+        <div class="post-head">
+          <span class="platform li">About</span>
+          <div class="titles">
+            <h3>Ganti seluruhnya — pilih satu</h3>
+            <p class="why">Yang sekarang ditulis untuk HRD yang mau merekrut Munira. Yang ini ditulis untuk klien yang mau menyewa Hoomanist. Di LinkedIn hanya 2–3 baris pertama yang terlihat sebelum tombol "see more", jadi kalimat pembukanya yang paling menentukan — sisanya jarang diklik.</p>
+          </div>
+        </div>
+        <div class="copyblock">
+          <p class="copytext" id="li-about">I run Hoomanist. We help agencies and brands hire creative people — designers, copywriters, video editors, social media.
+
+A portfolio shows what someone made. It doesn't show how they work with a half-finished brief, or who they need feedback from. That's usually what decides whether a creative hire lasts.
+
+So we learn how your team actually works before we start searching, send three to five people instead of twenty, and stay around after the offer is signed.
+
+65+ creative roles filled since 2022. Four to eight weeks per role. 90-day replacement at no extra cost.
+
+Two of us, one team at a time. The person you talk to is the person doing the work.
+
+hoomanist.id</p>
+        </div>
+        <div class="post-foot">
+          <button class="copy" data-src="li-about">Salin versi ringkas</button>
+          <span class="counter" data-count="li-about" data-limit="2600"></span>
+          <label class="done"><input type="checkbox" id="chk-li-about"> Sudah diganti</label>
+        </div>
+        <div class="copyblock">
+          <p class="copytext" id="li-about-pendek">I run Hoomanist. We help agencies and brands hire creative people — designers, copywriters, video editors, social media.
+
+A portfolio shows what someone made. It doesn't show how they work. That's usually what decides whether a creative hire lasts.
+
+So we learn how your team works before we search, send three to five people instead of twenty, and stay around after the offer is signed.
+
+65+ roles filled since 2022. Four to eight weeks each. 90-day replacement at no extra cost.
+
+Two of us, one team at a time.
+
+hoomanist.id</p>
+        </div>
+        <div class="post-foot">
+          <button class="copy" data-src="li-about-pendek">Salin versi paling pendek</button>
+          <span class="counter" data-count="li-about-pendek" data-limit="2600"></span>
+        </div>
+      </article>
+
+      <article class="post">
+        <div class="post-head">
+          <span class="platform li">Experience</span>
+          <div class="titles">
+            <h3>Tambahkan Hoomanist</h3>
+            <p class="why">Ini yang paling menentukan. Tanpa entri ini, tidak ada satu pun bukti di profil bahwa Munira punya bisnis — yang terlihat hanya orang HR di Sosplan.</p>
+          </div>
+        </div>
+        <div class="slides">
+          <div class="slide"><span class="slide-n">·</span><div class="slide-body"><p class="slide-title">Title</p><p class="slide-sub">Founder — atau Co-founder, kalau Tito juga pendiri. Pilih yang sesuai kenyataan.</p></div></div>
+          <div class="slide"><span class="slide-n">·</span><div class="slide-body"><p class="slide-title">Company</p><p class="slide-sub">Hoomanist · Self-employed</p></div></div>
+          <div class="slide"><span class="slide-n">·</span><div class="slide-body"><p class="slide-title">Tanggal</p><p class="slide-sub">2022 — Present. Bulannya pilih sendiri; yang penting tahunnya 2022, sama dengan website. Wajar kalau beririsan dengan masa kerja di Sosplan.</p></div></div>
+        </div>
+        <div class="copyblock">
+          <p class="copytext" id="li-exp">Creative recruitment for agencies and brands in Indonesia. Designers, copywriters, video editors, social media.
+
+— 65+ creative roles filled since 2022
+— Average 4–8 weeks per role
+— 3–5 candidates shortlisted per role, not 20
+— 90-day replacement at no extra cost
+
+We learn how a team actually works before we start searching, and stay involved after the offer is signed.
+
+hoomanist.id</p>
+        </div>
+        <div class="post-foot">
+          <button class="copy" data-src="li-exp">Salin deskripsinya</button>
+          <label class="done"><input type="checkbox" id="chk-li-exp"> Sudah ditambah</label>
+        </div>
+      </article>
+    </div>
+
+    <div class="warn">
+      <p><strong>Satu hal yang perlu dijaga.</strong> Setelan <em>"Open to work"</em> sekarang disetel <em>Recruiters only</em> — artinya tidak terlihat publik, klien tidak melihatnya. Aman. Tapi jangan sampai berubah jadi <em>"All LinkedIn members"</em>: calon klien yang melihat pemilik Hoomanist sedang mencari pekerjaan sebagai HR Manager tidak akan melanjutkan obrolan. Mau tetap mencari peluang kerja atau tidak itu keputusan Munira sendiri — yang penting setelannya tetap privat.</p>
+    </div>
+  </section>
+
+  <!-- ====================== LINKEDIN ====================== -->
+  <section>
+    <div class="sec-head">
+      <span class="sec-num">LinkedIn</span>
+      <h2>Lima tulisan untuk mencari klien</h2>
+    </div>
+    <p class="sec-note">Pembacanya pemilik agensi dan kepala tim yang pernah salah merekrut. 300–600 kata, satu kejadian, satu pelajaran, selesai. Tidak perlu "hubungi kami" di akhir — orang yang butuh akan mencari sendiri.</p>
+
+    <div class="stack">
+
+      <!-- LI 1 -->
+      <article class="post">
+        <div class="post-head">
+          <span class="platform li">LinkedIn 01</span>
+          <div class="titles">
+            <h3>"Portfolio-nya bagus banget"</h3>
+            <p class="why">Paling relatable. Hampir semua pemilik agensi pernah mengalaminya, dan hampir tidak ada yang membicarakannya terbuka.</p>
+          </div>
+        </div>
+        <div class="copyblock">
+          <p class="copytext" id="li-1">"Portfolio-nya bagus banget."
+
+Kalimat itu hampir selalu jadi alasan utama seseorang direkrut. Dan hampir selalu jadi alasan kenapa tiga bulan kemudian semua orang bingung kenapa tidak nyambung.
+<span class="fill">ISI CERITA DI SINI — satu kandidat yang portfolionya kuat tapi tidak cocok di tim. Apa yang terlihat di portfolio, dan apa yang ternyata terjadi saat dia mulai bekerja. 3–5 kalimat. Tidak perlu menyebut nama orang atau perusahaannya.</span>
+Masalahnya begini: portfolio menunjukkan hasil akhir. Yang tidak terlihat di sana:
+
+— seberapa jelas brief yang dia terima
+— berapa kali revisi sebelum jadi sebagus itu
+— dia yang memimpin, atau dia yang mengikuti
+— ada art director yang mengarahkan, atau dia sendirian
+— berapa lama waktu yang dibutuhkan
+
+Dua desainer bisa punya portfolio yang terlihat sama persis. Tapi yang satu bisa jalan dari brief setengah jadi, dan yang satu lagi berhenti kalau arahannya tidak detail.
+
+Di tim kecil, perbedaan itu segalanya.
+
+Sekarang yang kami tanyakan bukan "ini bikinnya bagaimana", tapi:
+
+"Ceritakan proyek yang hasilnya tidak sebagus ini. Apa yang terjadi?"
+
+Jawaban pertanyaan itu jauh lebih banyak memberi tahu daripada seluruh isi portfolionya.</p>
+        </div>
+        <div class="post-foot">
+          <button class="copy" data-src="li-1">Salin</button>
+          <label class="done"><input type="checkbox" id="chk-li-1"> Sudah diposting</label>
+        </div>
+      </article>
+
+      <!-- LI 2 -->
+      <article class="post">
+        <div class="post-head">
+          <span class="platform li">LinkedIn 02</span>
+          <div class="titles">
+            <h3>Kenapa kandidat bagus tidak melamar ke lowongan Anda</h3>
+            <p class="why"><strong>Mulai dari sini.</strong> Satu-satunya tulisan yang tidak butuh cerita tambahan — bisa tayang hari ini juga. Pembaca langsung berkaca, dan ini yang paling mungkin membuat orang menghubungi duluan.</p>
+          </div>
+        </div>
+        <div class="copyblock">
+          <p class="copytext" id="li-2">Kalau lowongan sudah tayang tiga minggu dan yang masuk hanya kandidat yang tidak nyambung — biasanya masalahnya bukan di pasar.
+
+Biasanya di tulisan lowongannya.
+
+Empat pola yang paling sering kami temui:
+
+<b>1. Minta terlalu banyak</b>
+"Desainer grafis, bisa motion, bisa video editing, bisa social media, bisa copywriting." Itu empat pekerjaan. Orang yang benar-benar jago salah satunya langsung tahu dia akan dibayar satu gaji untuk pekerjaan empat orang. Dia lewat.
+
+<b>2. Tidak menyebut gaji</b>
+Kandidat bagus punya pilihan. Mereka tidak akan menghabiskan waktu untuk proses yang mungkin berakhir di angka yang tidak masuk akal. Yang tetap melamar tanpa tahu angkanya biasanya yang tidak punya pilihan lain — dan itu bukan orang yang sedang dicari.
+
+<b>3. Tidak jelas dia akan bekerja dengan siapa</b>
+"Bergabung dengan tim yang dinamis" tidak memberi informasi apa pun. Orang kreatif memilih tempat kerja berdasarkan siapa yang akan memberi feedback ke karyanya setiap hari. Sebut orangnya.
+
+<b>4. Prosesnya kepanjangan</b>
+Lima tahap wawancara plus tugas tanpa bayaran. Kandidat terbaik sudah memegang tawaran di tempat lain sebelum sampai tahap tiga.
+<span class="fill">OPSIONAL — kalau ada contoh nyata lowongan klien yang direvisi lalu langsung mendapat kandidat lebih baik, taruh satu paragraf di sini. Kalau belum ada, hapus baris ini saja.</span>
+Lowongan itu bukan daftar permintaan. Itu tawaran.
+
+Coba baca ulang lowongan sendiri. Kalau kita sendiri tidak tertarik melamar, kandidat juga tidak.</p>
+        </div>
+        <div class="post-foot">
+          <button class="copy" data-src="li-2">Salin</button>
+          <label class="done"><input type="checkbox" id="chk-li-2"> Sudah diposting</label>
+        </div>
+      </article>
+
+      <!-- LI 3 -->
+      <article class="post">
+        <div class="post-head">
+          <span class="platform li">LinkedIn 03</span>
+          <div class="titles">
+            <h3>Kami tidak mengirim 20 CV</h3>
+            <p class="why">Ini yang membuat orang mengingat nama Hoomanist. Posisi yang berlawanan dengan hampir semua agensi rekrutmen lain.</p>
+          </div>
+        </div>
+        <div class="copyblock">
+          <p class="copytext" id="li-3">Kebanyakan agensi rekrutmen bangga dengan jumlah.
+
+"Kami kirim 20 kandidat dalam seminggu."
+
+Kami tidak.
+
+Kalau kami mengirim 20 CV, artinya salah satu dari dua hal: kami tidak paham yang sedang dicari, atau kami melempar semuanya supaya klien sendiri yang menyortir.
+
+Dua-duanya memindahkan pekerjaan klien kembali ke klien.
+
+Untuk satu peran kreatif, kami biasanya mengirim tiga sampai lima orang. Kadang dua.
+
+Bedanya ada di sebelum pengiriman, bukan sesudah:
+
+— kami bicara dulu soal tim yang sudah ada, bukan hanya posisi yang kosong
+— kami tahu siapa yang akan memberi feedback ke orang ini setiap hari
+— kami tanya proyek apa yang berjalan enam bulan ke depan
+— baru kami mulai mencari
+
+Rata-rata empat sampai delapan minggu per peran. Lebih lama dari yang kebanyakan agensi janjikan.
+
+Dan kalau ternyata tidak cocok, kami ganti dalam 90 hari tanpa biaya tambahan.
+
+65+ peran kreatif terisi sejak 2022. Satu tim dalam satu waktu.</p>
+        </div>
+        <div class="post-foot">
+          <button class="copy" data-src="li-3">Salin</button>
+          <label class="done"><input type="checkbox" id="chk-li-3"> Sudah diposting</label>
+        </div>
+      </article>
+
+      <!-- LI 4 -->
+      <article class="post">
+        <div class="post-head">
+          <span class="platform li">LinkedIn 04</span>
+          <div class="titles">
+            <h3>Berapa sebenarnya biaya salah merekrut satu desainer</h3>
+            <p class="why">Membuat pembaca menghitung sendiri. Begitu dia menghitung, harga jasa Hoomanist terlihat murah.</p>
+          </div>
+        </div>
+        <div class="copyblock">
+          <p class="copytext" id="li-4">Salah merekrut satu desainer terlihat seperti hanya rugi gaji beberapa bulan.
+
+Coba hitung betulan.
+
+<b>Gaji yang terbuang</b>
+Tiga sampai enam bulan, sebelum semua orang akhirnya mengakui ini tidak jalan.
+
+<b>Waktu tim</b>
+Art director yang seharusnya memikirkan konsep, malah merevisi. Setiap minggu. Itu jam kerja orang yang jauh lebih mahal.
+
+<b>Proyek yang molor</b>
+Tenggat bergeser. Klien menunggu. Kadang mereka tidak komplain — hanya tidak kembali lagi.
+
+<b>Merekrut ulang</b>
+Pasang lowongan lagi, menyortir lagi, wawancara lagi. Satu sampai dua bulan, dan posisinya kosong selama itu.
+
+<b>Dan yang paling mahal, yang paling tidak terlihat:</b>
+Orang bagus di tim ikut lelah. Merekalah yang menambal pekerjaan yang tidak selesai. Kalau terlalu lama, yang resign duluan justru yang paling tidak ingin dilepas.
+
+Satu kesalahan merekrut bisa jadi dua.
+<span class="fill">OPSIONAL TAPI KUAT — kalau berani, taruh angka kasarnya di sini. Tapi hanya angka yang benar-benar bisa dipertanggungjawabkan dari pengalaman sendiri. Jangan mengambil dari artikel lain.</span>
+Karena itu kami memilih empat sampai delapan minggu untuk mengisi satu peran, bukan dua minggu.
+
+Bukan karena kami lambat. Karena yang mahal bukan waktunya.</p>
+        </div>
+        <div class="post-foot">
+          <button class="copy" data-src="li-4">Salin</button>
+          <label class="done"><input type="checkbox" id="chk-li-4"> Sudah diposting</label>
+        </div>
+      </article>
+
+      <!-- LI 5 -->
+      <article class="post">
+        <div class="post-head">
+          <span class="platform li">LinkedIn 05</span>
+          <div class="titles">
+            <h3>Apa itu "people partner"</h3>
+            <p class="why">Tulisan yang membuat istilahnya berdiri sendiri. Setelah ini, kata itu bisa dipakai di mana saja tanpa perlu dijelaskan lagi — orang tinggal diberi tautannya.</p>
+          </div>
+        </div>
+        <div class="copyblock">
+          <p class="copytext" id="li-5">Kami menyebut diri "people partner", bukan agensi rekrutmen.
+
+Dan setiap kali saya menulis itu, selalu ada yang bertanya: bedanya apa? Bukankah itu hanya kata yang lebih enak didengar?
+
+Pertanyaan yang wajar. Ini jawabannya.
+
+Agensi rekrutmen mulai bekerja saat ada kursi kosong. Klien mengirim job description, mereka mengirim kandidat. Pekerjaannya selesai saat kandidatnya tanda tangan.
+
+Itu bukan model yang buruk. Itu memang modelnya, dan untuk banyak posisi itu sudah cukup.
+
+Masalahnya, yang membuat rekrutmen kreatif gagal hampir tidak pernah ada di job description.
+<span class="fill">ISI CERITA DI SINI — satu contoh konkret di mana job description-nya sudah benar tapi hasilnya tetap tidak jalan, dan yang sebenarnya jadi masalah adalah hal lain: cara kerja tim, siapa yang mengarahkan, ekspektasi yang tidak dibicarakan. 4–6 kalimat. Ini jantung tulisannya — tanpa ini, sisanya hanya klaim.</span>
+Jadi yang kami kerjakan berbeda di tiga tempat:
+
+<b>Sebelum mencari</b>
+Kami bertanya soal tim yang sudah ada, bukan hanya posisi yang kosong. Siapa yang akan memberi feedback ke orang ini setiap hari. Proyek apa yang berjalan enam bulan ke depan. Siapa yang terakhir keluar dari posisi ini, dan kenapa.
+
+Pertanyaan terakhir itu yang paling sering membuat obrolan jadi panjang. Dan paling sering mengubah orang yang akhirnya kami cari.
+
+<b>Saat mencari</b>
+Kami mengirim tiga sampai lima orang, bukan dua puluh. Bukan karena kami pelit — karena kalau kami benar-benar paham timnya, kami tidak perlu menebak.
+
+Kalau kami mengirim dua puluh CV, itu tandanya kami tidak paham. Kami hanya memindahkan pekerjaan menyortir kembali ke klien.
+
+<b>Setelah tanda tangan</b>
+Kami masih ada.
+
+Bulan pertama itu yang paling menentukan satu rekrutmen jadi atau tidak. Dan itu justru saat kebanyakan agensi sudah tidak terlihat lagi — tagihan sudah dibayar, urusan selesai.
+
+Kalau ternyata tidak cocok, kami ganti dalam 90 hari tanpa biaya tambahan. Tapi jujur, garansi itu bukan intinya. Intinya: kami masih di sana untuk tahu kalau ada yang tidak beres, sebelum jadi masalah sungguhan.
+
+Jadi "partner" bukan kata yang lebih sopan untuk "vendor".
+
+Bedanya ada di mana pekerjaannya dimulai, dan di mana dia berhenti.
+
+Vendor berhenti saat kontraknya ditandatangani.
+Partner baru mulai diuji di situ.</p>
+        </div>
+        <div class="post-foot">
+          <button class="copy" data-src="li-5">Salin</button>
+          <label class="done"><input type="checkbox" id="chk-li-5"> Sudah diposting</label>
+        </div>
+      </article>
+    </div>
+
+    <div class="aside">
+      <p><strong>LinkedIn 05 itu tulisan paling penting di halaman ini.</strong> Begitu tayang, Hoomanist punya satu tautan yang menjelaskan posisinya sekali untuk selamanya. Setelah itu kata "people partner" bebas dipakai di bio, di profil, di proposal, di mana pun — tanpa perlu diulang penjelasannya.</p>
+      <p>Tapi tulisan ini juga yang paling butuh cerita asli. Tanpa contoh konkret di tengahnya, isinya hanya jadi daftar janji — dan itu persis yang membuat semua agensi rekrutmen terdengar sama.</p>
+    </div>
+  </section>
+
+  <!-- ====================== INSTAGRAM ====================== -->
+  <section>
+    <div class="sec-head">
+      <span class="sec-num">Instagram</span>
+      <h2>Empat carousel untuk menarik kandidat</h2>
+    </div>
+    <p class="sec-note">Tugas Instagram berbeda dari LinkedIn. LinkedIn mencari yang membayar; Instagram mencari yang ditempatkan — sekaligus jadi penjaga gerbang kredibilitas, karena orang yang mendengar soal Hoomanist akan membuka Instagram duluan, bukan website. Di sini sapaannya "kamu", bukan "Anda", karena pembacanya kandidat. Tiap baris di bawah ini satu slide.</p>
+
+    <div class="stack">
+
+      <!-- IG 1 -->
+      <article class="post">
+        <div class="post-head">
+          <span class="platform ig">Instagram 01</span>
+          <div class="titles">
+            <h3>5 red flag waktu interview kerja kreatif</h3>
+            <p class="why">Untuk kandidat. Jenis konten yang disimpan dan dikirim ke teman — itu cara akun kecil tumbuh.</p>
+          </div>
+        </div>
+        <div class="slides">
+          <div class="slide"><span class="slide-n">01</span><div class="slide-body"><p class="slide-title">5 red flag waktu interview kerja kreatif</p><p class="slide-sub">Simpan dulu. Nanti terpakai.</p></div></div>
+          <div class="slide"><span class="slide-n">02</span><div class="slide-body"><p class="slide-title">Tugas tanpa bayaran yang kelewat besar</p><p class="slide-sub">Tes dua jam itu wajar. Diminta membuat satu kampanye penuh dalam seminggu? Itu pekerjaan, bukan tes.</p></div></div>
+          <div class="slide"><span class="slide-n">03</span><div class="slide-body"><p class="slide-title">Tidak mau menyebut kisaran gaji</p><p class="slide-sub">Kalau sampai tahap akhir angkanya masih rahasia, biasanya karena angkanya memang tidak enak dibicarakan.</p></div></div>
+          <div class="slide"><span class="slide-n">04</span><div class="slide-body"><p class="slide-title">"Kami seperti keluarga"</p><p class="slide-sub">Keluarga tidak bisa resign. Perusahaan bisa. Kalimat ini sering dipakai untuk meminta lebih tanpa membayar lebih.</p></div></div>
+          <div class="slide"><span class="slide-n">05</span><div class="slide-body"><p class="slide-title">Tidak jelas kamu lapor ke siapa</p><p class="slide-sub">Kalau mereka tidak bisa menjawab siapa yang akan memberi feedback ke karyamu, berarti strukturnya memang belum ada.</p></div></div>
+          <div class="slide"><span class="slide-n">06</span><div class="slide-body"><p class="slide-title">Prosesnya tidak ada ujungnya</p><p class="slide-sub">Wawancara keempat, masih "menunggu kabar". Perusahaan yang benar-benar mau merekrut, bergerak cepat.</p></div></div>
+          <div class="slide"><span class="slide-n">07</span><div class="slide-body"><p class="slide-title">Interview itu dua arah</p><p class="slide-sub">Mereka menilai kamu. Kamu juga menilai mereka. — @hoomanist.id</p></div></div>
+        </div>
+        <div class="post-foot">
+          <button class="copy" data-src="ig-1-cap">Salin caption</button>
+          <label class="done"><input type="checkbox" id="chk-ig-1"> Sudah diposting</label>
+        </div>
+        <div class="copyblock">
+          <p class="copytext" id="ig-1-cap">5 red flag waktu interview kerja kreatif 🚩
+
+Kami mengobrol dengan ratusan kandidat kreatif setiap tahun. Ini pola yang paling sering terdengar — dan paling sering diabaikan karena takut terlihat rewel.
+
+Kamu tidak rewel. Kamu sedang memilih tempat yang akan kamu datangi setiap hari.
+
+Simpan untuk interview berikutnya.
+
+#karirkreatif #desaingrafis #copywriter #videoeditor #lowongankreatif #hoomanist</p>
+        </div>
+      </article>
+
+      <!-- IG 2 -->
+      <article class="post">
+        <div class="post-head">
+          <span class="platform ig">Instagram 02</span>
+          <div class="titles">
+            <h3>Portfolio bagus. Tapi kenapa tidak dipanggil?</h3>
+            <p class="why">Untuk kandidat. Hoomanist membaca portfolio setiap hari — ini sudut pandang yang tidak dimiliki akun lain.</p>
+          </div>
+        </div>
+        <div class="slides">
+          <div class="slide"><span class="slide-n">01</span><div class="slide-body"><p class="slide-title">Portfolio bagus. Tapi kenapa tidak dipanggil?</p><p class="slide-sub">Dari orang yang membaca portfolio setiap hari.</p></div></div>
+          <div class="slide"><span class="slide-n">02</span><div class="slide-body"><p class="slide-title">Yang kami lihat pertama bukan hasil akhirnya</p><p class="slide-sub">Hasil akhir yang bagus itu standar. Yang membedakan ada di bawah ini.</p></div></div>
+          <div class="slide"><span class="slide-n">03</span><div class="slide-body"><p class="slide-title">Ceritakan prosesnya, bukan hanya hasilnya</p><p class="slide-sub">Brief-nya apa, masalahnya apa, keputusan apa yang diambil. Itu yang menunjukkan cara berpikir.</p></div></div>
+          <div class="slide"><span class="slide-n">04</span><div class="slide-body"><p class="slide-title">Jujur bagian mana yang dikerjakan</p><p class="slide-sub">"Saya bagian layout dan ilustrasi, konsepnya dari AD" membuat kami percaya — bukan mengurangi nilai.</p></div></div>
+          <div class="slide"><span class="slide-n">05</span><div class="slide-body"><p class="slide-title">10 karya kuat &gt; 40 karya campur</p><p class="slide-sub">Kami menilai dari karya yang paling lemah, bukan yang paling kuat.</p></div></div>
+          <div class="slide"><span class="slide-n">06</span><div class="slide-body"><p class="slide-title">Masukkan yang gagal</p><p class="slide-sub">Proyek yang tidak jadi, dan apa yang dipelajari. Hampir tidak ada yang berani — dan itu yang paling diingat.</p></div></div>
+          <div class="slide"><span class="slide-n">07</span><div class="slide-body"><p class="slide-title">Buat gampang dibuka</p><p class="slide-sub">PDF 80MB atau tautan yang minta izin akses sama dengan tidak terbuka. Serius.</p></div></div>
+          <div class="slide"><span class="slide-n">08</span><div class="slide-body"><p class="slide-title">Portfolio itu bukan galeri. Itu penjelasan cara berpikir.</p><p class="slide-sub">@hoomanist.id</p></div></div>
+        </div>
+        <div class="post-foot">
+          <button class="copy" data-src="ig-2-cap">Salin caption</button>
+          <label class="done"><input type="checkbox" id="chk-ig-2"> Sudah diposting</label>
+        </div>
+        <div class="copyblock">
+          <p class="copytext" id="ig-2-cap">Portfolio bagus. Tapi kenapa tidak dipanggil-panggil?
+
+Kami membaca portfolio setiap hari untuk mencarikan orang kreatif tempat kerja. Dan hampir selalu, yang membuat satu portfolio tersangkut di kepala bukan karyanya yang paling cakep — tapi penjelasannya.
+
+Geser untuk 5 hal yang kami lihat duluan.
+
+#portfolio #desaingrafis #copywriter #videoeditor #karirkreatif #hoomanist</p>
+        </div>
+      </article>
+
+      <!-- IG 3 -->
+      <article class="post">
+        <div class="post-head">
+          <span class="platform ig">Instagram 03</span>
+          <div class="titles">
+            <h3>Kenapa rekrutmen kreatif sering gagal</h3>
+            <p class="why">Untuk perusahaan. Satu-satunya dari empat ini yang berbicara ke calon pembeli — porsinya memang sengaja sedikit.</p>
+          </div>
+        </div>
+        <div class="slides">
+          <div class="slide"><span class="slide-n">01</span><div class="slide-body"><p class="slide-title">Kenapa rekrutmen kreatif sering gagal</p><p class="slide-sub">Dan hampir tidak pernah karena skill.</p></div></div>
+          <div class="slide"><span class="slide-n">02</span><div class="slide-body"><p class="slide-title">Yang diseleksi: portfolio. Yang membuat gagal: hal lain.</p><p class="slide-sub">Empat hal yang paling sering kami temui.</p></div></div>
+          <div class="slide"><span class="slide-n">03</span><div class="slide-body"><p class="slide-title">Cara kerjanya berbeda dengan timnya</p><p class="slide-sub">Ada yang butuh brief detail, ada yang jalan dari arahan setengah jadi. Dua-duanya sah. Tapi hanya satu yang cocok di satu tim.</p></div></div>
+          <div class="slide"><span class="slide-n">04</span><div class="slide-body"><p class="slide-title">Tidak jelas siapa yang mengarahkan</p><p class="slide-sub">Orang kreatif tanpa feedback yang konsisten akan menebak-nebak. Dan menebak itu melelahkan.</p></div></div>
+          <div class="slide"><span class="slide-n">05</span><div class="slide-body"><p class="slide-title">Ekspektasi berbeda sejak hari pertama</p><p class="slide-sub">Dia mengira akan memegang konsep. Ternyata eksekusi saja. Tidak ada yang salah — hanya tidak dibicarakan di depan.</p></div></div>
+          <div class="slide"><span class="slide-n">06</span><div class="slide-body"><p class="slide-title">Direkrut terburu-buru</p><p class="slide-sub">Posisi kosong membuat panik. Panik membuat kompromi. Kompromi ketahuan tiga bulan kemudian.</p></div></div>
+          <div class="slide"><span class="slide-n">07</span><div class="slide-body"><p class="slide-title">Skill bisa diukur dari portfolio. Kecocokan tidak.</p><p class="slide-sub">@hoomanist.id</p></div></div>
+        </div>
+        <div class="post-foot">
+          <button class="copy" data-src="ig-3-cap">Salin caption</button>
+          <label class="done"><input type="checkbox" id="chk-ig-3"> Sudah diposting</label>
+        </div>
+        <div class="copyblock">
+          <p class="copytext" id="ig-3-cap">Kenapa rekrutmen kreatif sering gagal — dan hampir tidak pernah karena skill.
+
+Dari 65+ peran kreatif yang kami tempatkan sejak 2022, polanya hampir selalu sama. Yang diseleksi portfolio. Yang membuat gagal justru hal yang tidak terlihat di portfolio.
+
+Geser untuk 4 penyebab yang paling sering.
+
+#rekrutmen #timkreatif #agensikreatif #hiring #hoomanist</p>
+        </div>
+      </article>
+
+      <!-- IG 4 -->
+      <article class="post">
+        <div class="post-head">
+          <span class="platform ig">Instagram 04</span>
+          <div class="titles">
+            <h3>Format: tim yang sudah kami tempatkan</h3>
+            <p class="why">Ini format, bukan tulisan jadi — isinya foto asli. Yang paling penting dari empat ini, dan hanya Hoomanist yang punya bahannya.</p>
+          </div>
+        </div>
+        <div class="slides">
+          <div class="slide"><span class="slide-n">01</span><div class="slide-body"><p class="slide-title">Foto tim sedang bekerja — tanpa teks apa pun</p><p class="slide-sub">Foto By.U, Bestie Konter by XL, atau Sosplan yang sudah dirapikan untuk website. Sekarang hanya menganggur di sana.</p></div></div>
+          <div class="slide"><span class="slide-n">02</span><div class="slide-body"><p class="slide-title">Perannya apa, dan kenapa sulit diisi</p><p class="slide-sub">Satu paragraf pendek. Konkret, bukan promosi.</p></div></div>
+          <div class="slide"><span class="slide-n">03</span><div class="slide-body"><p class="slide-title">Yang kami cari — dan yang kami abaikan</p><p class="slide-sub">Bagian ini yang membuat orang berhenti scroll. Sebut hal yang berlawanan dengan ekspektasi umum.</p></div></div>
+          <div class="slide"><span class="slide-n">04</span><div class="slide-body"><p class="slide-title">Berapa lama, dan sekarang bagaimana</p><p class="slide-sub">"4 minggu. Sekarang sudah 8 bulan di sana." Kalimat sependek itu lebih meyakinkan daripada satu halaman penuh klaim.</p></div></div>
+          <div class="slide"><span class="slide-n">05</span><div class="slide-body"><p class="slide-title">Foto lagi, atau logo kliennya</p><p class="slide-sub">@hoomanist.id</p></div></div>
+        </div>
+        <div class="post-foot">
+          <label class="done"><input type="checkbox" id="chk-ig-4"> Sudah diposting</label>
+        </div>
+        <div class="warn">
+          <p><strong>Minta izin sebelum memposting foto orang.</strong> Foto-foto itu isinya tim klien. Mereka mengizinkan dipajang di website belum tentu mengizinkan dipajang di Instagram dengan keterangan "kami yang menempatkan dia". Satu pesan WhatsApp ke kliennya cukup — dan itu jauh lebih murah daripada memperbaiki hubungan yang rusak.</p>
+        </div>
+      </article>
+    </div>
+
+    <div class="warn">
+      <p><strong>Soal konten gaji.</strong> Topik gaji desainer, copywriter, dan video editor di Indonesia adalah bahan paling kuat yang Hoomanist punya — orang akan menyebarkannya ke mana-mana. Tapi sengaja tidak ditulis di sini, karena angkanya harus datang dari 65 penempatan sendiri. Jangan mengambil dari artikel lain, jangan mengira-ngira. Kalau datanya hanya cukup untuk dua peran, tulis dua peran saja. Satu angka yang meleset bisa merusak kepercayaan yang dibangun bertahun-tahun.</p>
+    </div>
+  </section>
+
+  <!-- ====================== JADWAL ====================== -->
+  <section>
+    <div class="sec-head">
+      <span class="sec-num">Jadwal</span>
+      <h2>Lima minggu, dua postingan seminggu</h2>
+    </div>
+    <p class="sec-note">Satu kali seminggu yang konsisten jauh lebih kuat daripada lima kali sebulan lalu hilang dua bulan. Harinya boleh digeser — yang penting jaraknya tetap. Urutannya sengaja dibalik dari nomor tulisannya: yang siap tayang duluan, yang butuh cerita menyusul. Momentum lebih penting daripada urutan rapi.</p>
+
+    <div class="sched-scroll">
+      <table>
+        <thead>
+          <tr><th>Minggu</th><th>Senin · LinkedIn</th><th>Kamis · Instagram</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="wk">0</td><td colspan="2">Follow 200–300 akun · ganti bio · belum memposting apa pun</td></tr>
+          <tr><td class="wk">1</td><td><strong>Kenapa kandidat bagus tidak melamar</strong> — siap tayang</td><td>5 red flag waktu interview</td></tr>
+          <tr><td class="wk">2</td><td>"Portfolio-nya bagus banget" — butuh cerita</td><td>Portfolio bagus, tapi kenapa tidak dipanggil</td></tr>
+          <tr><td class="wk">3</td><td>Kami tidak mengirim 20 CV</td><td>Kenapa rekrutmen kreatif sering gagal</td></tr>
+          <tr><td class="wk">4</td><td>Biaya salah merekrut satu desainer</td><td>Tim yang sudah kami tempatkan (foto asli)</td></tr>
+          <tr><td class="wk">5</td><td>Apa itu "people partner"</td><td>—</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="aside">
+      <p><strong>"Apa itu people partner" sengaja ditaruh di minggu terakhir.</strong> Bio yang baru tidak memakai istilah itu, jadi tidak ada utang penjelasan yang harus dilunasi buru-buru. Dan di minggu kelima pembaca sudah mengenal Hoomanist lewat empat tulisan sebelumnya — mereka jauh lebih peduli saat akhirnya Hoomanist berbicara soal dirinya sendiri. Membuka dengan "ini kami" ke orang yang belum kenal selalu lebih lemah.</p>
+    </div>
+
+    <div class="aside">
+      <p><strong>Setelah minggu kelima, lihat mana yang paling ramai.</strong> Bukan dari jumlah like — dari komentar dan DM. Satu komentar dari pemilik agensi lebih berharga daripada 200 like dari mahasiswa.</p>
+      <p>Topik yang mendapat respons paling banyak, tulis lagi dari sudut yang lain. Yang sepi, tinggalkan. Lima minggu cukup untuk tahu mana yang menyangkut.</p>
+    </div>
+  </section>
+
+  <footer class="end">
+    <p>Sembilan tulisan di atas dibuat dari hal yang Hoomanist benar-benar punya: 65+ peran kreatif terisi sejak 2022, rata-rata 4–8 minggu per peran, garansi ganti 90 hari, serta klien By.U, Bestie Konter by XL, dan Sosplan.</p>
+    <p>Blok kuning di dalam tulisan adalah tempat cerita asli — sengaja tidak diisi, karena cerita karangan persis itulah yang membuat konten rekrutmen terdengar kosong.</p>
+  </footer>
+
+</div>
+
+<script>
+  // Hitung panjang bio — Instagram batasnya 150 karakter.
+  document.querySelectorAll('[data-count]').forEach(function (el) {
+    var src = document.getElementById(el.getAttribute('data-count'));
+    var limit = parseInt(el.getAttribute('data-limit'), 10);
+    if (!src) return;
+    var n = src.textContent.length;
+    el.textContent = n + '/' + limit;
+    if (n > limit) el.classList.add('over');
+  });
+
+  // Salin ke papan klip. Kalau ditolak peramban, teksnya diseleksi saja
+  // supaya tetap bisa disalin manual.
+  document.querySelectorAll('button.copy').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var src = document.getElementById(btn.getAttribute('data-src'));
+      if (!src) return;
+      // Blok kuning itu catatan untuk Munira, bukan bagian tulisannya —
+      // jangan sampai ikut tersalin lalu ter-posting mentah-mentah.
+      // Disembunyikan sebentar di DOM aslinya, bukan di salinan lepas:
+      // innerText hanya menghormati baris baru pada elemen yang benar-benar
+      // dirender.
+      var catatan = src.querySelectorAll('.fill');
+      for (var j = 0; j < catatan.length; j++) catatan[j].hidden = true;
+      var teks = src.innerText.replace(/\n{3,}/g, '\n\n').trim();
+      for (var k = 0; k < catatan.length; k++) catatan[k].hidden = false;
+      var semula = btn.textContent;
+      var beres = function () {
+        btn.textContent = 'Tersalin';
+        setTimeout(function () { btn.textContent = semula; }, 1600);
+      };
+      var manual = function () {
+        var r = document.createRange();
+        r.selectNodeContents(src);
+        var s = window.getSelection();
+        s.removeAllRanges();
+        s.addRange(r);
+        btn.textContent = 'Blok lalu salin';
+        setTimeout(function () { btn.textContent = semula; }, 2600);
+      };
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(teks).then(beres, manual);
+      } else {
+        manual();
+      }
+    });
+  });
+
+  // Centang "sudah diposting" disimpan di peramban masing-masing.
+  // Dibungkus try/catch karena di jendela privat penyimpanannya bisa menolak.
+  var KUNCI = 'hoomanist-konten-v1';
+  var simpanan = {};
+  try { simpanan = JSON.parse(localStorage.getItem(KUNCI) || '{}'); } catch (e) { simpanan = {}; }
+
+  document.querySelectorAll('.done input[type=checkbox]').forEach(function (kotak) {
+    if (simpanan[kotak.id]) kotak.checked = true;
+    kotak.addEventListener('change', function () {
+      simpanan[kotak.id] = kotak.checked;
+      try { localStorage.setItem(KUNCI, JSON.stringify(simpanan)); } catch (e) { /* biarkan */ }
+    });
+  });
+</script>

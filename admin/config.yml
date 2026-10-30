@@ -777,7 +777,7 @@ collections:
             label: "Teks pendek 16"
             widget: string
             required: false
-            hint: "— Doni, Marketing Team, By.U"
+            hint: "— Joody, Sosplan Creative"
           - name: "client_since_2023_quoted_with_permission"
             label: "Teks pendek 17"
             widget: text
