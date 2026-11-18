@@ -35,6 +35,10 @@
     "tag": "a",
     "label": "@hoomanist.id"
   },
+  "linkedin": {
+    "tag": "a",
+    "label": "LinkedIn"
+  },
   "2026_hoomanist_all_rights_reserved_peopl": {
     "tag": "div",
     "label": "© 2026 Hoomanist. All rights reserved. People. &nbsp;Presenc…"

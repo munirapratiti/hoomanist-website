@@ -1253,6 +1253,11 @@ collections:
             widget: string
             required: false
             hint: "@hoomanist.id"
+          - name: "linkedin"
+            label: "Tautan 6"
+            widget: string
+            required: false
+            hint: "LinkedIn"
           - name: "2026_hoomanist_all_rights_reserved_peopl"
             label: "Teks pendek 4"
             widget: text
@@ -1616,6 +1621,10 @@ collections:
             hint: "Terhubung"
           - name: "hoomanist_id"
             label: "Tautan 5"
+            widget: string
+            required: false
+          - name: "linkedin"
+            label: "Tautan 6"
             widget: string
             required: false
           - name: "2026_hoomanist_all_rights_reserved_peopl"
